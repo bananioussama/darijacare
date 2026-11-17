@@ -1,0 +1,7 @@
+# Fins de ligne LF partout (les empreintes DVC et les rapports doivent être identiques sous Windows et Linux).
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.pdf binary
+*.safetensors binary
+*.jsonl -text

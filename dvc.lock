@@ -1,0 +1,287 @@
+schema: '2.0'
+stages:
+  ingest:
+    cmd: python -m darijacare.data.cli ingest
+    deps:
+    - path: src/darijacare/data/ingest.py
+      hash: md5
+      md5: 4afc0faaba21fd6bff114f641b859c5c
+      size: 5817
+    - path: src/darijacare/io.py
+      hash: md5
+      md5: b5604d6bdb01485e853ba48b36936c02
+      size: 2716
+    params:
+      configs/data.yaml:
+        source:
+          repo_id: mballouch/jev-darija-telecom
+          repo_type: dataset
+          revision: 2d5de707e8a902b371f5925224f255984c3b34bc
+          mode: auto
+          local_dir: ..
+          license: CC-BY-4.0
+          license_url: https://creativecommons.org/licenses/by/4.0/
+          author: Mohamed Ballouch
+          title: 'Jev-Darija Telecom: Moroccan Darija Customer-Service Messages'
+          url: https://huggingface.co/datasets/mballouch/jev-darija-telecom
+          year: 2026
+          files:
+            train.jsonl:
+              hub_path: data/train.jsonl
+              local_names:
+              - train.jsonl
+              sha256: 
+                21928dabc531b32f639c957e3c23d9f24396970abb7cdee93dc15006442deb4a
+            test.jsonl:
+              hub_path: data/test.jsonl
+              local_names:
+              - test.jsonl
+              sha256: 
+                beb32cc49f6dd2b6ae2908a1b782db43cbea54f0d665276618c218115eadcb4e
+            telecom_taxonomy.json:
+              hub_path: telecom_taxonomy.json
+              local_names:
+              - telecom_taxonomy.json
+              sha256: 
+                5043f178453bb09a776d30642838b3e855708f3bac5e818cae0842415ec85153
+            DATASET_CARD.md:
+              hub_path: README.md
+              local_names:
+              - README.md
+              - README (1).md
+              sha256: 
+                227da62415d8fc6c060363a9fbc1d34e51c374dd8837d9dd457ec9667902d22c
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: 3ebf387bfc7b27e8007a0ae59c620fa3.dir
+      size: 15974816
+      nfiles: 7
+  validate:
+    cmd: python -m darijacare.data.cli validate
+    deps:
+    - path: data/raw
+      hash: md5
+      md5: 3ebf387bfc7b27e8007a0ae59c620fa3.dir
+      size: 15974816
+      nfiles: 7
+    - path: src/darijacare/data/normalize.py
+      hash: md5
+      md5: b46ea55e7ce2000fa7e3c84135e6fd8c
+      size: 9488
+    - path: src/darijacare/data/proximity.py
+      hash: md5
+      md5: 76738f7207396029c16935c26de69cc0
+      size: 4500
+    - path: src/darijacare/data/scripts.py
+      hash: md5
+      md5: 2a0af14428fa0adaa2b265ed1a6adb94
+      size: 4413
+    - path: src/darijacare/data/taxonomy.py
+      hash: md5
+      md5: da94517031ccc1c9091c887d38b71ad4
+      size: 2770
+    - path: src/darijacare/data/validate.py
+      hash: md5
+      md5: c49a8251f148d93db40cb8a2314604ba
+      size: 11825
+    params:
+      configs/data.yaml:
+        normalize:
+          enabled: true
+          nfkc: true
+          arabic_diacritics: true
+          tatweel: true
+          unify_alef: true
+          unify_ya: true
+          arabic_indic_digits: true
+          arabic_punctuation: true
+          lowercase_latin: true
+          reduce_elongation: true
+          max_repeat: 2
+          mask_urls: true
+          mask_emails: true
+          mask_phones: true
+        validation:
+          expected_rows:
+            train: 40357
+            test: 1107
+          expected_taxonomy:
+            categories: 12
+            intents: 75
+          min_script_coherence: 0.99
+          duplicate_conflict_policy: drop_all
+          proximity:
+            ngram: 3
+            threshold: 0.8
+            block_on: same_intent
+            max_allowed_pairs: 0
+    outs:
+    - path: data/interim/validated
+      hash: md5
+      md5: 521cb249f4a1439629cd0af2c3c2b0b9.dir
+      size: 15941524
+      nfiles: 2
+    - path: reports/validation
+      hash: md5
+      md5: 818cef3a388f31e3411a0c7d26a4d147.dir
+      size: 13425
+      nfiles: 4
+  normalize:
+    cmd: python -m darijacare.data.cli normalize
+    deps:
+    - path: data/interim/validated
+      hash: md5
+      md5: 521cb249f4a1439629cd0af2c3c2b0b9.dir
+      size: 15941524
+      nfiles: 2
+    - path: src/darijacare/data/normalize.py
+      hash: md5
+      md5: b46ea55e7ce2000fa7e3c84135e6fd8c
+      size: 9488
+    params:
+      configs/data.yaml:
+        normalize:
+          enabled: true
+          nfkc: true
+          arabic_diacritics: true
+          tatweel: true
+          unify_alef: true
+          unify_ya: true
+          arabic_indic_digits: true
+          arabic_punctuation: true
+          lowercase_latin: true
+          reduce_elongation: true
+          max_repeat: 2
+          mask_urls: true
+          mask_emails: true
+          mask_phones: true
+    outs:
+    - path: data/interim/normalized
+      hash: md5
+      md5: bd053af406017dcd93f4a19b1079c16e.dir
+      size: 21278546
+      nfiles: 2
+    - path: reports/normalize
+      hash: md5
+      md5: 9ef3a4c8d2e332e9cbd332aad04737b7.dir
+      size: 667
+      nfiles: 1
+  split:
+    cmd: python -m darijacare.data.cli split
+    deps:
+    - path: data/interim/normalized
+      hash: md5
+      md5: bd053af406017dcd93f4a19b1079c16e.dir
+      size: 21278546
+      nfiles: 2
+    - path: src/darijacare/data/proximity.py
+      hash: md5
+      md5: 76738f7207396029c16935c26de69cc0
+      size: 4500
+    - path: src/darijacare/data/split.py
+      hash: md5
+      md5: 051365a93a0530fe40afb1d2ae82d83e
+      size: 7101
+    params:
+      configs/data.yaml:
+        seed: 42
+        split:
+          val_fraction: 0.1
+          stratify_by:
+          - intent
+          - script
+          - generator
+          fallback_keys:
+          - - intent
+            - script
+          - - intent
+          min_stratum_size: 10
+          proximity:
+            ngram: 3
+            threshold: 0.8
+            action: move_to_train
+          max_distribution_gap_points: 2.0
+          check_columns:
+          - intent
+          - category
+          - script
+          - generator
+          - product
+          - urgency
+          - needs_human
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: 8f13302c16c057a101db3e49b71e4dba.dir
+      size: 21278546
+      nfiles: 3
+    - path: reports/split
+      hash: md5
+      md5: aeb2daed7ef9549993b74c0f576def90.dir
+      size: 791
+      nfiles: 2
+  eda:
+    cmd: python -m darijacare.data.cli eda
+    deps:
+    - path: data/processed
+      hash: md5
+      md5: 8f13302c16c057a101db3e49b71e4dba.dir
+      size: 21278546
+      nfiles: 3
+    - path: data/raw
+      hash: md5
+      md5: 3ebf387bfc7b27e8007a0ae59c620fa3.dir
+      size: 15974816
+      nfiles: 7
+    - path: src/darijacare/data/eda.py
+      hash: md5
+      md5: c52a274eb6862e1944c8f5fa2ff56ab2
+      size: 20114
+    - path: src/darijacare/data/scripts.py
+      hash: md5
+      md5: 2a0af14428fa0adaa2b265ed1a6adb94
+      size: 4413
+    params:
+      configs/data.yaml:
+        eda:
+          reference:
+            train:
+              rows: 40357
+              script_pct:
+                arabic: 54.2
+                arabizi: 23.8
+                mixed: 22.0
+              needs_human_pct: 15.1
+              urgency_pct:
+                0: 48.4
+                1: 29.2
+                2: 19.4
+                3: 3.0
+              product_unknown_pct: 48.6
+              length_mean: 74.8
+              length_median: 74
+              length_max: 247
+            test:
+              rows: 1107
+              script_pct:
+                arabic: 53.5
+                arabizi: 26.5
+                mixed: 20.1
+              needs_human_pct: 12.7
+              urgency_pct:
+                0: 50.3
+                1: 24.5
+                2: 21.6
+                3: 3.6
+              product_unknown_pct: 51.2
+              length_mean: 71.7
+              length_median: 70
+              length_max: 184
+          tolerance_points: 0.15
+    outs:
+    - path: reports/eda
+      hash: md5
+      md5: 69dd69f7bdd77a44555c804ca357e7b4.dir
+      size: 491313
+      nfiles: 14

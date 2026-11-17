@@ -1,0 +1,32 @@
+{
+  "config": {
+    "arabic_diacritics": true,
+    "arabic_indic_digits": true,
+    "arabic_punctuation": true,
+    "enabled": true,
+    "lowercase_latin": true,
+    "mask_emails": true,
+    "mask_phones": true,
+    "mask_urls": true,
+    "max_repeat": 2,
+    "nfkc": true,
+    "reduce_elongation": true,
+    "tatweel": true,
+    "unify_alef": true,
+    "unify_ya": true
+  },
+  "test": {
+    "changed": 696,
+    "empty_after_normalization": 0,
+    "rows": 1107,
+    "tel_masked_rows": 0,
+    "url_masked_rows": 0
+  },
+  "train": {
+    "changed": 27004,
+    "empty_after_normalization": 0,
+    "rows": 40353,
+    "tel_masked_rows": 383,
+    "url_masked_rows": 0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "distribution_gap_points": {
+    "category": 0.123,
+    "generator": 0.131,
+    "intent": 0.058,
+    "needs_human": 0.537,
+    "product": 0.376,
+    "script": 0.519,
+    "urgency": 0.415
+  },
+  "rows": {
+    "test": 1107,
+    "train": 36317,
+    "val": 4036
+  },
+  "seed": 42,
+  "strata": 460,
+  "strata_by_level": {
+    "L0": 40034,
+    "L1": 57,
+    "L2": 28,
+    "rest": 234
+  },
+  "val_by_generator": {
+    "claude-opus-5.5": 3132,
+    "gemini-3.8-flash": 203,
+    "gemini-4-argon": 701
+  },
+  "val_by_script": {
+    "arabic": 2204,
+    "arabizi": 962,
+    "mixed": 870
+  },
+  "val_fraction_effective": 0.1,
+  "val_intents": 75,
+  "val_min_per_intent": 47,
+  "val_moved_to_train": 0
+}

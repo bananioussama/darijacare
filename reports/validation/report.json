@@ -1,0 +1,72 @@
+{
+  "splits": {
+    "test": {
+      "duplicates_removed": [],
+      "rows_in": 1107,
+      "rows_out": 1107,
+      "script_coherence": 0.9982,
+      "script_coherence_by_script": {
+        "arabic": 1.0,
+        "arabizi": 1.0,
+        "mixed": 0.991
+      },
+      "script_exceptions": 2
+    },
+    "train": {
+      "duplicates_removed": [
+        {
+          "id": "train-balance_check-0413",
+          "intent": "balance_check",
+          "kept_id": null,
+          "reason": "labels_divergents",
+          "text": "ch7al b9a?"
+        },
+        {
+          "id": "train-check_usage-0431",
+          "intent": "check_usage",
+          "kept_id": null,
+          "reason": "labels_divergents",
+          "text": "ch7al b9a?"
+        },
+        {
+          "id": "train-line_identification-0500",
+          "intent": "line_identification",
+          "kept_id": null,
+          "reason": "labels_divergents",
+          "text": "الخط باسم الكاري القديم"
+        },
+        {
+          "id": "train-ownership_transfer-0333",
+          "intent": "ownership_transfer",
+          "kept_id": null,
+          "reason": "labels_divergents",
+          "text": "الخط باسم الكاري القديم"
+        }
+      ],
+      "rows_in": 40357,
+      "rows_out": 40353,
+      "script_coherence": 0.9958,
+      "script_coherence_by_script": {
+        "arabic": 1.0,
+        "arabizi": 1.0,
+        "mixed": 0.9811
+      },
+      "script_exceptions": 168
+    }
+  },
+  "status": "ok",
+  "taxonomy": {
+    "categories": 12,
+    "intents": 75,
+    "name": "darija_telecom_v1",
+    "products": 11
+  },
+  "train_test_proximity": {
+    "ngram": 3,
+    "pairs_cross_intent": 0,
+    "pairs_same_intent": 0,
+    "pairs_total": 0,
+    "test_rows_with_near_train": 0,
+    "threshold": 0.8
+  }
+}

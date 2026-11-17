@@ -1,0 +1,371 @@
+{
+  "script_detector_accuracy": 0.896,
+  "stats": {
+    "final_test": {
+      "categories": 12,
+      "generator_pct": {
+        "claude-opus-5.5": 100.0
+      },
+      "imbalance_ratio_intent": 1.15,
+      "intents": 75,
+      "length_max": 184,
+      "length_mean": 71.7,
+      "length_median": 70.0,
+      "length_min": 10,
+      "needs_human_pct": 12.7,
+      "non_telecom_pct": 1.4,
+      "per_intent_max": 15,
+      "per_intent_min": 13,
+      "product_unknown_pct": 51.2,
+      "round_pct": {
+        "1": 100.0
+      },
+      "rows": 1107,
+      "script_pct": {
+        "arabic": 53.5,
+        "arabizi": 26.5,
+        "mixed": 20.1
+      },
+      "urgency_pct": {
+        "0": 50.3,
+        "1": 24.5,
+        "2": 21.6,
+        "3": 3.6
+      }
+    },
+    "final_train": {
+      "categories": 12,
+      "generator_pct": {
+        "claude-opus-5.5": 77.6,
+        "gemini-3.8-flash": 4.9,
+        "gemini-4-argon": 17.5
+      },
+      "imbalance_ratio_intent": 1.38,
+      "intents": 75,
+      "length_max": 247,
+      "length_mean": 74.8,
+      "length_median": 74.0,
+      "length_min": 4,
+      "needs_human_pct": 15.2,
+      "non_telecom_pct": 1.4,
+      "per_intent_max": 585,
+      "per_intent_min": 425,
+      "product_unknown_pct": 48.7,
+      "round_pct": {
+        "1": 28.0,
+        "2": 12.7,
+        "3": 4.9,
+        "4": 36.9,
+        "6": 17.5
+      },
+      "rows": 36317,
+      "script_pct": {
+        "arabic": 54.1,
+        "arabizi": 23.8,
+        "mixed": 22.1
+      },
+      "urgency_pct": {
+        "0": 48.3,
+        "1": 29.2,
+        "2": 19.4,
+        "3": 3.0
+      }
+    },
+    "final_val": {
+      "categories": 12,
+      "generator_pct": {
+        "claude-opus-5.5": 77.6,
+        "gemini-3.8-flash": 5.0,
+        "gemini-4-argon": 17.4
+      },
+      "imbalance_ratio_intent": 1.4,
+      "intents": 75,
+      "length_max": 214,
+      "length_mean": 75.0,
+      "length_median": 74.0,
+      "length_min": 6,
+      "needs_human_pct": 14.7,
+      "non_telecom_pct": 1.3,
+      "per_intent_max": 66,
+      "per_intent_min": 47,
+      "product_unknown_pct": 48.3,
+      "round_pct": {
+        "1": 26.2,
+        "2": 13.2,
+        "3": 5.0,
+        "4": 38.2,
+        "6": 17.4
+      },
+      "rows": 4036,
+      "script_pct": {
+        "arabic": 54.6,
+        "arabizi": 23.8,
+        "mixed": 21.6
+      },
+      "urgency_pct": {
+        "0": 48.8,
+        "1": 29.0,
+        "2": 19.2,
+        "3": 3.1
+      }
+    },
+    "raw_test": {
+      "categories": 12,
+      "generator_pct": {
+        "claude-opus-5.5": 100.0
+      },
+      "imbalance_ratio_intent": 1.15,
+      "intents": 75,
+      "length_max": 184,
+      "length_mean": 71.7,
+      "length_median": 70.0,
+      "length_min": 10,
+      "needs_human_pct": 12.7,
+      "non_telecom_pct": 1.4,
+      "per_intent_max": 15,
+      "per_intent_min": 13,
+      "product_unknown_pct": 51.2,
+      "round_pct": {
+        "1": 100.0
+      },
+      "rows": 1107,
+      "script_pct": {
+        "arabic": 53.5,
+        "arabizi": 26.5,
+        "mixed": 20.1
+      },
+      "urgency_pct": {
+        "0": 50.3,
+        "1": 24.5,
+        "2": 21.6,
+        "3": 3.6
+      }
+    },
+    "raw_train": {
+      "categories": 12,
+      "generator_pct": {
+        "claude-opus-5.5": 77.6,
+        "gemini-3.8-flash": 4.9,
+        "gemini-4-argon": 17.5
+      },
+      "imbalance_ratio_intent": 1.38,
+      "intents": 75,
+      "length_max": 247,
+      "length_mean": 74.8,
+      "length_median": 74.0,
+      "length_min": 4,
+      "needs_human_pct": 15.1,
+      "non_telecom_pct": 1.4,
+      "per_intent_max": 650,
+      "per_intent_min": 472,
+      "product_unknown_pct": 48.6,
+      "round_pct": {
+        "1": 27.8,
+        "2": 12.8,
+        "3": 4.9,
+        "4": 37.1,
+        "6": 17.5
+      },
+      "rows": 40357,
+      "script_pct": {
+        "arabic": 54.2,
+        "arabizi": 23.8,
+        "mixed": 22.0
+      },
+      "urgency_pct": {
+        "0": 48.4,
+        "1": 29.2,
+        "2": 19.4,
+        "3": 3.0
+      }
+    }
+  },
+  "table5_checks": {
+    "test": [
+      {
+        "indicateur": "lignes",
+        "mesuré": 1107,
+        "ok": true,
+        "référence": 1107,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "script arabic (%)",
+        "mesuré": 53.5,
+        "ok": true,
+        "référence": 53.5,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "script arabizi (%)",
+        "mesuré": 26.5,
+        "ok": true,
+        "référence": 26.5,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "script mixed (%)",
+        "mesuré": 20.1,
+        "ok": true,
+        "référence": 20.1,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "needs_human (%)",
+        "mesuré": 12.7,
+        "ok": true,
+        "référence": 12.7,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "urgence 0 (%)",
+        "mesuré": 50.3,
+        "ok": true,
+        "référence": 50.3,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "urgence 1 (%)",
+        "mesuré": 24.5,
+        "ok": true,
+        "référence": 24.5,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "urgence 2 (%)",
+        "mesuré": 21.6,
+        "ok": true,
+        "référence": 21.6,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "urgence 3 (%)",
+        "mesuré": 3.6,
+        "ok": true,
+        "référence": 3.6,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "produit unknown (%)",
+        "mesuré": 51.2,
+        "ok": true,
+        "référence": 51.2,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "longueur moyenne",
+        "mesuré": 71.7,
+        "ok": true,
+        "référence": 71.7,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "longueur médiane",
+        "mesuré": 70.0,
+        "ok": true,
+        "référence": 70,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "longueur max",
+        "mesuré": 184,
+        "ok": true,
+        "référence": 184,
+        "écart": 0.0
+      }
+    ],
+    "train": [
+      {
+        "indicateur": "lignes",
+        "mesuré": 40357,
+        "ok": true,
+        "référence": 40357,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "script arabic (%)",
+        "mesuré": 54.2,
+        "ok": true,
+        "référence": 54.2,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "script arabizi (%)",
+        "mesuré": 23.8,
+        "ok": true,
+        "référence": 23.8,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "script mixed (%)",
+        "mesuré": 22.0,
+        "ok": true,
+        "référence": 22.0,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "needs_human (%)",
+        "mesuré": 15.1,
+        "ok": true,
+        "référence": 15.1,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "urgence 0 (%)",
+        "mesuré": 48.4,
+        "ok": true,
+        "référence": 48.4,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "urgence 1 (%)",
+        "mesuré": 29.2,
+        "ok": true,
+        "référence": 29.2,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "urgence 2 (%)",
+        "mesuré": 19.4,
+        "ok": true,
+        "référence": 19.4,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "urgence 3 (%)",
+        "mesuré": 3.0,
+        "ok": true,
+        "référence": 3.0,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "produit unknown (%)",
+        "mesuré": 48.6,
+        "ok": true,
+        "référence": 48.6,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "longueur moyenne",
+        "mesuré": 74.8,
+        "ok": true,
+        "référence": 74.8,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "longueur médiane",
+        "mesuré": 74.0,
+        "ok": true,
+        "référence": 74,
+        "écart": 0.0
+      },
+      {
+        "indicateur": "longueur max",
+        "mesuré": 247,
+        "ok": true,
+        "référence": 247,
+        "écart": 0.0
+      }
+    ]
+  }
+}

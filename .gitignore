@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Secrets
+.env
+!.env.example
+
+# Données et modèles : versionnés par DVC, jamais par git
+/data/raw/
+/data/interim/
+/data/processed/
+/models/
+*.safetensors
+*.bin
+*.pt
+*.onnx
+
+# MLflow / outils
+/mlruns/
+/mlartifacts/
+
+# Frontend
+node_modules/
+frontend/dist/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

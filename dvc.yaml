@@ -1,0 +1,73 @@
+# Pipeline de données DarijaCare (Phase 1) — zones bronze (raw) / argent (interim) / or (processed).
+# `dvc repro` rejoue tout depuis les fichiers sources ; les empreintes sont figées dans dvc.lock.
+stages:
+  ingest:
+    cmd: python -m darijacare.data.cli ingest
+    deps:
+      - src/darijacare/data/ingest.py
+      - src/darijacare/io.py
+    params:
+      - configs/data.yaml:
+          - source
+    outs:
+      - data/raw
+
+  validate:
+    cmd: python -m darijacare.data.cli validate
+    deps:
+      - data/raw
+      - src/darijacare/data/validate.py
+      - src/darijacare/data/scripts.py
+      - src/darijacare/data/taxonomy.py
+      - src/darijacare/data/proximity.py
+      - src/darijacare/data/normalize.py
+    params:
+      - configs/data.yaml:
+          - validation
+          - normalize
+    outs:
+      - data/interim/validated
+      - reports/validation:
+          cache: false
+
+  normalize:
+    cmd: python -m darijacare.data.cli normalize
+    deps:
+      - data/interim/validated
+      - src/darijacare/data/normalize.py
+    params:
+      - configs/data.yaml:
+          - normalize
+    outs:
+      - data/interim/normalized
+      - reports/normalize:
+          cache: false
+
+  split:
+    cmd: python -m darijacare.data.cli split
+    deps:
+      - data/interim/normalized
+      - src/darijacare/data/split.py
+      - src/darijacare/data/proximity.py
+    params:
+      - configs/data.yaml:
+          - seed
+          - split
+    outs:
+      - data/processed
+      - reports/split:
+          cache: false
+
+  eda:
+    cmd: python -m darijacare.data.cli eda
+    deps:
+      - data/raw
+      - data/processed
+      - src/darijacare/data/eda.py
+      - src/darijacare/data/scripts.py
+    params:
+      - configs/data.yaml:
+          - eda
+    outs:
+      - reports/eda:
+          cache: false

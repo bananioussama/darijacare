@@ -1,0 +1,112 @@
+# Configuration du pipeline de données DarijaCare (Phase 1).
+# Utilisée comme fichier de paramètres DVC : toute modification relance les étapes concernées.
+
+seed: 42
+
+source:
+  repo_id: mballouch/jev-darija-telecom
+  repo_type: dataset
+  # Révision figée (commit du Hub). Les empreintes ci-dessous ont été vérifiées sur cette révision.
+  revision: 2d5de707e8a902b371f5925224f255984c3b34bc
+  # auto : copie locale si les fichiers existent dans local_dir, sinon téléchargement du Hub.
+  # local : copie locale uniquement ; hub : téléchargement uniquement.
+  mode: auto
+  # Relatif à la racine du dépôt darijacare/ (surchargeable par DARIJACARE_SOURCE_DIR dans .env).
+  local_dir: ..
+  license: CC-BY-4.0
+  license_url: https://creativecommons.org/licenses/by/4.0/
+  author: Mohamed Ballouch
+  title: "Jev-Darija Telecom: Moroccan Darija Customer-Service Messages"
+  url: https://huggingface.co/datasets/mballouch/jev-darija-telecom
+  year: 2026
+  # nom dans data/raw  ->  {chemin sur le Hub, nom local alternatif, sha256 attendu}
+  files:
+    train.jsonl:
+      hub_path: data/train.jsonl
+      local_names: [train.jsonl]
+      sha256: 21928dabc531b32f639c957e3c23d9f24396970abb7cdee93dc15006442deb4a
+    test.jsonl:
+      hub_path: data/test.jsonl
+      local_names: [test.jsonl]
+      sha256: beb32cc49f6dd2b6ae2908a1b782db43cbea54f0d665276618c218115eadcb4e
+    telecom_taxonomy.json:
+      hub_path: telecom_taxonomy.json
+      local_names: [telecom_taxonomy.json]
+      sha256: 5043f178453bb09a776d30642838b3e855708f3bac5e818cae0842415ec85153
+    DATASET_CARD.md:
+      hub_path: README.md
+      local_names: [README.md, "README (1).md"]
+      sha256: 227da62415d8fc6c060363a9fbc1d34e51c374dd8837d9dd457ec9667902d22c
+
+validation:
+  expected_rows: {train: 40357, test: 1107}
+  expected_taxonomy: {categories: 12, intents: 75}
+  # Tableau 20 du cahier des charges.
+  min_script_coherence: 0.99        # < 99 % -> échec ; sinon exceptions listées pour revue
+  # Doublons exacts (texte identique) dans un même split :
+  #   mêmes labels        -> on garde la première occurrence (ordre des id)
+  #   labels divergents   -> drop_all (message ambigu) ou keep_first
+  duplicate_conflict_policy: drop_all
+  # Proximité train/test : Jaccard sur n-grammes de caractères du texte normalisé.
+  proximity:
+    ngram: 3
+    threshold: 0.8
+    # same_intent : échec bloquant si une paire train/test de même intention dépasse le seuil
+    # (la fiche du dataset garantit qu'il n'y en a aucune). Les paires inter-intentions sont rapportées.
+    block_on: same_intent
+    max_allowed_pairs: 0
+
+normalize:
+  # Mettre enabled: false pour l'ablation « sans normalisation » (seul le masquage reste actif).
+  enabled: true
+  nfkc: true
+  arabic_diacritics: true
+  tatweel: true
+  unify_alef: true
+  unify_ya: true
+  arabic_indic_digits: true
+  arabic_punctuation: true
+  lowercase_latin: true
+  reduce_elongation: true
+  max_repeat: 2
+  mask_urls: true
+  mask_emails: true
+  mask_phones: true
+
+split:
+  val_fraction: 0.10
+  # Clé de stratification ; repli sur des clés plus grossières si une strate a trop peu de lignes.
+  stratify_by: [intent, script, generator]
+  fallback_keys: [[intent, script], [intent]]
+  min_stratum_size: 10
+  proximity:
+    ngram: 3
+    threshold: 0.8
+    # Les lignes de validation trop proches d'une ligne d'entraînement sont rendues au train.
+    action: move_to_train
+  # Écart maximal (en points de %) entre les distributions train et validation.
+  max_distribution_gap_points: 2.0
+  check_columns: [intent, category, script, generator, product, urgency, needs_human]
+
+eda:
+  # Valeurs de référence du Tableau 5 (cahier des charges) pour contrôle croisé.
+  reference:
+    train:
+      rows: 40357
+      script_pct: {arabic: 54.2, arabizi: 23.8, mixed: 22.0}
+      needs_human_pct: 15.1
+      urgency_pct: {0: 48.4, 1: 29.2, 2: 19.4, 3: 3.0}
+      product_unknown_pct: 48.6
+      length_mean: 74.8
+      length_median: 74
+      length_max: 247
+    test:
+      rows: 1107
+      script_pct: {arabic: 53.5, arabizi: 26.5, mixed: 20.1}
+      needs_human_pct: 12.7
+      urgency_pct: {0: 50.3, 1: 24.5, 2: 21.6, 3: 3.6}
+      product_unknown_pct: 51.2
+      length_mean: 71.7
+      length_median: 70
+      length_max: 184
+  tolerance_points: 0.15
