@@ -9,8 +9,8 @@ UV ?= uv
 help:
 	@echo "Cibles : install lint format typecheck test test-data cov repro data-status up down logs clean precommit"
 
-install:  ## Environnement Python figé (uv.lock) + hooks pre-commit
-	$(UV) sync --locked --all-extras
+install:  ## Environnement figé (uv.lock), torch CPU + hooks pre-commit
+	$(UV) sync --locked --extra pipeline --extra nlu --extra cpu
 	$(UV) run pre-commit install
 
 lint:
@@ -50,6 +50,9 @@ down:
 
 logs:
 	docker compose logs -f --tail=100
+
+install-gpu:  ## Variante torch CUDA 12.6 (GPU Pascal et plus récents)
+	$(UV) sync --locked --extra pipeline --extra nlu --extra cu126
 
 precommit:
 	$(UV) run pre-commit run --all-files

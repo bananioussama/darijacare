@@ -9,8 +9,10 @@ n'est utilisé** : le projet repose uniquement sur un jeu de données et un mod�
 publics. Les données sont **synthétiques** ; tous les résultats sont donc mesurés
 sur des données synthétiques.
 
-> État : **Phase 1 — socle et pipeline de données** terminée. Les phases suivantes
-> (NLU, décision, base de connaissances, API, interface) restent à faire.
+> État : **Phase 1** (données) et **Phase 2** (NLU : reproduction des modèles publiés, baseline,
+> calibration, script de ré-entraînement — voir [docs/nlu.md](docs/nlu.md)) terminées ; le
+> ré-entraînement complet reste à lancer sur GPU T4. Les phases suivantes
+> (décision, base de connaissances, API, interface, livraison) restent à faire.
 
 ## Démarrage rapide
 
@@ -18,7 +20,8 @@ Prérequis : [uv](https://docs.astral.sh/uv/) ≥ 0.10, Git, Docker (facultatif 
 
 ```bash
 cd darijacare
-uv sync --locked --all-extras      # Python 3.11 + dépendances figées (uv.lock)
+uv sync --locked --extra pipeline --extra nlu --extra cpu   # Python 3.11, torch CPU, versions figées
+# GPU (CUDA 12.6) : remplacer --extra cpu par --extra cu126
 cp .env.example .env               # puis adapter
 uv run dvc repro                   # rejoue tout le pipeline de données
 uv run pytest                      # tests unitaires + tests sur les données

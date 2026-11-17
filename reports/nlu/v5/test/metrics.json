@@ -1,0 +1,353 @@
+{
+  "bootstrap_95ci": {
+    "intent_end_to_end": {
+      "estimate": 0.8961156278229448,
+      "high": 0.9141824751580849,
+      "low": 0.8780487804878049
+    },
+    "intent_given_category": {
+      "estimate": 0.9668615984405458,
+      "high": 0.9774763558265709,
+      "low": 0.9552964042759962
+    }
+  },
+  "by_category": {
+    "billing_payment": {
+      "category_acc": 0.9658119658119658,
+      "category_f1_macro": 0.24565217391304348,
+      "intent_acc": 0.9401709401709402,
+      "intent_end_to_end": 0.9401709401709402,
+      "intent_f1_macro": 0.6372649995193561,
+      "intent_given_category": 0.9734513274336283,
+      "n": 117.0,
+      "needs_human_acc": 0.8803418803418803,
+      "needs_human_f1_macro": 0.8548901488306165,
+      "product_acc": 0.6581196581196581,
+      "product_f1_macro": 0.6082250272713104,
+      "urgency_acc": 0.7948717948717948,
+      "urgency_f1_macro": 0.656941206941207,
+      "urgency_qwk": 0.8601036269430051
+    },
+    "customer_care": {
+      "category_acc": 0.93,
+      "category_f1_macro": 0.1376757957068838,
+      "intent_acc": 0.93,
+      "intent_end_to_end": 0.93,
+      "intent_f1_macro": 0.4793700088731145,
+      "intent_given_category": 1.0,
+      "n": 100.0,
+      "needs_human_acc": 0.9,
+      "needs_human_f1_macro": 0.8809523809523809,
+      "product_acc": 0.94,
+      "product_f1_macro": 0.4057919621749409,
+      "urgency_acc": 0.77,
+      "urgency_f1_macro": 0.5296444235588972,
+      "urgency_qwk": 0.7470303563572371
+    },
+    "devices": {
+      "category_acc": 0.8666666666666667,
+      "category_f1_macro": 0.30952380952380953,
+      "intent_acc": 0.8444444444444444,
+      "intent_end_to_end": 0.8444444444444444,
+      "intent_f1_macro": 0.44720986281053027,
+      "intent_given_category": 0.9743589743589743,
+      "n": 45.0,
+      "needs_human_acc": 0.9555555555555556,
+      "needs_human_f1_macro": 0.7383720930232558,
+      "product_acc": 0.9555555555555556,
+      "product_f1_macro": 0.8253968253968255,
+      "urgency_acc": 0.7777777777777778,
+      "urgency_f1_macro": 0.5947672854452515,
+      "urgency_qwk": 0.7232472324723247
+    },
+    "home_internet": {
+      "category_acc": 1.0,
+      "category_f1_macro": 1.0,
+      "intent_acc": 0.970873786407767,
+      "intent_end_to_end": 0.970873786407767,
+      "intent_f1_macro": 0.9700574334294341,
+      "intent_given_category": 0.970873786407767,
+      "n": 103.0,
+      "needs_human_acc": 0.970873786407767,
+      "needs_human_f1_macro": 0.876843363889996,
+      "product_acc": 0.941747572815534,
+      "product_f1_macro": 0.9659770114942529,
+      "urgency_acc": 0.8932038834951457,
+      "urgency_f1_macro": 0.838265931372549,
+      "urgency_qwk": 0.9209957464611952
+    },
+    "home_line": {
+      "category_acc": 0.9223300970873787,
+      "category_f1_macro": 0.15993265993265993,
+      "intent_acc": 0.8932038834951457,
+      "intent_end_to_end": 0.8932038834951457,
+      "intent_f1_macro": 0.4331095298911391,
+      "intent_given_category": 0.968421052631579,
+      "n": 103.0,
+      "needs_human_acc": 0.970873786407767,
+      "needs_human_f1_macro": 0.9130312412046158,
+      "product_acc": 0.8932038834951457,
+      "product_f1_macro": 0.903879954273045,
+      "urgency_acc": 0.7087378640776699,
+      "urgency_f1_macro": 0.5675689948110392,
+      "urgency_qwk": 0.7762785493319292
+    },
+    "mobile_money": {
+      "category_acc": 0.88,
+      "category_f1_macro": 0.18723404255319148,
+      "intent_acc": 0.8133333333333334,
+      "intent_end_to_end": 0.8133333333333334,
+      "intent_f1_macro": 0.3847943722943723,
+      "intent_given_category": 0.9242424242424242,
+      "n": 75.0,
+      "needs_human_acc": 0.8666666666666667,
+      "needs_human_f1_macro": 0.7336647727272727,
+      "product_acc": 0.84,
+      "product_f1_macro": 0.3043478260869565,
+      "urgency_acc": 0.8666666666666667,
+      "urgency_f1_macro": 0.8412563667232598,
+      "urgency_qwk": 0.8679867986798679
+    },
+    "network_calls": {
+      "category_acc": 0.9401709401709402,
+      "category_f1_macro": 0.1384518565135305,
+      "intent_acc": 0.9316239316239316,
+      "intent_end_to_end": 0.9316239316239316,
+      "intent_f1_macro": 0.5114014380681048,
+      "intent_given_category": 0.990909090909091,
+      "n": 117.0,
+      "needs_human_acc": 0.9914529914529915,
+      "needs_human_f1_macro": 0.9643835616438357,
+      "product_acc": 0.9743589743589743,
+      "product_f1_macro": 0.7348792270531401,
+      "urgency_acc": 0.7777777777777778,
+      "urgency_f1_macro": 0.5876529373307182,
+      "urgency_qwk": 0.8216744626057708
+    },
+    "out_of_scope": {
+      "category_acc": 0.6,
+      "category_f1_macro": 0.10714285714285714,
+      "intent_acc": 0.6,
+      "intent_end_to_end": 0.6,
+      "intent_f1_macro": 0.10714285714285714,
+      "intent_given_category": 1.0,
+      "n": 15.0,
+      "needs_human_acc": 1.0,
+      "needs_human_f1_macro": 1.0,
+      "product_acc": 1.0,
+      "product_f1_macro": 1.0,
+      "urgency_acc": 0.7333333333333333,
+      "urgency_f1_macro": 0.4230769230769231,
+      "urgency_qwk": 0.0
+    },
+    "plans_subscription": {
+      "category_acc": 0.9328358208955224,
+      "category_f1_macro": 0.13789299503585217,
+      "intent_acc": 0.9029850746268657,
+      "intent_end_to_end": 0.9029850746268657,
+      "intent_f1_macro": 0.5252693636583723,
+      "intent_given_category": 0.968,
+      "n": 134.0,
+      "needs_human_acc": 0.9701492537313433,
+      "needs_human_f1_macro": 0.7922480620155039,
+      "product_acc": 0.8059701492537313,
+      "product_f1_macro": 0.8746806478340741,
+      "urgency_acc": 0.8880597014925373,
+      "urgency_f1_macro": 0.786430846764608,
+      "urgency_qwk": 0.8350024626498112
+    },
+    "prepaid_credit": {
+      "category_acc": 0.9863013698630136,
+      "category_f1_macro": 0.496551724137931,
+      "intent_acc": 0.9452054794520548,
+      "intent_end_to_end": 0.9452054794520548,
+      "intent_f1_macro": 0.7921970914184485,
+      "intent_given_category": 0.9583333333333334,
+      "n": 73.0,
+      "needs_human_acc": 0.9726027397260274,
+      "needs_human_f1_macro": 0.8926470588235295,
+      "product_acc": 1.0,
+      "product_f1_macro": 1.0,
+      "urgency_acc": 0.8904109589041096,
+      "urgency_f1_macro": 0.7662698412698412,
+      "urgency_qwk": 0.9426776599921476
+    },
+    "sim_line": {
+      "category_acc": 0.8833333333333333,
+      "category_f1_macro": 0.18761061946902655,
+      "intent_acc": 0.8166666666666667,
+      "intent_end_to_end": 0.8166666666666667,
+      "intent_f1_macro": 0.4074764906865934,
+      "intent_given_category": 0.9245283018867925,
+      "n": 120.0,
+      "needs_human_acc": 0.9416666666666667,
+      "needs_human_f1_macro": 0.8928434749330272,
+      "product_acc": 0.9416666666666667,
+      "product_f1_macro": 0.6172907488986784,
+      "urgency_acc": 0.7,
+      "urgency_f1_macro": 0.6923897059694105,
+      "urgency_qwk": 0.8362032759344813
+    },
+    "usage_mobile_data": {
+      "category_acc": 0.9047619047619048,
+      "category_f1_macro": 0.15833333333333333,
+      "intent_acc": 0.8761904761904762,
+      "intent_end_to_end": 0.8761904761904762,
+      "intent_f1_macro": 0.45926138060255334,
+      "intent_given_category": 0.968421052631579,
+      "n": 105.0,
+      "needs_human_acc": 0.9714285714285714,
+      "needs_human_f1_macro": 0.8258706467661692,
+      "product_acc": 0.9238095238095239,
+      "product_f1_macro": 0.6120540529662722,
+      "urgency_acc": 0.8476190476190476,
+      "urgency_f1_macro": 0.759906462585034,
+      "urgency_qwk": 0.856788592684439
+    }
+  },
+  "by_script": {
+    "arabic": {
+      "category_acc": 0.9358108108108109,
+      "category_f1_macro": 0.9227568173976249,
+      "intent_acc": 0.8969594594594594,
+      "intent_end_to_end": 0.8969594594594594,
+      "intent_f1_macro": 0.8967870233195311,
+      "intent_given_category": 0.9584837545126353,
+      "n": 592.0,
+      "needs_human_acc": 0.9459459459459459,
+      "needs_human_f1_macro": 0.8911664675062045,
+      "product_acc": 0.8902027027027027,
+      "product_f1_macro": 0.8850843939223509,
+      "urgency_acc": 0.785472972972973,
+      "urgency_f1_macro": 0.6938951128102551,
+      "urgency_qwk": 0.859038534527825
+    },
+    "arabizi": {
+      "category_acc": 0.9146757679180887,
+      "category_f1_macro": 0.8687468707904746,
+      "intent_acc": 0.8873720136518771,
+      "intent_end_to_end": 0.8873720136518771,
+      "intent_f1_macro": 0.8808186628186628,
+      "intent_given_category": 0.9701492537313433,
+      "n": 293.0,
+      "needs_human_acc": 0.9453924914675768,
+      "needs_human_f1_macro": 0.8368142578668895,
+      "product_acc": 0.8703071672354948,
+      "product_f1_macro": 0.7754609276633405,
+      "urgency_acc": 0.8191126279863481,
+      "urgency_f1_macro": 0.7573695279733054,
+      "urgency_qwk": 0.8444318843558387
+    },
+    "mixed": {
+      "category_acc": 0.918918918918919,
+      "category_f1_macro": 0.9099034613664033,
+      "intent_acc": 0.9054054054054054,
+      "intent_end_to_end": 0.9054054054054054,
+      "intent_f1_macro": 0.9035238095238094,
+      "intent_given_category": 0.9852941176470589,
+      "n": 222.0,
+      "needs_human_acc": 0.9504504504504504,
+      "needs_human_f1_macro": 0.858377312532622,
+      "product_acc": 0.918918918918919,
+      "product_f1_macro": 0.9335053923570669,
+      "urgency_acc": 0.8513513513513513,
+      "urgency_f1_macro": 0.7985124757085272,
+      "urgency_qwk": 0.8631520239527989
+    }
+  },
+  "intent_by_script": {
+    "arabic": 0.8969594594594594,
+    "arabizi": 0.8873720136518771,
+    "mixed": 0.9054054054054054
+  },
+  "n": 1107,
+  "overall": {
+    "category_acc": 0.926829268292683,
+    "category_f1_macro": 0.9073665075362767,
+    "intent_acc": 0.8961156278229448,
+    "intent_end_to_end": 0.8961156278229448,
+    "intent_f1_macro": 0.8947733183529385,
+    "intent_given_category": 0.9668615984405458,
+    "intent_with_gold_category": 0.959349593495935,
+    "needs_human_acc": 0.9467028003613369,
+    "needs_human_f1_macro": 0.8751674773750251,
+    "product_acc": 0.8906955736224029,
+    "product_f1_macro": 0.8887202600965227,
+    "urgency_acc": 0.8075880758807588,
+    "urgency_f1_macro": 0.7225898095007113,
+    "urgency_qwk": 0.8568229036203162
+  },
+  "published_comparison": [
+    {
+      "mesuré (%)": 89.6,
+      "métrique": "Intention de bout en bout",
+      "ok": true,
+      "publié (%)": 89.6,
+      "écart (pts)": 0.0
+    },
+    {
+      "mesuré (%)": 92.7,
+      "métrique": "Catégorie",
+      "ok": true,
+      "publié (%)": 92.7,
+      "écart (pts)": 0.0
+    },
+    {
+      "mesuré (%)": 96.7,
+      "métrique": "Intention sachant la catégorie (catégorie prédite juste)",
+      "ok": true,
+      "publié (%)": 95.9,
+      "écart (pts)": 0.8
+    },
+    {
+      "mesuré (%)": 95.9,
+      "métrique": "Intention avec la vraie catégorie (passe 2 forcée)",
+      "ok": true,
+      "publié (%)": 95.9,
+      "écart (pts)": 0.0
+    },
+    {
+      "mesuré (%)": 89.1,
+      "métrique": "Produit",
+      "ok": true,
+      "publié (%)": 89.1,
+      "écart (pts)": 0.0
+    },
+    {
+      "mesuré (%)": 80.8,
+      "métrique": "Urgence (niveau exact)",
+      "ok": true,
+      "publié (%)": 80.8,
+      "écart (pts)": 0.0
+    },
+    {
+      "mesuré (%)": 94.7,
+      "métrique": "needs_human",
+      "ok": true,
+      "publié (%)": 94.7,
+      "écart (pts)": 0.0
+    },
+    {
+      "mesuré (%)": 89.7,
+      "métrique": "Intention — arabic",
+      "ok": true,
+      "publié (%)": 89.7,
+      "écart (pts)": 0.0
+    },
+    {
+      "mesuré (%)": 88.7,
+      "métrique": "Intention — arabizi",
+      "ok": true,
+      "publié (%)": 88.7,
+      "écart (pts)": 0.0
+    },
+    {
+      "mesuré (%)": 90.5,
+      "métrique": "Intention — mixed",
+      "ok": true,
+      "publié (%)": 90.5,
+      "écart (pts)": 0.0
+    }
+  ],
+  "reproduced": true
+}

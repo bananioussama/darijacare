@@ -12,7 +12,8 @@ function Invoke-Step([string]$Cmd) {
 }
 
 switch ($Target) {
-    "install"     { Invoke-Step "uv sync --locked --all-extras"; Invoke-Step "uv run pre-commit install" }
+    "install"     { Invoke-Step "uv sync --locked --extra pipeline --extra nlu --extra cpu"; Invoke-Step "uv run pre-commit install" }
+    "install-gpu" { Invoke-Step "uv sync --locked --extra pipeline --extra nlu --extra cu126" }
     "lint"        { Invoke-Step "uv run ruff check src tests tools"; Invoke-Step "uv run black --check src tests tools" }
     "format"      { Invoke-Step "uv run ruff check --fix src tests tools"; Invoke-Step "uv run black src tests tools" }
     "typecheck"   { Invoke-Step "uv run mypy" }

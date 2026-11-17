@@ -21,7 +21,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           version: ${{ env.UV_VERSION }}
-      - run: uv sync --locked --all-extras
+      - run: uv sync --locked --extra pipeline
       - run: uv run ruff check src tests tools
       - run: uv run black --check src tests tools
       - run: uv run mypy
@@ -34,7 +34,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           version: ${{ env.UV_VERSION }}
-      - run: uv sync --locked --all-extras
+      - run: uv sync --locked --extra pipeline
       - run: uv run pytest --cov=darijacare --cov-report=term-missing
 
   data-pipeline:
@@ -45,7 +45,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           version: ${{ env.UV_VERSION }}
-      - run: uv sync --locked --all-extras
+      - run: uv sync --locked --extra pipeline
       - name: Rejouer tout le pipeline depuis les données brutes
         run: |
           cp dvc.lock /tmp/reference.lock

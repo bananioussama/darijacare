@@ -1,0 +1,296 @@
+{
+  "account_app_access": [
+    {
+      "count": 1,
+      "label": "payment_not_reflected"
+    },
+    {
+      "count": 1,
+      "label": "data_slow"
+    }
+  ],
+  "activate_call_features": [],
+  "activate_line": [
+    {
+      "count": 1,
+      "label": "home_line_activation"
+    },
+    {
+      "count": 1,
+      "label": "sim_replacement_esim"
+    }
+  ],
+  "adsl_to_fiber_migration": [],
+  "agency_location": [],
+  "balance_check": [
+    {
+      "count": 1,
+      "label": "international_calls"
+    }
+  ],
+  "balance_deducted": [],
+  "call_quality_drop": [],
+  "cancel_plan": [],
+  "cancellation_fee": [
+    {
+      "count": 1,
+      "label": "cancel_plan"
+    }
+  ],
+  "cannot_call_receive": [
+    {
+      "count": 1,
+      "label": "call_quality_drop"
+    }
+  ],
+  "change_plan": [],
+  "change_provider": [
+    {
+      "count": 1,
+      "label": "credit_transfer_loan"
+    },
+    {
+      "count": 1,
+      "label": "report_poor_signal"
+    }
+  ],
+  "check_signal_coverage": [],
+  "check_usage": [],
+  "complaint_followup": [],
+  "credit_transfer_loan": [],
+  "customer_service_contact": [
+    {
+      "count": 1,
+      "label": "file_complaint"
+    }
+  ],
+  "data_not_working": [
+    {
+      "count": 1,
+      "label": "home_outage"
+    }
+  ],
+  "data_pass_buy": [],
+  "data_slow": [],
+  "deactivate_call_features": [
+    {
+      "count": 1,
+      "label": "paid_services_charges"
+    }
+  ],
+  "deactivate_line": [
+    {
+      "count": 1,
+      "label": "usage_limits"
+    },
+    {
+      "count": 1,
+      "label": "home_line_suspend_restore"
+    }
+  ],
+  "device_purchase": [
+    {
+      "count": 1,
+      "label": "plan_offers_info"
+    }
+  ],
+  "device_repair_warranty": [
+    {
+      "count": 1,
+      "label": "equipment_return"
+    },
+    {
+      "count": 1,
+      "label": "mm_send_receive"
+    }
+  ],
+  "device_settings": [
+    {
+      "count": 1,
+      "label": "check_signal_coverage"
+    },
+    {
+      "count": 1,
+      "label": "non_telecom"
+    }
+  ],
+  "entertainment_services": [],
+  "equipment_return": [],
+  "excess_charges": [],
+  "fiber_eligibility": [
+    {
+      "count": 1,
+      "label": "home_line_suspend_restore"
+    }
+  ],
+  "file_complaint": [],
+  "fixed_phone_issue": [],
+  "greeting_thanks": [
+    {
+      "count": 1,
+      "label": "refund_compensation"
+    }
+  ],
+  "home_line_activation": [
+    {
+      "count": 1,
+      "label": "call_quality_drop"
+    },
+    {
+      "count": 1,
+      "label": "non_telecom"
+    }
+  ],
+  "home_line_suspend_restore": [],
+  "home_outage": [],
+  "home_slow": [
+    {
+      "count": 1,
+      "label": "data_slow"
+    },
+    {
+      "count": 1,
+      "label": "install_internet"
+    }
+  ],
+  "hotspot_apn": [],
+  "human_agent": [],
+  "install_internet": [],
+  "installation_delay": [],
+  "international_calls": [
+    {
+      "count": 1,
+      "label": "activate_call_features"
+    },
+    {
+      "count": 1,
+      "label": "plan_offers_info"
+    }
+  ],
+  "invoice_dispute": [],
+  "invoice_info": [],
+  "line_identification": [
+    {
+      "count": 1,
+      "label": "change_provider"
+    },
+    {
+      "count": 1,
+      "label": "scam_spam_report"
+    },
+    {
+      "count": 1,
+      "label": "agency_location"
+    }
+  ],
+  "lost_stolen": [
+    {
+      "count": 1,
+      "label": "deactivate_line"
+    },
+    {
+      "count": 1,
+      "label": "cancel_plan"
+    }
+  ],
+  "loyalty_points": [],
+  "mm_account_access": [],
+  "mm_cash_in_out": [],
+  "mm_payment": [],
+  "mm_send_receive": [],
+  "mm_transaction_issue": [],
+  "non_telecom": [
+    {
+      "count": 1,
+      "label": "customer_service_contact"
+    }
+  ],
+  "ownership_transfer": [
+    {
+      "count": 2,
+      "label": "line_identification"
+    },
+    {
+      "count": 1,
+      "label": "relocation"
+    },
+    {
+      "count": 1,
+      "label": "home_line_suspend_restore"
+    }
+  ],
+  "paid_services_charges": [
+    {
+      "count": 1,
+      "label": "payment_not_reflected"
+    },
+    {
+      "count": 1,
+      "label": "fixed_phone_issue"
+    },
+    {
+      "count": 1,
+      "label": "entertainment_services"
+    }
+  ],
+  "pay_bill": [],
+  "payment_methods": [
+    {
+      "count": 1,
+      "label": "schedule_payments"
+    }
+  ],
+  "payment_not_reflected": [],
+  "plan_offers_info": [
+    {
+      "count": 1,
+      "label": "change_plan"
+    }
+  ],
+  "promotions_bonus": [
+    {
+      "count": 1,
+      "label": "invoice_dispute"
+    }
+  ],
+  "recharge_failed": [],
+  "recharge_how": [],
+  "refund_compensation": [
+    {
+      "count": 1,
+      "label": "payment_methods"
+    }
+  ],
+  "relocation": [],
+  "report_poor_signal": [],
+  "roaming": [
+    {
+      "count": 1,
+      "label": "data_pass_buy"
+    }
+  ],
+  "router_wifi": [],
+  "scam_spam_report": [
+    {
+      "count": 1,
+      "label": "change_provider"
+    }
+  ],
+  "schedule_payments": [],
+  "sign_up_plan": [],
+  "sim_blocked_puk": [],
+  "sim_replacement_esim": [
+    {
+      "count": 1,
+      "label": "recharge_failed"
+    }
+  ],
+  "sms_issue": [],
+  "tv_issue": [],
+  "usage_limits": [
+    {
+      "count": 1,
+      "label": "excess_charges"
+    }
+  ]
+}

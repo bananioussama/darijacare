@@ -181,8 +181,8 @@ stages:
       size: 4500
     - path: src/darijacare/data/split.py
       hash: md5
-      md5: 051365a93a0530fe40afb1d2ae82d83e
-      size: 7101
+      md5: 633cf0af2bc8581f1d2ba563cdcab334
+      size: 7316
     params:
       configs/data.yaml:
         seed: 42
@@ -218,8 +218,8 @@ stages:
       nfiles: 3
     - path: reports/split
       hash: md5
-      md5: aeb2daed7ef9549993b74c0f576def90.dir
-      size: 791
+      md5: 60141f9c29f9c924eac4ec9d3359b81f.dir
+      size: 1067
       nfiles: 2
   eda:
     cmd: python -m darijacare.data.cli eda

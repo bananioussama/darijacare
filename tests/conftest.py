@@ -31,9 +31,21 @@ TAXONOMY: dict[str, Any] = {
         },
     },
     "extra_questions": {
-        "product": {"criteria": {"prepaid_mobile": "", "unknown": ""}},
-        "urgency": {"criteria": ["a", "b", "c", "d"]},
-        "needs_human": {"criteria": {"true": "", "false": ""}},
+        "product": {
+            "type": "choice",
+            "instructions": "Which product?",
+            "criteria": {"prepaid_mobile": "", "unknown": ""},
+        },
+        "urgency": {
+            "type": "score",
+            "instructions": "How urgent?",
+            "criteria": ["a", "b", "c", "d"],
+        },
+        "needs_human": {
+            "type": "noul",
+            "instructions": "Human?",
+            "criteria": {"true": "", "false": ""},
+        },
     },
 }
 

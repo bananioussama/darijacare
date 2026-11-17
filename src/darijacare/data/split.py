@@ -21,7 +21,7 @@ from sklearn.model_selection import train_test_split
 
 from darijacare.config import Paths
 from darijacare.data.proximity import find_near_pairs, near_pairs_frame
-from darijacare.io import read_jsonl, write_json, write_jsonl
+from darijacare.io import read_jsonl, sha256_file, write_json, write_jsonl
 
 log = logging.getLogger(__name__)
 
@@ -175,6 +175,10 @@ def run_split(paths: Paths, config: dict[str, Any]) -> dict[str, Any]:
         "val_by_generator": val["generator"].value_counts().sort_index().to_dict(),
         "val_intents": int(val["intent"].nunique()),
         "val_min_per_intent": int(val["intent"].value_counts().min()),
+        # Fingerprints used to check that another machine (e.g. Kaggle) rebuilt the same split.
+        "sha256": {
+            name: sha256_file(out / name) for name in ("train.jsonl", "val.jsonl", "test.jsonl")
+        },
     }
     write_json(report, rep_dir / "report.json")
     log.info("Découpage : %s", report["rows"])

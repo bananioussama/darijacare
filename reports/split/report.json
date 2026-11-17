@@ -14,6 +14,11 @@
     "val": 4036
   },
   "seed": 42,
+  "sha256": {
+    "test.jsonl": "82df7427ef4d8bd7b8c107f4200a1e0753c2ddf7bb454978da0c46d006094a77",
+    "train.jsonl": "6b30dc2ec90d86edf770f689f4df654a394b13c2a5b952e5790781cdbbd10f97",
+    "val.jsonl": "046de1e4b14f63064a2686586dd444fe9d725864df42743d154a21147b52123c"
+  },
   "strata": 460,
   "strata_by_level": {
     "L0": 40034,

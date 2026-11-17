@@ -1,0 +1,114 @@
+{
+  "ece": {
+    "test": {
+      "category": {
+        "après": 0.06680187539267278,
+        "avant": 0.04461750556495489
+      },
+      "intent": {
+        "après": 0.10445021681663154,
+        "avant": 0.07284731445024943
+      },
+      "intent_end_to_end": {
+        "après": 0.0951894019540132,
+        "avant": 0.09752465624234158
+      },
+      "needs_human": {
+        "après": 0.039774062533468484,
+        "avant": 0.04076341463414619
+      },
+      "product": {
+        "après": 0.07031578194187785,
+        "avant": 0.05498838730002804
+      },
+      "urgency": {
+        "après": 0.07343461820377213,
+        "avant": 0.046047398906768275
+      }
+    },
+    "val": {
+      "category": {
+        "après": 0.044744347953365,
+        "avant": 0.05063015246558162
+      },
+      "intent": {
+        "après": 0.16052152129472508,
+        "avant": 0.1269794659794267
+      },
+      "intent_end_to_end": {
+        "après": 0.07575914966046496,
+        "avant": 0.08051680144765597
+      },
+      "needs_human": {
+        "après": 0.015614987301133346,
+        "avant": 0.025576237182345172
+      },
+      "product": {
+        "après": 0.06321185318340156,
+        "avant": 0.051138099617413224
+      },
+      "urgency": {
+        "après": 0.03142923874777866,
+        "avant": 0.0327006527921576
+      }
+    }
+  },
+  "fit_filter": {
+    "round": [
+      4,
+      6
+    ]
+  },
+  "fit_rows": 2243,
+  "fit_split": "val",
+  "temperatures": {
+    "category": 1.0776176418215861,
+    "intent": 0.8794264716726372,
+    "needs_human": 1.12995951907614,
+    "product": 1.074403814181191,
+    "urgency": 1.046570608241224
+  },
+  "temperatures_by_script": {
+    "arabic": {
+      "category": 1.0871050950515142,
+      "intent": 0.8472426993582612,
+      "needs_human": 1.1818101431044337,
+      "product": 1.0700807992825245,
+      "urgency": 1.0960165216529012
+    },
+    "arabizi": {
+      "category": 1.0696389461298033,
+      "intent": 0.9813383111336876,
+      "needs_human": 1.0513602712292864,
+      "product": 1.1119668259175932,
+      "urgency": 1.013346246448759
+    },
+    "mixed": {
+      "category": 1.0604192070706042,
+      "intent": 0.8382584861097111,
+      "needs_human": 1.0745468403574492,
+      "product": 1.0449461091379653,
+      "urgency": 0.9553408632318656
+    }
+  },
+  "thresholds": {
+    "intent_confidence": {
+      "accuracy_answered": 1.0,
+      "coverage": 0.00044583147570218456,
+      "threshold": 0.8628027658382131
+    },
+    "needs_human": {
+      "precision": 0.24154987633965375,
+      "precision_target": 0.7,
+      "precision_target_met": false,
+      "recall": 0.8517441860465116,
+      "threshold": 0.0838
+    }
+  },
+  "thresholds_on_test": {
+    "intent_accuracy_answered": 1.0,
+    "intent_coverage": 0.0018066847335140017,
+    "needs_human_precision": 0.22592592592592592,
+    "needs_human_recall": 0.8652482269503546
+  }
+}
