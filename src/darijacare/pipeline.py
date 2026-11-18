@@ -102,11 +102,17 @@ class DarijaCareAssistant:
 
 
 def build_assistant(
-    root: Any = None, nlu_model: str = "v5", device: str | None = None, with_retriever: bool = True
+    root: Any = None,
+    nlu_model: str = "v5",
+    device: str | None = None,
+    with_retriever: bool = True,
+    qdrant_url: str | None = None,
 ) -> DarijaCareAssistant:
     """Assemble the real assistant from ``configs/`` (published NLU model, BGE-M3, Qdrant).
 
     Heavy imports happen here so that importing :mod:`darijacare.pipeline` stays light.
+    ``qdrant_url`` selects the Qdrant server (the API passes its setting); otherwise
+    ``QDRANT_URL`` or the local embedded store is used.
     """
     from darijacare.config import get_paths, load_yaml
     from darijacare.nlu.cli import load_train_config, model_spec
@@ -123,7 +129,7 @@ def build_assistant(
     )
     fiches = load_kb(paths.root / rag_cfg["kb_dir"])
     retriever = (
-        make_retriever(paths, rag_cfg, make_embedder(paths, rag_cfg, device))
+        make_retriever(paths, rag_cfg, make_embedder(paths, rag_cfg, device), qdrant_url)
         if with_retriever
         else None
     )

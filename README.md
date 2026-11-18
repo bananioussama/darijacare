@@ -9,11 +9,13 @@ n'est utilisé** : le projet repose uniquement sur un jeu de données et un mod�
 publics. Les données sont **synthétiques** ; tous les résultats sont donc mesurés
 sur des données synthétiques.
 
-> État : **Phase 1** (données), **Phase 2** (NLU — [docs/nlu.md](docs/nlu.md)) et **Phase 3**
-> (décision — [docs/decision.md](docs/decision.md) ; base de connaissances et RAG —
-> [docs/rag.md](docs/rag.md)) terminées. Le ré-entraînement complet reste à lancer sur GPU T4 ;
-> les 75 fiches (fictives, en français, darija et arabizi) attendent la relecture de l'équipe.
-> Phases suivantes : API, interface, livraison.
+> État :
+> - terminées : **Phase 1** (données), **Phase 2** (NLU — [docs/nlu.md](docs/nlu.md)),
+>   **Phase 3** (décision — [docs/decision.md](docs/decision.md) ; base de connaissances et RAG —
+>   [docs/rag.md](docs/rag.md)) et **Phase 4** (API et base de données — [docs/api.md](docs/api.md)) ;
+> - en attente : le ré-entraînement complet sur GPU T4, et la relecture par l'équipe des 75 fiches
+>   (fictives, en français, darija et arabizi) ;
+> - phases suivantes : interface, puis livraison.
 
 ## Démarrage rapide
 
@@ -21,7 +23,7 @@ Prérequis : [uv](https://docs.astral.sh/uv/) ≥ 0.10, Git, Docker (PostgreSQL 
 
 ```bash
 cd darijacare
-uv sync --locked --extra pipeline --extra nlu --extra rag --extra cpu   # Python 3.11, torch CPU, versions figées
+uv sync --locked --extra pipeline --extra nlu --extra rag --extra api --extra cpu   # Python 3.11, torch CPU
 # GPU (CUDA 12.6) : remplacer --extra cpu par --extra cu126
 cp .env.example .env               # puis adapter
 uv run dvc repro                   # rejoue tout le pipeline de données
@@ -109,6 +111,28 @@ python -m darijacare.demo        # démonstration de bout en bout -> reports/dem
 Résultat clé (test officiel) : Recall@3 = **0,916** avec le filtre d'intention contre 0,458 sans.
 Chaque fiche existe en français, en darija écrite en arabe et en arabizi : l'assistant répond
 au client dans son écriture.
+
+## API et base de données (Phase 4)
+
+FastAPI, PostgreSQL (SQLAlchemy et migrations Alembic) et le serveur Qdrant :
+
+- le chat est servi en flux SSE ;
+- les clients sont anonymes, et chaque session ne voit que sa propre conversation ;
+- les conseillers disposent d'une console d'escalades, triée par priorité ;
+- les comptes du personnel (conseiller, ml, admin) se connectent avec un mot de passe haché en
+  Argon2id et un jeton de 15 minutes ;
+- les textes sont masqués avant tout stockage.
+
+```bash
+docker compose up -d postgres qdrant   # .env : POSTGRES_PASSWORD, JWT_SECRET, QDRANT_URL
+make db-upgrade                        # migrations Alembic
+python -m darijacare.api.cli create-user --username admin --role admin
+make api                               # http://127.0.0.1:8000/docs
+make api-smoke                         # démonstration -> reports/demo/phase4.md
+```
+
+Avec les vrais modèles sur CPU, une réponse prend 1,81 s en médiane (p95 1,90 s) pour une cible de
+2 s. Détails : [docs/api.md](docs/api.md).
 
 ## Licences et crédits
 

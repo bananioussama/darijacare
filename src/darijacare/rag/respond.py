@@ -71,6 +71,10 @@ class Responder:
         text = self.env.get_template(f"{script}/{name}.j2").render(**ctx)
         return "\n".join(line.rstrip() for line in text.strip().splitlines())
 
+    def case_number_line(self, script: str, case_number: str) -> str:
+        """Line giving the escalation case number, in the customer's script."""
+        return self._render(script, "case_number", case_number=case_number)
+
     def answer_template(self, script: str, intent: str) -> str:
         """Per-intent override ``<script>/intents/<intent>.j2`` if present, else ``answer``."""
         script = script if script in SCRIPTS else "mixed"

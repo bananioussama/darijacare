@@ -37,6 +37,18 @@ nlu = [
 ]
 # RAG : BGE-M3 (dense + creux) via la bibliothèque officielle de BAAI.
 rag = ["FlagEmbedding==1.4.2"]
+# API (Phase 4) : FastAPI, PostgreSQL (psycopg 3), migrations Alembic, Argon2id, JWT.
+# Versions publiées depuis au moins deux semaines au moment du choix (novembre 2026).
+api = [
+    "fastapi==0.162.0",
+    "uvicorn==0.54.0",
+    "pydantic-settings==2.16.2",
+    "sqlalchemy>=2.0,<2.1",
+    "alembic==1.20.1",
+    "psycopg[binary]==3.3.7",
+    "argon2-cffi==25.1.0",
+    "pyjwt==2.15.1",
+]
 # Variante de torch (extras exclusifs) : `--extra cpu` (léger, par défaut) ou `--extra cu126`
 # (CUDA 12.6 : dernière combinaison qui prend encore en charge les GPU Pascal, sm_61).
 cpu = ["torch==2.7.1"]
@@ -95,6 +107,10 @@ ignore = [
     "SIM905",  # lexiques écrits en """...""".split() pour la lisibilité
 ]
 
+[tool.ruff.lint.flake8-bugbear]
+# Idiome FastAPI : les dépendances et paramètres se déclarent en valeur par défaut.
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query", "fastapi.params.Depends"]
+
 [tool.black]
 line-length = 100
 target-version = ["py311"]
@@ -111,4 +127,9 @@ testpaths = ["tests"]
 addopts = "-q --strict-markers"
 markers = [
     "data: tests sur les vraies données (nécessite data/raw, sinon ignorés)",
+    "postgres: tests sur le PostgreSQL de docker-compose (ignorés s'il est absent)",
+]
+filterwarnings = [
+    # Avertissement interne de starlette.testclient (dépendance httpx), sans effet sur nos tests.
+    "ignore:Using `httpx` with `starlette.testclient` is deprecated",
 ]

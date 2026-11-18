@@ -1,0 +1,167 @@
+# API et base de données (Phase 4)
+
+Références du cahier des charges :
+- exigences : F-API-01, F-API-02, F-UI-04 à F-UI-06 (côté serveur), F-UI-08 (avancé) ;
+- tableaux : 13 (acteurs), 14 (permissions), 32 (sécurité) ;
+- figures : 3 (séquence d'escalade), 6 (diagramme de classes).
+
+Code : `src/darijacare/api/`, migrations : `migrations/`. Données **synthétiques**, fiches **fictives**.
+
+## 1. Lancer
+
+Il faut un fichier `.env`, copié depuis [.env.example](../.env.example), qui contient :
+- `POSTGRES_PASSWORD` ;
+- `JWT_SECRET`, d'au moins 32 caractères ;
+- `QDRANT_URL`.
+
+```bash
+docker compose up -d postgres qdrant
+make db-upgrade      # migrations Alembic (crée les 10 tables)
+python -m darijacare.api.cli create-user --username admin --role admin   # mot de passe demandé
+QDRANT_URL=http://127.0.0.1:6333 make rag-index     # 1 125 passages dans le serveur Qdrant
+make api             # http://127.0.0.1:8000, documentation OpenAPI sur /docs
+make api-smoke       # démonstration de bout en bout -> reports/demo/phase4.md
+```
+
+Sous Windows sans `make` : `.\tasks.ps1 db-upgrade`, `.\tasks.ps1 api`, etc.
+
+Au démarrage, environ 25 s sur CPU, l'API :
+- charge **une seule fois** les modèles : NLU v5, BGE-M3 et le client Qdrant ;
+- synchronise les tables de référence (voir §4).
+
+Le conteneur de l'API est prévu en Phase 6, avec nginx et l'interface.
+
+## 2. Routes
+
+| Méthode et chemin | Accès | Rôle |
+|---|---|---|
+| `GET /health` | libre | état de la base, de Qdrant et des modèles |
+| `POST /predict` | libre, limité | analyse NLU d'un message, **sans stockage** |
+| `POST /sessions` | libre, limité | ouvre une conversation anonyme et renvoie un jeton de session |
+| `POST /chat` | jeton de session (ou aucun : nouvelle session) | traite un message ; flux SSE (§3) |
+| `GET /sessions/{id}/messages` | jeton de **cette** session | historique paginé (F-UI-05) |
+| `POST /sessions/{id}/reset` | jeton de cette session | ferme la conversation et en ouvre une autre |
+| `POST /feedback` | jeton de session | « Utile » / « Corriger », sur ses propres messages (F-UI-04) |
+| `POST /auth/login` | libre, limité | connexion du personnel : jeton de 15 minutes |
+| `GET /auth/me` | personnel | compte connecté |
+| `GET /escalades` | conseiller, admin (lecture) | file triée par priorité puis par arrivée (F-UI-06) |
+| `GET /escalades/{id}` | conseiller, admin (lecture) | dossier : message, analyse NLU, fiche proposée, historique |
+| `PATCH /escalades/{id}` | conseiller | `prendre`, puis `cloturer` (avec correction d'intention éventuelle) |
+| `GET /analytics/summary` | ml, admin | volume, taux d'escalade, latence, répartitions, feedback |
+| `GET /analytics/escalades` | conseiller, ml, admin | file par statut et par niveau (vue limitée des conseillers) |
+| `GET /feedback/export` | ml, admin | corrections d'intention, pour enrichir le jeu gold |
+| `GET /kb/fiches`, `GET /models`, `GET /config/decision` | ml, admin | fiches, versions du modèle et évaluations, configuration active |
+| `GET /admin/users`, `POST /admin/users` | admin | comptes du personnel |
+
+Les contrats (schémas Pydantic) sont publiés par FastAPI sur `/openapi.json` et `/docs`.
+
+## 3. Flux SSE de `POST /chat`
+
+Les événements arrivent dans cet ordre :
+
+| Événement | Contenu |
+|---|---|
+| `session` | identifiant de session ; pour une nouvelle session, le jeton (24 h) |
+| `analysis` | texte masqué, écriture, analyse NLU complète (top-2, probabilités), décision (règle, explication, priorité) |
+| `token` (répété) | morceaux de la réponse, mot par mot |
+| `sources` | fiches citées (identifiant et version) |
+| `done` | identifiant du message, tour, escalade (numéro de dossier, niveau), latences |
+
+Les gabarits produisent la réponse d'un seul coup ; le flux la découpe pour un affichage
+progressif. Avec la génération par LLM (option non activée), les morceaux suivraient la génération.
+
+**Escalade** (séquence de la Figure 3) :
+1. Le dossier est créé avec sa priorité, ses contributions et un résumé pour le conseiller.
+2. Le client reçoit son **numéro de dossier** dans son écriture, par exemple
+   `رقم الملف ديالك : DC-7F19B411`, `Numero dyal dossier dyalek : …` ou
+   `Votre numéro de dossier : …`.
+3. Une conversation n'a qu'un dossier : une nouvelle demande sur un dossier clôturé le rouvre.
+
+## 4. Modèle de données (diagramme de classes, Figure 6)
+
+| Classe du cahier | Table | Remarques |
+|---|---|---|
+| Utilisateur | `utilisateur` | personnel seulement (conseiller, ml, admin) ; hachage Argon2id ; les clients restent anonymes |
+| Conversation | `conversation` | `session_id` aléatoire ; statut ouverte / escaladee / close ; état « clarification en attente » (règle 5) |
+| Message | `message` | texte **masqué**, écriture, intention, catégorie, produit, urgence, needs_human, confiance, `model_version`, `decision_config_id`, règle et action, analyse complète, réponse, sources, fiche proposée, latences |
+| Feedback | `feedback` | 0..1 par message ; note `utile` / `a_corriger`, intention corrigée, commentaire masqué, auteur client ou conseiller |
+| Escalade | `escalade` | 0..1 par conversation ; numéro de dossier, priorité (score, niveau, contributions), motif, statut nouveau → en_cours → cloture, conseiller, résumé |
+| FicheKB, Chunk | `fiche_kb`, `chunk` | copie de `kb/` (une ligne par fiche et par langue) et des 1 125 points Qdrant, réécrite au démarrage |
+| ModèleNLU | `modele_nlu` | version `v5@8e694ecf`, encodeur lu dans les fichiers du modèle (`jhu-clsp/mmBERT-base`), métriques publiées et reproduites |
+| ExécutionÉvaluation | `execution_evaluation` | évaluation du test officiel importée de `reports/nlu/` (F1 macro de l'intention 0,895, ECE 0,045) |
+| ConfigDécision | `config_decision` | `configs/decision.yaml`, identifiée par l'empreinte SHA-256 de son contenu ; une seule active |
+
+Chaque message enregistre la version du modèle et la configuration de décision qui l'ont
+produit : un résultat est donc toujours reproductible. Les contraintes vérifient les statuts,
+les rôles, l'écriture et l'urgence (0 à 3).
+
+Le schéma vient de la migration `0001`, générée par Alembic puis relue. Un test sur PostgreSQL
+vérifie qu'Alembic ne détecte aucune différence entre la migration et les modèles.
+
+## 5. Sécurité (Tableau 32)
+
+**Données personnelles**
+- `<TEL>`, `<URL>` et `<EMAIL>` sont masqués **avant** tout stockage : messages, commentaires,
+  résumés.
+- Les journaux sont en JSON ; ils ne contiennent ni les messages ni les mots de passe (testé).
+- Les journaux d'accès gardent la méthode, le chemin, le statut, la durée et un identifiant de
+  requête.
+
+**Mots de passe et jetons**
+- Mots de passe : Argon2id (argon2-cffi). Une connexion refusée prend le même temps et donne le
+  même message, que le compte existe ou non.
+- Jetons JWT HS256 :
+  - personnel : 15 minutes ;
+  - session client : 24 h, valable pour **une seule** conversation.
+- La clé de signature vient de `.env` ; l'API refuse de démarrer si elle fait moins de
+  32 caractères.
+
+**Rôles**
+- Ils sont vérifiés côté serveur à chaque requête, selon le Tableau 14.
+- Le compte est relu en base : un compte désactivé ou un rôle modifié prend effet tout de suite.
+
+**Exposition**
+- Limitation de débit par adresse : 30 messages par minute ; 5 tentatives de connexion par minute.
+- CORS strict : seules les origines configurées sont acceptées (l'interface Vite en développement).
+- En-tête `X-Content-Type-Options: nosniff`.
+- Les services Docker n'écoutent que sur 127.0.0.1.
+
+## 6. Choix et limites
+
+| Point | Choix |
+|---|---|
+| Matrice des permissions | Les lignes « lancer pipeline et entraînement », « publier un modèle » et « consulter les journaux » passent par DVC, MLflow et `docker logs`, pas par l'API. Les seuils de décision se changent dans `configs/decision.yaml`, fichier versionné et tracé sur chaque message par son empreinte, puis au redémarrage. |
+| ONNX Runtime (F-API-01) | laya fournit `ONNXAgent` mais aucune fonction d'export : l'API sert le modèle en PyTorch. La quantification int8 et ONNX seront étudiées en Phase 6, en vérifiant que les sorties restent identiques. |
+| Un seul processus | Les modèles sont en mémoire, un appel au modèle à la fois. La limitation de débit est en mémoire ; derrière plusieurs processus, elle passerait dans nginx (Phase 6). |
+| Qdrant | L'API utilise le serveur, avec réutilisation des connexions (voir [rag.md](rag.md) §2) : le mode local n'accepte qu'un processus. |
+| Comptes | Le premier compte admin se crée en ligne de commande. Le mot de passe est demandé ou lu dans `DARIJACARE_NEW_PASSWORD`, jamais passé en argument. Ensuite, `POST /admin/users`. |
+
+## 7. Tests et mesures
+
+- `tests/api/`, sur SQLite en mémoire, avec un NLU factice à mots-clés et les vraies politique,
+  garde, fiches et gabarits. Ils couvrent :
+  - l'ordre des événements SSE et le masquage ;
+  - l'isolation des sessions ;
+  - le feedback limité à ses messages ;
+  - le cycle complet d'escalade et l'ordre de la file ;
+  - la matrice des permissions, route par route et rôle par rôle ;
+  - les jetons expirés, falsifiés ou désactivés ;
+  - la limitation de débit et CORS ;
+  - les entrées limites, qui ne renvoient jamais d'erreur 5xx (vide, un caractère, émojis,
+    600 caractères, injection) ;
+  - les journaux sans texte client.
+- `tests/api/test_postgres.py` (marqueur `postgres`) : sur le PostgreSQL de docker-compose, une
+  base temporaire est migrée, comparée aux modèles, utilisée pour un cycle complet, puis
+  supprimée. Ces tests sont ignorés si le serveur est absent, comme en CI.
+- Démonstration avec les vrais modèles ([reports/demo/phase4.md](../reports/demo/phase4.md)),
+  en arabe, arabizi et mixte, avec escalades, console et isolation.
+
+  Latence sur CPU, sur 20 messages :
+
+  | Mesure | Médiane | p95 |
+  |---|---|---|
+  | Traitement serveur | 1,76 s | 1,84 s |
+  | Requête complète vue du client | 1,81 s | 1,90 s |
+
+  La cible « première réponse ≤ 2 s » est tenue, mais de peu : la marge viendra de la
+  quantification ou du GPU (Phase 6).

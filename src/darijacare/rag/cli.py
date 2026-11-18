@@ -41,11 +41,14 @@ def make_embedder(paths: Paths, cfg: dict[str, Any], device: str | None = None) 
     return BGEM3Embedder(model_dir, e["batch_size"], e["max_length"], e["use_fp16"], device)
 
 
-def make_retriever(paths: Paths, cfg: dict[str, Any], embedder: Any) -> Any:
+def make_retriever(
+    paths: Paths, cfg: dict[str, Any], embedder: Any, qdrant_url: str | None = None
+) -> Any:
+    """Retriever over the Qdrant server (``qdrant_url`` or ``QDRANT_URL``) or the local store."""
     from darijacare.rag.index import get_client
     from darijacare.rag.retrieve import Retriever, load_neighbours
 
-    client = get_client(cfg["qdrant"], paths.root)
+    client = get_client(cfg["qdrant"], paths.root, qdrant_url)
     nb = load_neighbours(paths.root / cfg["retrieval"]["neighbours_file"])
     return Retriever(client, cfg["qdrant"]["collection"], embedder, cfg["retrieval"], nb)
 

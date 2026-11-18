@@ -21,9 +21,9 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           version: ${{ env.UV_VERSION }}
-      - run: uv sync --locked --extra pipeline
-      - run: uv run ruff check src tests tools
-      - run: uv run black --check src tests tools
+      - run: uv sync --locked --extra pipeline --extra api
+      - run: uv run ruff check src tests tools migrations
+      - run: uv run black --check src tests tools migrations
       - run: uv run mypy
 
   tests:
@@ -34,7 +34,8 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           version: ${{ env.UV_VERSION }}
-      - run: uv sync --locked --extra pipeline
+      - run: uv sync --locked --extra pipeline --extra api
+      # Les tests PostgreSQL sont ignorés en CI (pas de serveur) ; ils tournent en local.
       - run: uv run pytest --cov=darijacare --cov-report=term-missing
 
   data-pipeline:

@@ -86,8 +86,22 @@ Python, PyTorch, Transformers, laya, FlagEmbedding (MIT), qdrant-client et Qdran
 Jinja2 (BSD), pandas, Pandera, scikit-learn, matplotlib, DVC, MLflow, huggingface_hub,
 PostgreSQL — chacun sous sa propre licence open source.
 
+API (Phase 4) :
+
+| Bibliothèque | Licence |
+|---|---|
+| FastAPI | MIT |
+| Starlette | BSD-3-Clause |
+| Uvicorn | BSD-3-Clause |
+| Pydantic, pydantic-settings | MIT |
+| SQLAlchemy, Alembic | MIT |
+| psycopg 3 | LGPL-3.0, utilisé comme bibliothèque, sans modification |
+| argon2-cffi | MIT |
+| PyJWT | MIT |
+
 ## Base de connaissances
 
-Les 75 fiches de `kb/` ont été rédigées pour ce projet. Elles sont **fictives** : elles ne
+Les 75 fiches de `kb/` (français, darija en écriture arabe, darija en arabizi) ont été rédigées
+pour ce projet. Elles sont **fictives** : elles ne
 décrivent les procédures d'aucun opérateur réel et ne contiennent ni prix, ni numéro, ni
 engagement réels.
