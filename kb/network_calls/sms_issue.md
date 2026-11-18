@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si aucun SMS ne passe après ces vérifications, transmettre à un conseiller.
 ## التحويل لمستشار
 
 إلا حتى ميساج ما داز من بعد هاد الخطوات، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Les SMS ma kaymchiwch wla ma kaywslouch
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li les SMS dyalo ma kaytsiftouch wla ma kaywslouch.
+
+## Lkhatawat
+
+1. Chouf solde wla lforfait dyal les SMS w la memoire dyal tilifon (les messages 3amrin).
+2. Chouf numero dyal centre de messagerie f les parametres dyal les messages (rjj3o l la valeur l2asliya).
+3. Tfi w ch3el tilifon w 3awed jerreb.
+4. Ila kanou les codes dyal confirmation ma kaywslouch, t2akked beli lmorsil machi mbloki.
+
+## Chorout
+
+- Khass lkhat ykoun khdam.
+
+## L7oudoud
+
+- Lmessage li jay men chi khidma okhra y9der yt3ttel men 3ndhom.
+- Lmousa3id ma y9derch ychouf les messages.
+
+## Ta7wil l conseiller
+
+Ila 7ta message ma daz men ba3d had lkhatawat, kan7awlouk l conseiller.

@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Toute demande de résiliation est confirmée par un conseiller ou une agence.
 ## التحويل لمستشار
 
 أي طلب ديال الإلغاء كيأكدو مستشار ولا الوكالة.
+
+# Nouskha b darija (arabizi) — Nlghi l'abonnement
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tlghi abonnement dyal tilifon wla internet.
+
+## Lkhatawat
+
+1. Chouf fou9ach katsali lmodda dyal l'engagement w les frais ila kanou (chouf « Les frais dyal la resiliation »).
+2. Mol lkhat kaydir talab f lwkala b la carte nationale, wla b tari9a lmktouba f lcontrat.
+3. Khlles lfwatir li ba9yin.
+4. Rjje3 l2ajhiza li 3tawk (chouf « Nrjje3 lbox, routeur wla decodeur »).
+
+## Chorout
+
+- Ghir mol lkhat li y9der ylghi.
+
+## L7oudoud
+
+- La resiliation katbda 3la 7sab lmodda lmktouba f lcontrat.
+- Lmousa3id ma kaysjjelch la resiliation.
+
+## Ta7wil l conseiller
+
+Ay talab dyal resiliation kay2akkdo conseiller wla lwkala.

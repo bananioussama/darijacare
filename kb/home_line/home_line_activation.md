@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si le délai d'activation est dépassé, transmettre à un conseiller.
 ## التحويل لمستشار
 
 إلا فاتت المدة ديال التفعيل، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Lkhat lfixe trekkeb walakin ba9i ma tfa3elch
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li lkhat lfixe wla internet dyalo ttleb wla trekkeb walakin ba9i ma tfa3elch.
+
+## Lkhatawat
+
+1. L9a numero dyal talab w chouf lmar7ala « Tfe3il » f suivi dyal talab.
+2. Men ba3d tterkib, tsenna lmodda dyal tfe3il li mktouba f message dyal confirmation.
+3. Tfi w ch3el lbox w chouf dwaw mli tfout lmodda.
+4. Ila lkhat ba9i ma tfa3elch, dir chkaya « Tfe3il ba9i ».
+
+## Chorout
+
+- Khass tterkib ykoun sala.
+- Khass lwata2i9 li ttelbou nhar l'abonnement ykounou kamlin.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch yfa3el lkhat.
+
+## Ta7wil l conseiller
+
+Ila fatet lmodda dyal tfe3il, kan7awlouk l conseiller.

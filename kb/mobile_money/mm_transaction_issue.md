@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ De l'argent est en jeu ; transmettre à un conseiller en priorité.
 ## التحويل لمستشار
 
 كاينة الفلوس فالموضوع، كنحولوك لمستشار بالأولوية.
+
+# Nouskha b darija (arabizi) — Mochkil f chi 3amaliya dyal lwallet
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li chi transfert wla khlas dyalo ma dazch, ba9i m3alle9 wla mcha l nmra ghalta.
+
+## Lkhatawat
+
+1. Chouf l'historique dyal lwallet bach t3ref l7ala b dabt (dazet, m3all9a, ma dazetch).
+2. L3amaliya li ma dazetch f l3ada ma katkte3ch, w lm3all9a t9der ttsewwa b wa7dha.
+3. Jme3 la reference dyal l3amaliya, tarikh, lmablagh w nmra lma3niya.
+4. Ila sifetti l nmra ghalta, tleb f l7in conseiller, w ma tttaselch nta b yeddek b li wslouh lflous.
+
+## Chorout
+
+- La reference dyal l3amaliya darouriya l ay ba7t.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch ylghi wla yrjje3 l3amaliya, w 7ta rjou3 lflous machi madmoun.
+
+## Ta7wil l conseiller
+
+Kaynin lflous f lmawdou3, kan7awlouk l conseiller b l2awlawiya.

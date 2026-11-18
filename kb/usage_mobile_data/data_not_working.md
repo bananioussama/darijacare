@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si rien ne fonctionne après ces vérifications, proposer un conseiller pour un 
 ## التحويل لمستشار
 
 إلا حتى حاجة ما خدمات من بعد هاد الخطوات، نحولوك لمستشار باش يشوف الخط.
+
+# Nouskha b darija (arabizi) — Internet dyal tilifon ma khdamch nihai2iyan
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li internet dyal tilifon dyalo ma khdamch nihai2iyan.
+
+## Lkhatawat
+
+1. T2akked beli 3ndek pass wla internet khdam w ma salach.
+2. T2akked beli « Data » mch3la w mode avion tafi.
+3. Tfi w ch3el tilifon, w men ba3d chouf les parametres dyal APN (chouf lbita9a « Ncharek la connexion w les parametres dyal APN »).
+4. Jerreb sim f tilifon akhor bach t3ref wach lmochkil f tilifon wla f lkhat.
+
+## Chorout
+
+- Khass lkhat ykoun khdam w tilifon kaytmacha m3a reseau.
+- Khass reseau ykoun kayn f lblasa li fiha lclient.
+
+## L7oudoud
+
+- Lmousa3id ma kaychoufch l7ala l7a9i9iya dyal lkhat wla dyal reseau.
+- Chi panne f reseau f lmanti9a ma kattsle7ch men tilifon.
+
+## Ta7wil l conseiller
+
+Ila 7ta 7aja ma khdmat men ba3d had lkhatawat, n7awlouk l conseiller bach ychouf lkhat.

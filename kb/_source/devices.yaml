@@ -24,6 +24,18 @@ device_purchase:
   limites_ar:
     - المساعد ما كيبيعش الأجهزة وما كيعطيش الأثمنة ولا واش كاين فالسطوك.
   escalade_ar: إلا كان عرض ديال شركة ولا طلب بالكمية، نقدرو نحولوك لمستشار.
+  title_arabizi: Nchri tilifon wla jihaz
+  objet_arabizi: Nwjjhou lclient li bgha ychri tilifon wla jihaz, 7ta b ta9sit.
+  etapes_arabizi:
+    - Chouf catalogue dyal l2ajhiza f tatbi9, f site wla f lwkala.
+    - T2akked beli ljihaz kaytmacha (4G, 5G, eSIM) m3a l'isti3mal dyalek.
+    - Ila bghiti b ta9sit, sewwel 3la chorout (lwata2i9, lmodda, l'iltizam).
+    - Kemmel chra f lwkala wla f internet w 7tafed b lfatoura dyal chra l garantie.
+  conditions_arabizi:
+    - Ta9sit y9der ykoun ghir l les clients li 3ndhom abonnement w khasso mowaf9a.
+  limites_arabizi:
+    - Lmousa3id ma kaybi3ch l2ajhiza w ma kay3tich l2atmina wla wach kayn f stock.
+  escalade_arabizi: Ila kan 3ard dyal charika wla talab b lkammiya, n9dro n7awlouk l conseiller.
 
 device_repair_warranty:
   title_fr: Réparation, garantie et assurance d'un appareil
@@ -52,6 +64,19 @@ device_repair_warranty:
   limites_ar:
     - المساعد ما كيقررش واش الجهاز غادي يتصلح فابور، التشخيص كتديرو المصلحة التقنية.
   escalade_ar: إلا رفضو يصلحوه وانت معترض، كنحولوك لمستشار.
+  title_arabizi: Reparation, garantie w assurance dyal ljihaz
+  objet_arabizi: Nchr7ou kifach yt3alej jihaz chritih men 3nd l'operateur (panne, garantie, assurance).
+  etapes_arabizi:
+    - L9a lfatoura dyal chra, w ila kan, lcontrat dyal l'assurance.
+    - Dir sauvegarde l lma3loumat dyalek w 7iyed sim w la carte memoire.
+    - Dfe3 ljihaz f lwkala wla f centre de service li galou lik, m3a lfatoura.
+    - 7tafed b lwasl dyal depot w tbe3 la reparation.
+  conditions_arabizi:
+    - La garantie katghetti l2a3tab dyal ssna3a f lmodda lmktouba f lfatoura.
+    - Theras wla lma machi dakhlin f la garantie, walakin y9dro ydkhlou f l'assurance ila kanet.
+  limites_arabizi:
+    - Lmousa3id ma kay9arrerch wach ljihaz ghadi ytsle7 fabor, diagnostic kaydiro service technique.
+  escalade_arabizi: Ila rafdou ysl7ouh w nta m3tared, kan7awlouk l conseiller.
 
 device_settings:
   title_fr: Réglages du téléphone (4G, 5G, réseau)
@@ -80,3 +105,16 @@ device_settings:
   limites_ar:
     - القوائم كتختلف على حساب الماركة والنسخة ديال النظام.
   escalade_ar: إلا ما قدرتيش تريڭلو، نقدرو نحولوك لمستشار.
+  title_arabizi: Les parametres dyal tilifon (4G, 5G, reseau)
+  objet_arabizi: N3awnou nreglou tilifon, matalan bach tch3el 4G wla 5G.
+  etapes_arabizi:
+    - 7ell Parametres > Reseau mobile > Type de reseau prefere.
+    - Khtar a3la mode kayn (5G/4G/3G/2G automatique).
+    - T2akked beli sim kat9bel 4G wla 5G (sim l9dima y9der ykhessha ttbddel).
+    - Tfi w ch3el tilifon w chouf l'icone dyal reseau.
+  conditions_arabizi:
+    - Khass tilifon, sim w l3ard ykounou kaytmachaw m3a technologie li bghiti.
+    - Khass la couverture dyal 4G wla 5G tkoun kayna f lblasa.
+  limites_arabizi:
+    - Les menus katkhtalef 3la 7sab lmarka w version dyal systeme.
+  escalade_arabizi: Ila ma 9dertich treglih, n9dro n7awlouk l conseiller.

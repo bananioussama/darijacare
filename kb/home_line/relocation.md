@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Pour un déménagement vers une autre ville ou un cas complexe, proposer un cons
 ## التحويل لمستشار
 
 إلا كان الرحيل لمدينة أخرى ولا حالة معقدة، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nr7el lkhat lfixe wla internet l dar jdida
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tn9el lkhat lfixe wla l'abonnement dyal internet l 3onwan jdid.
+
+## Lkhatawat
+
+1. T2akked men l'eligibilite dyal l3onwan jdid (chouf « Wach la fibre kayna 3ndi »).
+2. Dir talab dyal tbdil l3onwan men l'espace client wla f lwkala, w l2a7ssan 9bel ma tr7el.
+3. 3ti l3onwan jdid kamel w chi wati9a ila tlbouha.
+4. Khtar rendez-vous dyal tterkib f l3onwan jdid w 7tafed b l2ajhiza (lbox, decodeur).
+
+## Chorout
+
+- Mol l'abonnement howa li kaydir talab.
+- Khass l'abonnement ykoun mkhlles.
+
+## L7oudoud
+
+- Ila l3onwan jdid ma fihch nfs technologie, y9der yt9tare7 3ard akhor.
+- Numero dyal fixe y9der ytbddel 3la 7sab lmanti9a.
+
+## Ta7wil l conseiller
+
+Ila kan r7il l mdina okhra wla 7ala m3a99da, n9dro n7awlouk l conseiller.

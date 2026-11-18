@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si le client conteste des montants déjà prélevés, transmettre à un conseill
 ## التحويل لمستشار
 
 إلا الكليان معترض على فلوس تقطعو من قبل، كنحولوه لمستشار.
+
+# Nouskha b darija (arabizi) — Khadamat b lflous ma bghithach
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient yl9a w ywe99ef chi khadamat b lflous, messages ghalyin wla abonnements dyal charikat okhrin kayaklou lih solde wla lfatoura.
+
+## Lkhatawat
+
+1. Chouf l'historique dyal lconsommation f l'espace client bach tl9a lkhidma li katkhlles 3liha.
+2. 7ell « Lkhadamat dyali » w we99ef lkhidma.
+3. Fa3el l7imaya men lkhadamat b lflous dyal charikat lokhrin ila kanet.
+4. Ma tjawebch abadan 3la chi message kaytleb mnek t2akked chi abonnement ma kat3rfouch.
+
+## Chorout
+
+- Mol lkhat howa li kaywe99ef lkhidma.
+- Smiya dyal lkhidma katban f l'historique wla f message dyal confirmation.
+
+## L7oudoud
+
+- Twe9if lkhidma ma kayrjje3ch automatiquement lflous li tkt3ou.
+- Lmousa3id ma kaychoufch la liste l7a9i9iya dyal lkhadamat lmfa3la.
+
+## Ta7wil l conseiller
+
+Ila lclient m3tared 3la flous tkt3ou men 9bel, kan7awlouh l conseiller.

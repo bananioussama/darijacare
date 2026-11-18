@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -61,3 +62,29 @@ Pour connaître le montant exact, un conseiller consulte le contrat du client.
 ## التحويل لمستشار
 
 باش تعرف المبلغ بالضبط، المستشار كيشوف العقد ديالك.
+
+# Nouskha b darija (arabizi) — Les frais dyal la resiliation
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3tiw lma3loumat 3la les frais wla les penalites li momkin ykounou mli tlghi.
+
+## Lkhatawat
+
+1. L9a tarikh li bda fih l'engagement w lmodda dyalo f lcontrat wla f l'espace client.
+2. 9ra ljouz2 « Resiliation » f chorout dyal l3ard.
+3. Ferre9 bin les frais dyal l'engagement li ba9i, lfwatir li ma tkhllsouch, w l2ajhiza li ma trj3ouch.
+
+## Chorout
+
+- Les frais katbe3 lcontrat li we99a3ti w tarikh dyal la resiliation.
+
+## L7oudoud
+
+- Lmousa3id ma kay7sebch lmablagh dyal les frais.
+
+## Ta7wil l conseiller
+
+Bach t3ref lmablagh b dabt, lconseiller kaychouf lcontrat dyalek.

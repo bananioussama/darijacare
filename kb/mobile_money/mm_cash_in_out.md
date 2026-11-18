@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Si un dépôt n'apparaît pas sur le portefeuille, transmettre à un conseiller 
 ## التحويل لمستشار
 
 إلا الفلوس اللي حطيتي ما بانوش فالمحفظة، كنحولوك لمستشار مع الوصل.
+
+# Nouskha b darija (arabizi) — N7ett wla njbed lflous 3nd l'agent
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach t7ett lflous f lwallet w kifach tjbedhom 3nd agent m3tamad.
+
+## Lkhatawat
+
+1. L9a agent m3tamad b lkharita dyal les points de service f tatbi9.
+2. Bach t7ett, 3ti nmra dyal lwallet w lflous, w t2akked men message dyal confirmation 9bel ma tmchi.
+3. Bach tjbed, bda l3amaliya f tatbi9 wla 3nd l'agent, w men ba3d 2akked b lcode sirri.
+4. 7tafed b lwasl li 3tak l'agent.
+
+## Chorout
+
+- Y9dro ytlbou la carte nationale, w kaynin 7doud dyal l'ida3 w ssa7b.
+
+## L7oudoud
+
+- Lmousa3id ma kaychoufch les soldes wla l3amaliyat.
+
+## Ta7wil l conseiller
+
+Ila lflous li 7titi ma banouch f lwallet, kan7awlouk l conseiller m3a lwasl.

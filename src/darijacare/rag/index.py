@@ -1,7 +1,8 @@
 """Vector index of the knowledge base (cahier des charges, F-KB-02).
 
 * Chunking by section: one chunk per (fiche, language, section), prefixed with
-  the fiche title so short sections keep their context (5 sections x 2 languages).
+  the fiche title so short sections keep their context (5 sections x 3 parts:
+  French, Darija in Arabic script, Darija in Arabizi).
 * BGE-M3 dense + sparse vectors through the official ``FlagEmbedding`` library
   (``BGEM3FlagModel.encode(..., return_dense=True, return_sparse=True)``).
 * Qdrant collection with named vectors ``dense`` (cosine) and ``sparse`` and a
@@ -130,13 +131,27 @@ def sparse_vector(weights: Mapping[str, float]) -> Any:
     return models.SparseVector(indices=[i for i, _ in items], values=[v for _, v in items])
 
 
-def get_client(cfg: Mapping[str, Any], root: Path) -> Any:
-    """``QdrantClient`` for ``QDRANT_URL`` (server) or the local embedded store."""
+KEEPALIVE_CONNECTIONS = 16
+
+
+def get_client(cfg: Mapping[str, Any], root: Path, url: str | None = None) -> Any:
+    """``QdrantClient`` for the server (``url`` or ``QDRANT_URL``) or the local embedded store.
+
+    For a server, HTTP keep-alive is turned back on: qdrant-client disables it when
+    the host is ``localhost`` / ``127.0.0.1`` (``max_keepalive_connections=0`` in
+    ``QdrantRemote``), so every request opens a TCP connection. On Windows, the
+    40 000 requests of an evaluation then exhaust the ephemeral ports (WinError 10048),
+    and a production search takes 30 ms instead of 8.5 ms (median, measured).
+    """
+    import httpx
     from qdrant_client import QdrantClient
 
-    url = os.environ.get("QDRANT_URL")
+    url = url or os.environ.get("QDRANT_URL")
     if url:
-        return QdrantClient(url=url)
+        limits = httpx.Limits(
+            max_connections=KEEPALIVE_CONNECTIONS, max_keepalive_connections=KEEPALIVE_CONNECTIONS
+        )
+        return QdrantClient(url=url, limits=limits)
     path = Path(cfg["local_path"])
     return QdrantClient(path=str(path if path.is_absolute() else root / path))
 

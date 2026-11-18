@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si les compteurs semblent incohérents, le client peut demander un conseiller.
 ## التحويل لمستشار
 
 إلا العدادات بانو ليك ما معقولينش، تقدر تطلب مستشار.
+
+# Nouskha b darija (arabizi) — Ntbe3 lconsommation dyali (internet, d9aye9, SMS)
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Ngoulou kifach t3ref ch7al sthlekti w ch7al ba9i lik f internet, d9aye9 w les SMS.
+
+## Lkhatawat
+
+1. 7ell tatbi9, f « Lconsommation dyali ».
+2. Chouf ch7al ba9i (internet, appels, SMS) w fou9ach kaysali lforfait wla pass.
+3. Chouf ttafsil nhar b nhar bach tl9a chi consommation machi 3adiya.
+4. Fa3el les alertes dyal lconsommation ila kanet.
+
+## Chorout
+
+- Sal7a l lkhtout prepaye w li fihom abonnement.
+- Les compteurs kayt7addtou b chwiya dyal tta2khir.
+
+## L7oudoud
+
+- Lmousa3id ma kaychoufch les compteurs l7a9i9iyin dyal lclient.
+- Lconsommation f lkharij t9der tban m3ttla ktar.
+
+## Ta7wil l conseiller
+
+Ila les compteurs banou lik ma m39oulinch, t9der ttleb conseiller.

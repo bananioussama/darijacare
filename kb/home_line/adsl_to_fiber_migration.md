@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si la migration bloque après l'installation, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا التبديل وقف من بعد التركيب، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Ndouz men ADSL l la fibre
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tbddel khat ADSL l la fibre.
+
+## Lkhatawat
+
+1. T2akked beli l3onwan mo2ahal l la fibre.
+2. Tleb tbdil f l'espace client wla f lwkala w khtar 3ard dyal la fibre.
+3. Dir rendez-vous bach yrekkbou la prise dyal la fibre w lbox jdida.
+4. Men ba3d ma ttfa3el la fibre, rjje3 lbox l9dima dyal ADSL (chouf « Nrjje3 lbox, routeur wla decodeur »).
+
+## Chorout
+
+- Khass l3onwan ykoun mo2ahal l la fibre.
+- Khass l'abonnement dyal ADSL ykoun mkhlles.
+
+## L7oudoud
+
+- Y9der yw9e3 chi in9ita3 9sir nhar tbdil.
+- Numero dyal fixe f l3ada kayb9a, ghir ila kan chi mochkil te9ni.
+
+## Ta7wil l conseiller
+
+Ila tbdil w9ef men ba3d tterkib, n9dro n7awlouk l conseiller.

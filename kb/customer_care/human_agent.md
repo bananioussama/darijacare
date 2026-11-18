@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Transmettre systématiquement à un conseiller.
 ## التحويل لمستشار
 
 ديما كنحولو لمستشار.
+
+# Nouskha b darija (arabizi) — Bghit nhder m3a conseiller
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Njawbou lclient li tleb b sra7a yhder m3a chi wa7d.
+
+## Lkhatawat
+
+1. Lclient kaysta3mel lbouton « Nhder m3a conseiller » f chat.
+2. Kayt7ell dossier fih molakhas talab bach ma y3awedch kolchi.
+3. Lclient kay3ref tartib dyalo f ssaf dyal les conseillers.
+4. W howa kaytsenna, y9der lclient yzid ywdde7 talab dyalo, w lconseiller ghadi yl9ah f dossier.
+
+## Chorout
+
+- Talab sri7 dyal lhedra m3a insan dima kayt7tarem.
+- L2ijra2at li khassha la carte nationale katb9a khassha tdar f lwkala.
+
+## L7oudoud
+
+- Lwe9t kaytbe3 ch7al kayn men talab, w l7alat lmost3jla kaydouzou lowlin.
+
+## Ta7wil l conseiller
+
+Dima kan7awlou l conseiller.

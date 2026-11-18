@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ De l'argent est en jeu ; si le crédit n'est pas arrivé après le délai normal
 ## التحويل لمستشار
 
 كاينة الفلوس فالموضوع، إلا الرصيد ما وصلش من بعد الوقت العادي كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Recharge ma wseltch wla lcode ma dazch
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li recharge dyalo ma dkhletch l solde wla lcode dyalo ma tt9belch.
+
+## Lkhatawat
+
+1. Chouf solde men ba3d chi d9aye9 (solde y9der yt3ttel chwiya).
+2. 3awed chouf lcode li dkhelti (ar9am m9loubin, espace zayed) w 3awed jerreb merra wa7da.
+3. Ila charjiti f internet wla b mobile money, l9a la reference dyal l3amaliya wla lwasl.
+4. Ila recharge ba9a ma wseltch, dir chkaya « Recharge ma wseltch » m3a lcode wla la reference.
+
+## Chorout
+
+- 7tafed b la carte de recharge wla lwasl 7ta yt7ell lmochkil.
+- Khass recharge tkoun tdaret l numero s7i7.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch yzid solde wla yt2akked men lcode.
+- Bzaf dyal lmo7awalat b code ghalet t9der twe99ef recharge b lcode l chi modda.
+
+## Ta7wil l conseiller
+
+Kaynin lflous f lmawdou3, ila solde ma wselch men ba3d lwe9t l3adi kan7awlouk l conseiller.

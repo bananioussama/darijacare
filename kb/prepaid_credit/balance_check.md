@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si le solde affiché semble faux, le client peut faire une réclamation (voir la
 ## التحويل لمستشار
 
 إلا الصولد اللي باين كيبان غالط، يقدر الكليان يدير شكاية (شوف البطاقة «الصولد كينقص»).
+
+# Nouskha b darija (arabizi) — Nchouf solde
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Ngoulou kifach t3ref ch7al ba9i lik f solde w 7ta l imta sale7.
+
+## Lkhatawat
+
+1. 7ell tatbi9 w chouf la page lowla « Solde dyali ».
+2. Wla sta3mel le menu dyal solde f tilifon (lcode l9sir mktoub 3la lghlaf dyal sim).
+3. Chouf 7ta tarikh dyal sala7iya dyal solde w les pass li khddamin.
+
+## Chorout
+
+- La consultation dyal solde fabor.
+- Tatbi9 khasso internet wla reseau.
+
+## L7oudoud
+
+- Lmousa3id ma kaychoufch solde l7a9i9i dyal lclient.
+- Solde li kayban y9der yt3ttel chi d9aye9 men ba3d lconsommation.
+
+## Ta7wil l conseiller
+
+Ila solde li bayen kayban ghalet, y9der lclient ydir chkaya (chouf lbita9a « Solde kayn9es »).

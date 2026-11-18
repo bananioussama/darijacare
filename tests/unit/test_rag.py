@@ -16,8 +16,9 @@ from darijacare.data.taxonomy import load_taxonomy
 from darijacare.decision.policy import ConversationState, DecisionPolicy
 from darijacare.guards.input_guard import InputGuard
 from darijacare.pipeline import DarijaCareAssistant
-from darijacare.rag.index import Encoded, chunk_fiches, index_chunks
+from darijacare.rag.index import Encoded, chunk_fiches, get_client, index_chunks
 from darijacare.rag.kb import (
+    LANGS,
     SECTION_KEYS,
     Fiche,
     load_kb,
@@ -53,6 +54,7 @@ def test_every_fiche_is_marked_fictional(fiches: dict[str, Fiche]) -> None:
     for path in KB_DIR.glob("*/*.md"):
         text = path.read_text(encoding="utf-8")
         assert "status: fictif" in text and "Fiche fictive" in text and "بطاقة خيالية" in text
+        assert "Bita9a khayaliya" in text
 
 
 def test_markdown_round_trip(fiches: dict[str, Fiche]) -> None:
@@ -78,6 +80,29 @@ def test_validate_kb_reports_problems(fiches: dict[str, Fiche]) -> None:
     assert any("statut" in p for p in problems)
     assert any("téléphone" in p for p in problems)
     assert any("fiche manquante" in p for p in problems)
+
+
+def test_validate_kb_checks_arabizi_mirrors_arabic(fiches: dict[str, Fiche]) -> None:
+    tax_path = REPO_ROOT / "data" / "raw" / "telecom_taxonomy.json"
+    if not tax_path.exists():
+        pytest.skip("data/raw absent")
+    tax = load_taxonomy(tax_path)
+    f = fiches["balance_check"]
+    assert f.sections["arabizi"]["etapes"] and not ARABIC_LETTER_RE.search(f.titles["arabizi"])
+
+    def variant(**arabizi: Any) -> list[str]:
+        sections = {lg: dict(s) for lg, s in f.sections.items()}
+        sections["arabizi"].update(arabizi)
+        broken = Fiche(f.intent, f.category, f.version, f.status, f.titles, sections)
+        return [p for p in validate_kb({"balance_check": broken}, tax) if "[arabizi]" in p]
+
+    az = f.sections["arabizi"]
+    assert variant() == []
+    assert any("etapes a 2 élément(s)" in p for p in variant(etapes=az["etapes"][:2]))
+    assert any("lettres arabes" in p for p in variant(objet="شوف الصولد"))
+    # Same structure but almost no words: a truncated translation.
+    tiny = {k: ["ok"] * len(az[k]) for k in ("etapes", "conditions", "limites")}
+    assert any("longueur" in p for p in variant(objet="ok", escalade="ok", **tiny))
 
 
 def test_parse_rejects_unknown_section() -> None:
@@ -118,7 +143,8 @@ def retriever(fiches: dict[str, Fiche]) -> Retriever:
     client = QdrantClient(":memory:")
     emb = FakeEmbedder()
     stats = index_chunks(client, "kb", chunk_fiches(fiches), emb)
-    assert stats == {"upserted": 750, "deleted": 0, "total": 750}
+    n = 75 * len(LANGS) * len(SECTION_KEYS)  # 1125: 75 fiches x 3 parts x 5 sections
+    assert stats == {"upserted": n, "deleted": 0, "total": n}
     cfg = {
         "top_k": 10,
         "rrf_k": 60,
@@ -132,19 +158,49 @@ def retriever(fiches: dict[str, Fiche]) -> Retriever:
 
 def test_chunks_one_per_section_and_language(fiches: dict[str, Fiche]) -> None:
     chunks = chunk_fiches(fiches)
-    assert len(chunks) == 75 * 2 * len(SECTION_KEYS)
+    assert len(chunks) == 75 * len(LANGS) * len(SECTION_KEYS)
     assert len({c.point_id for c in chunks}) == len(chunks)
+    assert {c.lang for c in chunks} == set(LANGS)
 
 
 def test_index_is_idempotent_and_removes_stale(fiches: dict[str, Fiche]) -> None:
     from qdrant_client import QdrantClient
 
     client, emb = QdrantClient(":memory:"), FakeEmbedder()
+    per_fiche = len(LANGS) * len(SECTION_KEYS)
     chunks = chunk_fiches({k: fiches[k] for k in ("balance_check", "recharge_how")})
-    assert index_chunks(client, "kb", chunks, emb)["total"] == 20
-    assert index_chunks(client, "kb", chunks, emb) == {"upserted": 20, "deleted": 0, "total": 20}
+    assert index_chunks(client, "kb", chunks, emb)["total"] == 2 * per_fiche
+    assert index_chunks(client, "kb", chunks, emb) == {
+        "upserted": 2 * per_fiche,
+        "deleted": 0,
+        "total": 2 * per_fiche,
+    }
     smaller = [c for c in chunks if c.intent == "balance_check"]
-    assert index_chunks(client, "kb", smaller, emb) == {"upserted": 10, "deleted": 10, "total": 10}
+    assert index_chunks(client, "kb", smaller, emb) == {
+        "upserted": per_fiche,
+        "deleted": per_fiche,
+        "total": per_fiche,
+    }
+
+
+def test_server_client_keeps_connections_alive(monkeypatch: pytest.MonkeyPatch) -> None:
+    """qdrant-client turns keep-alive off for 127.0.0.1; get_client must turn it back on."""
+    import qdrant_client
+
+    captured: dict[str, Any] = {}
+
+    class SpyClient:
+        def __init__(self, **kwargs: Any) -> None:
+            captured.update(kwargs)
+
+    monkeypatch.setattr(qdrant_client, "QdrantClient", SpyClient)
+    monkeypatch.delenv("QDRANT_URL", raising=False)
+    get_client({"local_path": "data/qdrant"}, REPO_ROOT, url="http://127.0.0.1:6333")
+    assert captured["url"] == "http://127.0.0.1:6333"
+    assert captured["limits"].max_keepalive_connections > 0
+    captured.clear()
+    get_client({"local_path": "data/qdrant"}, REPO_ROOT)  # no URL: local embedded store
+    assert captured == {"path": str(REPO_ROOT / "data" / "qdrant")}
 
 
 def test_rrf_fuse() -> None:
@@ -200,7 +256,7 @@ def test_answer_uses_only_fiche_content_in_customer_script(
 ) -> None:
     d = policy.decide(guard.check("kifach nchouf solde"), nlu())
     r = responder.render(d, script, "balance_check", "balance_check")
-    lang = "ar" if script == "arabic" else "fr"
+    lang = {"arabic": "ar", "arabizi": "arabizi", "mixed": "fr"}[script]
     f = fiches["balance_check"]
     assert r.template == "answer" and r.sources == [{"id": "KB-balance_check", "version": 1}]
     assert f.titles[lang] in r.text  # customer-facing opening uses the fiche title
@@ -211,6 +267,9 @@ def test_answer_uses_only_fiche_content_in_customer_script(
         assert ARABIC_LETTER_RE.search(r.text.split("\n")[0])
     else:
         assert LATIN_LETTER_RE.search(r.text.split("\n")[0])
+    if script == "arabizi":  # Arabizi customers get the Arabizi part, not the French one
+        assert not ARABIC_LETTER_RE.search(r.text)
+        assert f.sections["fr"]["etapes"][0] not in r.text
 
 
 @pytest.mark.parametrize("script", ["arabic", "arabizi", "mixed"])

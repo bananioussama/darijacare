@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si la connexion ne revient pas après redémarrage, ouvrir un signalement et tra
 ## التحويل لمستشار
 
 إلا الكونيكسيون ما رجعاتش من بعد ما طفيتي وشعلتي، كنفتحو بلاغ وكنحولوك لمستشار (خدمة مقطوعة).
+
+# Nouskha b darija (arabizi) — Internet dyal dar ma9tou3
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li internet dyal dar dyalo mab9ach khdam nihai2iyan.
+
+## Lkhatawat
+
+1. T2akked beli lbox mch3la w chouf dwaw (ddaw l7mer wla tafi kay3ni lkhat ma9tou3).
+2. Chouf les cables (la fibre wla ADSL w ddaw) bla ma tlwi lcable dyal la fibre.
+3. Tfi lbox d9i9a w men ba3d ch3elha, w tsenna 7ta ysta9rrou dwaw.
+4. Chouf f tatbi9 wach kayn chi panne m3lna f l7ouma.
+
+## Chorout
+
+- Khass lfatoura wla l'abonnement ma ykounch mwe99ef 3la 9bel ma tkhllesch.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch yjerreb lkhat men b3id.
+- La panne f l7ouma kattsle7 b tadakhol dyal l'equipe technique.
+
+## Ta7wil l conseiller
+
+Ila la connexion ma rj3atch men ba3d ma tfiti w ch3elti, kanft7ou blagh w kan7awlouk l conseiller (khidma ma9tou3a).

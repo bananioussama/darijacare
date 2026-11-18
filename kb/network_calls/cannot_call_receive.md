@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Si la ligne ne permet aucun appel après ces vérifications, c'est un service co
 ## التحويل لمستشار
 
 إلا الخط ما كيخليك تعيط نهائيا من بعد هاد الخطوات، هادي خدمة مقطوعة، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Ma n9derch n3iyet wla y3iytou lia
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li ma 9adrch y3iyet wla ytwssel b les appels.
+
+## Lkhatawat
+
+1. Chouf solde wla lforfait (khat prepaye bla solde, khat mwe99ef).
+2. T2akked beli mode avion w transfert d'appel tafyin.
+3. T2akked beli nmra machi f la liste noire dyal tilifon.
+4. Tfi w ch3el tilifon w jerreb sim f jihaz akhor.
+
+## Chorout
+
+- Khass lkhat ykoun khdam w msjjel b smiytek (chouf « Nsjjel lkhat b smiyti »).
+
+## L7oudoud
+
+- Lmousa3id ma kaychoufch l7ala l7a9i9iya dyal lkhat.
+
+## Ta7wil l conseiller
+
+Ila lkhat ma kaykhallikch t3iyet nihai2iyan men ba3d had lkhatawat, hadi khidma ma9tou3a, kan7awlouk l conseiller.

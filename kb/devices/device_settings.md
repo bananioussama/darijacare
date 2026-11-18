@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si le réglage reste impossible, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا ما قدرتيش تريڭلو، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Les parametres dyal tilifon (4G, 5G, reseau)
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou nreglou tilifon, matalan bach tch3el 4G wla 5G.
+
+## Lkhatawat
+
+1. 7ell Parametres > Reseau mobile > Type de reseau prefere.
+2. Khtar a3la mode kayn (5G/4G/3G/2G automatique).
+3. T2akked beli sim kat9bel 4G wla 5G (sim l9dima y9der ykhessha ttbddel).
+4. Tfi w ch3el tilifon w chouf l'icone dyal reseau.
+
+## Chorout
+
+- Khass tilifon, sim w l3ard ykounou kaytmachaw m3a technologie li bghiti.
+- Khass la couverture dyal 4G wla 5G tkoun kayna f lblasa.
+
+## L7oudoud
+
+- Les menus katkhtalef 3la 7sab lmarka w version dyal systeme.
+
+## Ta7wil l conseiller
+
+Ila ma 9dertich treglih, n9dro n7awlouk l conseiller.

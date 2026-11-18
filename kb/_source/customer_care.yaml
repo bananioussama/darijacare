@@ -26,6 +26,19 @@ file_complaint:
     - الوقت ديال الجواب كيتبع النوع ديال الشكاية.
     - المساعد ما يقدرش يسجل شكاية رسمية بيدو.
   escalade_ar: إلا الكليان ما قدرش يدير الشكاية، المستشار كيسجلها ليه.
+  title_arabizi: Ndirou chkaya
+  objet_arabizi: Nchr7ou kifach tdir chkaya jdida 3la chi khidma.
+  etapes_arabizi:
+    - 7ell « Chkayat » f tatbi9 wla f site, wla sir l lwkala.
+    - Khtar sabab (fatoura, reseau, internet, khidma, l'isti9bal) w wsef lmochkil b tawarikh.
+    - Zid lwata2i9 li kat3awen (tsawer l'ecran, lwsoulat, numerowat dyal talabat).
+    - Sjjel numero dyal chkaya li 3tawk bach ttbe3ha.
+  conditions_arabizi:
+    - Chkaya kaydirha mol lkhat wla chi wa7d 3ndo l'idn.
+  limites_arabizi:
+    - Lwe9t dyal jawab kaytbe3 naw3 dyal chkaya.
+    - Lmousa3id ma y9derch ysjjel chkaya rasmiya b yeddo.
+  escalade_arabizi: Ila lclient ma 9derch ydir chkaya, lconseiller kaysjjelha lih.
 
 complaint_followup:
   title_fr: Suivre une réclamation en cours
@@ -52,6 +65,18 @@ complaint_followup:
   limites_ar:
     - المساعد ما كيشوفش الحالة الحقيقية ديال الشكايات.
   escalade_ar: إلا بقات الشكاية بلا جواب من بعد ما ذكرتيهم، كنحولوك لمستشار (مشكل كيتعاود).
+  title_arabizi: Ntbe3 chkaya dertha
+  objet_arabizi: N3awnou lclient li bgha y3ref fin wslat chi chkaya wla chi talab darou men 9bel.
+  etapes_arabizi:
+    - L9a numero dyal chkaya li wslek f message.
+    - Chouf « Chkayat dyali » f tatbi9 bach t3ref l7ala dyalha.
+    - Ila fatet lmodda li galou, 3awed dakkerhom men chkaya (lbouton « Dakker »).
+    - Zid ay ma3louma jdida kat3awen f dossier.
+  conditions_arabizi:
+    - Numero dyal chkaya darouri bach ttbe3 b dabt.
+  limites_arabizi:
+    - Lmousa3id ma kaychoufch l7ala l7a9i9iya dyal chkayat.
+  escalade_arabizi: Ila b9at chkaya bla jawab men ba3d ma dakkertihom, kan7awlouk l conseiller (mochkil kayt3awed).
 
 human_agent:
   title_fr: Parler à un conseiller
@@ -80,6 +105,19 @@ human_agent:
   limites_ar:
     - الوقت كيتبع شحال كاين من طلب، والحالات المستعجلة كيدوزو اللولين.
   escalade_ar: ديما كنحولو لمستشار.
+  title_arabizi: Bghit nhder m3a conseiller
+  objet_arabizi: Njawbou lclient li tleb b sra7a yhder m3a chi wa7d.
+  etapes_arabizi:
+    - Lclient kaysta3mel lbouton « Nhder m3a conseiller » f chat.
+    - Kayt7ell dossier fih molakhas talab bach ma y3awedch kolchi.
+    - Lclient kay3ref tartib dyalo f ssaf dyal les conseillers.
+    - W howa kaytsenna, y9der lclient yzid ywdde7 talab dyalo, w lconseiller ghadi yl9ah f dossier.
+  conditions_arabizi:
+    - Talab sri7 dyal lhedra m3a insan dima kayt7tarem.
+    - L2ijra2at li khassha la carte nationale katb9a khassha tdar f lwkala.
+  limites_arabizi:
+    - Lwe9t kaytbe3 ch7al kayn men talab, w l7alat lmost3jla kaydouzou lowlin.
+  escalade_arabizi: Dima kan7awlou l conseiller.
 
 customer_service_contact:
   title_fr: Contacter le service client
@@ -106,6 +144,18 @@ customer_service_contact:
   limites_ar:
     - هاد البطاقة الخيالية ما فيها حتى نمرة حقيقية.
   escalade_ar: إلا بغا الكليان يتاصل فالحين، استعمل «نهضر مع مستشار».
+  title_arabizi: Kifach nttasel b service client
+  objet_arabizi: Ngoulou torou9 bach tttasel b service client w l2aw9at dyalo.
+  etapes_arabizi:
+    - Sta3mel chat dyal tatbi9 wla lbouton « Nhder m3a conseiller ».
+    - 3iyet l nmra l9sira dyal service client lmktouba f lghlaf dyal sim w f tatbi9.
+    - Kteb men le formulaire de contact f site ila ma kanch talab most3jel.
+    - Sir l lwkala l l2ijra2at li khassha la carte nationale.
+  conditions_arabizi:
+    - L2aw9at dyal service client bayenin f tatbi9.
+  limites_arabizi:
+    - Had lbita9a lkhayaliya ma fiha 7ta nmra 7a9i9iya.
+  escalade_arabizi: Ila bgha lclient yttasel f l7in, sta3mel « Nhder m3a conseiller ».
 
 agency_location:
   title_fr: Trouver une agence et ses horaires
@@ -132,6 +182,18 @@ agency_location:
   limites_ar:
     - هاد البطاقة الخيالية ما فيها حتى عنوان حقيقي.
   escalade_ar: ما خاصش تحويل، إلا إلا كان الكليان ما يقدرش يتحرك.
+  title_arabizi: Nl9a wkala w l2aw9at dyalha
+  objet_arabizi: N3awnou lclient yl9a a9rab wkala w l2aw9at dyal lfti7 dyalha.
+  etapes_arabizi:
+    - 7ell lkharita dyal lwkalat f tatbi9 wla f site.
+    - 9elleb b lmdina wla khalli tatbi9 y3ref fin nta bach ybanou lik lwkalat l9rab.
+    - Chouf l2aw9at dyal lfti7 w lkhadamat li kat9eddem lwkala.
+    - Dir rendez-vous f internet ila kanet had l2imkaniya bach ma ttsennach.
+  conditions_arabizi:
+    - L2aw9at y9dro ytbddlou f l3otal w f Ramadan.
+  limites_arabizi:
+    - Had lbita9a lkhayaliya ma fiha 7ta 3onwan 7a9i9i.
+  escalade_arabizi: Ma khassch ta7wil, ghir ila kan lclient ma y9derch yt7errek.
 
 account_app_access:
   title_fr: Problème de connexion à l'application ou à l'espace client
@@ -160,6 +222,19 @@ account_app_access:
     - عمرك ما تعطي الكود ديال التأكيد لحتى واحد، واخا يقول ليك بلي مستشار.
     - المساعد ما كيعاودش يفتح الحسابات.
   escalade_ar: إلا بقا الحساب مبلوكي، كنحولوك لمستشار.
+  title_arabizi: Ma 9adrch ndkhol l tatbi9 wla l l'espace client
+  objet_arabizi: N3awnou lclient li ma 9adrch ydkhol l tatbi9 wla l lcompte dyalo f internet.
+  etapes_arabizi:
+    - Sta3mel « Nsit lmot de passe » w tbe3 lien wla lcode li wslek.
+    - Dkhel lcode dyal confirmation b zerba (kaysali men ba3d chi d9aye9).
+    - Dir mise a jour l tatbi9, mse7 le cache dyalo wla 3awed 7mmlo.
+    - Chouf internet w chouf beli tarikh w sa3a f tilifon automatiques.
+  conditions_arabizi:
+    - Lcode dyal confirmation kaytsifet l nmra dyal lkhat, khass lkhat ytwssel b les messages.
+  limites_arabizi:
+    - 3emmrek ma t3ti lcode dyal confirmation l 7ta wa7d, wakha ygoul lik beli conseiller.
+    - Lmousa3id ma kay3awedch yfte7 les comptes.
+  escalade_arabizi: Ila b9a lcompte mbloki, kan7awlouk l conseiller.
 
 greeting_thanks:
   title_fr: Salutations et remerciements
@@ -188,3 +263,16 @@ greeting_thanks:
     - ما كاين حتى إجراء.
     - إلا كان فالميساج حتى شي طلب، هداك الطلب هو اللي كيتعالج.
   escalade_ar: والو.
+  title_arabizi: Salam w chokr
+  objet_arabizi: Njawbou b l2adab 3la salam, chokr wla tasslim bla talab mo3ayyan.
+  etapes_arabizi:
+    - Redd salam 3la lclient b nfs tari9a dyal lktaba dyalo.
+    - 9tare7 3lih ywsef talab dyalo ila kan 3ndo chi talab.
+    - F lakher, chkro w fakkro beli y9der yrje3 f ay we9t.
+    - Khalli jawab 9sir w m2addab, bla ma tsewwel 7ta so2al chakhsi.
+  conditions_arabizi:
+    - Ma khass 7ta ma3louma 3la lkhat.
+  limites_arabizi:
+    - Ma kayn 7ta ijra2.
+    - Ila kan f lmessage chi talab, hadak talab howa li kayt3alej.
+  escalade_arabizi: Walo.

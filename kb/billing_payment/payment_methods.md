@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si aucun moyen ne fonctionne pour le client, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا حتى طريقة ما خدمات مع الكليان، نقدرو نحولوه لمستشار.
+
+# Nouskha b darija (arabizi) — Torou9 bach tkhlles lfatoura
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou torou9 li momkin tkhlles bihom lfatoura.
+
+## Lkhatawat
+
+1. Lkhlas b la carte bancaire f l'espace client (tatbi9 wla site).
+2. Lkhlas f lwkala, f lguichet, b la reference dyal lfatoura.
+3. Lkhlas 3nd chi point de paiement partenaire m3tamad.
+4. Lkhlas men lwallet (mobile money) ila 3ndek wa7d.
+
+## Chorout
+
+- Khassek la reference dyal lfatoura wla numero dyal lkhat.
+- Lkhlas b la carte khasso carte mfa3la l lkhlas f internet.
+
+## L7oudoud
+
+- Lwe9t bach ytsjjel lkhlas kaykhtalef 3la 7sab tari9a (f l7in f internet, ktar f blayes lokhrin).
+- Lmousa3id ma kayakhod 7ta khlas b yeddo.
+
+## Ta7wil l conseiller
+
+Ila 7ta tari9a ma khdmat m3a lclient, n9dro n7awlouh l conseiller.

@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si des points semblent manquer, proposer une réclamation et un conseiller.
 ## التحويل لمستشار
 
 إلا بان ليك شي نقط ناقصين، دير شكاية ونقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Barnamaj lwafa2 w les points
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tchouf, terbe7 w tsta3mel les points dyal lwafa2.
+
+## Lkhatawat
+
+1. Chouf ch7al 3ndek men point f « Lwafa2 » f tatbi9.
+2. 9ra l9awa3id bach terbe7 les points (recharge, lfwatir lmkhllsa, anciennete).
+3. Khtar chi hdiya men catalogue w 2akked tbdil dyal les points.
+4. Chouf fou9ach kaysaliw les points.
+
+## Chorout
+
+- Les points chakhsiyin w merboutin b lkhat.
+
+## L7oudoud
+
+- Les points li salaw ma kayrj3ouch.
+- Lhdaya li f catalogue kaytbddlou 3la 7sab lfatrat.
+- Lmousa3id ma kaychoufch ch7al 3ndek men point b s7.
+
+## Ta7wil l conseiller
+
+Ila ban lik chi points na9sin, dir chkaya w n9dro n7awlouk l conseiller.

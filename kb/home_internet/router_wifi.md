@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si la box ne s'allume plus ou semble défectueuse, transmettre à un conseiller 
 ## التحويل لمستشار
 
 إلا البوكس مابقاتش كتشعل ولا باينة خاسرة، كنحولوك لمستشار باش تتبدل.
+
+# Nouskha b darija (arabizi) — Lbox, routeur w wifi
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou f lmachakil dyal lbox wla routeur w f smiya wla lmot de passe dyal wifi.
+
+## Lkhatawat
+
+1. Smiya dyal wifi w lmot de passe l2asli mktoubin f lwr9a li ta7t lbox.
+2. Bach tbddelhom, 7ell l'interface dyal lbox men tatbi9 wla navigateur, f « Wifi ».
+3. Ila kan chi mochkil, tfi w ch3el lbox, w ila ma nfe3ch dir reset (wifi kayrje3 l les parametres li f lwr9a).
+4. 7ett lbox f blasa 3alya w m7loula, b3ida 3la l7youta lghlida w l2ajhiza electroniques.
+
+## Chorout
+
+- Tabdilat kattdar men jihaz merbout m3a lbox.
+
+## L7oudoud
+
+- Reset kaymse7 les parametres li derti.
+- Lmousa3id ma y9derch ydkhol l lbox men b3id.
+
+## Ta7wil l conseiller
+
+Ila lbox mab9atch katch3el wla bayna khasra, kan7awlouk l conseiller bach ttbddel.

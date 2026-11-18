@@ -24,6 +24,18 @@ plan_offers_info:
   limites_ar:
     - المساعد ما كيعطيش الأثمنة وما كينصحش بعرض تجاري معين.
   escalade_ar: إلا بغيتي نصيحة خاصة بيك (شركة، عائلة كبيرة)، نقدرو نحولوك لمستشار.
+  title_arabizi: Nt3arraf 3la l3orod w les forfaits
+  objet_arabizi: Nwjjhou lclient li bgha y3ref l3orod li kaynin (prepaye, forfait, internet f dar).
+  etapes_arabizi:
+    - 7added chno li kat7taj ktar (appels, internet f tilifon, internet f dar, international).
+    - Chouf « L3orod » f tatbi9 wla f site, wla le depliant f lwkala.
+    - 9aren l7ajm li dakhel, lmodda dyal l'engagement w chorout dyal kol 3ard.
+    - Bach tchtarek, chouf lbita9a « Nchtarek f forfait jdid ».
+  conditions_arabizi:
+    - L3orod w l2atmina kaytbddlou, w lmarja3 howa lwata2i9 rasmiya lmo7adata.
+  limites_arabizi:
+    - Lmousa3id ma kay3tich l2atmina w ma kaynse7ch b 3ard tijari mo3ayyan.
+  escalade_arabizi: Ila bghiti nasi7a khassa bik (charika, 3a2ila kbira), n9dro n7awlouk l conseiller.
 
 sign_up_plan:
   title_fr: Souscrire un nouveau forfait
@@ -52,6 +64,19 @@ sign_up_plan:
   limites_ar:
     - المساعد ما كيدير حتى اشتراك.
   escalade_ar: إلا الاشتراك فالأنترنيت ما دازش، نقدرو نحولوك لمستشار ولا للوكالة.
+  title_arabizi: Nchtarek f forfait jdid
+  objet_arabizi: Nwjjhou lclient li bgha ychtarek f forfait wla abonnement jdid.
+  etapes_arabizi:
+    - Khtar l3ard f tatbi9, f site wla f lwkala.
+    - 3ti carte d'identite sal7a, w ila tlbou, chi wati9a dyal l3onwan wla wasila dyal lkhlas.
+    - 9ra chorout (lmodda dyal l'engagement, les frais) 9bel ma ttwe99a3.
+    - Twssel b sim wla dir rendez-vous dyal tterkib, w men ba3d fa3el lkhat.
+  conditions_arabizi:
+    - Khass li kaychtarek ykoun rached w msjjel.
+    - Y9der ykoun chi engagement b modda 3la 7sab l3ard li khtariti.
+  limites_arabizi:
+    - Lmousa3id ma kaydir 7ta abonnement.
+  escalade_arabizi: Ila l'abonnement f internet ma dazch, n9dro n7awlouk l conseiller wla l lwkala.
 
 change_plan:
   title_fr: Changer de forfait
@@ -80,6 +105,19 @@ change_plan:
     - النزول لعرض أصغر وانت باقي ملتزم يقدر يجيب مصاريف.
     - اللي ما استهلكتيش من العرض القديم ماشي ضروري يتزاد.
   escalade_ar: إلا العرض اللي بغيتي ما بانش، نقدرو نحولوك لمستشار.
+  title_arabizi: Nbddel lforfait
+  objet_arabizi: Nchr7ou kifach ttle3 l forfait kbar wla tnzel l forfait sghar wla tbddel l3ard.
+  etapes_arabizi:
+    - 7ell tatbi9 f « Bddel l3ard » bach tchouf l3orod li momkin tdouz lihom.
+    - Chouf fou9ach ghadi ybda tbdil (f l7in wla f lfatoura jaya).
+    - T2akked wach kayn chi engagement kaymne3 nnzoul l 3ard sghar.
+    - 2akked tbdil w 7tafed b message dyal confirmation.
+  conditions_arabizi:
+    - Mol lkhat howa li kaybddel.
+  limites_arabizi:
+    - Nnzoul l 3ard sghar w nta ba9i moltazim y9der yjib les frais.
+    - Li ma sthlektich men l3ard l9dim machi darouri ytzad.
+  escalade_arabizi: Ila l3ard li bghiti ma banch, n9dro n7awlouk l conseiller.
 
 cancel_plan:
   title_fr: Résilier un abonnement
@@ -108,6 +146,19 @@ cancel_plan:
     - الإلغاء كيبدا على حساب المدة المكتوبة فالعقد.
     - المساعد ما كيسجلش الإلغاء.
   escalade_ar: أي طلب ديال الإلغاء كيأكدو مستشار ولا الوكالة.
+  title_arabizi: Nlghi l'abonnement
+  objet_arabizi: Nchr7ou kifach tlghi abonnement dyal tilifon wla internet.
+  etapes_arabizi:
+    - Chouf fou9ach katsali lmodda dyal l'engagement w les frais ila kanou (chouf « Les frais dyal la resiliation »).
+    - Mol lkhat kaydir talab f lwkala b la carte nationale, wla b tari9a lmktouba f lcontrat.
+    - Khlles lfwatir li ba9yin.
+    - Rjje3 l2ajhiza li 3tawk (chouf « Nrjje3 lbox, routeur wla decodeur »).
+  conditions_arabizi:
+    - Ghir mol lkhat li y9der ylghi.
+  limites_arabizi:
+    - La resiliation katbda 3la 7sab lmodda lmktouba f lcontrat.
+    - Lmousa3id ma kaysjjelch la resiliation.
+  escalade_arabizi: Ay talab dyal resiliation kay2akkdo conseiller wla lwkala.
 
 cancellation_fee:
   title_fr: Frais de résiliation
@@ -132,6 +183,17 @@ cancellation_fee:
   limites_ar:
     - المساعد ما كيحسبش المبلغ ديال المصاريف.
   escalade_ar: باش تعرف المبلغ بالضبط، المستشار كيشوف العقد ديالك.
+  title_arabizi: Les frais dyal la resiliation
+  objet_arabizi: N3tiw lma3loumat 3la les frais wla les penalites li momkin ykounou mli tlghi.
+  etapes_arabizi:
+    - L9a tarikh li bda fih l'engagement w lmodda dyalo f lcontrat wla f l'espace client.
+    - 9ra ljouz2 « Resiliation » f chorout dyal l3ard.
+    - Ferre9 bin les frais dyal l'engagement li ba9i, lfwatir li ma tkhllsouch, w l2ajhiza li ma trj3ouch.
+  conditions_arabizi:
+    - Les frais katbe3 lcontrat li we99a3ti w tarikh dyal la resiliation.
+  limites_arabizi:
+    - Lmousa3id ma kay7sebch lmablagh dyal les frais.
+  escalade_arabizi: Bach t3ref lmablagh b dabt, lconseiller kaychouf lcontrat dyalek.
 
 promotions_bonus:
   title_fr: Promotion ou bonus non reçu
@@ -158,6 +220,18 @@ promotions_bonus:
   limites_ar:
     - المساعد ما يقدرش يزيد البونوس.
   escalade_ar: إلا كانت الشروط متوفرة وفاتت المدة، كنحولوك لمستشار.
+  title_arabizi: La promotion wla le bonus ma wselch
+  objet_arabizi: N3awnou lclient li ma twsselch b chi bonus, recharge mda3fa wla chi imtiyaz dyal la promotion.
+  etapes_arabizi:
+    - 3awed 9ra chorout dyal la promotion (tawarikh, a9al mablagh, lkhtout lma3niya).
+    - Chouf f « Lconsommation dyali » wach le bonus dkhel f compteur b wa7do.
+    - Tsenna lmodda li mktouba f chorout.
+    - Ila le bonus ma banch men ba3d had lmodda, dir chkaya b tarikh w ddlil dyal l3amaliya.
+  conditions_arabizi:
+    - Khass la promotion tkoun sal7a nhar l3amaliya l lkhat dyalek.
+  limites_arabizi:
+    - Lmousa3id ma y9derch yzid le bonus.
+  escalade_arabizi: Ila kanet chorout metwafra w fatet lmodda, kan7awlouk l conseiller.
 
 roaming:
   title_fr: Utiliser sa ligne à l'étranger (itinérance)
@@ -188,6 +262,20 @@ roaming:
     - بلا باس، الاستهلاك برا يقدر يكون غالي بزاف.
     - المساعد ما كيعطيش الأثمنة الحقيقية.
   escalade_ar: إلا الخط ما خدمش برا واخا مفعل، نقدرو نحولوك لمستشار.
+  title_arabizi: Nsta3mel lkhat berra (roaming)
+  objet_arabizi: Nchr7ou kifach tsta3mel lkhat dyalek f lkharij w tfa3el roaming.
+  etapes_arabizi:
+    - 9bel ma tsafer, t2akked f tatbi9 beli roaming mfa3el f lkhat.
+    - Chouf l2atmina w les pass dyal roaming l lblad li ghadi liha.
+    - Ch3el roaming dyal internet f les parametres ghir ila kan 3ndek pass.
+    - Temma, khtar chi reseau partenaire ila le choix automatique ma khdemch.
+  conditions_arabizi:
+    - F lkhat prepaye, khass solde ykoun kafi.
+    - Roaming y9der yttleb chi anciennete dyal lkhat.
+  limites_arabizi:
+    - Bla pass, lconsommation berra t9der tkoun ghalya bzaf.
+    - Lmousa3id ma kay3tich l2atmina l7a9i9iya.
+  escalade_arabizi: Ila lkhat ma khdemch berra wakha mfa3el, n9dro n7awlouk l conseiller.
 
 entertainment_services:
   title_fr: Services de divertissement (streaming, musique, jeux, tonalités)
@@ -216,6 +304,19 @@ entertainment_services:
     - المحتوى ديال الخدمات كيقدموه شركاء.
     - المساعد ما كيشترك فحتى أوبسيون.
   escalade_ar: إلا شي أوبسيون ما خدماتش ولا ما بغاتش تتوقف، نقدرو نحولوك لمستشار.
+  title_arabizi: Khadamat tarfih (streaming, musique, jeux, sonneries)
+  objet_arabizi: Nchr7ou kifach tchtarek w tsiyer les options dyal tarfih (streaming, musique, jeux, sonneries d'attente).
+  etapes_arabizi:
+    - 7ell « Tarfih » f tatbi9 bach tchouf les options li kaynin.
+    - Chtarek f l'option li bghiti w chouf kol ch7al katkhlles (nhar, simana, chhar).
+    - Siyer wla we99ef l'option men « Lkhadamat dyali ».
+    - Ila chtarekti b lghalat, chouf lbita9a « Khadamat b lflous ma bghithach ».
+  conditions_arabizi:
+    - Les options katkhlles men solde wla men lfatoura 3la 7sab l3ard.
+  limites_arabizi:
+    - Lmo7tawa dyal lkhadamat kay9addmouh partenaires.
+    - Lmousa3id ma kaychtarek f 7ta option.
+  escalade_arabizi: Ila chi option ma khdmatch wla ma bghatch ttwe99ef, n9dro n7awlouk l conseiller.
 
 loyalty_points:
   title_fr: Programme de fidélité et points
@@ -246,3 +347,17 @@ loyalty_points:
     - الهدايا اللي فالكاطالوك كيتبدلو على حساب الفترات.
     - المساعد ما كيشوفش شحال عندك من نقطة بصح.
   escalade_ar: إلا بان ليك شي نقط ناقصين، دير شكاية ونقدرو نحولوك لمستشار.
+  title_arabizi: Barnamaj lwafa2 w les points
+  objet_arabizi: Nchr7ou kifach tchouf, terbe7 w tsta3mel les points dyal lwafa2.
+  etapes_arabizi:
+    - Chouf ch7al 3ndek men point f « Lwafa2 » f tatbi9.
+    - 9ra l9awa3id bach terbe7 les points (recharge, lfwatir lmkhllsa, anciennete).
+    - Khtar chi hdiya men catalogue w 2akked tbdil dyal les points.
+    - Chouf fou9ach kaysaliw les points.
+  conditions_arabizi:
+    - Les points chakhsiyin w merboutin b lkhat.
+  limites_arabizi:
+    - Les points li salaw ma kayrj3ouch.
+    - Lhdaya li f catalogue kaytbddlou 3la 7sab lfatrat.
+    - Lmousa3id ma kaychoufch ch7al 3ndek men point b s7.
+  escalade_arabizi: Ila ban lik chi points na9sin, dir chkaya w n9dro n7awlouk l conseiller.

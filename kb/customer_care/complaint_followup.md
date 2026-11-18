@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Si la réclamation reste sans réponse après relance, transmettre à un conseil
 ## التحويل لمستشار
 
 إلا بقات الشكاية بلا جواب من بعد ما ذكرتيهم، كنحولوك لمستشار (مشكل كيتعاود).
+
+# Nouskha b darija (arabizi) — Ntbe3 chkaya dertha
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li bgha y3ref fin wslat chi chkaya wla chi talab darou men 9bel.
+
+## Lkhatawat
+
+1. L9a numero dyal chkaya li wslek f message.
+2. Chouf « Chkayat dyali » f tatbi9 bach t3ref l7ala dyalha.
+3. Ila fatet lmodda li galou, 3awed dakkerhom men chkaya (lbouton « Dakker »).
+4. Zid ay ma3louma jdida kat3awen f dossier.
+
+## Chorout
+
+- Numero dyal chkaya darouri bach ttbe3 b dabt.
+
+## L7oudoud
+
+- Lmousa3id ma kaychoufch l7ala l7a9i9iya dyal chkayat.
+
+## Ta7wil l conseiller
+
+Ila b9at chkaya bla jawab men ba3d ma dakkertihom, kan7awlouk l conseiller (mochkil kayt3awed).

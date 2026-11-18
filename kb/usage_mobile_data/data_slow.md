@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si la lenteur persiste partout et depuis plusieurs jours, proposer un conseiller
 ## التحويل لمستشار
 
 إلا بقا الأنترنيت ثقيل فكل بلاصة ومن شحال من نهار، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Internet dyal tilifon t9il
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li internet dyalo khdam walakin t9il.
+
+## Lkhatawat
+
+1. Chouf wach pass sala (sor3a t9der tn9es men ba3d ma ysali).
+2. T2akked beli tilifon mregle 3la reseau lasra3 (4G/5G) f les parametres.
+3. Tfi w ch3el tilifon w sedd les applications li kat7mmel men lour.
+4. Jerreb f blasa okhra wla f sa3a okhra bach t3ref wach kayn ddeght f lmanti9a.
+
+## Chorout
+
+- Khass tilifon w sim ykounou 4G wla 5G bach tstafed.
+- Sor3a katbe3 reseau w ch7al men wa7d kaysta3mel f nfs lblasa.
+
+## L7oudoud
+
+- Lmousa3id ma kaydmench 7ta sor3a.
+- Lmousa3id ma y9derch y9is sor3a l7a9i9iya dyal lclient.
+
+## Ta7wil l conseiller
+
+Ila b9a internet t9il f kol blasa w men ch7al men nhar, n9dro n7awlouk l conseiller.

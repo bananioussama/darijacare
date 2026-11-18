@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si l'image ne revient pas après redémarrage, transmettre à un conseiller.
 ## التحويل لمستشار
 
 إلا الصورة ما رجعاتش من بعد ما طفيتي وشعلتي، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Mochkil f tv wla decodeur
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li tv dyalo b lbox wla IPTV ma khdamach (les chaines, decodeur, tswira).
+
+## Lkhatawat
+
+1. T2akked beli internet dyal lbox khdam (w ila la chouf « Internet dyal dar ma9tou3 »).
+2. Chouf lcable bin decodeur w tv w khtar la source s7i7a (HDMI) f tv.
+3. Tfi decodeur, 7iyed ddaw d9i9a w rjj3o.
+4. Ila chi chaine mo3ayana na9sa, t2akked beli dakhla f le bouquet li 3ndek.
+
+## Chorout
+
+- Khass service tv ykoun dakhel f l'abonnement wla mfa3el k option.
+
+## L7oudoud
+
+- Lmo7tawa dyal les chaines ma kaytbe3ch lmousa3id.
+- Lmousa3id ma y9derch y3awed ydbet decodeur men b3id.
+
+## Ta7wil l conseiller
+
+Ila tswira ma rj3atch men ba3d ma tfiti w ch3elti, kan7awlouk l conseiller.

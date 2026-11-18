@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ En cas de transfert envoyé au mauvais numéro, transmettre à un conseiller.
 ## التحويل لمستشار
 
 إلا الرصيد تصيفط لنمرة غالطة، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — N7awel solde wla ntsellef chi selfa
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach t7awel solde l nmra okhra w kifach takhod selfa dyal solde.
+
+## Lkhatawat
+
+1. Bach t7awel solde, sta3mel « T7wil solde » f tatbi9 w dkhel nmra dyal li ghadi yakhdo.
+2. T2akked men lmablagh 9bel ma twafe9, w ghadi ywsel message l jouj nmrat.
+3. Bach takhod selfa, 7ell « Sselfa » w khtar lmablagh li m3roud.
+4. Sselfa kattkte3 b wa7dha f recharge li jaya.
+
+## Chorout
+
+- Khass jouj khtout ykounou khddamin, w y9der ykoun matloub chi anciennete.
+- Sselfa momkina ghir ila ma kanetch selfa okhra ba9a ma tkhllsatch.
+
+## L7oudoud
+
+- T7wil l nmra ghalta ma y9derch lmousa3id ylghih.
+- Lmabalegh w les frais ila kanou kaytb3ou chorout dyal l3ard.
+
+## Ta7wil l conseiller
+
+Ila solde tsifet l nmra ghalta, kan7awlouk l conseiller.

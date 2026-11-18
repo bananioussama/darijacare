@@ -26,6 +26,19 @@ check_signal_coverage:
     - الخريطة تقريبية وما كتضمنش الجودة فبلاصة معينة.
     - المساعد ما كيعرفش التغطية الحقيقية.
   escalade_ar: إلا عندك حاجة ديال الخدمة فبلاصة معينة، نقدرو نحولوك لمستشار.
+  title_arabizi: Nchouf wach reseau kayn f chi blasa
+  objet_arabizi: Ngoulou kifach t3ref wach chi blasa fiha reseau dyal tilifon (2G, 4G, 5G).
+  etapes_arabizi:
+    - 7ell lkharita dyal la couverture f tatbi9 wla f site.
+    - Dkhel lmdina, l7ouma wla lblasa b dabt (douar, tri9, jbel).
+    - 9ra niveau dyal la couverture l kol technologie.
+    - Ila kanet blasa b3ida, sewwel chi nas men temma ila momkin.
+  conditions_arabizi:
+    - Lkharita kat3ti la couverture berra, w dakhel dyal lbni y9der ykoun fih reseau d3if ktar.
+  limites_arabizi:
+    - Lkharita ta9ribiya w ma katdmench la qualite f blasa mo3ayana.
+    - Lmousa3id ma kay3refch la couverture l7a9i9iya.
+  escalade_arabizi: Ila 3ndek 7aja dyal lkhedma f blasa mo3ayana, n9dro n7awlouk l conseiller.
 
 report_poor_signal:
   title_fr: Signaler une absence ou une faiblesse de réseau
@@ -54,6 +67,19 @@ report_poor_signal:
     - البلاغ ما كيضمنش بلي التغطية غادي تتحسن بالزربة.
     - المساعد ما كيشوفش الحالة ديال الأنتينات.
   escalade_ar: إلا الريزو مقطوع ومانعك من كلشي شحال من نهار، كنحولوك لمستشار.
+  title_arabizi: Nballegh beli ma kaynch reseau wla d3if
+  objet_arabizi: Nkhalliw lclient yballegh beli ma 3ndouch reseau wla reseau d3if f lblasa li howa fiha.
+  etapes_arabizi:
+    - Tfi w ch3el tilifon w ch3el w tfi mode avion.
+    - Chouf beli le choix dyal reseau automatique w jerreb sim f tilifon akhor.
+    - Sjjel lblasa b dabt, sswaye3 w naw3 lmochkil (ma kayn 7ta khat, ghir 2G).
+    - Dir blagh dyal la couverture f tatbi9 b had lma3loumat.
+  conditions_arabizi:
+    - Lblagh kaykoun mofid ktar b 3onwan da9i9 w b sswaye3.
+  limites_arabizi:
+    - Lblagh ma kaydmench beli la couverture ghadi tt7assen b zerba.
+    - Lmousa3id ma kaychoufch l7ala dyal les antennes.
+  escalade_arabizi: Ila reseau ma9tou3 w man3ek men kolchi ch7al men nhar, kan7awlouk l conseiller.
 
 call_quality_drop:
   title_fr: Appels coupés ou de mauvaise qualité
@@ -82,6 +108,19 @@ call_quality_drop:
     - المشكل يقدر يكون فالريزو ولا فالتيليفون ديال اللي كتهضر معاه.
     - المساعد ما يقدرش يحلل المكالمات.
   escalade_ar: إلا التقطيع كيتعاود فكل بلاصة، كنحولوك لمستشار مع الساعات اللي سجلتي.
+  title_arabizi: Les appels kaytkt3ou wla sout khayb
+  objet_arabizi: N3awnou lclient li les appels dyalo kaytkt3ou wla sout fihom khayb.
+  etapes_arabizi:
+    - Chouf reseau fach kat3iyet w t7errek l blasa fiha reseau mzyan.
+    - Fa3el les appels b 4G (VoLTE) wla b wifi ila tilifon w l3ard kaysm7ou.
+    - Tfi w ch3el tilifon w 7iyed chi coque dyal l7did ila kanet katdorr l'antenne.
+    - Sjjel sswaye3 w lblayes fin kaytkt3ou bach tballegh.
+  conditions_arabizi:
+    - Les appels b 4G wla b wifi katbe3 tilifon w l3ard.
+  limites_arabizi:
+    - Lmochkil y9der ykoun f reseau wla f tilifon dyal li kathder m3ah.
+    - Lmousa3id ma y9derch y7allel les appels.
+  escalade_arabizi: Ila tte9tti3 kayt3awed f kol blasa, kan7awlouk l conseiller m3a sswaye3 li sjjelti.
 
 cannot_call_receive:
   title_fr: Impossible d'appeler ou de recevoir des appels
@@ -108,6 +147,18 @@ cannot_call_receive:
   limites_ar:
     - المساعد ما كيشوفش الحالة الحقيقية ديال الخط.
   escalade_ar: إلا الخط ما كيخليك تعيط نهائيا من بعد هاد الخطوات، هادي خدمة مقطوعة، كنحولوك لمستشار.
+  title_arabizi: Ma n9derch n3iyet wla y3iytou lia
+  objet_arabizi: N3awnou lclient li ma 9adrch y3iyet wla ytwssel b les appels.
+  etapes_arabizi:
+    - Chouf solde wla lforfait (khat prepaye bla solde, khat mwe99ef).
+    - T2akked beli mode avion w transfert d'appel tafyin.
+    - T2akked beli nmra machi f la liste noire dyal tilifon.
+    - Tfi w ch3el tilifon w jerreb sim f jihaz akhor.
+  conditions_arabizi:
+    - Khass lkhat ykoun khdam w msjjel b smiytek (chouf « Nsjjel lkhat b smiyti »).
+  limites_arabizi:
+    - Lmousa3id ma kaychoufch l7ala l7a9i9iya dyal lkhat.
+  escalade_arabizi: Ila lkhat ma kaykhallikch t3iyet nihai2iyan men ba3d had lkhatawat, hadi khidma ma9tou3a, kan7awlouk l conseiller.
 
 sms_issue:
   title_fr: SMS non envoyés ou non reçus
@@ -136,6 +187,19 @@ sms_issue:
     - الميساج اللي جاي من شي خدمة أخرى يقدر يتعطل من عندهم.
     - المساعد ما يقدرش يشوف الميساجات.
   escalade_ar: إلا حتى ميساج ما داز من بعد هاد الخطوات، كنحولوك لمستشار.
+  title_arabizi: Les SMS ma kaymchiwch wla ma kaywslouch
+  objet_arabizi: N3awnou lclient li les SMS dyalo ma kaytsiftouch wla ma kaywslouch.
+  etapes_arabizi:
+    - Chouf solde wla lforfait dyal les SMS w la memoire dyal tilifon (les messages 3amrin).
+    - Chouf numero dyal centre de messagerie f les parametres dyal les messages (rjj3o l la valeur l2asliya).
+    - Tfi w ch3el tilifon w 3awed jerreb.
+    - Ila kanou les codes dyal confirmation ma kaywslouch, t2akked beli lmorsil machi mbloki.
+  conditions_arabizi:
+    - Khass lkhat ykoun khdam.
+  limites_arabizi:
+    - Lmessage li jay men chi khidma okhra y9der yt3ttel men 3ndhom.
+    - Lmousa3id ma y9derch ychouf les messages.
+  escalade_arabizi: Ila 7ta message ma daz men ba3d had lkhatawat, kan7awlouk l conseiller.
 
 international_calls:
   title_fr: Appeler à l'étranger
@@ -164,6 +228,19 @@ international_calls:
     - المساعد ما كيعطيش الأثمنة الحقيقية.
     - شي بلدان ولا نمرات خاصة يقدرو ما يتوصلوش.
   escalade_ar: إلا المكالمات الدولية ما كادوزش واخا مسموحة، نقدرو نحولوك لمستشار.
+  title_arabizi: N3iyet l lkharij
+  objet_arabizi: N3tiw lma3loumat 3la les appels l lkharij (tfe3il, l2atmina, lmachakil).
+  etapes_arabizi:
+    - Dreb nmra b format international (00 wla + w men ba3d l'indicatif dyal lblad).
+    - Chouf f l'espace client wach les appels internationaux msmou7a f lkhat.
+    - Chouf l2atmina dwaliya dyal l3ard, wla chi pass international ila kan.
+    - Bach t3iyet men lkharij, chouf lbita9a « Nsta3mel lkhat berra ».
+  conditions_arabizi:
+    - F lkhat prepaye, khass solde ykffi taman dyal l'appel.
+  limites_arabizi:
+    - Lmousa3id ma kay3tich l2atmina l7a9i9iya.
+    - Chi bldan wla nmrat khassa y9dro ma yttwslouch.
+  escalade_arabizi: Ila les appels internationaux ma kaydouzouch wakha msmou7a, n9dro n7awlouk l conseiller.
 
 activate_call_features:
   title_fr: Activer la messagerie vocale, le renvoi, le double appel ou l'affichage du numéro
@@ -192,6 +269,19 @@ activate_call_features:
     - القوائم كتختلف على حساب التيليفون.
     - المساعد ما يقدرش يفعل الخدمة من بعيد.
   escalade_ar: إلا الخدمة ما تفعلاتش، نقدرو نحولوك لمستشار.
+  title_arabizi: Nfa3el la messagerie vocale, transfert d'appel, double appel wla l'affichage dyal nmra
+  objet_arabizi: Nchr7ou kifach tfa3el les services dyal les appels (la messagerie vocale, transfert d'appel, double appel, l'affichage dyal nmra).
+  etapes_arabizi:
+    - 7ell Parametres > Telephone > Services d'appel f tilifon.
+    - Khtar lkhidma (transfert d'appel, double appel, l'affichage dyal nmra) w fa3elha.
+    - Bnisba l la messagerie vocale, fa3elha f tatbi9 f « Lkhadamat dyali » w sjjel le message d'accueil.
+    - Dir appel dyal tajriba bach tt2akked.
+  conditions_arabizi:
+    - Chi khadamat y9dro ykounou b lflous wla kaytb3ou l3ard.
+  limites_arabizi:
+    - Les menus katkhtalef 3la 7sab tilifon.
+    - Lmousa3id ma y9derch yfa3el lkhidma men b3id.
+  escalade_arabizi: Ila lkhidma ma tfa3latch, n9dro n7awlouk l conseiller.
 
 deactivate_call_features:
   title_fr: Désactiver la messagerie vocale, le renvoi, le double appel ou l'affichage du numéro
@@ -218,3 +308,15 @@ deactivate_call_features:
   limites_ar:
     - إلا كان التحويل مفعل فالتيليفون وفالخط، خاصو يتطفى فالجوج.
   escalade_ar: إلا المكالمات باقا كتحول، نقدرو نحولوك لمستشار.
+  title_arabizi: Nwe99ef la messagerie vocale, transfert d'appel, double appel wla l'affichage dyal nmra
+  objet_arabizi: Nchr7ou kifach twe99ef les services dyal les appels.
+  etapes_arabizi:
+    - 7ell Parametres > Telephone > Services d'appel.
+    - Tfi transfert d'appel (« Toujours », « Si occupe », « Si pas de reponse ») wla double appel.
+    - Bnisba l la messagerie vocale, tfiha f tatbi9 f « Lkhadamat dyali ».
+    - Dir appel dyal tajriba bach tt2akked beli tilifon kaysonni.
+  conditions_arabizi:
+    - Twe9if kayttdar men lkhat nit wla men 3nd molah.
+  limites_arabizi:
+    - Ila kan transfert mfa3el f tilifon w f lkhat, khasso yttfa f jouj.
+  escalade_arabizi: Ila les appels ba9yin kayt7awlou, n9dro n7awlouk l conseiller.

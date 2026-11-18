@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Si le paiement est débité mais non reçu par le bénéficiaire, voir « Probl�
 ## التحويل لمستشار
 
 إلا تقطعو الفلوس وما وصلوش لمولاهم، شوف «مشكل فشي عملية» وطلب مستشار.
+
+# Nouskha b darija (arabizi) — Nkhlles fatoura wla 7anout b lwallet
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tkhlles fatoura wla chi 7aja f l7anout b lwallet.
+
+## Lkhatawat
+
+1. 7ell lwallet w khtar « Khlles fatoura » wla « Khlles tajer ».
+2. Bnisba l lfatoura, khtar ljiha w dkhel la reference, w bnisba l tajer, scanni le code QR dyalo.
+3. T2akked men lmablagh w li ghadi yakhdo, w men ba3d 2akked b lcode sirri.
+4. 7tafed b lwasl dyal lkhlas.
+
+## Chorout
+
+- Khass solde dyal lwallet ykffi lmablagh.
+
+## L7oudoud
+
+- Ljiha li katkhlles liha t9der takhod chwiya dyal lwe9t bach tsjjel lkhlas.
+
+## Ta7wil l conseiller
+
+Ila tkt3ou lflous w ma wslouch l molahom, chouf « Mochkil f chi 3amaliya dyal lwallet » w tleb conseiller.

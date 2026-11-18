@@ -12,8 +12,8 @@ sur des données synthétiques.
 > État : **Phase 1** (données), **Phase 2** (NLU — [docs/nlu.md](docs/nlu.md)) et **Phase 3**
 > (décision — [docs/decision.md](docs/decision.md) ; base de connaissances et RAG —
 > [docs/rag.md](docs/rag.md)) terminées. Le ré-entraînement complet reste à lancer sur GPU T4 ;
-> les 75 fiches (fictives) attendent la relecture de l'équipe. Phases suivantes : API, interface,
-> livraison.
+> les 75 fiches (fictives, en français, darija et arabizi) attendent la relecture de l'équipe.
+> Phases suivantes : API, interface, livraison.
 
 ## Démarrage rapide
 
@@ -101,12 +101,14 @@ message ─► garde d'entrée ─► NLU (v5) ─► politique (7 règles ordon
 
 ```bash
 make kb-validate                 # 75 fiches, une par intention
-make rag-index                   # 750 passages dans Qdrant (local ou QDRANT_URL)
+make rag-index                   # 1 125 passages dans Qdrant (local ou QDRANT_URL)
 make rag-eval                    # Recall@k / MRR avec et sans filtre d'intention
 python -m darijacare.demo        # démonstration de bout en bout -> reports/demo/phase3.md
 ```
 
-Résultat clé (test officiel) : Recall@3 = **0,916** avec le filtre d'intention contre 0,451 sans.
+Résultat clé (test officiel) : Recall@3 = **0,916** avec le filtre d'intention contre 0,458 sans.
+Chaque fiche existe en français, en darija écrite en arabe et en arabizi : l'assistant répond
+au client dans son écriture.
 
 ## Licences et crédits
 

@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Pas d'escalade nécessaire, sauf si le client ne peut pas se déplacer.
 ## التحويل لمستشار
 
 ما خاصش تحويل، إلا إلا كان الكليان ما يقدرش يتحرك.
+
+# Nouskha b darija (arabizi) — Nl9a wkala w l2aw9at dyalha
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient yl9a a9rab wkala w l2aw9at dyal lfti7 dyalha.
+
+## Lkhatawat
+
+1. 7ell lkharita dyal lwkalat f tatbi9 wla f site.
+2. 9elleb b lmdina wla khalli tatbi9 y3ref fin nta bach ybanou lik lwkalat l9rab.
+3. Chouf l2aw9at dyal lfti7 w lkhadamat li kat9eddem lwkala.
+4. Dir rendez-vous f internet ila kanet had l2imkaniya bach ma ttsennach.
+
+## Chorout
+
+- L2aw9at y9dro ytbddlou f l3otal w f Ramadan.
+
+## L7oudoud
+
+- Had lbita9a lkhayaliya ma fiha 7ta 3onwan 7a9i9i.
+
+## Ta7wil l conseiller
+
+Ma khassch ta7wil, ghir ila kan lclient ma y9derch yt7errek.

@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Si le client veut être mis en relation tout de suite, utiliser « Parler à un 
 ## التحويل لمستشار
 
 إلا بغا الكليان يتاصل فالحين، استعمل «نهضر مع مستشار».
+
+# Nouskha b darija (arabizi) — Kifach nttasel b service client
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Ngoulou torou9 bach tttasel b service client w l2aw9at dyalo.
+
+## Lkhatawat
+
+1. Sta3mel chat dyal tatbi9 wla lbouton « Nhder m3a conseiller ».
+2. 3iyet l nmra l9sira dyal service client lmktouba f lghlaf dyal sim w f tatbi9.
+3. Kteb men le formulaire de contact f site ila ma kanch talab most3jel.
+4. Sir l lwkala l l2ijra2at li khassha la carte nationale.
+
+## Chorout
+
+- L2aw9at dyal service client bayenin f tatbi9.
+
+## L7oudoud
+
+- Had lbita9a lkhayaliya ma fiha 7ta nmra 7a9i9iya.
+
+## Ta7wil l conseiller
+
+Ila bgha lclient yttasel f l7in, sta3mel « Nhder m3a conseiller ».

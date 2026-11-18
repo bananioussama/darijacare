@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si le test donne un résultat incohérent avec les voisins déjà raccordés, pr
 ## التحويل لمستشار
 
 إلا النتيجة ما متافقاش مع الجيران اللي عندهم لافيبر، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Wach la fibre kayna 3ndi
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach t3ref wach la fibre wla chi 3ard internet akhor kayn f wa7d l3onwan.
+
+## Lkhatawat
+
+1. 7ell le test d'eligibilite f tatbi9 wla f site.
+2. Dkhel l3onwan kamel (lmdina, l7ouma, zen9a, ra9m, l3imara w tab9 ila khass).
+3. 9ra natija, la fibre kayna, ADSL wla box 4G/5G f blastha.
+4. Ila l3onwan ma mo2ahalch, sjjel bach y3lmouk mli twsel ila kanet had l2imkaniya.
+
+## Chorout
+
+- Khass l3onwan ykoun da9i9, l3onwan tta9ribi y9der y3ti natija ghalta.
+
+## L7oudoud
+
+- Natija ta9ribiya w katt2akked nhar ma yji technicien.
+- Lmousa3id ma kay3refch la couverture l7a9i9iya dyal chi 3onwan.
+
+## Ta7wil l conseiller
+
+Ila natija ma mtaf9ach m3a jiran li 3ndhom la fibre, n9dro n7awlouk l conseiller.

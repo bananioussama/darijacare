@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Cas sensible traité en priorité par un conseiller.
 ## التحويل لمستشار
 
 حالة حساسة كيعالجها مستشار بالأولوية.
+
+# Nouskha b darija (arabizi) — Tilifon wla sim da3 wla tsre9
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+L'ijra2 dyal l2aman mli kaydi3 wla kaytsre9 tilifon wla sim, bach yttbloka lkhat b zerba.
+
+## Lkhatawat
+
+1. Tleb f l7in blocage dyal lkhat (lbouton « Blokki lkhat dyali » f l'espace client wla conseiller).
+2. Ila kanet chi wallet merbouta m3a lkhat, tleb 7ta hiya tttbloka.
+3. Bddel les mots de passe dyal les comptes li kanou m7loulin f tilifon (email, reseaux sociaux, lbanka).
+4. Sarre7 b sser9a 3nd sslotat w 7tafed b lwasl.
+5. Men ba3d tleb sim jdida b nfs nmra f lwkala (chouf « Nbddel sim »).
+
+## Chorout
+
+- Blocage kaytlbo mol lkhat wla men ba3d ma ytt2akked men l'identite dyalo.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch yblokki lkhat b yeddo, kaysifet talab b l2awlawiya.
+- Lconsommation li tdaret 9bel blocage t9der tb9a khassha ttkhlles.
+
+## Ta7wil l conseiller
+
+7ala 7assasa kay3aljha conseiller b l2awlawiya.

@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Si le portefeuille est bloqué alors que le client a besoin de son argent, trans
 ## التحويل لمستشار
 
 إلا المحفظة مبلوكية والكليان محتاج الفلوس ديالو، كنحولوه لمستشار.
+
+# Nouskha b darija (arabizi) — Lcompte dyal lwallet, lcode sirri, blocage w l7doud
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach t7ell lwallet, mli katensa lcode sirri, mli kattbloka lwallet, w l7doud dyalha.
+
+## Lkhatawat
+
+1. Bach t7ell lwallet, tsjjel f tatbi9 wla f lwkala b carte d'identite sal7a.
+2. Ila nsiti lcode sirri, sta3mel « Nsit lcode » wla sir l lwkala b la carte nationale.
+3. Men ba3d bzaf dyal les codes ghaltin, lwallet kattbloka, w lfti7 kayttdar men ba3d tta2kod men l'identite.
+4. Bach ttle3 chi 7add, 3ti lma3loumat wla lwata2i9 zayda li tlbou.
+
+## Chorout
+
+- Lwallet chakhsiya w merbouta b khat msjjel.
+
+## L7oudoud
+
+- Lmousa3id ma kayfte7ch lwallet w ma kay3ti 7ta code.
+
+## Ta7wil l conseiller
+
+Ila lwallet mblokya w lclient m7taj lflous dyalo, kan7awlouh l conseiller.

@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si le pass est payé mais non activé, voir la fiche « Promotion ou bonus non r
 ## التحويل لمستشار
 
 إلا خلصتي الباس وما تفعلش، شوف البطاقة «البروموسيون ولا البونوس ما وصلش» ولا طلب مستشار.
+
+# Nouskha b darija (arabizi) — Nchri wla nfa3el pass dyal internet
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nwjjhou lclient li bgha ychri wla yfa3el pass dyal internet f tilifon.
+
+## Lkhatawat
+
+1. 7ell tatbi9, f « Les pass internet ».
+2. Khtar pass 3la 7sab l7ajm w lmodda li bayenin.
+3. Khlles b solde, b la carte bancaire wla b lwallet, w men ba3d 2akked.
+4. T2akked men tfe3il b message li kaywslek wla f « Lconsommation dyali ».
+
+## Chorout
+
+- Khass solde wla wasila dyal lkhlas tkffi taman dyal pass.
+- Chi pass ma kaytjem3ouch m3a pass akhor khdam.
+
+## L7oudoud
+
+- Lmousa3id ma kay3refch l2atmina l7a9i9iya w ma y9derch yfa3el pass.
+- Pass mli kaytfa3el ma kaytrjje3ch.
+
+## Ta7wil l conseiller
+
+Ila khllesti pass w ma tfa3elch, chouf lbita9a « La promotion wla le bonus ma wselch » wla tleb conseiller.

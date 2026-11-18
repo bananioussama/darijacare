@@ -22,3 +22,14 @@ non_telecom:
   limites_ar:
     - المساعد ما كيعطيش رأي ولا معلومات خارج الاتصالات.
   escalade_ar: والو، إلا إلا كان الميساج فيه بصح مشكل ديال الاتصالات (مثلا «الأنترنيت تقطع من بعد ما مشا الضو»).
+  title_arabizi: Talab berra les services telecom
+  objet_arabizi: Njawbou b l2adab 3la chi talab ma 3ndo 3ala9a b les services telecom (ddaw, lma, lbanka, l2akhbar...).
+  etapes_arabizi:
+    - Goul b l2adab beli lmousa3id kay3awen ghir f les services telecom (tilifon, internet, fixe, wallet).
+    - Ila momkin, wjjeh l ljiha lmokhtassa (charikat ddaw wla lma, lbanka, l'idara), bla ma t3ti numerowat.
+    - 9tare7 t3awen f chi so2al 3la telecom.
+  conditions_arabizi:
+    - Ma khass 7ta ma3louma 3la lkhat.
+  limites_arabizi:
+    - Lmousa3id ma kay3tich ra2y wla ma3loumat berra telecom.
+  escalade_arabizi: Walo, ghir ila kan lmessage fih b s7 mochkil dyal telecom (matalan « internet tkte3 men ba3d ma mcha ddaw »).

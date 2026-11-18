@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si le service ne s'active pas, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا الخدمة ما تفعلاتش، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nfa3el la messagerie vocale, transfert d'appel, double appel wla l'affichage dyal nmra
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tfa3el les services dyal les appels (la messagerie vocale, transfert d'appel, double appel, l'affichage dyal nmra).
+
+## Lkhatawat
+
+1. 7ell Parametres > Telephone > Services d'appel f tilifon.
+2. Khtar lkhidma (transfert d'appel, double appel, l'affichage dyal nmra) w fa3elha.
+3. Bnisba l la messagerie vocale, fa3elha f tatbi9 f « Lkhadamat dyali » w sjjel le message d'accueil.
+4. Dir appel dyal tajriba bach tt2akked.
+
+## Chorout
+
+- Chi khadamat y9dro ykounou b lflous wla kaytb3ou l3ard.
+
+## L7oudoud
+
+- Les menus katkhtalef 3la 7sab tilifon.
+- Lmousa3id ma y9derch yfa3el lkhidma men b3id.
+
+## Ta7wil l conseiller
+
+Ila lkhidma ma tfa3latch, n9dro n7awlouk l conseiller.

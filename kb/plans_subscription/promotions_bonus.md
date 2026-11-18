@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Si les conditions étaient remplies et le délai dépassé, transmettre à un co
 ## التحويل لمستشار
 
 إلا كانت الشروط متوفرة وفاتت المدة، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — La promotion wla le bonus ma wselch
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li ma twsselch b chi bonus, recharge mda3fa wla chi imtiyaz dyal la promotion.
+
+## Lkhatawat
+
+1. 3awed 9ra chorout dyal la promotion (tawarikh, a9al mablagh, lkhtout lma3niya).
+2. Chouf f « Lconsommation dyali » wach le bonus dkhel f compteur b wa7do.
+3. Tsenna lmodda li mktouba f chorout.
+4. Ila le bonus ma banch men ba3d had lmodda, dir chkaya b tarikh w ddlil dyal l3amaliya.
+
+## Chorout
+
+- Khass la promotion tkoun sal7a nhar l3amaliya l lkhat dyalek.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch yzid le bonus.
+
+## Ta7wil l conseiller
+
+Ila kanet chorout metwafra w fatet lmodda, kan7awlouk l conseiller.

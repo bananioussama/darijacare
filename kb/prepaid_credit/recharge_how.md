@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si aucune méthode n'est possible pour le client, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا حتى طريقة ما ممكنة للكليان، نقدرو نحولوه لمستشار.
+
+# Nouskha b darija (arabizi) — Kifach ncharji lkhat
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou torou9 bach tcharji khat b la carte (prepaye).
+
+## Lkhatawat
+
+1. Chri carte dyal recharge 3nd chi bayi3 w dkhel lcode men le menu dyal recharge f tilifon.
+2. Charji f internet b la carte bancaire men tatbi9 wla site.
+3. Charji men lwallet (mobile money).
+4. Tleb recharge electronique nichan 3nd chi bayi3 m3tamad.
+
+## Chorout
+
+- Khass lkhat ykoun khdam w prepaye.
+- Lcode dyal la carte de recharge kaytsta3mel ghir merra wa7da.
+
+## L7oudoud
+
+- Lmousa3id ma kaybi3ch recharge w ma kay3refch lmabalegh li kaynin 3nd lbaya3a.
+- Recharge ma kattrjje3ch men ba3d ma tdkhol l solde.
+
+## Ta7wil l conseiller
+
+Ila 7ta tari9a ma momkina l lclient, n9dro n7awlouh l conseiller.

@@ -3,9 +3,9 @@
 * One template per action and script (``templates/<script>/<action>.j2``), filled
   with the fiche of the intent; an intent can override the answer template with
   ``templates/<script>/intents/<intent>.j2`` (no override is needed today).
-* Arabic script -> the Darija part of the fiche; mixed and Arabizi -> the French
-  part, framed in French-Darija or in Arabizi (the fiches have no Arabizi version,
-  and automatic transliteration would not be reliable).
+* The reply uses the fiche part written in the customer's script: Arabic script ->
+  Darija in Arabic script; Arabizi -> Darija in Latin script (written by hand, not
+  transliterated automatically); mixed -> French, framed with Darija formulas.
 * Every factual sentence comes from the fiche: the answer opens with the fiche
   title (customer-facing) and lists its steps; the template only adds greetings,
   connecting words and the offer of an advisor (a capability of the assistant,
@@ -26,7 +26,7 @@ from darijacare.rag.kb import Fiche
 
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 SCRIPTS = ("arabic", "arabizi", "mixed")
-CONTENT_LANG = {"arabic": "ar", "arabizi": "fr", "mixed": "fr"}
+CONTENT_LANG = {"arabic": "ar", "arabizi": "arabizi", "mixed": "fr"}
 
 
 @dataclass(frozen=True)

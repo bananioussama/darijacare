@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Si la tonalité ne revient pas après ces vérifications, transmettre à un cons
 ## التحويل لمستشار
 
 إلا الصوت ما رجعش من بعد هاد الخطوات، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Mochkil f tilifon lfixe
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li tilifon lfixe dyalo ma khdamch (ma kaynch sout, ma kay9derch y3iyet, mochkil f nmra).
+
+## Lkhatawat
+
+1. T2akked beli tilifon merbout mzyan f lblasa dyal tilifon f lbox w beli lbox khddama.
+2. Jerreb b tilifon akhor ila momkin.
+3. Tfi w ch3el lbox, 7it lfixe kaydouz men lbox f 3rod internet.
+4. Chouf f l'espace client wach lkhat lfixe khdam w machi mwe99ef.
+
+## Chorout
+
+- F 3rod internet, lfixe ma kaykhdem ghir ila kanet lbox mch3la w merbouta.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch yjerreb lkhat wla ybddel nmra.
+
+## Ta7wil l conseiller
+
+Ila sout ma rje3ch men ba3d had lkhatawat, kan7awlouk l conseiller.

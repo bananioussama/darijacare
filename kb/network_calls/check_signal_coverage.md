@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Pour un besoin professionnel précis de couverture, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا عندك حاجة ديال الخدمة فبلاصة معينة، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nchouf wach reseau kayn f chi blasa
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Ngoulou kifach t3ref wach chi blasa fiha reseau dyal tilifon (2G, 4G, 5G).
+
+## Lkhatawat
+
+1. 7ell lkharita dyal la couverture f tatbi9 wla f site.
+2. Dkhel lmdina, l7ouma wla lblasa b dabt (douar, tri9, jbel).
+3. 9ra niveau dyal la couverture l kol technologie.
+4. Ila kanet blasa b3ida, sewwel chi nas men temma ila momkin.
+
+## Chorout
+
+- Lkharita kat3ti la couverture berra, w dakhel dyal lbni y9der ykoun fih reseau d3if ktar.
+
+## L7oudoud
+
+- Lkharita ta9ribiya w ma katdmench la qualite f blasa mo3ayana.
+- Lmousa3id ma kay3refch la couverture l7a9i9iya.
+
+## Ta7wil l conseiller
+
+Ila 3ndek 7aja dyal lkhedma f blasa mo3ayana, n9dro n7awlouk l conseiller.

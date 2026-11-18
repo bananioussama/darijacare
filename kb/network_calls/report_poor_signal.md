@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si l'absence de réseau empêche tout usage depuis plusieurs jours, transmettre 
 ## التحويل لمستشار
 
 إلا الريزو مقطوع ومانعك من كلشي شحال من نهار، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nballegh beli ma kaynch reseau wla d3if
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nkhalliw lclient yballegh beli ma 3ndouch reseau wla reseau d3if f lblasa li howa fiha.
+
+## Lkhatawat
+
+1. Tfi w ch3el tilifon w ch3el w tfi mode avion.
+2. Chouf beli le choix dyal reseau automatique w jerreb sim f tilifon akhor.
+3. Sjjel lblasa b dabt, sswaye3 w naw3 lmochkil (ma kayn 7ta khat, ghir 2G).
+4. Dir blagh dyal la couverture f tatbi9 b had lma3loumat.
+
+## Chorout
+
+- Lblagh kaykoun mofid ktar b 3onwan da9i9 w b sswaye3.
+
+## L7oudoud
+
+- Lblagh ma kaydmench beli la couverture ghadi tt7assen b zerba.
+- Lmousa3id ma kaychoufch l7ala dyal les antennes.
+
+## Ta7wil l conseiller
+
+Ila reseau ma9tou3 w man3ek men kolchi ch7al men nhar, kan7awlouk l conseiller.

@@ -28,6 +28,20 @@ check_usage:
     - المساعد ما كيشوفش العدادات الحقيقية ديال الكليان.
     - الاستهلاك فالخارج يقدر يبان معطل كثر.
   escalade_ar: إلا العدادات بانو ليك ما معقولينش، تقدر تطلب مستشار.
+  title_arabizi: Ntbe3 lconsommation dyali (internet, d9aye9, SMS)
+  objet_arabizi: Ngoulou kifach t3ref ch7al sthlekti w ch7al ba9i lik f internet, d9aye9 w les SMS.
+  etapes_arabizi:
+    - 7ell tatbi9, f « Lconsommation dyali ».
+    - Chouf ch7al ba9i (internet, appels, SMS) w fou9ach kaysali lforfait wla pass.
+    - Chouf ttafsil nhar b nhar bach tl9a chi consommation machi 3adiya.
+    - Fa3el les alertes dyal lconsommation ila kanet.
+  conditions_arabizi:
+    - Sal7a l lkhtout prepaye w li fihom abonnement.
+    - Les compteurs kayt7addtou b chwiya dyal tta2khir.
+  limites_arabizi:
+    - Lmousa3id ma kaychoufch les compteurs l7a9i9iyin dyal lclient.
+    - Lconsommation f lkharij t9der tban m3ttla ktar.
+  escalade_arabizi: Ila les compteurs banou lik ma m39oulinch, t9der ttleb conseiller.
 
 excess_charges:
   title_fr: Frais de dépassement de forfait
@@ -58,6 +72,20 @@ excess_charges:
     - المساعد ما يقدرش يلغي المصاريف ديال الفوت.
     - الاستهلاك اللي تدار بصح خاصو يتخلص.
   escalade_ar: إلا الكليان معترض على الفوت، كنوجهوه للاعتراض على الفاتورة ولمستشار.
+  title_arabizi: Les frais dyal lfout 3la lforfait
+  objet_arabizi: Nchr7ou les frais li katkhlles mli lclient kayfout lforfait wla internet dyalo, w kifach ytfadaha.
+  etapes_arabizi:
+    - L9a f lfatoura wla f l'historique ljouz2 « Hors forfait ».
+    - Chouf chmen compteur li fat (internet, appels, SMS, international).
+    - Fa3el limite dyal lconsommation (chouf « N7added lconsommation ») bach ma y3awedch yw9e3.
+    - Fakker f chi pass zayed wla forfait monasib ktar ila kan lfout kayt3awed.
+  conditions_arabizi:
+    - L2atmina hors forfait katbe3 chorout dyal l3ard li 3ndek.
+    - Lfout kaytkhlles f lmodda li w9e3 fiha.
+  limites_arabizi:
+    - Lmousa3id ma y9derch ylghi les frais dyal lfout.
+    - Lconsommation li tdaret b s7 khassha ttkhlles.
+  escalade_arabizi: Ila lclient m3tared 3la lfout, kanwjjhouh l l'i3tirad 3la lfatoura w l conseiller.
 
 usage_limits:
   title_fr: Limiter sa consommation ou ses dépenses
@@ -88,6 +116,20 @@ usage_limits:
     - الأنواع ديال الحدود كتبع العرض.
     - الحد يقدر يتطبق بشوية ديال التأخير.
   escalade_ar: إلا الحد ما تطبقش، نقدرو نحولوك لمستشار.
+  title_arabizi: N7added lconsommation wla lmasrouf
+  objet_arabizi: Nchr7ou kifach t7ett, tbddel wla t7iyed wa7d l7add dyal lconsommation wla lmasrouf.
+  etapes_arabizi:
+    - 7ell tatbi9, f « L7add dyal lconsommation ».
+    - Khtar naw3 l7add (internet bla pass, mablagh hors forfait, khadamat b lflous).
+    - 7ett la valeur li bghiti w 2akked, w ghadi ywslek message.
+    - Rje3 l nfs lblasa bach tbddel wla t7iyed l7add.
+  conditions_arabizi:
+    - Mol lkhat howa li kaybddel.
+    - Mli kaywsel l7add, lconsommation katwe99ef 7ta l lmodda jaya wla 7ta tbddlo.
+  limites_arabizi:
+    - L2anwa3 dyal l7doud katbe3 l3ard.
+    - L7add y9der yttebbe9 b chwiya dyal tta2khir.
+  escalade_arabizi: Ila l7add ma ttebbe9ch, n9dro n7awlouk l conseiller.
 
 data_pass_buy:
   title_fr: Acheter ou activer un pass internet
@@ -118,6 +160,20 @@ data_pass_buy:
     - المساعد ما كيعرفش الأثمنة الحقيقية وما يقدرش يفعل الباس.
     - الباس ملي كيتفعل ما كيترجعش.
   escalade_ar: إلا خلصتي الباس وما تفعلش، شوف البطاقة «البروموسيون ولا البونوس ما وصلش» ولا طلب مستشار.
+  title_arabizi: Nchri wla nfa3el pass dyal internet
+  objet_arabizi: Nwjjhou lclient li bgha ychri wla yfa3el pass dyal internet f tilifon.
+  etapes_arabizi:
+    - 7ell tatbi9, f « Les pass internet ».
+    - Khtar pass 3la 7sab l7ajm w lmodda li bayenin.
+    - Khlles b solde, b la carte bancaire wla b lwallet, w men ba3d 2akked.
+    - T2akked men tfe3il b message li kaywslek wla f « Lconsommation dyali ».
+  conditions_arabizi:
+    - Khass solde wla wasila dyal lkhlas tkffi taman dyal pass.
+    - Chi pass ma kaytjem3ouch m3a pass akhor khdam.
+  limites_arabizi:
+    - Lmousa3id ma kay3refch l2atmina l7a9i9iya w ma y9derch yfa3el pass.
+    - Pass mli kaytfa3el ma kaytrjje3ch.
+  escalade_arabizi: Ila khllesti pass w ma tfa3elch, chouf lbita9a « La promotion wla le bonus ma wselch » wla tleb conseiller.
 
 data_not_working:
   title_fr: Internet mobile qui ne fonctionne pas du tout
@@ -148,6 +204,20 @@ data_not_working:
     - المساعد ما كيشوفش الحالة الحقيقية ديال الخط ولا ديال الريزو.
     - شي عطب فالريزو فالمنطقة ما كيتصلحش من التيليفون.
   escalade_ar: إلا حتى حاجة ما خدمات من بعد هاد الخطوات، نحولوك لمستشار باش يشوف الخط.
+  title_arabizi: Internet dyal tilifon ma khdamch nihai2iyan
+  objet_arabizi: N3awnou lclient li internet dyal tilifon dyalo ma khdamch nihai2iyan.
+  etapes_arabizi:
+    - T2akked beli 3ndek pass wla internet khdam w ma salach.
+    - T2akked beli « Data » mch3la w mode avion tafi.
+    - Tfi w ch3el tilifon, w men ba3d chouf les parametres dyal APN (chouf lbita9a « Ncharek la connexion w les parametres dyal APN »).
+    - Jerreb sim f tilifon akhor bach t3ref wach lmochkil f tilifon wla f lkhat.
+  conditions_arabizi:
+    - Khass lkhat ykoun khdam w tilifon kaytmacha m3a reseau.
+    - Khass reseau ykoun kayn f lblasa li fiha lclient.
+  limites_arabizi:
+    - Lmousa3id ma kaychoufch l7ala l7a9i9iya dyal lkhat wla dyal reseau.
+    - Chi panne f reseau f lmanti9a ma kattsle7ch men tilifon.
+  escalade_arabizi: Ila 7ta 7aja ma khdmat men ba3d had lkhatawat, n7awlouk l conseiller bach ychouf lkhat.
 
 data_slow:
   title_fr: Internet mobile lent
@@ -178,6 +248,20 @@ data_slow:
     - المساعد ما كيضمنش حتى سرعة.
     - المساعد ما يقدرش يقيس السرعة الحقيقية ديال الكليان.
   escalade_ar: إلا بقا الأنترنيت ثقيل فكل بلاصة ومن شحال من نهار، نقدرو نحولوك لمستشار.
+  title_arabizi: Internet dyal tilifon t9il
+  objet_arabizi: N3awnou lclient li internet dyalo khdam walakin t9il.
+  etapes_arabizi:
+    - Chouf wach pass sala (sor3a t9der tn9es men ba3d ma ysali).
+    - T2akked beli tilifon mregle 3la reseau lasra3 (4G/5G) f les parametres.
+    - Tfi w ch3el tilifon w sedd les applications li kat7mmel men lour.
+    - Jerreb f blasa okhra wla f sa3a okhra bach t3ref wach kayn ddeght f lmanti9a.
+  conditions_arabizi:
+    - Khass tilifon w sim ykounou 4G wla 5G bach tstafed.
+    - Sor3a katbe3 reseau w ch7al men wa7d kaysta3mel f nfs lblasa.
+  limites_arabizi:
+    - Lmousa3id ma kaydmench 7ta sor3a.
+    - Lmousa3id ma y9derch y9is sor3a l7a9i9iya dyal lclient.
+  escalade_arabizi: Ila b9a internet t9il f kol blasa w men ch7al men nhar, n9dro n7awlouk l conseiller.
 
 hotspot_apn:
   title_fr: Partage de connexion et réglages APN
@@ -208,3 +292,17 @@ hotspot_apn:
     - القوائم كتختلف على حساب الماركة والنسخة ديال التيليفون.
     - المساعد ما كيعطيش القيم الحقيقية ديال APN ديال شي أوبيراتور.
   escalade_ar: إلا الإعدادات ما تطبقوش، نقدرو نحولوك لمستشار.
+  title_arabizi: Ncharek la connexion w les parametres dyal APN
+  objet_arabizi: Nchr7ou kifach tcharek la connexion (hotspot) w kifach tchouf les parametres dyal APN.
+  etapes_arabizi:
+    - Bach tcharek la connexion, 7ell Parametres > Point d'acces personnel, khtar smiya w mot de passe, w men ba3d ch3elha.
+    - Bnisba l APN, 7ell Parametres > Reseau mobile > Noms des points d'acces.
+    - Rjje3 APN l les parametres l2asliyin wla tleb les parametres automatiques f message.
+    - Tfi w ch3el tilifon men ba3d ay tbdil.
+  conditions_arabizi:
+    - Le partage dyal la connexion katakol men internet dyal lkhat.
+    - Chi 3orod y9dro y7addou le partage dyal la connexion.
+  limites_arabizi:
+    - Les menus katkhtalef 3la 7sab lmarka w version dyal tilifon.
+    - Lmousa3id ma kay3tich les valeurs l7a9i9iyin dyal APN dyal chi operateur.
+  escalade_arabizi: Ila les parametres ma ttebb9ouch, n9dro n7awlouk l conseiller.

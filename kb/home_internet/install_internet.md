@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Pour un cas particulier (immeuble sans gaine, local professionnel), proposer un 
 ## التحويل لمستشار
 
 فشي حالة خاصة (عمارة بلا قنوات، محل ديال الخدمة)، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Ntleb nrekkbou internet f dar
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nwjjhou lclient li bgha yrekkeb internet jdid f dar (la fibre, ADSL wla box 4G/5G).
+
+## Lkhatawat
+
+1. T2akked 9bel wach l3onwan mo2ahal (chouf lbita9a « Wach la fibre kayna 3ndi »).
+2. Khtar l3ard f tatbi9, f site wla f lwkala.
+3. 3ti la carte nationale dyal mol lkhat w l3onwan kamel dyal dar.
+4. Khtar rendez-vous l technicien w 7tafed b numero dyal talab.
+
+## Chorout
+
+- Khass mol lkhat ykoun rached w 3ndo carte d'identite sal7a.
+- Khass ykoun chi wa7d rached f dar nhar rendez-vous.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch ydir talab wla y7dded rendez-vous.
+- Lwe9t dyal tterkib kaytbe3 lmanti9a w lkhedma li khassha tdar.
+
+## Ta7wil l conseiller
+
+F chi 7ala khassa (3imara bla 9anawat, ma7al dyal lkhedma), n9dro n7awlouk l conseiller.

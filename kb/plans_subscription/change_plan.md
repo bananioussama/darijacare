@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si l'offre souhaitée n'apparaît pas, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا العرض اللي بغيتي ما بانش، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nbddel lforfait
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach ttle3 l forfait kbar wla tnzel l forfait sghar wla tbddel l3ard.
+
+## Lkhatawat
+
+1. 7ell tatbi9 f « Bddel l3ard » bach tchouf l3orod li momkin tdouz lihom.
+2. Chouf fou9ach ghadi ybda tbdil (f l7in wla f lfatoura jaya).
+3. T2akked wach kayn chi engagement kaymne3 nnzoul l 3ard sghar.
+4. 2akked tbdil w 7tafed b message dyal confirmation.
+
+## Chorout
+
+- Mol lkhat howa li kaybddel.
+
+## L7oudoud
+
+- Nnzoul l 3ard sghar w nta ba9i moltazim y9der yjib les frais.
+- Li ma sthlektich men l3ard l9dim machi darouri ytzad.
+
+## Ta7wil l conseiller
+
+Ila l3ard li bghiti ma banch, n9dro n7awlouk l conseiller.

@@ -2,8 +2,14 @@
 
 Each fiche is a Markdown file ``kb/<category>/<intent>.md`` with a YAML front
 matter (``id, intent, category, version, status: fictif, langs``), a notice that
-the content is fictional, then a French part and a Darija part (Arabic script),
-each with five sections: objective, steps, conditions, limits, escalation.
+the content is fictional, then three parts with the same five sections (objective,
+steps, conditions, limits, escalation):
+
+* French and Darija in Arabic script, the two versions required by the cahier des
+  charges (150–300 words together, Table 21);
+* Darija in Latin script (Arabizi), the same content as the Arabic-script part,
+  written by hand for customers who write in Arabizi (not transliterated
+  automatically). Validation checks that it mirrors the Arabic-script part.
 
 The Markdown files are the source of truth (they are what the team reviews).
 :func:`render_fiche` / :func:`parse_fiche` round-trip, and
@@ -21,9 +27,18 @@ from typing import Any
 import yaml
 
 from darijacare.data.normalize import PHONE_RE
+from darijacare.data.scripts import ARABIC_LETTER_RE
 from darijacare.data.taxonomy import Taxonomy
 
-LANGS = ("fr", "ar")
+LANGS = ("fr", "ar", "arabizi")
+REQUIRED_LANGS = ("fr", "ar")
+"""Versions required by the cahier des charges; the word-count rule applies to them."""
+PARALLEL = {"arabizi": "ar"}
+"""``{lang: reference}``: ``lang`` must mirror ``reference`` (same items per list section)."""
+PARALLEL_WORD_RATIO = (0.8, 1.6)
+"""Allowed ``words(lang) / words(reference)``: Arabizi splits words such as ``فالدار``
+into ``f dar`` (ratio 1.09–1.32 on the 75 fiches); outside this range a sentence is
+probably missing or duplicated."""
 SECTION_KEYS = ("objet", "etapes", "conditions", "limites", "escalade")
 LIST_SECTIONS = ("etapes", "conditions", "limites")
 HEADINGS: dict[str, dict[str, str]] = {
@@ -41,13 +56,26 @@ HEADINGS: dict[str, dict[str, str]] = {
         "limites": "الحدود",
         "escalade": "التحويل لمستشار",
     },
+    "arabizi": {
+        "objet": "Lhadaf",
+        "etapes": "Lkhatawat",
+        "conditions": "Chorout",
+        "limites": "L7oudoud",
+        "escalade": "Ta7wil l conseiller",
+    },
 }
-LANG_TITLES = {"fr": "Version française", "ar": "النسخة بالدارجة"}
+LANG_TITLES = {
+    "fr": "Version française",
+    "ar": "النسخة بالدارجة",
+    "arabizi": "Nouskha b darija (arabizi)",
+}
 NOTICES = {
     "fr": "> ⚠️ **Fiche fictive** rédigée pour le projet académique DarijaCare. Elle ne décrit "
     "pas la procédure d'un opérateur réel et ne contient ni prix, ni numéro, ni engagement réels.",
     "ar": "> ⚠️ **بطاقة خيالية** مكتوبة للمشروع الجامعي DarijaCare. ما كتوصفش الإجراءات ديال "
     "شي أوبيراتور حقيقي، وما فيها لا أثمنة لا أرقام لا التزامات حقيقية.",
+    "arabizi": "> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch "
+    "l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.",
 }
 
 
@@ -191,9 +219,11 @@ def validate_kb(
     """Return a list of problems (empty when the knowledge base is valid).
 
     Checks: one fiche per taxonomy intent and no extra ones; category matches the
-    taxonomy; status ``fictif``; all sections present and non-empty in both
-    languages; total words (FR + AR) in ``[min_words, max_words]`` (Table 21:
-    150–300 words per fiche); no phone number.
+    taxonomy; status ``fictif``; all sections present and non-empty in every
+    language; words of the required versions (FR + AR) in ``[min_words, max_words]``
+    (Table 21: 150–300 words per fiche); no phone number; the Arabizi part mirrors
+    the Arabic-script part (same number of items per list section, length ratio in
+    :data:`PARALLEL_WORD_RATIO`, no Arabic letters).
     """
     problems: list[str] = []
     i2c = taxonomy.intent_to_category
@@ -217,11 +247,32 @@ def validate_kb(
                 full = "\n".join(f.text(lang, k) for k in SECTION_KEYS)
                 if PHONE_RE.search(full):
                     problems.append(f"{intent} [{lang}] : numéro de téléphone détecté")
-        complete = all(f.sections.get(lg, {}).get(k) for lg in LANGS for k in SECTION_KEYS)
-        if complete:
-            n = sum(f.word_count(lg) for lg in LANGS)
+
+        def complete(langs: tuple[str, ...], fiche: Fiche = f) -> bool:
+            return all(fiche.sections.get(lg, {}).get(k) for lg in langs for k in SECTION_KEYS)
+
+        if complete(REQUIRED_LANGS):
+            n = sum(f.word_count(lg) for lg in REQUIRED_LANGS)
             if not min_words <= n <= max_words:
                 problems.append(f"{intent} : {n} mots (attendu {min_words}–{max_words})")
+        for lang, ref in PARALLEL.items():
+            if not complete((lang, ref)):
+                continue
+            for key in LIST_SECTIONS:
+                got, want = len(f.sections[lang][key]), len(f.sections[ref][key])
+                if got != want:
+                    problems.append(
+                        f"{intent} [{lang}] : {key} a {got} élément(s), {want} en [{ref}]"
+                    )
+            ratio = f.word_count(lang) / max(f.word_count(ref), 1)
+            lo, hi = PARALLEL_WORD_RATIO
+            if not lo <= ratio <= hi:
+                problems.append(
+                    f"{intent} [{lang}] : longueur {ratio:.2f} × [{ref}] (attendu {lo}–{hi})"
+                )
+            mirrored = " ".join([f.titles.get(lang, ""), *(f.text(lang, k) for k in SECTION_KEYS)])
+            if ARABIC_LETTER_RE.search(mirrored):
+                problems.append(f"{intent} [{lang}] : lettres arabes dans la version {lang}")
     return problems
 
 

@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si le matériel rendu est encore facturé, transmettre à un conseiller avec le 
 ## التحويل لمستشار
 
 إلا رجعتي الجهاز وباقي كيتخلص عليك، كنحولوك لمستشار مع الوصل.
+
+# Nouskha b darija (arabizi) — Nrjje3 lbox, routeur wla decodeur
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach trjje3 l2ajhiza li 3tawk (lbox, routeur, decodeur), matalan men ba3d ma t7iyed l'abonnement.
+
+## Lkhatawat
+
+1. Jme3 ljihaz kamel b les cables w ddaw dyalo.
+2. Dfe3o f lwkala w tleb wasl dyal l'irja3.
+3. 7tafed b had lwasl 7ta ytsedd lcompte nihai2iyan.
+
+## Chorout
+
+- Khass ljihaz ytrjje3 f lwe9t lm7added men ba3d ilgha2 l'abonnement.
+- Ljihaz li 3tawk kayb9a dyal l'operateur.
+
+## L7oudoud
+
+- Ljihaz li ma trje3ch wla na9es y9der ytkhlles 3la 7sab chorout dyal l3ard.
+- Lmousa3id ma y9derch ysjjel l'irja3.
+
+## Ta7wil l conseiller
+
+Ila rjje3ti ljihaz w ba9i kaytkhlles 3lik, kan7awlouk l conseiller m3a lwasl.

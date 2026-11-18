@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si les réglages ne s'appliquent pas, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا الإعدادات ما تطبقوش، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Ncharek la connexion w les parametres dyal APN
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tcharek la connexion (hotspot) w kifach tchouf les parametres dyal APN.
+
+## Lkhatawat
+
+1. Bach tcharek la connexion, 7ell Parametres > Point d'acces personnel, khtar smiya w mot de passe, w men ba3d ch3elha.
+2. Bnisba l APN, 7ell Parametres > Reseau mobile > Noms des points d'acces.
+3. Rjje3 APN l les parametres l2asliyin wla tleb les parametres automatiques f message.
+4. Tfi w ch3el tilifon men ba3d ay tbdil.
+
+## Chorout
+
+- Le partage dyal la connexion katakol men internet dyal lkhat.
+- Chi 3orod y9dro y7addou le partage dyal la connexion.
+
+## L7oudoud
+
+- Les menus katkhtalef 3la 7sab lmarka w version dyal tilifon.
+- Lmousa3id ma kay3tich les valeurs l7a9i9iyin dyal APN dyal chi operateur.
+
+## Ta7wil l conseiller
+
+Ila les parametres ma ttebb9ouch, n9dro n7awlouk l conseiller.

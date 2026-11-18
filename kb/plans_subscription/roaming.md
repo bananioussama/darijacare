@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si la ligne ne fonctionne pas à l'étranger malgré l'activation, proposer un c
 ## التحويل لمستشار
 
 إلا الخط ما خدمش برا واخا مفعل، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nsta3mel lkhat berra (roaming)
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tsta3mel lkhat dyalek f lkharij w tfa3el roaming.
+
+## Lkhatawat
+
+1. 9bel ma tsafer, t2akked f tatbi9 beli roaming mfa3el f lkhat.
+2. Chouf l2atmina w les pass dyal roaming l lblad li ghadi liha.
+3. Ch3el roaming dyal internet f les parametres ghir ila kan 3ndek pass.
+4. Temma, khtar chi reseau partenaire ila le choix automatique ma khdemch.
+
+## Chorout
+
+- F lkhat prepaye, khass solde ykoun kafi.
+- Roaming y9der yttleb chi anciennete dyal lkhat.
+
+## L7oudoud
+
+- Bla pass, lconsommation berra t9der tkoun ghalya bzaf.
+- Lmousa3id ma kay3tich l2atmina l7a9i9iya.
+
+## Ta7wil l conseiller
+
+Ila lkhat ma khdemch berra wakha mfa3el, n9dro n7awlouk l conseiller.

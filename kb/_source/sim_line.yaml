@@ -26,6 +26,19 @@ activate_line:
     - التفعيل يقدر ياخد شوية ديال الوقت من بعد التسجيل.
     - المساعد ما يقدرش يفعل الخط.
   escalade_ar: إلا الخط ما تفعلش من بعد المدة المعلنة، نقدرو نحولوك لمستشار.
+  title_arabizi: Nfa3el khat jdid wla sim jdida
+  objet_arabizi: Nwjjhou lclient li bgha yfa3el khat jdid wla sim jdida.
+  etapes_arabizi:
+    - Dkhel sim f tilifon w tfih w ch3lo.
+    - Sjjel lkhat b la carte nationale sal7a (f lwkala, 3nd bayi3 m3tamad wla f tatbi9).
+    - Tsenna message dyal confirmation dyal tfe3il.
+    - Dir awwel appel wla recharge bach tt2akked beli lkhat khdam.
+  conditions_arabizi:
+    - Ttasjil dyal mol lkhat darouri 9bel tfe3il.
+  limites_arabizi:
+    - Tfe3il y9der yakhod chwiya dyal lwe9t men ba3d ttasjil.
+    - Lmousa3id ma y9derch yfa3el lkhat.
+  escalade_arabizi: Ila lkhat ma tfa3elch men ba3d lmodda lm3lna, n9dro n7awlouk l conseiller.
 
 deactivate_line:
   title_fr: Suspendre ou désactiver une ligne mobile
@@ -54,6 +67,19 @@ deactivate_line:
     - الخط اللي تلغى نهائيا يقدر تمشي النمرة ديالو من بعد واحد المدة.
     - الرصيد اللي باقي ماشي ضروري يترجع.
   escalade_ar: الإلغاء النهائي كيأكدو مستشار ولا الوكالة.
+  title_arabizi: Nwe99ef wla nlghi khat dyal tilifon
+  objet_arabizi: Nchr7ou kifach twe99ef khat l wa7d lmodda wla tlghih nihai2iyan.
+  etapes_arabizi:
+    - Bach twe99fo l wa7d lmodda, dir talab f l'espace client w goul lmodda.
+    - Bach tlghi nihai2iyan khat fih abonnement, chouf 7ta lbita9a « Nlghi l'abonnement ».
+    - Mol lkhat kayjib la carte nationale l lwkala bach ylghih nihai2iyan.
+    - Ila da3 wla tsre9, tbe3 lbita9a « Tilifon wla sim da3 wla tsre9 ».
+  conditions_arabizi:
+    - Ghir mol lkhat li y9der ywe99fo wla ylghih.
+  limites_arabizi:
+    - Lkhat li tlgha nihai2iyan t9der tmchi nmra dyalo men ba3d wa7d lmodda.
+    - Solde li ba9i machi darouri ytrjje3.
+  escalade_arabizi: L'ilgha2 nniha2i kay2akkdo conseiller wla lwkala.
 
 sim_blocked_puk:
   title_fr: Carte SIM bloquée, code PIN ou PUK
@@ -82,6 +108,19 @@ sim_blocked_puk:
     - المساعد عمرو ما كيعطي الكود PUK.
     - السيم اللي تبلوكات نهائيا خاصها تتبدل (شوف «نبدل السيم ولا ندوز لـeSIM»).
   escalade_ar: إلا مول الخط ما قدرش يدخل للفضاء ديال الكليان ولا يمشي للوكالة، نقدرو نحولوه لمستشار.
+  title_arabizi: Sim mblokya, code PIN wla PUK
+  objet_arabizi: N3awnou lclient li sim dyalo tblokat men ba3d ma ghlet f lcode PIN w khasso lcode PUK.
+  etapes_arabizi:
+    - Ma tjerrebch des codes bla ma t3refhom, 7it ila ghlti bzaf f PUK sim katkhser nihai2iyan.
+    - L9a lcode PUK f la carte plastique l2asliya dyal sim.
+    - W ila la, mol lkhat kayakhdo men l'espace client (« Sim dyali ») wla men lwkala b la carte nationale.
+    - Dkhel PUK w men ba3d khtar code PIN jdid.
+  conditions_arabizi:
+    - Lcode PUK kayt3ta ghir l mol lkhat lmsjjel.
+  limites_arabizi:
+    - Lmousa3id 3emmro ma kay3ti lcode PUK.
+    - Sim li tblokat nihai2iyan khassha ttbddel (chouf « Nbddel sim wla ndouz l eSIM »).
+  escalade_arabizi: Ila mol lkhat ma 9derch ydkhol l l'espace client wla ymchi l lwkala, n9dro n7awlouh l conseiller.
 
 lost_stolen:
   title_fr: Téléphone ou carte SIM perdu ou volé
@@ -112,6 +151,20 @@ lost_stolen:
     - المساعد ما يقدرش يبلوكي الخط بيدو، كيصيفط الطلب بالأولوية.
     - الاستهلاك اللي تدار قبل البلوكاج يقدر يبقى خاصو يتخلص.
   escalade_ar: حالة حساسة كيعالجها مستشار بالأولوية.
+  title_arabizi: Tilifon wla sim da3 wla tsre9
+  objet_arabizi: L'ijra2 dyal l2aman mli kaydi3 wla kaytsre9 tilifon wla sim, bach yttbloka lkhat b zerba.
+  etapes_arabizi:
+    - Tleb f l7in blocage dyal lkhat (lbouton « Blokki lkhat dyali » f l'espace client wla conseiller).
+    - Ila kanet chi wallet merbouta m3a lkhat, tleb 7ta hiya tttbloka.
+    - Bddel les mots de passe dyal les comptes li kanou m7loulin f tilifon (email, reseaux sociaux, lbanka).
+    - Sarre7 b sser9a 3nd sslotat w 7tafed b lwasl.
+    - Men ba3d tleb sim jdida b nfs nmra f lwkala (chouf « Nbddel sim »).
+  conditions_arabizi:
+    - Blocage kaytlbo mol lkhat wla men ba3d ma ytt2akked men l'identite dyalo.
+  limites_arabizi:
+    - Lmousa3id ma y9derch yblokki lkhat b yeddo, kaysifet talab b l2awlawiya.
+    - Lconsommation li tdaret 9bel blocage t9der tb9a khassha ttkhlles.
+  escalade_arabizi: 7ala 7assasa kay3aljha conseiller b l2awlawiya.
 
 sim_replacement_esim:
   title_fr: Remplacer sa carte SIM ou passer à l'eSIM
@@ -140,6 +193,19 @@ sim_replacement_esim:
     - التبديل يقدر يكون بالفلوس على حساب العرض.
     - المساعد ما يقدرش يعطي سيم ولا كود QR.
   escalade_ar: إلا السيم الجديدة ولا eSIM ما تفعلاتش، نقدرو نحولوك لمستشار.
+  title_arabizi: Nbddel sim wla ndouz l eSIM
+  objet_arabizi: Nchr7ou kifach tbddel sim (khasra, daye3a, machi l9yas) w kifach tdouz l eSIM.
+  etapes_arabizi:
+    - T2akked beli tilifon kay9bel eSIM ila hadchi li bghiti.
+    - Mol lkhat kaymchi l lwkala b la carte nationale (wla kaytlebha f tatbi9 ila kanet eSIM metwafra temma).
+    - Bnisba l eSIM, scanni le code QR li 3tawk w men ba3d tfi w ch3el tilifon.
+    - Sim l9dima katwe99ef mli tttfa3el jdida.
+  conditions_arabizi:
+    - Ghir mol lkhat lmsjjel li y9der ytleb tbdil, w nmra katb9a.
+  limites_arabizi:
+    - Tbdil y9der ykoun b lflous 3la 7sab l3ard.
+    - Lmousa3id ma y9derch y3ti sim wla code QR.
+  escalade_arabizi: Ila sim jdida wla eSIM ma tfa3latch, n9dro n7awlouk l conseiller.
 
 line_identification:
   title_fr: Identifier sa ligne ou mettre à jour son identité
@@ -168,6 +234,19 @@ line_identification:
   limites_ar:
     - المساعد ما كيجمعش حتى وثيقة ديال الهوية.
   escalade_ar: إلا كان الخط باسم شي واحد آخر، شوف «نبدل مول الخط» ولا طلب مستشار.
+  title_arabizi: Nsjjel lkhat b smiyti wla n7addet lma3loumat dyali
+  objet_arabizi: Nchr7ou kifach tsjjel l'identite dyal mol lkhat wla t7addet had lma3loumat.
+  etapes_arabizi:
+    - Wjjed wati9a dyal l'identite sal7a (la carte nationale, carte de sejour wla passeport).
+    - Sir l lwkala wla 3nd bayi3 m3tamad, wla sta3mel « Ttasjil » f tatbi9 ila kan.
+    - T2akked men lma3loumat lmsjjla w we99a3 ila tlbou mnek.
+    - Tsenna message dyal confirmation.
+  conditions_arabizi:
+    - Lkhat li ma msjjelch y9der yt7added wla ytwe99ef.
+    - Kol khat merbout b chi wa7d rached w msjjel.
+  limites_arabizi:
+    - Lmousa3id ma kayjme3ch 7ta wati9a dyal l'identite.
+  escalade_arabizi: Ila kan lkhat b smiyt chi wa7d akhor, chouf « Nbddel mol lkhat » wla tleb conseiller.
 
 change_provider:
   title_fr: Changer d'opérateur en gardant son numéro (portabilité)
@@ -198,6 +277,20 @@ change_provider:
     - يقدر يوقع شي انقطاع قصير نهار التبديل.
     - المساعد ما كيعالجش نقل النمرة.
   escalade_ar: إلا نقل النمرة وقف، نقدرو نحولوك لمستشار.
+  title_arabizi: Nbddel l'operateur w nkhalli nfs nmra
+  objet_arabizi: Nchr7ou kifach tn9el nmra dyalek men wla l operateur akhor.
+  etapes_arabizi:
+    - Mol lkhat kaymchi 3nd l'operateur jdid b la carte nationale w nmra dyalo.
+    - L'operateur jdid howa li kaydir talab m3a l9dim.
+    - Khalli sim l9dima khddama 7ta l nhar dyal tbdil.
+    - Dkhel sim jdida f nhar li galou lik, w nmra katb9a hiya hiya.
+  conditions_arabizi:
+    - Khass lkhat ykoun khdam w b smiyt li kaytleb.
+    - Lfwatir w les engagements li ba9yin 3nd l'operateur l9dim khasshom ytkhllsou.
+  limites_arabizi:
+    - Y9der yw9e3 chi in9ita3 9sir nhar tbdil.
+    - Lmousa3id ma kay3alejch la portabilite dyal nmra.
+  escalade_arabizi: Ila n9l nmra w9ef, n9dro n7awlouk l conseiller.
 
 scam_spam_report:
   title_fr: Signaler une arnaque, un spam ou un SMS frauduleux
@@ -226,3 +319,16 @@ scam_spam_report:
   limites_ar:
     - المساعد ما يقدرش يعرف شكون اللي نصب ولا يرجع الفلوس.
   escalade_ar: حالة حساسة كيعالجها مستشار بالأولوية، خصوصا إلا تعطات شي فلوس ولا شي كود.
+  title_arabizi: Nballegh 3la nasba, spam wla message dyal ta7ayol
+  objet_arabizi: L'ijra2 dyal l2aman mli katwslek appels wla messages dyal nasba (rbe7 kddab, conseiller kddab, kaytlbou code).
+  etapes_arabizi:
+    - 3emmrek ma t3ti chi code jak f message, lcode PIN, lmot de passe wla lma3loumat dyal lbanka.
+    - Ma t3awedch t3iyet l nmra w ma tcliquich 3la les liens li wslouk.
+    - Ballegh 3la nmra wla lmessage men « Ballegh 3la ta7ayol » f tatbi9.
+    - Blokki nmra f tilifon.
+    - Ila 3titi chi code wla chi flous, tleb f l7in conseiller bach y7mi lkhat w lwallet.
+  conditions_arabizi:
+    - Lconseiller l7a9i9i 3emmro ma kaytleb lcode dyal confirmation wla lcode PIN.
+  limites_arabizi:
+    - Lmousa3id ma y9derch y3ref chkoun li nseb wla yrjje3 lflous.
+  escalade_arabizi: 7ala 7assasa kay3aljha conseiller b l2awlawiya, khosousan ila t3tat chi flous wla chi code.

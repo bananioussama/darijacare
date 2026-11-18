@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si le paiement échoue plusieurs fois, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا الخلاص ما دازش بزاف ديال المرات، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nkhlles lfatoura daba
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nwjjhou lclient li bgha ykhlles lfatoura dyalo f l7in.
+
+## Lkhatawat
+
+1. Dkhol l l'espace client w khtar « Khlles lfatoura ».
+2. T2akked men lmablagh w lmodda li bayenin.
+3. Khtar tari9at lkhlas (carte bancaire wla wallet) w 2akked.
+4. 7tafed b lwasl dyal lkhlas li kaywslek f message wla kayban f l'ecran.
+
+## Chorout
+
+- Khass lkhat ykoun fih abonnement w tkoun chi fatoura ba9a ma tkhllsatch.
+- Lkhlas f internet khasso wasila dyal lkhlas sal7a.
+
+## L7oudoud
+
+- Ila kan lkhat ma9tou3 3la 9bel ma tkhllesch, y9der yakhod chwiya dyal lwe9t bach yrje3 men ba3d lkhlas.
+- Lmousa3id ma kaychoufch lmablagh l7a9i9i li 3lik.
+
+## Ta7wil l conseiller
+
+Ila lkhlas ma dazch bzaf dyal lmerrat, n9dro n7awlouk l conseiller.

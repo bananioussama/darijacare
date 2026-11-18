@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si le débit reste inexpliqué après vérification, transmettre à un conseille
 ## التحويل لمستشار
 
 إلا بقا الاقتطاع ما مفهومش من بعد ما شفتي، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Solde kayn9es bla sabab
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li la7ed solde dyalo n9es w ma 3refch 3lach.
+
+## Lkhatawat
+
+1. Chouf l'historique dyal lconsommation f tatbi9 bach t3ref mnin tkt3ou lflous.
+2. Chouf lkhadamat b lflous li mfa3la w we99efha ila khass (chouf « Khadamat b lflous ma bghithach »).
+3. Tfi internet dyal tilifon ila ma 3ndekch pass (lconsommation bla pass katakol solde).
+4. Ila b9a chi i9tita3 ma mfhomch, dir chkaya w goul tawarikh w lmabalegh.
+
+## Chorout
+
+- Lclient kay3ti lmodda li fiha lmochkil.
+- Mol lkhat howa li kaydir chkaya.
+
+## L7oudoud
+
+- Lmousa3id ma kaychoufch l'historique l7a9i9i w ma y9derch yrjje3 solde.
+- Lconsommation li tdaret b s7 ma kattrjje3ch.
+
+## Ta7wil l conseiller
+
+Ila b9a l'i9tita3 ma mfhomch men ba3d ma chefti, kan7awlouk l conseiller.

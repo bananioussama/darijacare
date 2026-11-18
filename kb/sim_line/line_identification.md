@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si la ligne est au nom d'une autre personne, voir « Changer le titulaire » ou 
 ## التحويل لمستشار
 
 إلا كان الخط باسم شي واحد آخر، شوف «نبدل مول الخط» ولا طلب مستشار.
+
+# Nouskha b darija (arabizi) — Nsjjel lkhat b smiyti wla n7addet lma3loumat dyali
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tsjjel l'identite dyal mol lkhat wla t7addet had lma3loumat.
+
+## Lkhatawat
+
+1. Wjjed wati9a dyal l'identite sal7a (la carte nationale, carte de sejour wla passeport).
+2. Sir l lwkala wla 3nd bayi3 m3tamad, wla sta3mel « Ttasjil » f tatbi9 ila kan.
+3. T2akked men lma3loumat lmsjjla w we99a3 ila tlbou mnek.
+4. Tsenna message dyal confirmation.
+
+## Chorout
+
+- Lkhat li ma msjjelch y9der yt7added wla ytwe99ef.
+- Kol khat merbout b chi wa7d rached w msjjel.
+
+## L7oudoud
+
+- Lmousa3id ma kayjme3ch 7ta wati9a dyal l'identite.
+
+## Ta7wil l conseiller
+
+Ila kan lkhat b smiyt chi wa7d akhor, chouf « Nbddel mol lkhat » wla tleb conseiller.

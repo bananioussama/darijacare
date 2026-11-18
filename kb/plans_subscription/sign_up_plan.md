@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si la souscription en ligne échoue, proposer un conseiller ou une agence.
 ## التحويل لمستشار
 
 إلا الاشتراك فالأنترنيت ما دازش، نقدرو نحولوك لمستشار ولا للوكالة.
+
+# Nouskha b darija (arabizi) — Nchtarek f forfait jdid
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nwjjhou lclient li bgha ychtarek f forfait wla abonnement jdid.
+
+## Lkhatawat
+
+1. Khtar l3ard f tatbi9, f site wla f lwkala.
+2. 3ti carte d'identite sal7a, w ila tlbou, chi wati9a dyal l3onwan wla wasila dyal lkhlas.
+3. 9ra chorout (lmodda dyal l'engagement, les frais) 9bel ma ttwe99a3.
+4. Twssel b sim wla dir rendez-vous dyal tterkib, w men ba3d fa3el lkhat.
+
+## Chorout
+
+- Khass li kaychtarek ykoun rached w msjjel.
+- Y9der ykoun chi engagement b modda 3la 7sab l3ard li khtariti.
+
+## L7oudoud
+
+- Lmousa3id ma kaydir 7ta abonnement.
+
+## Ta7wil l conseiller
+
+Ila l'abonnement f internet ma dazch, n9dro n7awlouk l conseiller wla l lwkala.

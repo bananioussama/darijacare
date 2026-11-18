@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Aucune.
 ## التحويل لمستشار
 
 والو.
+
+# Nouskha b darija (arabizi) — Salam w chokr
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Njawbou b l2adab 3la salam, chokr wla tasslim bla talab mo3ayyan.
+
+## Lkhatawat
+
+1. Redd salam 3la lclient b nfs tari9a dyal lktaba dyalo.
+2. 9tare7 3lih ywsef talab dyalo ila kan 3ndo chi talab.
+3. F lakher, chkro w fakkro beli y9der yrje3 f ay we9t.
+4. Khalli jawab 9sir w m2addab, bla ma tsewwel 7ta so2al chakhsi.
+
+## Chorout
+
+- Ma khass 7ta ma3louma 3la lkhat.
+
+## L7oudoud
+
+- Ma kayn 7ta ijra2.
+- Ila kan f lmessage chi talab, hadak talab howa li kayt3alej.
+
+## Ta7wil l conseiller
+
+Walo.

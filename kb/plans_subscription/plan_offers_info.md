@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Pour un conseil personnalisé (entreprise, famille nombreuse), proposer un conse
 ## التحويل لمستشار
 
 إلا بغيتي نصيحة خاصة بيك (شركة، عائلة كبيرة)، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nt3arraf 3la l3orod w les forfaits
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nwjjhou lclient li bgha y3ref l3orod li kaynin (prepaye, forfait, internet f dar).
+
+## Lkhatawat
+
+1. 7added chno li kat7taj ktar (appels, internet f tilifon, internet f dar, international).
+2. Chouf « L3orod » f tatbi9 wla f site, wla le depliant f lwkala.
+3. 9aren l7ajm li dakhel, lmodda dyal l'engagement w chorout dyal kol 3ard.
+4. Bach tchtarek, chouf lbita9a « Nchtarek f forfait jdid ».
+
+## Chorout
+
+- L3orod w l2atmina kaytbddlou, w lmarja3 howa lwata2i9 rasmiya lmo7adata.
+
+## L7oudoud
+
+- Lmousa3id ma kay3tich l2atmina w ma kaynse7ch b 3ard tijari mo3ayyan.
+
+## Ta7wil l conseiller
+
+Ila bghiti nasi7a khassa bik (charika, 3a2ila kbira), n9dro n7awlouk l conseiller.

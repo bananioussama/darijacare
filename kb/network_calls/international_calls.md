@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si les appels internationaux échouent alors qu'ils sont autorisés, proposer un
 ## التحويل لمستشار
 
 إلا المكالمات الدولية ما كادوزش واخا مسموحة، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — N3iyet l lkharij
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3tiw lma3loumat 3la les appels l lkharij (tfe3il, l2atmina, lmachakil).
+
+## Lkhatawat
+
+1. Dreb nmra b format international (00 wla + w men ba3d l'indicatif dyal lblad).
+2. Chouf f l'espace client wach les appels internationaux msmou7a f lkhat.
+3. Chouf l2atmina dwaliya dyal l3ard, wla chi pass international ila kan.
+4. Bach t3iyet men lkharij, chouf lbita9a « Nsta3mel lkhat berra ».
+
+## Chorout
+
+- F lkhat prepaye, khass solde ykffi taman dyal l'appel.
+
+## L7oudoud
+
+- Lmousa3id ma kay3tich l2atmina l7a9i9iya.
+- Chi bldan wla nmrat khassa y9dro ma yttwslouch.
+
+## Ta7wil l conseiller
+
+Ila les appels internationaux ma kaydouzouch wakha msmou7a, n9dro n7awlouk l conseiller.

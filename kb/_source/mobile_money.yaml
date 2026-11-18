@@ -28,6 +28,20 @@ mm_send_receive:
     - الفلوس اللي مشاو لنمرة غالطة ما يقدرش المساعد يلغيهم (شوف «مشكل فشي عملية»).
     - المصاريف إلا كانو كيتبعو الشروط ديال الخدمة.
   escalade_ar: إلا صيفطتي لنمرة غالطة، كنحولوك فالحين لمستشار.
+  title_arabizi: Nsifet wla ntwssel b lflous b lwallet
+  objet_arabizi: Nchr7ou kifach tsifet wla ttwssel b lflous b lwallet, 7ta men lkharij.
+  etapes_arabizi:
+    - 7ell lwallet f tatbi9, w khtar « Sifet lflous ».
+    - Dkhel nmra dyal li ghadi yakhdhom, t2akked men smiya li katban, w men ba3d lmablagh.
+    - 2akked b lcode sirri dyal lwallet, w lwasl kaywsel l jouj.
+    - Bach ttwssel men lkharij, 3ti l 9ribek nmra dyal lwallet w smiya b dabt dyal molaha.
+  conditions_arabizi:
+    - Khass jouj wallets ykounou khddamin, w kaynin 7doud.
+    - Lcode sirri 3emmro ma yt3ta l 7ta wa7d.
+  limites_arabizi:
+    - Lflous li mchaw l nmra ghalta ma y9derch lmousa3id ylghihom (chouf « Mochkil f chi 3amaliya dyal lwallet »).
+    - Les frais ila kanou kaytb3ou chorout dyal lkhidma.
+  escalade_arabizi: Ila sifetti l nmra ghalta, kan7awlouk f l7in l conseiller.
 
 mm_cash_in_out:
   title_fr: Déposer ou retirer de l'argent chez un agent
@@ -54,6 +68,18 @@ mm_cash_in_out:
   limites_ar:
     - المساعد ما كيشوفش الأرصدة ولا العمليات.
   escalade_ar: إلا الفلوس اللي حطيتي ما بانوش فالمحفظة، كنحولوك لمستشار مع الوصل.
+  title_arabizi: N7ett wla njbed lflous 3nd l'agent
+  objet_arabizi: Nchr7ou kifach t7ett lflous f lwallet w kifach tjbedhom 3nd agent m3tamad.
+  etapes_arabizi:
+    - L9a agent m3tamad b lkharita dyal les points de service f tatbi9.
+    - Bach t7ett, 3ti nmra dyal lwallet w lflous, w t2akked men message dyal confirmation 9bel ma tmchi.
+    - Bach tjbed, bda l3amaliya f tatbi9 wla 3nd l'agent, w men ba3d 2akked b lcode sirri.
+    - 7tafed b lwasl li 3tak l'agent.
+  conditions_arabizi:
+    - Y9dro ytlbou la carte nationale, w kaynin 7doud dyal l'ida3 w ssa7b.
+  limites_arabizi:
+    - Lmousa3id ma kaychoufch les soldes wla l3amaliyat.
+  escalade_arabizi: Ila lflous li 7titi ma banouch f lwallet, kan7awlouk l conseiller m3a lwasl.
 
 mm_payment:
   title_fr: Payer une facture ou un commerçant avec le portefeuille
@@ -80,6 +106,18 @@ mm_payment:
   limites_ar:
     - الجهة اللي كتخلص ليها تقدر تاخد شوية ديال الوقت باش تسجل الخلاص.
   escalade_ar: إلا تقطعو الفلوس وما وصلوش لمولاهم، شوف «مشكل فشي عملية» وطلب مستشار.
+  title_arabizi: Nkhlles fatoura wla 7anout b lwallet
+  objet_arabizi: Nchr7ou kifach tkhlles fatoura wla chi 7aja f l7anout b lwallet.
+  etapes_arabizi:
+    - 7ell lwallet w khtar « Khlles fatoura » wla « Khlles tajer ».
+    - Bnisba l lfatoura, khtar ljiha w dkhel la reference, w bnisba l tajer, scanni le code QR dyalo.
+    - T2akked men lmablagh w li ghadi yakhdo, w men ba3d 2akked b lcode sirri.
+    - 7tafed b lwasl dyal lkhlas.
+  conditions_arabizi:
+    - Khass solde dyal lwallet ykffi lmablagh.
+  limites_arabizi:
+    - Ljiha li katkhlles liha t9der takhod chwiya dyal lwe9t bach tsjjel lkhlas.
+  escalade_arabizi: Ila tkt3ou lflous w ma wslouch l molahom, chouf « Mochkil f chi 3amaliya dyal lwallet » w tleb conseiller.
 
 mm_transaction_issue:
   title_fr: Problème de transaction du portefeuille
@@ -106,6 +144,18 @@ mm_transaction_issue:
   limites_ar:
     - المساعد ما يقدرش يلغي ولا يرجع العملية، وحتى رجوع الفلوس ماشي مضمون.
   escalade_ar: كاينة الفلوس فالموضوع، كنحولوك لمستشار بالأولوية.
+  title_arabizi: Mochkil f chi 3amaliya dyal lwallet
+  objet_arabizi: N3awnou lclient li chi transfert wla khlas dyalo ma dazch, ba9i m3alle9 wla mcha l nmra ghalta.
+  etapes_arabizi:
+    - Chouf l'historique dyal lwallet bach t3ref l7ala b dabt (dazet, m3all9a, ma dazetch).
+    - L3amaliya li ma dazetch f l3ada ma katkte3ch, w lm3all9a t9der ttsewwa b wa7dha.
+    - Jme3 la reference dyal l3amaliya, tarikh, lmablagh w nmra lma3niya.
+    - Ila sifetti l nmra ghalta, tleb f l7in conseiller, w ma tttaselch nta b yeddek b li wslouh lflous.
+  conditions_arabizi:
+    - La reference dyal l3amaliya darouriya l ay ba7t.
+  limites_arabizi:
+    - Lmousa3id ma y9derch ylghi wla yrjje3 l3amaliya, w 7ta rjou3 lflous machi madmoun.
+  escalade_arabizi: Kaynin lflous f lmawdou3, kan7awlouk l conseiller b l2awlawiya.
 
 mm_account_access:
   title_fr: Compte du portefeuille, code secret, blocage et plafonds
@@ -132,3 +182,15 @@ mm_account_access:
   limites_ar:
     - المساعد ما كيفتحش المحفظة وما كيعطي حتى كود.
   escalade_ar: إلا المحفظة مبلوكية والكليان محتاج الفلوس ديالو، كنحولوه لمستشار.
+  title_arabizi: Lcompte dyal lwallet, lcode sirri, blocage w l7doud
+  objet_arabizi: Nchr7ou kifach t7ell lwallet, mli katensa lcode sirri, mli kattbloka lwallet, w l7doud dyalha.
+  etapes_arabizi:
+    - Bach t7ell lwallet, tsjjel f tatbi9 wla f lwkala b carte d'identite sal7a.
+    - Ila nsiti lcode sirri, sta3mel « Nsit lcode » wla sir l lwkala b la carte nationale.
+    - Men ba3d bzaf dyal les codes ghaltin, lwallet kattbloka, w lfti7 kayttdar men ba3d tta2kod men l'identite.
+    - Bach ttle3 chi 7add, 3ti lma3loumat wla lwata2i9 zayda li tlbou.
+  conditions_arabizi:
+    - Lwallet chakhsiya w merbouta b khat msjjel.
+  limites_arabizi:
+    - Lmousa3id ma kayfte7ch lwallet w ma kay3ti 7ta code.
+  escalade_arabizi: Ila lwallet mblokya w lclient m7taj lflous dyalo, kan7awlouh l conseiller.

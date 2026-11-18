@@ -28,6 +28,20 @@ relocation:
     - إلا العنوان الجديد ما فيهش نفس التكنولوجيا، يقدر يتقترح عرض آخر.
     - رقم الفيكس يقدر يتبدل على حساب المنطقة.
   escalade_ar: إلا كان الرحيل لمدينة أخرى ولا حالة معقدة، نقدرو نحولوك لمستشار.
+  title_arabizi: Nr7el lkhat lfixe wla internet l dar jdida
+  objet_arabizi: Nchr7ou kifach tn9el lkhat lfixe wla l'abonnement dyal internet l 3onwan jdid.
+  etapes_arabizi:
+    - T2akked men l'eligibilite dyal l3onwan jdid (chouf « Wach la fibre kayna 3ndi »).
+    - Dir talab dyal tbdil l3onwan men l'espace client wla f lwkala, w l2a7ssan 9bel ma tr7el.
+    - 3ti l3onwan jdid kamel w chi wati9a ila tlbouha.
+    - Khtar rendez-vous dyal tterkib f l3onwan jdid w 7tafed b l2ajhiza (lbox, decodeur).
+  conditions_arabizi:
+    - Mol l'abonnement howa li kaydir talab.
+    - Khass l'abonnement ykoun mkhlles.
+  limites_arabizi:
+    - Ila l3onwan jdid ma fihch nfs technologie, y9der yt9tare7 3ard akhor.
+    - Numero dyal fixe y9der ytbddel 3la 7sab lmanti9a.
+  escalade_arabizi: Ila kan r7il l mdina okhra wla 7ala m3a99da, n9dro n7awlouk l conseiller.
 
 home_line_activation:
   title_fr: Ligne fixe installée mais pas encore active
@@ -56,6 +70,19 @@ home_line_activation:
   limites_ar:
     - المساعد ما يقدرش يفعل الخط.
   escalade_ar: إلا فاتت المدة ديال التفعيل، كنحولوك لمستشار.
+  title_arabizi: Lkhat lfixe trekkeb walakin ba9i ma tfa3elch
+  objet_arabizi: N3awnou lclient li lkhat lfixe wla internet dyalo ttleb wla trekkeb walakin ba9i ma tfa3elch.
+  etapes_arabizi:
+    - L9a numero dyal talab w chouf lmar7ala « Tfe3il » f suivi dyal talab.
+    - Men ba3d tterkib, tsenna lmodda dyal tfe3il li mktouba f message dyal confirmation.
+    - Tfi w ch3el lbox w chouf dwaw mli tfout lmodda.
+    - Ila lkhat ba9i ma tfa3elch, dir chkaya « Tfe3il ba9i ».
+  conditions_arabizi:
+    - Khass tterkib ykoun sala.
+    - Khass lwata2i9 li ttelbou nhar l'abonnement ykounou kamlin.
+  limites_arabizi:
+    - Lmousa3id ma y9derch yfa3el lkhat.
+  escalade_arabizi: Ila fatet lmodda dyal tfe3il, kan7awlouk l conseiller.
 
 home_line_suspend_restore:
   title_fr: Suspendre ou rétablir la ligne fixe
@@ -84,6 +111,19 @@ home_line_suspend_restore:
   limites_ar:
     - الرجوع يقدر ياخد شوية ديال الوقت من بعد الخلاص.
   escalade_ar: إلا بقا الخط مقطوع من بعد الخلاص، شوف «خلصت والخلاص ما تسجلش» وطلب مستشار.
+  title_arabizi: Nwe99ef wla nrjje3 lkhat lfixe
+  objet_arabizi: Nchr7ou kifach twe99ef lkhat lfixe wla internet l wa7d lmodda, wla trjj3o men ba3d twe9if wla 9te3 3la 9bel ma khllestich.
+  etapes_arabizi:
+    - Bach twe99fo l wa7d lmodda (ghiyab, safar), dir talab f l'espace client w goul lmodda.
+    - Bach trjj3o men ba3d twe9if dertih b yeddek, sta3mel « Rjje3 lkhat dyali » f nfs lblasa.
+    - Ila tkte3 3la 9bel ma khllestich, khlles lfatoura li ba9a (chouf « Nkhlles lfatoura daba »).
+    - Tfi w ch3el lbox mli ytt2akked rjou3.
+  conditions_arabizi:
+    - Twe9if lmo2a99at m7doud f lwe9t 3la 7sab chorout dyal l3ard.
+    - Rjou3 men ba3d 3adam lkhlas kayttleb tkhlles kolchi li 3lik.
+  limites_arabizi:
+    - Rjou3 y9der yakhod chwiya dyal lwe9t men ba3d lkhlas.
+  escalade_arabizi: Ila b9a lkhat ma9tou3 men ba3d lkhlas, chouf « Khllest w lkhlas ma tsjjelch » w tleb conseiller.
 
 ownership_transfer:
   title_fr: Changer le titulaire de la ligne
@@ -114,6 +154,20 @@ ownership_transfer:
     - تبديل مول الخط ما كيتدارش بميساج ولا عن طريق المساعد.
     - الوثائق بالضبط يقدرو يختلفو على حساب الحالة.
   escalade_ar: أي طلب ديال تبديل مول الخط كيدوز عن طريق مستشار ولا الوكالة.
+  title_arabizi: Nbddel mol lkhat
+  objet_arabizi: Nchr7ou kifach ytbddel mol lkhat (n3tih l chi wa7d akhor, mol lkhat twffa wla mcha).
+  etapes_arabizi:
+    - Mol lkhat l7ali w li ghadi yakhdo kaymchiw l lwkala b les cartes nationales dyalhom.
+    - Ila mol lkhat twffa, chi wa7d men l3a2ila kayjib chahadat lwafat w chi wati9a katbiyen l3ala9a wla beli wares.
+    - Ttwe99a3 le formulaire dyal tbdil mol lkhat, w jdid kaykemmel b l'abonnement.
+    - 7tafed b lwasl dyal talab.
+  conditions_arabizi:
+    - Khass lfwatir li ba9yin ytkhllsou 9bel tbdil.
+    - Khass mol lkhat jdid ykoun rached.
+  limites_arabizi:
+    - Tbdil mol lkhat ma kayttdarch b message wla 3an tari9 lmousa3id.
+    - Lwata2i9 b dabt y9dro ykhtalfou 3la 7sab l7ala.
+  escalade_arabizi: Ay talab dyal tbdil mol lkhat kaydouz 3an tari9 conseiller wla lwkala.
 
 adsl_to_fiber_migration:
   title_fr: Passer de l'ADSL à la fibre
@@ -144,6 +198,20 @@ adsl_to_fiber_migration:
     - يقدر يوقع شي انقطاع قصير نهار التبديل.
     - رقم الفيكس فالعادة كيبقى، إلا إلا كان شي مشكل تقني.
   escalade_ar: إلا التبديل وقف من بعد التركيب، نقدرو نحولوك لمستشار.
+  title_arabizi: Ndouz men ADSL l la fibre
+  objet_arabizi: Nchr7ou kifach tbddel khat ADSL l la fibre.
+  etapes_arabizi:
+    - T2akked beli l3onwan mo2ahal l la fibre.
+    - Tleb tbdil f l'espace client wla f lwkala w khtar 3ard dyal la fibre.
+    - Dir rendez-vous bach yrekkbou la prise dyal la fibre w lbox jdida.
+    - Men ba3d ma ttfa3el la fibre, rjje3 lbox l9dima dyal ADSL (chouf « Nrjje3 lbox, routeur wla decodeur »).
+  conditions_arabizi:
+    - Khass l3onwan ykoun mo2ahal l la fibre.
+    - Khass l'abonnement dyal ADSL ykoun mkhlles.
+  limites_arabizi:
+    - Y9der yw9e3 chi in9ita3 9sir nhar tbdil.
+    - Numero dyal fixe f l3ada kayb9a, ghir ila kan chi mochkil te9ni.
+  escalade_arabizi: Ila tbdil w9ef men ba3d tterkib, n9dro n7awlouk l conseiller.
 
 fixed_phone_issue:
   title_fr: Problème de téléphone fixe
@@ -170,6 +238,18 @@ fixed_phone_issue:
   limites_ar:
     - المساعد ما يقدرش يجرب الخط ولا يبدل النمرة.
   escalade_ar: إلا الصوت ما رجعش من بعد هاد الخطوات، كنحولوك لمستشار.
+  title_arabizi: Mochkil f tilifon lfixe
+  objet_arabizi: N3awnou lclient li tilifon lfixe dyalo ma khdamch (ma kaynch sout, ma kay9derch y3iyet, mochkil f nmra).
+  etapes_arabizi:
+    - T2akked beli tilifon merbout mzyan f lblasa dyal tilifon f lbox w beli lbox khddama.
+    - Jerreb b tilifon akhor ila momkin.
+    - Tfi w ch3el lbox, 7it lfixe kaydouz men lbox f 3rod internet.
+    - Chouf f l'espace client wach lkhat lfixe khdam w machi mwe99ef.
+  conditions_arabizi:
+    - F 3rod internet, lfixe ma kaykhdem ghir ila kanet lbox mch3la w merbouta.
+  limites_arabizi:
+    - Lmousa3id ma y9derch yjerreb lkhat wla ybddel nmra.
+  escalade_arabizi: Ila sout ma rje3ch men ba3d had lkhatawat, kan7awlouk l conseiller.
 
 equipment_return:
   title_fr: Rendre la box, le routeur ou le décodeur
@@ -198,3 +278,16 @@ equipment_return:
     - الجهاز اللي ما ترجعش ولا ناقص يقدر يتخلص على حساب الشروط ديال العرض.
     - المساعد ما يقدرش يسجل الإرجاع.
   escalade_ar: إلا رجعتي الجهاز وباقي كيتخلص عليك، كنحولوك لمستشار مع الوصل.
+  title_arabizi: Nrjje3 lbox, routeur wla decodeur
+  objet_arabizi: Nchr7ou kifach trjje3 l2ajhiza li 3tawk (lbox, routeur, decodeur), matalan men ba3d ma t7iyed l'abonnement.
+  etapes_arabizi:
+    - Jme3 ljihaz kamel b les cables w ddaw dyalo.
+    - Dfe3o f lwkala w tleb wasl dyal l'irja3.
+    - 7tafed b had lwasl 7ta ytsedd lcompte nihai2iyan.
+  conditions_arabizi:
+    - Khass ljihaz ytrjje3 f lwe9t lm7added men ba3d ilgha2 l'abonnement.
+    - Ljihaz li 3tawk kayb9a dyal l'operateur.
+  limites_arabizi:
+    - Ljihaz li ma trje3ch wla na9es y9der ytkhlles 3la 7sab chorout dyal l3ard.
+    - Lmousa3id ma y9derch ysjjel l'irja3.
+  escalade_arabizi: Ila rjje3ti ljihaz w ba9i kaytkhlles 3lik, kan7awlouk l conseiller m3a lwasl.

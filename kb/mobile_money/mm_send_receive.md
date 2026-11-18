@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ En cas d'envoi au mauvais numéro, transmettre immédiatement à un conseiller.
 ## التحويل لمستشار
 
 إلا صيفطتي لنمرة غالطة، كنحولوك فالحين لمستشار.
+
+# Nouskha b darija (arabizi) — Nsifet wla ntwssel b lflous b lwallet
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tsifet wla ttwssel b lflous b lwallet, 7ta men lkharij.
+
+## Lkhatawat
+
+1. 7ell lwallet f tatbi9, w khtar « Sifet lflous ».
+2. Dkhel nmra dyal li ghadi yakhdhom, t2akked men smiya li katban, w men ba3d lmablagh.
+3. 2akked b lcode sirri dyal lwallet, w lwasl kaywsel l jouj.
+4. Bach ttwssel men lkharij, 3ti l 9ribek nmra dyal lwallet w smiya b dabt dyal molaha.
+
+## Chorout
+
+- Khass jouj wallets ykounou khddamin, w kaynin 7doud.
+- Lcode sirri 3emmro ma yt3ta l 7ta wa7d.
+
+## L7oudoud
+
+- Lflous li mchaw l nmra ghalta ma y9derch lmousa3id ylghihom (chouf « Mochkil f chi 3amaliya dyal lwallet »).
+- Les frais ila kanou kaytb3ou chorout dyal lkhidma.
+
+## Ta7wil l conseiller
+
+Ila sifetti l nmra ghalta, kan7awlouk f l7in l conseiller.

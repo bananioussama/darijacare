@@ -28,6 +28,20 @@ recharge_how:
     - المساعد ما كيبيعش الشحن وما كيعرفش المبالغ اللي كاينين عند البائعين.
     - الشحن ما كيترجعش من بعد ما يدخل للرصيد.
   escalade_ar: إلا حتى طريقة ما ممكنة للكليان، نقدرو نحولوه لمستشار.
+  title_arabizi: Kifach ncharji lkhat
+  objet_arabizi: Nchr7ou torou9 bach tcharji khat b la carte (prepaye).
+  etapes_arabizi:
+    - Chri carte dyal recharge 3nd chi bayi3 w dkhel lcode men le menu dyal recharge f tilifon.
+    - Charji f internet b la carte bancaire men tatbi9 wla site.
+    - Charji men lwallet (mobile money).
+    - Tleb recharge electronique nichan 3nd chi bayi3 m3tamad.
+  conditions_arabizi:
+    - Khass lkhat ykoun khdam w prepaye.
+    - Lcode dyal la carte de recharge kaytsta3mel ghir merra wa7da.
+  limites_arabizi:
+    - Lmousa3id ma kaybi3ch recharge w ma kay3refch lmabalegh li kaynin 3nd lbaya3a.
+    - Recharge ma kattrjje3ch men ba3d ma tdkhol l solde.
+  escalade_arabizi: Ila 7ta tari9a ma momkina l lclient, n9dro n7awlouh l conseiller.
 
 recharge_failed:
   title_fr: Recharge non reçue ou code refusé
@@ -58,6 +72,20 @@ recharge_failed:
     - المساعد ما يقدرش يزيد الرصيد ولا يتأكد من الكود.
     - بزاف ديال المحاولات بكود غالط تقدر توقف الشحن بالكود لشي مدة.
   escalade_ar: كاينة الفلوس فالموضوع، إلا الرصيد ما وصلش من بعد الوقت العادي كنحولوك لمستشار.
+  title_arabizi: Recharge ma wseltch wla lcode ma dazch
+  objet_arabizi: N3awnou lclient li recharge dyalo ma dkhletch l solde wla lcode dyalo ma tt9belch.
+  etapes_arabizi:
+    - Chouf solde men ba3d chi d9aye9 (solde y9der yt3ttel chwiya).
+    - 3awed chouf lcode li dkhelti (ar9am m9loubin, espace zayed) w 3awed jerreb merra wa7da.
+    - Ila charjiti f internet wla b mobile money, l9a la reference dyal l3amaliya wla lwasl.
+    - Ila recharge ba9a ma wseltch, dir chkaya « Recharge ma wseltch » m3a lcode wla la reference.
+  conditions_arabizi:
+    - 7tafed b la carte de recharge wla lwasl 7ta yt7ell lmochkil.
+    - Khass recharge tkoun tdaret l numero s7i7.
+  limites_arabizi:
+    - Lmousa3id ma y9derch yzid solde wla yt2akked men lcode.
+    - Bzaf dyal lmo7awalat b code ghalet t9der twe99ef recharge b lcode l chi modda.
+  escalade_arabizi: Kaynin lflous f lmawdou3, ila solde ma wselch men ba3d lwe9t l3adi kan7awlouk l conseiller.
 
 balance_check:
   title_fr: Consulter son solde
@@ -86,6 +114,19 @@ balance_check:
     - المساعد ما كيشوفش الصولد الحقيقي ديال الكليان.
     - الصولد اللي كيبان يقدر يتعطل شي دقايق من بعد الاستهلاك.
   escalade_ar: إلا الصولد اللي باين كيبان غالط، يقدر الكليان يدير شكاية (شوف البطاقة «الصولد كينقص»).
+  title_arabizi: Nchouf solde
+  objet_arabizi: Ngoulou kifach t3ref ch7al ba9i lik f solde w 7ta l imta sale7.
+  etapes_arabizi:
+    - 7ell tatbi9 w chouf la page lowla « Solde dyali ».
+    - Wla sta3mel le menu dyal solde f tilifon (lcode l9sir mktoub 3la lghlaf dyal sim).
+    - Chouf 7ta tarikh dyal sala7iya dyal solde w les pass li khddamin.
+  conditions_arabizi:
+    - La consultation dyal solde fabor.
+    - Tatbi9 khasso internet wla reseau.
+  limites_arabizi:
+    - Lmousa3id ma kaychoufch solde l7a9i9i dyal lclient.
+    - Solde li kayban y9der yt3ttel chi d9aye9 men ba3d lconsommation.
+  escalade_arabizi: Ila solde li bayen kayban ghalet, y9der lclient ydir chkaya (chouf lbita9a « Solde kayn9es »).
 
 balance_deducted:
   title_fr: Crédit qui diminue sans raison
@@ -116,6 +157,20 @@ balance_deducted:
     - المساعد ما كيشوفش التاريخ الحقيقي وما يقدرش يرجع الرصيد.
     - الاستهلاك اللي تدار بصح ما كيترجعش.
   escalade_ar: إلا بقا الاقتطاع ما مفهومش من بعد ما شفتي، كنحولوك لمستشار.
+  title_arabizi: Solde kayn9es bla sabab
+  objet_arabizi: N3awnou lclient li la7ed solde dyalo n9es w ma 3refch 3lach.
+  etapes_arabizi:
+    - Chouf l'historique dyal lconsommation f tatbi9 bach t3ref mnin tkt3ou lflous.
+    - Chouf lkhadamat b lflous li mfa3la w we99efha ila khass (chouf « Khadamat b lflous ma bghithach »).
+    - Tfi internet dyal tilifon ila ma 3ndekch pass (lconsommation bla pass katakol solde).
+    - Ila b9a chi i9tita3 ma mfhomch, dir chkaya w goul tawarikh w lmabalegh.
+  conditions_arabizi:
+    - Lclient kay3ti lmodda li fiha lmochkil.
+    - Mol lkhat howa li kaydir chkaya.
+  limites_arabizi:
+    - Lmousa3id ma kaychoufch l'historique l7a9i9i w ma y9derch yrjje3 solde.
+    - Lconsommation li tdaret b s7 ma kattrjje3ch.
+  escalade_arabizi: Ila b9a l'i9tita3 ma mfhomch men ba3d ma chefti, kan7awlouk l conseiller.
 
 credit_transfer_loan:
   title_fr: Transférer du crédit ou emprunter une avance
@@ -146,3 +201,17 @@ credit_transfer_loan:
     - التحويل لنمرة غالطة ما يقدرش المساعد يلغيه.
     - المبالغ والمصاريف إلا كانو كيتبعو الشروط ديال العرض.
   escalade_ar: إلا الرصيد تصيفط لنمرة غالطة، كنحولوك لمستشار.
+  title_arabizi: N7awel solde wla ntsellef chi selfa
+  objet_arabizi: Nchr7ou kifach t7awel solde l nmra okhra w kifach takhod selfa dyal solde.
+  etapes_arabizi:
+    - Bach t7awel solde, sta3mel « T7wil solde » f tatbi9 w dkhel nmra dyal li ghadi yakhdo.
+    - T2akked men lmablagh 9bel ma twafe9, w ghadi ywsel message l jouj nmrat.
+    - Bach takhod selfa, 7ell « Sselfa » w khtar lmablagh li m3roud.
+    - Sselfa kattkte3 b wa7dha f recharge li jaya.
+  conditions_arabizi:
+    - Khass jouj khtout ykounou khddamin, w y9der ykoun matloub chi anciennete.
+    - Sselfa momkina ghir ila ma kanetch selfa okhra ba9a ma tkhllsatch.
+  limites_arabizi:
+    - T7wil l nmra ghalta ma y9derch lmousa3id ylghih.
+    - Lmabalegh w les frais ila kanou kaytb3ou chorout dyal l3ard.
+  escalade_arabizi: Ila solde tsifet l nmra ghalta, kan7awlouk l conseiller.

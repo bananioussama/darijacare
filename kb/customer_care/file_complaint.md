@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si le client ne peut pas déposer sa réclamation, un conseiller l'enregistre.
 ## التحويل لمستشار
 
 إلا الكليان ما قدرش يدير الشكاية، المستشار كيسجلها ليه.
+
+# Nouskha b darija (arabizi) — Ndirou chkaya
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tdir chkaya jdida 3la chi khidma.
+
+## Lkhatawat
+
+1. 7ell « Chkayat » f tatbi9 wla f site, wla sir l lwkala.
+2. Khtar sabab (fatoura, reseau, internet, khidma, l'isti9bal) w wsef lmochkil b tawarikh.
+3. Zid lwata2i9 li kat3awen (tsawer l'ecran, lwsoulat, numerowat dyal talabat).
+4. Sjjel numero dyal chkaya li 3tawk bach ttbe3ha.
+
+## Chorout
+
+- Chkaya kaydirha mol lkhat wla chi wa7d 3ndo l'idn.
+
+## L7oudoud
+
+- Lwe9t dyal jawab kaytbe3 naw3 dyal chkaya.
+- Lmousa3id ma y9derch ysjjel chkaya rasmiya b yeddo.
+
+## Ta7wil l conseiller
+
+Ila lclient ma 9derch ydir chkaya, lconseiller kaysjjelha lih.

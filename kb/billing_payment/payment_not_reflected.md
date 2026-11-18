@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Un paiement non pris en compte est un cas où de l'argent est en jeu ; transmett
 ## التحويل لمستشار
 
 هادي حالة فيها الفلوس، إلا فات الوقت العادي كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Khllest w lkhlas ma tsjjelch
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li khlles walakin lkhlas ma banch wla lkhat ba9i ma9tou3.
+
+## Lkhatawat
+
+1. Chouf tarikh w tari9a li khllesti biha (chi torou9 katakhod chwiya dyal lwe9t).
+2. L9a lwasl wla la reference dyal l3amaliya.
+3. Tfi w ch3el tilifon wla ljihaz ila kan lkhat mwe99ef.
+4. Ila fat lwe9t l3adi, dir chkaya « Khlas ma tsjjelch » w m3aha lwasl.
+
+## Chorout
+
+- Lwasl wla la reference dyal l3amaliya darouri bach ytb7et f dossier.
+- Khass lkhlas ykoun 3la lkhat w lfatoura s7a7.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch yt2akked men l3amaliya wla yrjje3 lkhat.
+- Lkhlas li tdar 3la reference okhra y9der yakhod ktar dyal lwe9t bach ytl9a.
+
+## Ta7wil l conseiller
+
+Hadi 7ala fiha lflous, ila fat lwe9t l3adi kan7awlouk l conseiller.

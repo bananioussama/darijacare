@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si la limite ne s'applique pas, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا الحد ما تطبقش، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — N7added lconsommation wla lmasrouf
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach t7ett, tbddel wla t7iyed wa7d l7add dyal lconsommation wla lmasrouf.
+
+## Lkhatawat
+
+1. 7ell tatbi9, f « L7add dyal lconsommation ».
+2. Khtar naw3 l7add (internet bla pass, mablagh hors forfait, khadamat b lflous).
+3. 7ett la valeur li bghiti w 2akked, w ghadi ywslek message.
+4. Rje3 l nfs lblasa bach tbddel wla t7iyed l7add.
+
+## Chorout
+
+- Mol lkhat howa li kaybddel.
+- Mli kaywsel l7add, lconsommation katwe99ef 7ta l lmodda jaya wla 7ta tbddlo.
+
+## L7oudoud
+
+- L2anwa3 dyal l7doud katbe3 l3ard.
+- L7add y9der yttebbe9 b chwiya dyal tta2khir.
+
+## Ta7wil l conseiller
+
+Ila l7add ma ttebbe9ch, n9dro n7awlouk l conseiller.

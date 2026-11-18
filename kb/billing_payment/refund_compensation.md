@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Toute demande de remboursement est transmise à un conseiller.
 ## التحويل لمستشار
 
 أي طلب ديال استرجاع الفلوس كيتحول لمستشار.
+
+# Nouskha b darija (arabizi) — Ntleb yrj3ou lia lflous wla ta3wid
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach ttleb trje3 lik lflous wla chi ta3wid men ba3d mochkil f lkhidma.
+
+## Lkhatawat
+
+1. Wsef lmochkil, lkhidma, nhar li bda w li sala, w ta2tir dyalo.
+2. Jme3 lwata2i9 (numerowat dyal chkayat li derti 9bel, lwsoulat).
+3. Dir talab « Istirja3 lflous / ta3wid » f chkayat.
+4. Tbe3 jawab b numero dyal chkaya.
+
+## Chorout
+
+- Khass talab ykoun 3la mochkil 7a9i9i w m3rouf tarikh dyalo (in9ita3, khlas jouj merrat, khidma ma twsseltich biha).
+- Kol talab kaytdres b wa7do.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch yw3dek b 7ta mablagh wla b rjou3 dyal lflous.
+- Ta3widat katbe3 chorout l3amma dyal l3ard.
+
+## Ta7wil l conseiller
+
+Ay talab dyal istirja3 lflous kayt7awel l conseiller.

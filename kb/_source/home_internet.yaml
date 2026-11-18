@@ -28,6 +28,20 @@ install_internet:
     - المساعد ما يقدرش يدير الطلب ولا يحدد الموعد.
     - الوقت ديال التركيب كيتبع المنطقة والخدمة اللي خاصها تدار.
   escalade_ar: فشي حالة خاصة (عمارة بلا قنوات، محل ديال الخدمة)، نقدرو نحولوك لمستشار.
+  title_arabizi: Ntleb nrekkbou internet f dar
+  objet_arabizi: Nwjjhou lclient li bgha yrekkeb internet jdid f dar (la fibre, ADSL wla box 4G/5G).
+  etapes_arabizi:
+    - T2akked 9bel wach l3onwan mo2ahal (chouf lbita9a « Wach la fibre kayna 3ndi »).
+    - Khtar l3ard f tatbi9, f site wla f lwkala.
+    - 3ti la carte nationale dyal mol lkhat w l3onwan kamel dyal dar.
+    - Khtar rendez-vous l technicien w 7tafed b numero dyal talab.
+  conditions_arabizi:
+    - Khass mol lkhat ykoun rached w 3ndo carte d'identite sal7a.
+    - Khass ykoun chi wa7d rached f dar nhar rendez-vous.
+  limites_arabizi:
+    - Lmousa3id ma y9derch ydir talab wla y7dded rendez-vous.
+    - Lwe9t dyal tterkib kaytbe3 lmanti9a w lkhedma li khassha tdar.
+  escalade_arabizi: F chi 7ala khassa (3imara bla 9anawat, ma7al dyal lkhedma), n9dro n7awlouk l conseiller.
 
 fiber_eligibility:
   title_fr: Éligibilité à la fibre ou à internet à domicile
@@ -56,6 +70,19 @@ fiber_eligibility:
     - النتيجة تقريبية وكتأكد نهار ما يجي التقني.
     - المساعد ما كيعرفش التغطية الحقيقية ديال شي عنوان.
   escalade_ar: إلا النتيجة ما متافقاش مع الجيران اللي عندهم لافيبر، نقدرو نحولوك لمستشار.
+  title_arabizi: Wach la fibre kayna 3ndi
+  objet_arabizi: Nchr7ou kifach t3ref wach la fibre wla chi 3ard internet akhor kayn f wa7d l3onwan.
+  etapes_arabizi:
+    - 7ell le test d'eligibilite f tatbi9 wla f site.
+    - Dkhel l3onwan kamel (lmdina, l7ouma, zen9a, ra9m, l3imara w tab9 ila khass).
+    - 9ra natija, la fibre kayna, ADSL wla box 4G/5G f blastha.
+    - Ila l3onwan ma mo2ahalch, sjjel bach y3lmouk mli twsel ila kanet had l2imkaniya.
+  conditions_arabizi:
+    - Khass l3onwan ykoun da9i9, l3onwan tta9ribi y9der y3ti natija ghalta.
+  limites_arabizi:
+    - Natija ta9ribiya w katt2akked nhar ma yji technicien.
+    - Lmousa3id ma kay3refch la couverture l7a9i9iya dyal chi 3onwan.
+  escalade_arabizi: Ila natija ma mtaf9ach m3a jiran li 3ndhom la fibre, n9dro n7awlouk l conseiller.
 
 installation_delay:
   title_fr: Retard d'installation ou de rendez-vous technicien
@@ -84,6 +111,19 @@ installation_delay:
     - المساعد ما كيشوفش فين وصل الطلب بصح وما يقدرش يقدم الموعد.
     - شي تعطلات كتبع أشغال ولا رخص من برا.
   escalade_ar: إلا الموعد فات ولا الوقت تعطل بزاف، كنحولوك لمستشار.
+  title_arabizi: Tterkib t3ttel wla technicien ma jach
+  objet_arabizi: N3awnou lclient li tterkib dyalo t3ttel wla technicien ma jach, wla bgha y3ref rendez-vous dyalo.
+  etapes_arabizi:
+    - L9a numero dyal talab li twsselti bih nhar derti l'abonnement.
+    - Chouf suivi dyal talab f tatbi9 bach t3ref fin wsel w tarikh lmotawa99a3.
+    - Bach tbddel rendez-vous, sta3mel « Tbdil rendez-vous » f suivi.
+    - Ila fat tarikh lmotawa99a3, dir chkaya « Ta3attol tterkib » b numero dyal talab.
+  conditions_arabizi:
+    - Numero dyal talab darouri l ay ijra2.
+  limites_arabizi:
+    - Lmousa3id ma kaychoufch fin wsel talab b s7 w ma y9derch y9addem rendez-vous.
+    - Chi ta3attolat katbe3 l2achghal wla rokhas men berra.
+  escalade_arabizi: Ila rendez-vous fat wla lwe9t t3ttel bzaf, kan7awlouk l conseiller.
 
 home_outage:
   title_fr: Internet à domicile coupé
@@ -112,6 +152,19 @@ home_outage:
     - المساعد ما يقدرش يجرب الخط من بعيد.
     - العطب فالحومة كيتصلح بتدخل ديال الفرقة التقنية.
   escalade_ar: إلا الكونيكسيون ما رجعاتش من بعد ما طفيتي وشعلتي، كنفتحو بلاغ وكنحولوك لمستشار (خدمة مقطوعة).
+  title_arabizi: Internet dyal dar ma9tou3
+  objet_arabizi: N3awnou lclient li internet dyal dar dyalo mab9ach khdam nihai2iyan.
+  etapes_arabizi:
+    - T2akked beli lbox mch3la w chouf dwaw (ddaw l7mer wla tafi kay3ni lkhat ma9tou3).
+    - Chouf les cables (la fibre wla ADSL w ddaw) bla ma tlwi lcable dyal la fibre.
+    - Tfi lbox d9i9a w men ba3d ch3elha, w tsenna 7ta ysta9rrou dwaw.
+    - Chouf f tatbi9 wach kayn chi panne m3lna f l7ouma.
+  conditions_arabizi:
+    - Khass lfatoura wla l'abonnement ma ykounch mwe99ef 3la 9bel ma tkhllesch.
+  limites_arabizi:
+    - Lmousa3id ma y9derch yjerreb lkhat men b3id.
+    - La panne f l7ouma kattsle7 b tadakhol dyal l'equipe technique.
+  escalade_arabizi: Ila la connexion ma rj3atch men ba3d ma tfiti w ch3elti, kanft7ou blagh w kan7awlouk l conseiller (khidma ma9tou3a).
 
 home_slow:
   title_fr: Internet à domicile lent
@@ -140,6 +193,19 @@ home_slow:
     - المساعد ما يقدرش يقيس ولا يضمن السرعة.
     - جهاز قديم ولا ويفي فيه الضغط يقدرو ينقصو السرعة بلا ما يكون المشكل فالخط.
   escalade_ar: إلا بقات السرعة بالكابل أقل بزاف من العرض شحال من نهار، كنحولوك لمستشار.
+  title_arabizi: Internet dyal dar t9il
+  objet_arabizi: N3awnou lclient li internet dyal dar dyalo khdam walakin a9al men sor3a li kaykhlles 3liha.
+  etapes_arabizi:
+    - 9is sor3a b jihaz merbout b lcable m3a lbox, machi b wifi.
+    - Tfi w ch3el lbox w n9es men l2ajhiza li kay7mmlou f nfs lwe9t.
+    - F wifi, 9erreb ljihaz men lbox wla sta3mel 5 GHz ila kanet.
+    - Sjjel natayej dyal les tests (nhar, sa3a, sor3a) ila 7tajiti tdir chkaya.
+  conditions_arabizi:
+    - Sor3a lm3lna hiya sor3a l9oswa, w sor3a l7a9i9iya katbe3 lkhat w l2ajhiza.
+  limites_arabizi:
+    - Lmousa3id ma y9derch y9is wla ydmen sor3a.
+    - Jihaz 9dim wla wifi fih ddeght y9dro yn9sou sor3a bla ma ykoun lmochkil f lkhat.
+  escalade_arabizi: Ila b9at sor3a b lcable a9al bzaf men l3ard ch7al men nhar, kan7awlouk l conseiller.
 
 router_wifi:
   title_fr: Box, routeur et Wi-Fi
@@ -168,6 +234,19 @@ router_wifi:
     - إعادة الضبط كتمسح الإعدادات اللي درتي.
     - المساعد ما يقدرش يدخل للبوكس من بعيد.
   escalade_ar: إلا البوكس مابقاتش كتشعل ولا باينة خاسرة، كنحولوك لمستشار باش تتبدل.
+  title_arabizi: Lbox, routeur w wifi
+  objet_arabizi: N3awnou f lmachakil dyal lbox wla routeur w f smiya wla lmot de passe dyal wifi.
+  etapes_arabizi:
+    - Smiya dyal wifi w lmot de passe l2asli mktoubin f lwr9a li ta7t lbox.
+    - Bach tbddelhom, 7ell l'interface dyal lbox men tatbi9 wla navigateur, f « Wifi ».
+    - Ila kan chi mochkil, tfi w ch3el lbox, w ila ma nfe3ch dir reset (wifi kayrje3 l les parametres li f lwr9a).
+    - 7ett lbox f blasa 3alya w m7loula, b3ida 3la l7youta lghlida w l2ajhiza electroniques.
+  conditions_arabizi:
+    - Tabdilat kattdar men jihaz merbout m3a lbox.
+  limites_arabizi:
+    - Reset kaymse7 les parametres li derti.
+    - Lmousa3id ma y9derch ydkhol l lbox men b3id.
+  escalade_arabizi: Ila lbox mab9atch katch3el wla bayna khasra, kan7awlouk l conseiller bach ttbddel.
 
 tv_issue:
   title_fr: Problème de TV ou de décodeur
@@ -196,3 +275,16 @@ tv_issue:
     - المحتوى ديال القنوات ما كيتبعش المساعد.
     - المساعد ما يقدرش يعاود يضبط الديكودور من بعيد.
   escalade_ar: إلا الصورة ما رجعاتش من بعد ما طفيتي وشعلتي، كنحولوك لمستشار.
+  title_arabizi: Mochkil f tv wla decodeur
+  objet_arabizi: N3awnou lclient li tv dyalo b lbox wla IPTV ma khdamach (les chaines, decodeur, tswira).
+  etapes_arabizi:
+    - T2akked beli internet dyal lbox khdam (w ila la chouf « Internet dyal dar ma9tou3 »).
+    - Chouf lcable bin decodeur w tv w khtar la source s7i7a (HDMI) f tv.
+    - Tfi decodeur, 7iyed ddaw d9i9a w rjj3o.
+    - Ila chi chaine mo3ayana na9sa, t2akked beli dakhla f le bouquet li 3ndek.
+  conditions_arabizi:
+    - Khass service tv ykoun dakhel f l'abonnement wla mfa3el k option.
+  limites_arabizi:
+    - Lmo7tawa dyal les chaines ma kaytbe3ch lmousa3id.
+    - Lmousa3id ma y9derch y3awed ydbet decodeur men b3id.
+  escalade_arabizi: Ila tswira ma rj3atch men ba3d ma tfiti w ch3elti, kan7awlouk l conseiller.

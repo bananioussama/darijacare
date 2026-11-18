@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si le titulaire ne peut accéder ni à l'espace client ni à une agence, propose
 ## التحويل لمستشار
 
 إلا مول الخط ما قدرش يدخل للفضاء ديال الكليان ولا يمشي للوكالة، نقدرو نحولوه لمستشار.
+
+# Nouskha b darija (arabizi) — Sim mblokya, code PIN wla PUK
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li sim dyalo tblokat men ba3d ma ghlet f lcode PIN w khasso lcode PUK.
+
+## Lkhatawat
+
+1. Ma tjerrebch des codes bla ma t3refhom, 7it ila ghlti bzaf f PUK sim katkhser nihai2iyan.
+2. L9a lcode PUK f la carte plastique l2asliya dyal sim.
+3. W ila la, mol lkhat kayakhdo men l'espace client (« Sim dyali ») wla men lwkala b la carte nationale.
+4. Dkhel PUK w men ba3d khtar code PIN jdid.
+
+## Chorout
+
+- Lcode PUK kayt3ta ghir l mol lkhat lmsjjel.
+
+## L7oudoud
+
+- Lmousa3id 3emmro ma kay3ti lcode PUK.
+- Sim li tblokat nihai2iyan khassha ttbddel (chouf « Nbddel sim wla ndouz l eSIM »).
+
+## Ta7wil l conseiller
+
+Ila mol lkhat ma 9derch ydkhol l l'espace client wla ymchi l lwkala, n9dro n7awlouh l conseiller.

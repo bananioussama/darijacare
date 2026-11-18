@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Toute demande de changement de titulaire passe par un conseiller ou une agence.
 ## التحويل لمستشار
 
 أي طلب ديال تبديل مول الخط كيدوز عن طريق مستشار ولا الوكالة.
+
+# Nouskha b darija (arabizi) — Nbddel mol lkhat
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach ytbddel mol lkhat (n3tih l chi wa7d akhor, mol lkhat twffa wla mcha).
+
+## Lkhatawat
+
+1. Mol lkhat l7ali w li ghadi yakhdo kaymchiw l lwkala b les cartes nationales dyalhom.
+2. Ila mol lkhat twffa, chi wa7d men l3a2ila kayjib chahadat lwafat w chi wati9a katbiyen l3ala9a wla beli wares.
+3. Ttwe99a3 le formulaire dyal tbdil mol lkhat, w jdid kaykemmel b l'abonnement.
+4. 7tafed b lwasl dyal talab.
+
+## Chorout
+
+- Khass lfwatir li ba9yin ytkhllsou 9bel tbdil.
+- Khass mol lkhat jdid ykoun rached.
+
+## L7oudoud
+
+- Tbdil mol lkhat ma kayttdarch b message wla 3an tari9 lmousa3id.
+- Lwata2i9 b dabt y9dro ykhtalfou 3la 7sab l7ala.
+
+## Ta7wil l conseiller
+
+Ay talab dyal tbdil mol lkhat kaydouz 3an tari9 conseiller wla lwkala.

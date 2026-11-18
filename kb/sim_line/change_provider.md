@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Si la portabilité est bloquée, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا نقل النمرة وقف، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nbddel l'operateur w nkhalli nfs nmra
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tn9el nmra dyalek men wla l operateur akhor.
+
+## Lkhatawat
+
+1. Mol lkhat kaymchi 3nd l'operateur jdid b la carte nationale w nmra dyalo.
+2. L'operateur jdid howa li kaydir talab m3a l9dim.
+3. Khalli sim l9dima khddama 7ta l nhar dyal tbdil.
+4. Dkhel sim jdida f nhar li galou lik, w nmra katb9a hiya hiya.
+
+## Chorout
+
+- Khass lkhat ykoun khdam w b smiyt li kaytleb.
+- Lfwatir w les engagements li ba9yin 3nd l'operateur l9dim khasshom ytkhllsou.
+
+## L7oudoud
+
+- Y9der yw9e3 chi in9ita3 9sir nhar tbdil.
+- Lmousa3id ma kay3alejch la portabilite dyal nmra.
+
+## Ta7wil l conseiller
+
+Ila n9l nmra w9ef, n9dro n7awlouk l conseiller.

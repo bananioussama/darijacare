@@ -28,6 +28,20 @@ invoice_info:
     - المساعد الأوتوماتيكي ما عندوش المبلغ الحقيقي ديال الفاتورة.
     - الفواتير القدام كيتشافو غير لواحد المدة محدودة.
   escalade_ar: إلا بقات شي حاجة فالفاتورة ما مفهوماش من بعد ما قريتي التفصيل، نقدرو نحولوك لمستشار.
+  title_arabizi: Nchouf lfatoura w nfhamha
+  objet_arabizi: N3awnou lclient yl9a lfatoura dyal chhar w yfham lmablagh dyalha (l'abonnement, les options, lconsommation li fat lforfait).
+  etapes_arabizi:
+    - Dkhol l l'espace client (tatbi9 wla site) w khtar « Lfwatir dyali ».
+    - Khtar chhar li bghiti bach tban lik lfatoura b ttafsil.
+    - 9ra lajza2 b tartib dyalhom, l'abonnement, les options, lconsommation li fat lforfait, les taxes.
+    - 7mmel lfatoura f PDF ila 7tajiti chi wati9a.
+  conditions_arabizi:
+    - Katkhos lkhtout li fihom abonnement (forfait kaytkhlles kol chhar).
+    - Lfatoura dyal chhar katban chi iyam men ba3d tarikh lighla9.
+  limites_arabizi:
+    - Lmousa3id l'automatique ma 3ndouch lmablagh l7a9i9i dyal lfatoura.
+    - Lfwatir l9dam kaytchafou ghir l wa7d lmodda m7douda.
+  escalade_arabizi: Ila b9at chi 7aja f lfatoura ma mfhomach men ba3d ma 9riti ttafsil, n9dro n7awlouk l conseiller.
 
 invoice_dispute:
   title_fr: Contester une facture
@@ -58,6 +72,20 @@ invoice_dispute:
     - المساعد ما يقدرش يلغي ولا يبدل الفاتورة.
     - المبلغ المعترض عليه كيبقى فالأصل خاصو يتخلص حتى تتعالج الشكاية.
   escalade_ar: أي اعتراض كيتحول لمستشار، هو اللي كيدرس الملف وكيجاوب الكليان.
+  title_arabizi: N3tared 3la fatoura
+  objet_arabizi: Nkhalliw lclient y3tared 3la chi mablagh wla chi ster f lfatoura li kaychouf beli machi m39oul.
+  etapes_arabizi:
+    - L9a f lfatoura lmfassla ster wla lmablagh li m3tared 3lih.
+    - Jme3 lma3loumat li kat3awen (tarikh, lkhidma, tsawer dyal l'ecran ila kanou).
+    - Dir chkaya men l'espace client, f « Chkayat », w khtar « I3tirad 3la fatoura ».
+    - Sjjel numero dyal chkaya li kayban lik bach ttbe3ha.
+  conditions_arabizi:
+    - Khass l'i3tirad ykoun f wa7d lmodda m39oula men ba3d ma twsselti b lfatoura.
+    - Mol lkhat (wla chi wa7d 3ndo l'idn) howa li kaydir chkaya.
+  limites_arabizi:
+    - Lmousa3id ma y9derch ylghi wla ybddel lfatoura.
+    - Lmablagh lm3tared 3lih kayb9a f l'asl khasso ytkhlles 7ta tt3alej chkaya.
+  escalade_arabizi: Ay i3tirad kayt7awel l conseiller, howa li kaydrous dossier w kayjaweb lclient.
 
 payment_methods:
   title_fr: Moyens de paiement d'une facture
@@ -88,6 +116,20 @@ payment_methods:
     - الوقت باش يتسجل الخلاص كيختلف على حساب الطريقة (فالحين فالأنترنيت، كثر فالبلايص الأخرى).
     - المساعد ما كياخد حتى خلاص بيدو.
   escalade_ar: إلا حتى طريقة ما خدمات مع الكليان، نقدرو نحولوه لمستشار.
+  title_arabizi: Torou9 bach tkhlles lfatoura
+  objet_arabizi: Nchr7ou torou9 li momkin tkhlles bihom lfatoura.
+  etapes_arabizi:
+    - Lkhlas b la carte bancaire f l'espace client (tatbi9 wla site).
+    - Lkhlas f lwkala, f lguichet, b la reference dyal lfatoura.
+    - Lkhlas 3nd chi point de paiement partenaire m3tamad.
+    - Lkhlas men lwallet (mobile money) ila 3ndek wa7d.
+  conditions_arabizi:
+    - Khassek la reference dyal lfatoura wla numero dyal lkhat.
+    - Lkhlas b la carte khasso carte mfa3la l lkhlas f internet.
+  limites_arabizi:
+    - Lwe9t bach ytsjjel lkhlas kaykhtalef 3la 7sab tari9a (f l7in f internet, ktar f blayes lokhrin).
+    - Lmousa3id ma kayakhod 7ta khlas b yeddo.
+  escalade_arabizi: Ila 7ta tari9a ma khdmat m3a lclient, n9dro n7awlouh l conseiller.
 
 pay_bill:
   title_fr: Payer sa facture maintenant
@@ -118,6 +160,20 @@ pay_bill:
     - إلا كان الخط مقطوع على قبل ما تخلصش، يقدر ياخد شوية ديال الوقت باش يرجع من بعد الخلاص.
     - المساعد ما كيشوفش المبلغ الحقيقي اللي عليك.
   escalade_ar: إلا الخلاص ما دازش بزاف ديال المرات، نقدرو نحولوك لمستشار.
+  title_arabizi: Nkhlles lfatoura daba
+  objet_arabizi: Nwjjhou lclient li bgha ykhlles lfatoura dyalo f l7in.
+  etapes_arabizi:
+    - Dkhol l l'espace client w khtar « Khlles lfatoura ».
+    - T2akked men lmablagh w lmodda li bayenin.
+    - Khtar tari9at lkhlas (carte bancaire wla wallet) w 2akked.
+    - 7tafed b lwasl dyal lkhlas li kaywslek f message wla kayban f l'ecran.
+  conditions_arabizi:
+    - Khass lkhat ykoun fih abonnement w tkoun chi fatoura ba9a ma tkhllsatch.
+    - Lkhlas f internet khasso wasila dyal lkhlas sal7a.
+  limites_arabizi:
+    - Ila kan lkhat ma9tou3 3la 9bel ma tkhllesch, y9der yakhod chwiya dyal lwe9t bach yrje3 men ba3d lkhlas.
+    - Lmousa3id ma kaychoufch lmablagh l7a9i9i li 3lik.
+  escalade_arabizi: Ila lkhlas ma dazch bzaf dyal lmerrat, n9dro n7awlouk l conseiller.
 
 schedule_payments:
   title_fr: Prélèvement automatique de la facture
@@ -148,6 +204,20 @@ schedule_payments:
     - التفعيل يقدر يبدا غير من الفاتورة الجاية.
     - الكليان هو المسؤول يكون عندو الفلوس فالحساب نهار الاقتطاع.
   escalade_ar: إلا الاقتطاع تّرفض ولا تقطع جوج مرات، نوجهوك لمستشار.
+  title_arabizi: Lkhlas automatique dyal lfatoura
+  objet_arabizi: Nchr7ou kifach tfa3el, tbddel wla twe99ef lkhlas automatique dyal lfwatir.
+  etapes_arabizi:
+    - F l'espace client, 7ell « Lkhlas automatique ».
+    - Khtar mnin ghadi ytkte3 lkhlas (compte bancaire wla carte) w dkhel lma3loumat lmatlouba.
+    - 2akked talab, w ghadi twslek message dyal confirmation.
+    - Bach twe99ef lkhlas, rje3 l nfs lblasa w khtar « I9af ».
+  conditions_arabizi:
+    - Ghir l lkhtout li fihom abonnement.
+    - Khass mol lcompte bancaire ykoun mwafe9.
+  limites_arabizi:
+    - Tfe3il y9der ybda ghir men lfatoura jaya.
+    - Lclient howa lmas2oul ykoun 3ndo lflous f lcompte nhar le prelevement.
+  escalade_arabizi: Ila le prelevement trfed wla tkte3 jouj merrat, nwjjhouk l conseiller.
 
 payment_not_reflected:
   title_fr: Paiement effectué mais non pris en compte
@@ -178,6 +248,20 @@ payment_not_reflected:
     - المساعد ما يقدرش يتأكد من العملية ولا يرجع الخط.
     - الخلاص اللي تدار على مرجع آخر يقدر ياخد كثر ديال الوقت باش يتلقى.
   escalade_ar: هادي حالة فيها الفلوس، إلا فات الوقت العادي كنحولوك لمستشار.
+  title_arabizi: Khllest w lkhlas ma tsjjelch
+  objet_arabizi: N3awnou lclient li khlles walakin lkhlas ma banch wla lkhat ba9i ma9tou3.
+  etapes_arabizi:
+    - Chouf tarikh w tari9a li khllesti biha (chi torou9 katakhod chwiya dyal lwe9t).
+    - L9a lwasl wla la reference dyal l3amaliya.
+    - Tfi w ch3el tilifon wla ljihaz ila kan lkhat mwe99ef.
+    - Ila fat lwe9t l3adi, dir chkaya « Khlas ma tsjjelch » w m3aha lwasl.
+  conditions_arabizi:
+    - Lwasl wla la reference dyal l3amaliya darouri bach ytb7et f dossier.
+    - Khass lkhlas ykoun 3la lkhat w lfatoura s7a7.
+  limites_arabizi:
+    - Lmousa3id ma y9derch yt2akked men l3amaliya wla yrjje3 lkhat.
+    - Lkhlas li tdar 3la reference okhra y9der yakhod ktar dyal lwe9t bach ytl9a.
+  escalade_arabizi: Hadi 7ala fiha lflous, ila fat lwe9t l3adi kan7awlouk l conseiller.
 
 refund_compensation:
   title_fr: Demander un remboursement ou un dédommagement
@@ -208,6 +292,20 @@ refund_compensation:
     - المساعد ما يقدرش يوعدك بحتى مبلغ ولا بالرجوع ديال الفلوس.
     - التعويضات كتبع الشروط العامة ديال العرض.
   escalade_ar: أي طلب ديال استرجاع الفلوس كيتحول لمستشار.
+  title_arabizi: Ntleb yrj3ou lia lflous wla ta3wid
+  objet_arabizi: Nchr7ou kifach ttleb trje3 lik lflous wla chi ta3wid men ba3d mochkil f lkhidma.
+  etapes_arabizi:
+    - Wsef lmochkil, lkhidma, nhar li bda w li sala, w ta2tir dyalo.
+    - Jme3 lwata2i9 (numerowat dyal chkayat li derti 9bel, lwsoulat).
+    - Dir talab « Istirja3 lflous / ta3wid » f chkayat.
+    - Tbe3 jawab b numero dyal chkaya.
+  conditions_arabizi:
+    - Khass talab ykoun 3la mochkil 7a9i9i w m3rouf tarikh dyalo (in9ita3, khlas jouj merrat, khidma ma twsseltich biha).
+    - Kol talab kaytdres b wa7do.
+  limites_arabizi:
+    - Lmousa3id ma y9derch yw3dek b 7ta mablagh wla b rjou3 dyal lflous.
+    - Ta3widat katbe3 chorout l3amma dyal l3ard.
+  escalade_arabizi: Ay talab dyal istirja3 lflous kayt7awel l conseiller.
 
 paid_services_charges:
   title_fr: Services payants non souhaités
@@ -238,3 +336,17 @@ paid_services_charges:
     - إيقاف الخدمة ما كيرجعش أوتوماتيكيا الفلوس اللي تقطعو.
     - المساعد ما كيشوفش اللائحة الحقيقية ديال الخدمات المفعلة.
   escalade_ar: إلا الكليان معترض على فلوس تقطعو من قبل، كنحولوه لمستشار.
+  title_arabizi: Khadamat b lflous ma bghithach
+  objet_arabizi: N3awnou lclient yl9a w ywe99ef chi khadamat b lflous, messages ghalyin wla abonnements dyal charikat okhrin kayaklou lih solde wla lfatoura.
+  etapes_arabizi:
+    - Chouf l'historique dyal lconsommation f l'espace client bach tl9a lkhidma li katkhlles 3liha.
+    - 7ell « Lkhadamat dyali » w we99ef lkhidma.
+    - Fa3el l7imaya men lkhadamat b lflous dyal charikat lokhrin ila kanet.
+    - Ma tjawebch abadan 3la chi message kaytleb mnek t2akked chi abonnement ma kat3rfouch.
+  conditions_arabizi:
+    - Mol lkhat howa li kaywe99ef lkhidma.
+    - Smiya dyal lkhidma katban f l'historique wla f message dyal confirmation.
+  limites_arabizi:
+    - Twe9if lkhidma ma kayrjje3ch automatiquement lflous li tkt3ou.
+    - Lmousa3id ma kaychoufch la liste l7a9i9iya dyal lkhadamat lmfa3la.
+  escalade_arabizi: Ila lclient m3tared 3la flous tkt3ou men 9bel, kan7awlouh l conseiller.

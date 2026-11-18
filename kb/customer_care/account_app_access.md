@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si le compte reste bloqué, transmettre à un conseiller.
 ## التحويل لمستشار
 
 إلا بقا الحساب مبلوكي، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Ma 9adrch ndkhol l tatbi9 wla l l'espace client
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li ma 9adrch ydkhol l tatbi9 wla l lcompte dyalo f internet.
+
+## Lkhatawat
+
+1. Sta3mel « Nsit lmot de passe » w tbe3 lien wla lcode li wslek.
+2. Dkhel lcode dyal confirmation b zerba (kaysali men ba3d chi d9aye9).
+3. Dir mise a jour l tatbi9, mse7 le cache dyalo wla 3awed 7mmlo.
+4. Chouf internet w chouf beli tarikh w sa3a f tilifon automatiques.
+
+## Chorout
+
+- Lcode dyal confirmation kaytsifet l nmra dyal lkhat, khass lkhat ytwssel b les messages.
+
+## L7oudoud
+
+- 3emmrek ma t3ti lcode dyal confirmation l 7ta wa7d, wakha ygoul lik beli conseiller.
+- Lmousa3id ma kay3awedch yfte7 les comptes.
+
+## Ta7wil l conseiller
+
+Ila b9a lcompte mbloki, kan7awlouk l conseiller.

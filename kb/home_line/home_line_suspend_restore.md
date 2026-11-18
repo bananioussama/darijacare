@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si la ligne reste coupée après paiement, voir « Paiement effectué mais non p
 ## التحويل لمستشار
 
 إلا بقا الخط مقطوع من بعد الخلاص، شوف «خلصت والخلاص ما تسجلش» وطلب مستشار.
+
+# Nouskha b darija (arabizi) — Nwe99ef wla nrjje3 lkhat lfixe
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach twe99ef lkhat lfixe wla internet l wa7d lmodda, wla trjj3o men ba3d twe9if wla 9te3 3la 9bel ma khllestich.
+
+## Lkhatawat
+
+1. Bach twe99fo l wa7d lmodda (ghiyab, safar), dir talab f l'espace client w goul lmodda.
+2. Bach trjj3o men ba3d twe9if dertih b yeddek, sta3mel « Rjje3 lkhat dyali » f nfs lblasa.
+3. Ila tkte3 3la 9bel ma khllestich, khlles lfatoura li ba9a (chouf « Nkhlles lfatoura daba »).
+4. Tfi w ch3el lbox mli ytt2akked rjou3.
+
+## Chorout
+
+- Twe9if lmo2a99at m7doud f lwe9t 3la 7sab chorout dyal l3ard.
+- Rjou3 men ba3d 3adam lkhlas kayttleb tkhlles kolchi li 3lik.
+
+## L7oudoud
+
+- Rjou3 y9der yakhod chwiya dyal lwe9t men ba3d lkhlas.
+
+## Ta7wil l conseiller
+
+Ila b9a lkhat ma9tou3 men ba3d lkhlas, chouf « Khllest w lkhlas ma tsjjelch » w tleb conseiller.

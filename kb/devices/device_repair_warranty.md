@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ En cas de refus de prise en charge contesté, transmettre à un conseiller.
 ## التحويل لمستشار
 
 إلا رفضو يصلحوه وانت معترض، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Reparation, garantie w assurance dyal ljihaz
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach yt3alej jihaz chritih men 3nd l'operateur (panne, garantie, assurance).
+
+## Lkhatawat
+
+1. L9a lfatoura dyal chra, w ila kan, lcontrat dyal l'assurance.
+2. Dir sauvegarde l lma3loumat dyalek w 7iyed sim w la carte memoire.
+3. Dfe3 ljihaz f lwkala wla f centre de service li galou lik, m3a lfatoura.
+4. 7tafed b lwasl dyal depot w tbe3 la reparation.
+
+## Chorout
+
+- La garantie katghetti l2a3tab dyal ssna3a f lmodda lmktouba f lfatoura.
+- Theras wla lma machi dakhlin f la garantie, walakin y9dro ydkhlou f l'assurance ila kanet.
+
+## L7oudoud
+
+- Lmousa3id ma kay9arrerch wach ljihaz ghadi ytsle7 fabor, diagnostic kaydiro service technique.
+
+## Ta7wil l conseiller
+
+Ila rafdou ysl7ouh w nta m3tared, kan7awlouk l conseiller.

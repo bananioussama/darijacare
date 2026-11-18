@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si une option ne fonctionne pas ou ne s'arrête pas, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا شي أوبسيون ما خدماتش ولا ما بغاتش تتوقف، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Khadamat tarfih (streaming, musique, jeux, sonneries)
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach tchtarek w tsiyer les options dyal tarfih (streaming, musique, jeux, sonneries d'attente).
+
+## Lkhatawat
+
+1. 7ell « Tarfih » f tatbi9 bach tchouf les options li kaynin.
+2. Chtarek f l'option li bghiti w chouf kol ch7al katkhlles (nhar, simana, chhar).
+3. Siyer wla we99ef l'option men « Lkhadamat dyali ».
+4. Ila chtarekti b lghalat, chouf lbita9a « Khadamat b lflous ma bghithach ».
+
+## Chorout
+
+- Les options katkhlles men solde wla men lfatoura 3la 7sab l3ard.
+
+## L7oudoud
+
+- Lmo7tawa dyal lkhadamat kay9addmouh partenaires.
+- Lmousa3id ma kaychtarek f 7ta option.
+
+## Ta7wil l conseiller
+
+Ila chi option ma khdmatch wla ma bghatch ttwe99ef, n9dro n7awlouk l conseiller.

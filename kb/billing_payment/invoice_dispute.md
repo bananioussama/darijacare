@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -67,3 +68,32 @@ Toute contestation est transmise à un conseiller, qui étudie le dossier et ré
 ## التحويل لمستشار
 
 أي اعتراض كيتحول لمستشار، هو اللي كيدرس الملف وكيجاوب الكليان.
+
+# Nouskha b darija (arabizi) — N3tared 3la fatoura
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nkhalliw lclient y3tared 3la chi mablagh wla chi ster f lfatoura li kaychouf beli machi m39oul.
+
+## Lkhatawat
+
+1. L9a f lfatoura lmfassla ster wla lmablagh li m3tared 3lih.
+2. Jme3 lma3loumat li kat3awen (tarikh, lkhidma, tsawer dyal l'ecran ila kanou).
+3. Dir chkaya men l'espace client, f « Chkayat », w khtar « I3tirad 3la fatoura ».
+4. Sjjel numero dyal chkaya li kayban lik bach ttbe3ha.
+
+## Chorout
+
+- Khass l'i3tirad ykoun f wa7d lmodda m39oula men ba3d ma twsselti b lfatoura.
+- Mol lkhat (wla chi wa7d 3ndo l'idn) howa li kaydir chkaya.
+
+## L7oudoud
+
+- Lmousa3id ma y9derch ylghi wla ybddel lfatoura.
+- Lmablagh lm3tared 3lih kayb9a f l'asl khasso ytkhlles 7ta tt3alej chkaya.
+
+## Ta7wil l conseiller
+
+Ay i3tirad kayt7awel l conseiller, howa li kaydrous dossier w kayjaweb lclient.

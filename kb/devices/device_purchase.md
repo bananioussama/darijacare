@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Pour une offre entreprise ou une commande en nombre, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا كان عرض ديال شركة ولا طلب بالكمية، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nchri tilifon wla jihaz
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nwjjhou lclient li bgha ychri tilifon wla jihaz, 7ta b ta9sit.
+
+## Lkhatawat
+
+1. Chouf catalogue dyal l2ajhiza f tatbi9, f site wla f lwkala.
+2. T2akked beli ljihaz kaytmacha (4G, 5G, eSIM) m3a l'isti3mal dyalek.
+3. Ila bghiti b ta9sit, sewwel 3la chorout (lwata2i9, lmodda, l'iltizam).
+4. Kemmel chra f lwkala wla f internet w 7tafed b lfatoura dyal chra l garantie.
+
+## Chorout
+
+- Ta9sit y9der ykoun ghir l les clients li 3ndhom abonnement w khasso mowaf9a.
+
+## L7oudoud
+
+- Lmousa3id ma kaybi3ch l2ajhiza w ma kay3tich l2atmina wla wach kayn f stock.
+
+## Ta7wil l conseiller
+
+Ila kan 3ard dyal charika wla talab b lkammiya, n9dro n7awlouk l conseiller.

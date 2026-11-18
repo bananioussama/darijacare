@@ -6,15 +6,15 @@ Modèle NLU v5 (publié), décision `configs/decision.yaml`, recherche BGE-M3 + 
 
 - NLU : `recharge_failed` (prepaid_credit), confiance 0.86, urgence 2, p(humain) 0.06, script détecté `arabizi`
 - Décision : règle 7 `reponse_ancree` — Réponse ancrée sur la fiche de l'intention recharge_failed.
-- Recherche : KB-recharge_failed (dense 0.38), KB-balance_deducted (dense 0.36), KB-activate_line (dense 0.36) ; fiable : True
-- Latence : nlu 1363 ms, retrieval 421 ms, total 1790 ms
+- Recherche : KB-recharge_failed (dense 0.51), KB-balance_deducted (dense 0.48), KB-activate_line (dense 0.48) ; fiable : True
+- Latence : nlu 1406 ms, retrieval 462 ms, total 1877 ms
 
 ```text
-Salam! 3la « Recharge non reçue ou code refusé », hadi l-khatawat :
-1. Vérifier le solde après quelques minutes (le crédit peut arriver avec un léger retard).
-2. Revérifier le code saisi (chiffres inversés, espace en trop) et réessayer une seule fois.
-3. Pour une recharge en ligne ou mobile money, retrouver la référence de la transaction ou le reçu.
-4. Si la recharge n'arrive toujours pas, déposer une réclamation « Recharge non reçue » avec le code ou la référence.
+Salam! 3la « Recharge ma wseltch wla lcode ma dazch », hadi lkhatawat :
+1. Chouf solde men ba3d chi d9aye9 (solde y9der yt3ttel chwiya).
+2. 3awed chouf lcode li dkhelti (ar9am m9loubin, espace zayed) w 3awed jerreb merra wa7da.
+3. Ila charjiti f internet wla b mobile money, l9a la reference dyal l3amaliya wla lwasl.
+4. Ila recharge ba9a ma wseltch, dir chkaya « Recharge ma wseltch » m3a lcode wla la reference.
 Ila b9a lmochkil, n9der n7awlek l chi conseiller.
 (Source, fiche fictive : KB-recharge_failed, v1)
 ```
@@ -23,8 +23,8 @@ Ila b9a lmochkil, n9der n7awlek l chi conseiller.
 
 - NLU : `home_outage` (home_internet), confiance 0.88, urgence 2, p(humain) 0.07, script détecté `arabic`
 - Décision : règle 7 `reponse_ancree` — Réponse ancrée sur la fiche de l'intention home_outage.
-- Recherche : KB-home_outage (dense 0.57), KB-router_wifi (dense 0.45), KB-data_not_working (dense 0.44) ; fiable : True
-- Latence : nlu 1390 ms, retrieval 311 ms, total 1705 ms
+- Recherche : KB-home_outage (dense 0.57), KB-router_wifi (dense 0.45), KB-invoice_dispute (dense 0.45) ; fiable : True
+- Latence : nlu 1438 ms, retrieval 311 ms, total 1752 ms
 
 ```text
 مرحبا! بخصوص «الأنترنيت ديال الدار مقطوع»، هادي الخطوات:
@@ -41,7 +41,7 @@ Ila b9a lmochkil, n9der n7awlek l chi conseiller.
 - NLU : `lost_stolen` (sim_line), confiance 0.88, urgence 3, p(humain) 0.94, script détecté `mixed`
 - Décision : règle 2 `escalade_prioritaire` — Escalade prioritaire : p(needs_human)=0.94 ≥ 0.30, urgence=3.
 - Priorité : 100.0 (critique)
-- Latence : nlu 1364 ms, total 1367 ms
+- Latence : nlu 1447 ms, total 1451 ms
 
 ```text
 C'est noté, je vous transfère vers un conseiller en priorité. Pas besoin de tout répéter, votre demande lui sera transmise.
@@ -59,7 +59,7 @@ En attendant, pour vous protéger :
 - NLU : `scam_spam_report` (sim_line), confiance 0.88, urgence 1, p(humain) 0.94, script détecté `arabic`
 - Décision : règle 2 `escalade_prioritaire` — Escalade prioritaire : p(needs_human)=0.94 ≥ 0.30.
 - Priorité : 72.31 (haute)
-- Latence : nlu 1492 ms, total 1496 ms
+- Latence : nlu 1542 ms, total 1547 ms
 
 ```text
 فهمتك، غادي نحولك لمستشار بالأولوية. ما تحتاجش تعاود كلشي، الطلب ديالك غادي يكون عندو.
@@ -76,7 +76,7 @@ En attendant, pour vous protéger :
 
 - NLU : `non_telecom` (out_of_scope), confiance 0.92, urgence 1, p(humain) 0.06, script détecté `arabic`
 - Décision : règle 4 `hors_perimetre` — Message hors du périmètre télécom.
-- Latence : nlu 1101 ms, total 1101 ms
+- Latence : nlu 1145 ms, total 1146 ms
 
 ```text
 سمح ليا، أنا كنعاون غير فالخدمات ديال الاتصالات (التيليفون، الأنترنيت، الفيكس، المحفظة الإلكترونية). واش عندك شي سؤال فهادشي؟
@@ -86,7 +86,7 @@ En attendant, pour vous protéger :
 
 - NLU : `greeting_thanks` (customer_care), confiance 0.88, urgence 0, p(humain) 0.06, script détecté `arabizi`
 - Décision : règle 6 `gabarit_direct` — Intention conversationnelle (greeting_thanks).
-- Latence : nlu 1405 ms, total 1406 ms
+- Latence : nlu 1420 ms, total 1421 ms
 
 ```text
 Salam! Ila kan 3ndek chi so2al 3la ligne, internet, facture wla wallet, ana hna bach n3awnek.
@@ -96,7 +96,7 @@ Salam! Ila kan 3ndek chi so2al 3la ligne, internet, facture wla wallet, ana hna 
 
 - NLU : `agency_location` (customer_care), confiance 0.88, urgence 0, p(humain) 0.06, script détecté `mixed`
 - Décision : règle 6 `gabarit_direct` — Intention conversationnelle (agency_location).
-- Latence : nlu 1387 ms, total 1391 ms
+- Latence : nlu 1571 ms, total 1573 ms
 
 ```text
 Salam ! À propos de « Trouver une agence et ses horaires », voici les étapes :
@@ -112,8 +112,8 @@ Si le problème persiste, je peux vous mettre en relation avec un conseiller.
 
 - NLU : `roaming` (plans_subscription), confiance 0.86, urgence 0, p(humain) 0.06, script détecté `mixed`
 - Décision : règle 7 `reponse_ancree` — Réponse ancrée sur la fiche de l'intention roaming.
-- Recherche : KB-roaming (dense 0.43), KB-international_calls (dense 0.38), KB-invoice_dispute (dense n/d) ; fiable : True
-- Latence : nlu 1448 ms, retrieval 298 ms, total 1746 ms
+- Recherche : KB-roaming (dense 0.47), KB-data_pass_buy (dense 0.46), KB-international_calls (dense n/d) ; fiable : True
+- Latence : nlu 1527 ms, retrieval 340 ms, total 1868 ms
 
 ```text
 Salam ! À propos de « Utiliser sa ligne à l'étranger (itinérance) », voici les étapes :
@@ -129,8 +129,8 @@ Si le problème persiste, je peux vous mettre en relation avec un conseiller.
 
 - NLU : `balance_check` (prepaid_credit), confiance 0.86, urgence 0, p(humain) 0.06, script détecté `arabic`
 - Décision : règle 7 `reponse_ancree` — Réponse ancrée sur la fiche de l'intention balance_check.
-- Recherche : KB-balance_check (dense 0.63), KB-international_calls (dense 0.50), KB-balance_deducted (dense 0.50) ; fiable : True
-- Latence : nlu 1376 ms, retrieval 324 ms, total 1701 ms
+- Recherche : KB-balance_check (dense 0.63), KB-international_calls (dense 0.52), KB-balance_deducted (dense 0.52) ; fiable : True
+- Latence : nlu 1498 ms, retrieval 385 ms, total 1884 ms
 
 ```text
 مرحبا! بخصوص «نشوف الصولد»، هادي الخطوات:
@@ -146,7 +146,7 @@ Si le problème persiste, je peux vous mettre en relation avec un conseiller.
 - NLU : `human_agent` (customer_care), confiance 0.88, urgence 1, p(humain) 0.94, script détecté `mixed`
 - Décision : règle 2 `escalade_prioritaire` — Escalade prioritaire : p(needs_human)=0.94 ≥ 0.30.
 - Priorité : 47.26 (normale)
-- Latence : nlu 1367 ms, total 1367 ms
+- Latence : nlu 1435 ms, total 1435 ms
 
 ```text
 C'est noté, je vous transfère vers un conseiller. Pas besoin de tout répéter, votre demande lui sera transmise.
@@ -156,14 +156,14 @@ C'est noté, je vous transfère vers un conseiller. Pas besoin de tout répéter
 
 - NLU : `balance_check` (prepaid_credit), confiance 0.86, urgence 0, p(humain) 0.06, script détecté `arabizi`
 - Décision : règle 7 `reponse_ancree` — Réponse ancrée sur la fiche de l'intention balance_check.
-- Recherche : KB-balance_check (dense 0.48), KB-paid_services_charges (dense 0.36) ; fiable : True
-- Latence : nlu 1226 ms, retrieval 228 ms, total 1454 ms
+- Recherche : KB-balance_check (dense 0.56), KB-balance_deducted (dense 0.54) ; fiable : True
+- Latence : nlu 1434 ms, retrieval 279 ms, total 1714 ms
 
 ```text
-Salam! 3la « Consulter son solde », hadi l-khatawat :
-1. Ouvrir l'application et consulter l'écran d'accueil « Mon solde ».
-2. Ou utiliser le menu de consultation du solde du téléphone (code court indiqué sur la pochette de la carte SIM).
-3. Vérifier aussi la date de validité du crédit et des passes en cours.
+Salam! 3la « Nchouf solde », hadi lkhatawat :
+1. 7ell tatbi9 w chouf la page lowla « Solde dyali ».
+2. Wla sta3mel le menu dyal solde f tilifon (lcode l9sir mktoub 3la lghlaf dyal sim).
+3. Chouf 7ta tarikh dyal sala7iya dyal solde w les pass li khddamin.
 Ila b9a lmochkil, n9der n7awlek l chi conseiller.
 (Source, fiche fictive : KB-balance_check, v1)
 ```

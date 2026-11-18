@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si le rendez-vous a été manqué ou le délai largement dépassé, transmettre 
 ## التحويل لمستشار
 
 إلا الموعد فات ولا الوقت تعطل بزاف، كنحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Tterkib t3ttel wla technicien ma jach
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+N3awnou lclient li tterkib dyalo t3ttel wla technicien ma jach, wla bgha y3ref rendez-vous dyalo.
+
+## Lkhatawat
+
+1. L9a numero dyal talab li twsselti bih nhar derti l'abonnement.
+2. Chouf suivi dyal talab f tatbi9 bach t3ref fin wsel w tarikh lmotawa99a3.
+3. Bach tbddel rendez-vous, sta3mel « Tbdil rendez-vous » f suivi.
+4. Ila fat tarikh lmotawa99a3, dir chkaya « Ta3attol tterkib » b numero dyal talab.
+
+## Chorout
+
+- Numero dyal talab darouri l ay ijra2.
+
+## L7oudoud
+
+- Lmousa3id ma kaychoufch fin wsel talab b s7 w ma y9derch y9addem rendez-vous.
+- Chi ta3attolat katbe3 l2achghal wla rokhas men berra.
+
+## Ta7wil l conseiller
+
+Ila rendez-vous fat wla lwe9t t3ttel bzaf, kan7awlouk l conseiller.

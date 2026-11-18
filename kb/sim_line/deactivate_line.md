@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Pour une désactivation définitive, un conseiller ou une agence confirme la dem
 ## التحويل لمستشار
 
 الإلغاء النهائي كيأكدو مستشار ولا الوكالة.
+
+# Nouskha b darija (arabizi) — Nwe99ef wla nlghi khat dyal tilifon
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach twe99ef khat l wa7d lmodda wla tlghih nihai2iyan.
+
+## Lkhatawat
+
+1. Bach twe99fo l wa7d lmodda, dir talab f l'espace client w goul lmodda.
+2. Bach tlghi nihai2iyan khat fih abonnement, chouf 7ta lbita9a « Nlghi l'abonnement ».
+3. Mol lkhat kayjib la carte nationale l lwkala bach ylghih nihai2iyan.
+4. Ila da3 wla tsre9, tbe3 lbita9a « Tilifon wla sim da3 wla tsre9 ».
+
+## Chorout
+
+- Ghir mol lkhat li y9der ywe99fo wla ylghih.
+
+## L7oudoud
+
+- Lkhat li tlgha nihai2iyan t9der tmchi nmra dyalo men ba3d wa7d lmodda.
+- Solde li ba9i machi darouri ytrjje3.
+
+## Ta7wil l conseiller
+
+L'ilgha2 nniha2i kay2akkdo conseiller wla lwkala.

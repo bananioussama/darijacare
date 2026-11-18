@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -65,3 +66,31 @@ Si la ligne n'est pas active après le délai indiqué, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا الخط ما تفعلش من بعد المدة المعلنة، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nfa3el khat jdid wla sim jdida
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nwjjhou lclient li bgha yfa3el khat jdid wla sim jdida.
+
+## Lkhatawat
+
+1. Dkhel sim f tilifon w tfih w ch3lo.
+2. Sjjel lkhat b la carte nationale sal7a (f lwkala, 3nd bayi3 m3tamad wla f tatbi9).
+3. Tsenna message dyal confirmation dyal tfe3il.
+4. Dir awwel appel wla recharge bach tt2akked beli lkhat khdam.
+
+## Chorout
+
+- Ttasjil dyal mol lkhat darouri 9bel tfe3il.
+
+## L7oudoud
+
+- Tfe3il y9der yakhod chwiya dyal lwe9t men ba3d ttasjil.
+- Lmousa3id ma y9derch yfa3el lkhat.
+
+## Ta7wil l conseiller
+
+Ila lkhat ma tfa3elch men ba3d lmodda lm3lna, n9dro n7awlouk l conseiller.

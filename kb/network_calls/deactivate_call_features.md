@@ -7,6 +7,7 @@ status: fictif
 langs:
 - fr
 - ar
+- arabizi
 reviewed_by: []
 ---
 
@@ -63,3 +64,30 @@ Si les appels sont toujours renvoyés, proposer un conseiller.
 ## التحويل لمستشار
 
 إلا المكالمات باقا كتحول، نقدرو نحولوك لمستشار.
+
+# Nouskha b darija (arabizi) — Nwe99ef la messagerie vocale, transfert d'appel, double appel wla l'affichage dyal nmra
+
+> ⚠️ **Bita9a khayaliya** mktouba l lmachrou3 jami3i DarijaCare. Ma katwsefch l2ijra2at dyal chi operateur 7a9i9i, w ma fiha la atmina la nmrat la iltizamat 7a9i9iya.
+
+## Lhadaf
+
+Nchr7ou kifach twe99ef les services dyal les appels.
+
+## Lkhatawat
+
+1. 7ell Parametres > Telephone > Services d'appel.
+2. Tfi transfert d'appel (« Toujours », « Si occupe », « Si pas de reponse ») wla double appel.
+3. Bnisba l la messagerie vocale, tfiha f tatbi9 f « Lkhadamat dyali ».
+4. Dir appel dyal tajriba bach tt2akked beli tilifon kaysonni.
+
+## Chorout
+
+- Twe9if kayttdar men lkhat nit wla men 3nd molah.
+
+## L7oudoud
+
+- Ila kan transfert mfa3el f tilifon w f lkhat, khasso yttfa f jouj.
+
+## Ta7wil l conseiller
+
+Ila les appels ba9yin kayt7awlou, n9dro n7awlouk l conseiller.
