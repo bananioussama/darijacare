@@ -12,7 +12,7 @@ une explication en français, et elle est journalisée (`darijacare.decision`).
 | # | Condition | Action | Réponse |
 |---|---|---|---|
 | 1 | Entrée vide, < 4 ou > 500 caractères, ou motif d'injection de prompt | Refus poli | gabarit `refuse` (raison adaptée) |
-| 2 | p(needs_human) ≥ **0,30** ou urgence = 3 | Escalade prioritaire | gabarit `escalate` (+ étapes de sécurité si l'intention est `lost_stolen` ou `scam_spam_report`) |
+| 2 | p(needs_human) ≥ **0,30**, urgence = 3, ou bouton « Parler à un conseiller » | Escalade prioritaire | gabarit `escalate` (+ étapes de sécurité si l'intention est `lost_stolen` ou `scam_spam_report`) |
 | 3 | Intention `scam_spam_report` ou `lost_stolen` | Procédure de sécurité + escalade | gabarit `escalate` avec les étapes de la fiche |
 | 4 | Intention `non_telecom` | Cadrage poli | gabarit `out_of_scope` |
 | 5 | Confiance conjointe (catégorie × intention) < **0,80** | Clarification (top-2) ; si déjà clarifié au tour précédent → escalade | gabarit `clarify` (titres des deux fiches) |
@@ -24,6 +24,7 @@ Choix documentés :
 - **Ordre des règles 2 et 3** : conservé comme dans le cahier. Un vol signalé avec urgence 3
   déclenche la règle 2 ; pour ne jamais priver le client des consignes de sécurité, la réponse
   d'escalade inclut quand même les étapes de la fiche (`include_safety_procedure`).
+- **Demande explicite d'un conseiller** (bouton de l'interface, Phase 5) : la règle 2 s'applique quelle que soit la prédiction, et la priorité compte p(needs_human) = 1. Une demande explicite n'est jamais remise en cause par le modèle.
 - **Une seule clarification par tour** (F-DEC-03) : si la confiance reste basse après une
   clarification, la politique escalade au lieu de répondre au hasard (prudence).
 - **Longueur minimale 4** : valeur du cahier, cohérente avec les données (le message le plus court

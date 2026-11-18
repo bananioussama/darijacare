@@ -50,6 +50,11 @@ def fiche_view(f: Fiche, lang: str) -> dict[str, Any]:
     }
 
 
+def source(fiche: Mapping[str, Any]) -> dict[str, Any]:
+    """Citation of a fiche: id, version and title in the language of the reply."""
+    return {"id": fiche["id"], "version": fiche["version"], "title": fiche["title"]}
+
+
 class Responder:
     """Choose and fill the template for a decision."""
 
@@ -122,7 +127,7 @@ class Responder:
             fiche = fiche_view(self.fiches[intent], lang) if safety and intent else None
             level = decision.priority.level if decision.priority else None
             text = self._render(script, "escalate", fiche=fiche, safety=safety, priority=level)
-            sources = [{"id": fiche["id"], "version": fiche["version"]}] if fiche else []
+            sources = [source(fiche)] if fiche else []
             return RenderedReply(text, "escalate", sources)
         if a is Action.TEMPLATE and intent == "greeting_thanks":
             return RenderedReply(self._render(script, "greeting"), "greeting", [])
@@ -133,5 +138,5 @@ class Responder:
         return RenderedReply(
             self._render(script, self.answer_template(script, target), fiche=fiche),
             "answer",
-            [{"id": fiche["id"], "version": fiche["version"]}],
+            [source(fiche)],
         )

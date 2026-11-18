@@ -188,7 +188,12 @@ def chat(client: TestClient, text: str, token: str | None = None) -> dict[str, A
     r = client.post("/chat", json={"text": text}, headers=auth(token))
     assert r.status_code == 200, r.text
     assert r.headers["content-type"].startswith("text/event-stream")
-    events = parse_sse(r.text)
+    return chat_events(r.text)
+
+
+def chat_events(body: str) -> dict[str, Any]:
+    """SSE body -> events grouped by name, with the ``token`` pieces joined in ``reply``."""
+    events = parse_sse(body)
     names = [e for e, _ in events]
     out: dict[str, Any] = {"order": names}
     out.update({name: data for name, data in events if name != "token"})

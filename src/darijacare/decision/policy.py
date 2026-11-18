@@ -51,6 +51,9 @@ class ConversationState:
 
     clarification_pending: bool = False
     """``True`` when the previous assistant turn was a clarification question."""
+    human_requested: bool = False
+    """``True`` when the customer pressed « Parler à un conseiller »: rule 2 applies
+    whatever the NLU predicts (an explicit request is never second-guessed)."""
 
 
 @dataclass
@@ -88,10 +91,11 @@ class DecisionPolicy:
         self.conversational = set(intents["conversational"])
         self.after_failed_clarification = cfg["clarification"]["after_failed_clarification"]
 
-    def _priority(self, nlu: NLUResult) -> Priority:
+    def _priority(self, nlu: NLUResult, human_requested: bool = False) -> Priority:
         return priority_score(
             urgency=nlu.urgency,
-            needs_human_probability=nlu.needs_human_probability,
+            # An explicit request counts as a certain need for a human.
+            needs_human_probability=1.0 if human_requested else nlu.needs_human_probability,
             confidence=nlu.intent_joint_confidence,
             intent=nlu.intent,
             category=nlu.category,
@@ -131,11 +135,14 @@ class DecisionPolicy:
         if nlu is None:
             raise ValueError("Analyse NLU manquante pour une entrée acceptée")
 
-        # 2. Human needed or urgency 3.
+        # 2. Human needed (predicted or explicitly requested) or urgency 3.
         human = nlu.needs_human_probability >= self.needs_human_threshold
         urgent = nlu.urgency >= self.escalate_urgency
-        if human or urgent:
+        requested = state.human_requested
+        if human or urgent or requested:
             why = []
+            if requested:
+                why.append("demande explicite d'un conseiller")
             if human:
                 why.append(
                     f"p(needs_human)={nlu.needs_human_probability:.2f} ≥ "
@@ -149,7 +156,7 @@ class DecisionPolicy:
                 "escalade_prioritaire",
                 "Escalade prioritaire : " + ", ".join(why) + ".",
                 escalate=True,
-                priority=self._priority(nlu),
+                priority=self._priority(nlu, requested),
                 include_safety_procedure=nlu.intent in self.security,
             )
 

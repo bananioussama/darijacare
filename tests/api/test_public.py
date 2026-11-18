@@ -16,7 +16,7 @@ from darijacare.api.logging_json import JsonFormatter
 from darijacare.api.models import Chunk, ConfigDecision, FicheKB, Message, ModeleNLU
 from darijacare.data.scripts import ARABIC_LETTER_RE
 from darijacare.pipeline import DarijaCareAssistant
-from tests.api.conftest import auth, chat, make_settings, start
+from tests.api.conftest import auth, chat, chat_events, make_settings, start
 
 PHONE = "0612345678"
 
@@ -63,7 +63,7 @@ def test_chat_streams_events_and_stores_masked_text(client: TestClient, engine: 
     assert analysis["decision"]["rule"] == 7
     # Arabizi customer -> Arabizi part of the fiche, no Arabic letters
     assert analysis["script"] == "arabizi" and not ARABIC_LETTER_RE.search(out["reply"])
-    assert out["sources"] == [{"id": "KB-balance_check", "version": 1}]
+    assert out["sources"] == [{"id": "KB-balance_check", "version": 1, "title": "Nchouf solde"}]
     config_id = client.get("/health").json()["decision_config"]
     with Session(engine) as db:
         stored = db.get(Message, uuid.UUID(out["done"]["message_id"]))
@@ -131,6 +131,33 @@ def test_feedback_only_on_own_messages_and_masked(client: TestClient) -> None:
     bad = {**body, "corrected_intent": "pas_une_intention"}
     assert client.post("/feedback", json=bad, headers=auth(token)).status_code == 422
     assert client.post("/feedback", json=body).status_code == 401
+
+
+def test_advisor_button_always_escalates(client: TestClient) -> None:
+    first = chat(client, "kifach nchouf solde dyali")
+    token = first["session"]["session_token"]
+    assert first["done"]["escalation"] is None
+    r = client.post(
+        "/chat",
+        json={"text": "bghit nhder m3a conseiller", "request_human": True},
+        headers=auth(token),
+    )
+    assert r.status_code == 200
+    out = chat_events(r.text)
+    assert out["analysis"]["decision"]["rule"] == 2
+    assert "demande explicite" in out["analysis"]["decision"]["explanation"]
+    assert out["done"]["escalation"]["case_number"].startswith("DC-")
+
+
+def test_reference_routes_for_the_interface(client: TestClient) -> None:
+    intents = client.get("/intents").json()
+    assert len(intents) == 75 and set(intents[0]["titles"]) == {"fr", "ar", "arabizi"}
+    fiche = client.get("/fiches/KB-balance_check?lang=arabizi").json()
+    assert fiche["title"] == "Nchouf solde" and fiche["notice"].startswith("⚠️ Bita9a khayaliya")
+    assert len(fiche["sections"]["etapes"]) >= 3 and fiche["version"] == 1
+    assert client.get("/fiches/KB-inconnue").status_code == 404
+    assert client.get("/fiches/balance_check").status_code == 404
+    assert client.get("/fiches/KB-balance_check?lang=en").status_code == 422
 
 
 def test_clarification_state_is_kept_between_requests(client: TestClient) -> None:

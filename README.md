@@ -12,10 +12,11 @@ sur des données synthétiques.
 > État :
 > - terminées : **Phase 1** (données), **Phase 2** (NLU — [docs/nlu.md](docs/nlu.md)),
 >   **Phase 3** (décision — [docs/decision.md](docs/decision.md) ; base de connaissances et RAG —
->   [docs/rag.md](docs/rag.md)) et **Phase 4** (API et base de données — [docs/api.md](docs/api.md)) ;
+>   [docs/rag.md](docs/rag.md)), **Phase 4** (API et base de données — [docs/api.md](docs/api.md))
+>   et **Phase 5** (interface — [docs/frontend.md](docs/frontend.md)) ;
 > - en attente : le ré-entraînement complet sur GPU T4, et la relecture par l'équipe des 75 fiches
 >   (fictives, en français, darija et arabizi) ;
-> - phases suivantes : interface, puis livraison.
+> - phase suivante : qualité, sécurité et livraison.
 
 ## Démarrage rapide
 
@@ -133,6 +134,27 @@ make api-smoke                         # démonstration -> reports/demo/phase4.m
 
 Avec les vrais modèles sur CPU, une réponse prend 1,81 s en médiane (p95 1,90 s) pour une cible de
 2 s. Détails : [docs/api.md](docs/api.md).
+
+## Interface (Phase 5)
+
+Interface en React, TypeScript, Vite et Tailwind CSS. Elle comprend :
+- le chat multi-écriture, avec la réponse affichée au fil de l'eau, les sources, la confiance,
+  « Utile » / « Corriger » et « Parler à un conseiller » ;
+- le panneau d'analyse NLU ;
+- l'historique de session ;
+- la console conseiller ;
+- le tableau de bord ;
+- la gestion de la base et des modèles ;
+- la page Crédits.
+
+```bash
+make front-install        # npm ci (versions figées)
+make front-dev            # http://127.0.0.1:5173, avec l'API lancée (make api)
+make front-test           # types, formatage, tests
+```
+
+Captures avec les vrais modèles : [reports/demo/phase5/](reports/demo/phase5/). Détails :
+[docs/frontend.md](docs/frontend.md).
 
 ## Licences et crédits
 

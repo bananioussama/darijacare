@@ -50,3 +50,8 @@ reports/nlu/**/intent_gold_category.jsonl
 reports/rag/**/query_cache.*
 /data/qdrant/
 reports/rag/**/details.csv
+
+# Interface (Phase 5)
+frontend/test-results/
+frontend/playwright-report/
+frontend/.vite/

@@ -1,0 +1,75 @@
+/* Identité visuelle (cahier des charges, Tableaux 30 et 31). Les couleurs d'inwi servent
+   seulement d'inspiration ; le logo n'est pas utilisé. */
+@import "tailwindcss";
+
+@theme {
+  --color-nuit: #24093f; /* fonds sombres, barre latérale */
+  --color-profond: #4b1486; /* titres, bouton principal */
+  --color-vif: #7b2cbf; /* éléments interactifs, focus (7,1:1 sur blanc) */
+  --color-lumineux: #b57bff; /* accents sur fond sombre uniquement (2,9:1 sur blanc) */
+  --color-lavande: #e9ddf9; /* fonds de cartes, états sélectionnés */
+  --color-gris: #f4f1f8; /* fond de page, lignes alternées */
+  --color-texte: #1e1530; /* corps de texte */
+  --color-texte-2: #5b4e6e; /* texte secondaire (7,6:1 sur blanc) */
+
+  --font-sans: "Inter Variable", "Noto Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-carte: 16px;
+  --radius-bouton: 12px;
+}
+
+@layer base {
+  html {
+    @apply bg-gris text-texte antialiased;
+    font-family: var(--font-sans);
+  }
+
+  /* Focus toujours visible, en violet vif (contraste suffisant sur fond clair). */
+  :focus-visible {
+    outline: 2px solid var(--color-vif);
+    outline-offset: 2px;
+  }
+
+  /* Le darija en écriture arabe garde sa police et un interligne confortable. */
+  [lang="ar"],
+  :dir(rtl) {
+    line-height: 1.75;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Composants réutilisables (Tailwind 4 : @utility, utilisables avec @apply et les variantes).
+   Cibles tactiles d'au moins 44 px (min-h-11). */
+@utility carte {
+  @apply rounded-carte bg-white shadow-sm ring-1 ring-lavande;
+}
+
+@utility bouton {
+  @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-bouton px-4 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+@utility bouton-principal {
+  @apply bouton bg-profond text-white hover:bg-vif;
+}
+
+@utility bouton-secondaire {
+  @apply bouton bg-white text-profond ring-1 ring-vif hover:bg-lavande;
+}
+
+@utility champ {
+  @apply min-h-11 w-full rounded-bouton border border-texte-2/40 bg-white px-3 py-2 text-base text-texte placeholder:text-texte-2;
+}
+
+@utility titre-page {
+  @apply text-2xl font-bold text-profond;
+}

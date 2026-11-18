@@ -38,6 +38,27 @@ jobs:
       # Les tests PostgreSQL sont ignorés en CI (pas de serveur) ; ils tournent en local.
       - run: uv run pytest --cov=darijacare --cov-report=term-missing
 
+  frontend:
+    name: Interface (types, formatage, tests, construction)
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.21.0"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run format:check
+      - run: npm test
+      - run: npm run build
+      # Dépendances livrées au navigateur uniquement (voir docs/frontend.md).
+      - run: npm audit --omit=dev --audit-level=high
+
   data-pipeline:
     name: Rejeu du pipeline DVC (données du Hub, révision figée)
     runs-on: ubuntu-24.04

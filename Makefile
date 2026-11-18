@@ -4,10 +4,10 @@
 export PYTHONUTF8 := 1
 UV ?= uv
 
-.PHONY: help install install-gpu lint format typecheck test test-data cov repro data-status eda up down logs clean precommit kb-validate rag-index rag-eval db-upgrade api api-smoke
+.PHONY: help install install-gpu lint format typecheck test test-data cov repro data-status eda up down logs clean precommit kb-validate rag-index rag-eval db-upgrade api api-smoke front-install front-dev front-test front-build
 
 help:
-	@echo "Cibles : install install-gpu lint format typecheck test test-data cov repro data-status up down logs clean precommit kb-validate rag-index rag-eval db-upgrade api api-smoke"
+	@echo "Cibles : install install-gpu lint format typecheck test test-data cov repro data-status up down logs clean precommit kb-validate rag-index rag-eval db-upgrade api api-smoke front-install front-dev front-test front-build"
 
 install:  ## Environnement figé (uv.lock), torch CPU + hooks pre-commit
 	$(UV) sync --locked --extra pipeline --extra nlu --extra rag --extra api --extra cpu
@@ -72,6 +72,20 @@ api:  ## API FastAPI sur http://127.0.0.1:8000 (documentation : /docs)
 
 api-smoke:  ## Démonstration de bout en bout sur l'API lancée -> reports/demo/phase4.md
 	$(UV) run python tools/api_smoke.py
+
+front-install:  ## Dépendances de l'interface (versions figées : package-lock.json)
+	npm --prefix frontend ci
+
+front-dev:  ## Interface sur http://127.0.0.1:5173 (relaie /api vers l'API du port 8000)
+	npm --prefix frontend run dev
+
+front-test:  ## Types, formatage et tests de l'interface
+	npm --prefix frontend run typecheck
+	npm --prefix frontend run format:check
+	npm --prefix frontend test
+
+front-build:  ## Version de production de l'interface -> frontend/dist
+	npm --prefix frontend run build
 
 precommit:
 	$(UV) run pre-commit run --all-files

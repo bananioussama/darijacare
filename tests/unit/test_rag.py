@@ -258,7 +258,8 @@ def test_answer_uses_only_fiche_content_in_customer_script(
     r = responder.render(d, script, "balance_check", "balance_check")
     lang = {"arabic": "ar", "arabizi": "arabizi", "mixed": "fr"}[script]
     f = fiches["balance_check"]
-    assert r.template == "answer" and r.sources == [{"id": "KB-balance_check", "version": 1}]
+    assert r.template == "answer"
+    assert r.sources == [{"id": "KB-balance_check", "version": 1, "title": f.titles[lang]}]
     assert f.titles[lang] in r.text  # customer-facing opening uses the fiche title
     for step in f.sections[lang]["etapes"]:
         assert step in r.text

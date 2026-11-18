@@ -11,9 +11,9 @@ import json
 import re
 import secrets
 from datetime import timedelta
-from typing import Any
+from typing import Any, Literal
 
-from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Path, Query, status
 from fastapi.responses import StreamingResponse
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
@@ -28,6 +28,7 @@ from darijacare.api.deps import (
 )
 from darijacare.api.models import Conversation, Feedback, FicheKB, Message
 from darijacare.api.schemas import (
+    ChatIn,
     FeedbackIn,
     FeedbackOut,
     HealthOut,
@@ -41,6 +42,7 @@ from darijacare.api.security import CLIENT_ROLE, SESSION, Principal, create_toke
 from darijacare.api.service import nlu_analysis
 from darijacare.data.normalize import mask_pii
 from darijacare.data.scripts import detect_script
+from darijacare.rag.kb import NOTICES, SECTION_KEYS
 
 router = APIRouter()
 chat_limit = Depends(rate_limit("chat", "rate_limit_chat_per_minute"))
@@ -80,6 +82,38 @@ def predict(body: TextIn, state: AppState = Depends(get_state)) -> PredictOut:
         script=nlu.script if nlu else detect_script(guard.masked_text),
         nlu=nlu_analysis(nlu),
     )
+
+
+@router.get("/intents", tags=["référentiel"])
+def intents(state: AppState = Depends(get_state)) -> list[dict[str, Any]]:
+    """The 75 intents with their category and fiche titles (for « Corriger »)."""
+    return [
+        {"intent": f.intent, "category": f.category, "titles": dict(f.titles)}
+        for f in sorted(state.fiches.values(), key=lambda f: (f.category, f.intent))
+    ]
+
+
+@router.get("/fiches/{fiche_id}", tags=["référentiel"])
+def fiche(
+    fiche_id: str = Path(max_length=80),
+    lang: Literal["fr", "ar", "arabizi"] = "fr",
+    state: AppState = Depends(get_state),
+) -> dict[str, Any]:
+    """One (fictional) fiche of the knowledge base, in one language: what a source cites."""
+    f = state.fiches.get(fiche_id.removeprefix("KB-")) if fiche_id.startswith("KB-") else None
+    if f is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Fiche inconnue.")
+    return {
+        "id": f.id,
+        "intent": f.intent,
+        "category": f.category,
+        "version": f.version,
+        "status": f.status,
+        "lang": lang,
+        "notice": NOTICES[lang].removeprefix("> ").replace("**", ""),
+        "title": f.titles[lang],
+        "sections": {key: f.sections[lang][key] for key in SECTION_KEYS},
+    }
 
 
 def open_session(db: Session, state: AppState) -> tuple[Conversation, SessionOut]:
@@ -178,7 +212,7 @@ def sse(event: str, data: Any) -> str:
     },
 )
 def chat(
-    body: TextIn,
+    body: ChatIn,
     principal: Principal | None = Depends(get_principal),
     db: Session = Depends(get_db),
     state: AppState = Depends(get_state),
@@ -204,7 +238,7 @@ def chat(
         session_event = out.model_dump()
     session_event["conversation_id"] = str(conversation.id)
 
-    exchange = state.chat.handle(db, conversation, body.text)
+    exchange = state.chat.handle(db, conversation, body.text, body.request_human)
     message, escalation = exchange.message, exchange.escalation
     events = [
         sse("session", session_event),

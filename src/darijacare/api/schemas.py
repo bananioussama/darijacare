@@ -19,6 +19,13 @@ class TextIn(BaseModel):
     text: str = Field(max_length=MAX_INPUT_CHARS, examples=["solde dyali sala bzerba, 3lach?"])
 
 
+class ChatIn(TextIn):
+    """A customer message, possibly sent by the « Parler à un conseiller » button."""
+
+    request_human: bool = False
+    """Explicit request for an advisor: the message is always escalated (rule 2)."""
+
+
 class PredictOut(BaseModel):
     """NLU analysis without storage (``POST /predict``)."""
 

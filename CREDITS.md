@@ -99,6 +99,19 @@ API (Phase 4) :
 | argon2-cffi | MIT |
 | PyJWT | MIT |
 
+Interface (Phase 5) :
+
+| Bibliothèque | Licence |
+|---|---|
+| React, React DOM, React Router | MIT |
+| Recharts | MIT |
+| Vite, @vitejs/plugin-react, Vitest | MIT |
+| Tailwind CSS | MIT |
+| TypeScript | Apache-2.0 |
+| Testing Library, jsdom, Prettier | MIT |
+| Playwright | Apache-2.0 |
+| Polices Inter et Noto Sans Arabic (paquets @fontsource) | SIL Open Font License 1.1 |
+
 ## Base de connaissances
 
 Les 75 fiches de `kb/` (français, darija en écriture arabe, darija en arabizi) ont été rédigées

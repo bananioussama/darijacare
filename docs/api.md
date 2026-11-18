@@ -38,10 +38,12 @@ Le conteneur de l'API est prévu en Phase 6, avec nginx et l'interface.
 | `GET /health` | libre | état de la base, de Qdrant et des modèles |
 | `POST /predict` | libre, limité | analyse NLU d'un message, **sans stockage** |
 | `POST /sessions` | libre, limité | ouvre une conversation anonyme et renvoie un jeton de session |
-| `POST /chat` | jeton de session (ou aucun : nouvelle session) | traite un message ; flux SSE (§3) |
+| `POST /chat` | jeton de session (ou aucun : nouvelle session) | traite un message ; flux SSE (§3). `request_human: true` = bouton « Parler à un conseiller » : escalade garantie (règle 2) |
 | `GET /sessions/{id}/messages` | jeton de **cette** session | historique paginé (F-UI-05) |
 | `POST /sessions/{id}/reset` | jeton de cette session | ferme la conversation et en ouvre une autre |
 | `POST /feedback` | jeton de session | « Utile » / « Corriger », sur ses propres messages (F-UI-04) |
+| `GET /intents` | libre | les 75 intentions, leur catégorie et les titres des fiches (liste « Corriger », Phase 5) |
+| `GET /fiches/{id}?lang=fr\|ar\|arabizi` | libre | une fiche (fictive) dans une langue : ce que cite une source (F-UI-03) |
 | `POST /auth/login` | libre, limité | connexion du personnel : jeton de 15 minutes |
 | `GET /auth/me` | personnel | compte connecté |
 | `GET /escalades` | conseiller, admin (lecture) | file triée par priorité puis par arrivée (F-UI-06) |
@@ -64,7 +66,7 @@ Les événements arrivent dans cet ordre :
 | `session` | identifiant de session ; pour une nouvelle session, le jeton (24 h) |
 | `analysis` | texte masqué, écriture, analyse NLU complète (top-2, probabilités), décision (règle, explication, priorité) |
 | `token` (répété) | morceaux de la réponse, mot par mot |
-| `sources` | fiches citées (identifiant et version) |
+| `sources` | fiches citées (identifiant, version et titre dans la langue de la réponse) |
 | `done` | identifiant du message, tour, escalade (numéro de dossier, niveau), latences |
 
 Les gabarits produisent la réponse d'un seul coup ; le flux la découpe pour un affichage

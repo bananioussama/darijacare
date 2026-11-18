@@ -82,6 +82,22 @@ def test_rule2_escalates_urgency3(policy: DecisionPolicy, guard: InputGuard) -> 
     assert d.rule == 2 and "urgence=3" in d.explanation
 
 
+def test_rule2_explicit_request_always_escalates(policy: DecisionPolicy, guard: InputGuard) -> None:
+    """« Parler à un conseiller »: escalated even when the NLU sees no need for a human."""
+    calm = nlu(p_human=0.01, urgency=0)
+    assert policy.decide(guard.check("Je veux parler à un conseiller"), calm).rule == 7
+    state = ConversationState(human_requested=True)
+    d = policy.decide(guard.check("Je veux parler à un conseiller"), calm, state)
+    assert (d.rule, d.action, d.escalate) == (2, Action.ESCALATE, True)
+    assert "demande explicite" in d.explanation
+    predicted = policy.decide(guard.check("bghit nhder m3a chi wa7ed"), nlu(p_human=0.6))
+    assert d.priority is not None and predicted.priority is not None
+    # the explicit request counts as p(needs_human) = 1
+    assert d.priority.contributions["needs_human"] > predicted.priority.contributions["needs_human"]
+    refused = policy.decide(guard.check("ok"), None, state)  # rule 1 still comes first
+    assert refused.rule == 1
+
+
 def test_rule2_keeps_safety_steps_for_security_intent(
     policy: DecisionPolicy, guard: InputGuard
 ) -> None:

@@ -32,6 +32,10 @@ switch ($Target) {
     "db-upgrade"  { Invoke-Step "uv run python -m darijacare.api.cli db-upgrade" }
     "api"         { Invoke-Step "uv run python -m darijacare.api.cli serve" }
     "api-smoke"   { Invoke-Step "uv run python tools/api_smoke.py" }
+    "front-install" { Invoke-Step "npm --prefix frontend ci" }
+    "front-dev"   { Invoke-Step "npm --prefix frontend run dev" }
+    "front-test"  { Invoke-Step "npm --prefix frontend run typecheck"; Invoke-Step "npm --prefix frontend run format:check"; Invoke-Step "npm --prefix frontend test" }
+    "front-build" { Invoke-Step "npm --prefix frontend run build" }
     "precommit"   { Invoke-Step "uv run pre-commit run --all-files" }
-    default       { Write-Host "Cibles : install install-gpu lint format typecheck test test-data cov repro data-status eda up down logs precommit kb-validate rag-index rag-eval db-upgrade api api-smoke" }
+    default       { Write-Host "Cibles : install install-gpu lint format typecheck test test-data cov repro data-status eda up down logs precommit kb-validate rag-index rag-eval db-upgrade api api-smoke front-install front-dev front-test front-build" }
 }

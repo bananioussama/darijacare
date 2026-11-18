@@ -71,9 +71,16 @@ class ChatService:
         with self._lock:
             return guard, self.assistant.nlu.predict(guard.model_text)
 
-    def handle(self, db: Session, conversation: Conversation, text: str) -> Exchange:
-        """Process ``text`` in ``conversation`` and commit the exchange."""
-        state = ConversationState(clarification_pending=conversation.clarification_pending)
+    def handle(
+        self, db: Session, conversation: Conversation, text: str, request_human: bool = False
+    ) -> Exchange:
+        """Process ``text`` in ``conversation`` and commit the exchange.
+
+        ``request_human``: the customer pressed « Parler à un conseiller » (always escalated).
+        """
+        state = ConversationState(
+            clarification_pending=conversation.clarification_pending, human_requested=request_human
+        )
         with self._lock:
             reply = self.assistant.handle(text, state)
         nlu, decision = reply.nlu, reply.decision
