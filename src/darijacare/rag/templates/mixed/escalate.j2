@@ -1,0 +1,4 @@
+{% import "_macros.j2" as m %}C'est noté, je vous transfère vers un conseiller{% if priority in ("critique", "haute") %} en priorité{% endif %}. Pas besoin de tout répéter, votre demande lui sera transmise.
+{% if fiche and safety %}En attendant, pour vous protéger :
+{{ m.steps(fiche.etapes) }}{{ m.source(fiche, "Source, fiche fictive") }}
+{% endif %}

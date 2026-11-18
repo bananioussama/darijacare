@@ -1,0 +1,4 @@
+{% import "_macros.j2" as m %}Fhamtek, ghadi n7awlek l chi conseiller{% if priority in ("critique", "haute") %} b l2awlawiya{% endif %}. Ma t7tajch t3awd kolchi, talab dyalek ghadi ykoun 3ndo.
+{% if fiche and safety %}F had lwe9t, bach t7mi rassek :
+{{ m.steps(fiche.etapes) }}{{ m.source(fiche, "Source, fiche fictive") }}
+{% endif %}

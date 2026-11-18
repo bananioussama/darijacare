@@ -181,8 +181,8 @@ stages:
       size: 4500
     - path: src/darijacare/data/split.py
       hash: md5
-      md5: 633cf0af2bc8581f1d2ba563cdcab334
-      size: 7316
+      md5: be9f7b1d97017e07fa8c7e74c01e2e52
+      size: 7338
     params:
       configs/data.yaml:
         seed: 42

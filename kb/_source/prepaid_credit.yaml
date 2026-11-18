@@ -1,0 +1,148 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+recharge_how:
+  title_fr: Comment recharger sa ligne prépayée
+  objet_fr: Présenter les façons de recharger une ligne prépayée.
+  etapes_fr:
+    - Acheter une carte de recharge chez un revendeur et saisir le code via le menu de recharge du téléphone.
+    - Recharger en ligne par carte bancaire depuis l'application ou le site.
+    - Recharger depuis le portefeuille mobile (mobile money).
+    - Demander une recharge électronique directement chez un revendeur agréé.
+  conditions_fr:
+    - La ligne doit être active et prépayée.
+    - Le code d'une carte de recharge ne peut être utilisé qu'une seule fois.
+  limites_fr:
+    - L'assistant ne vend pas de recharge et ne connaît pas les montants disponibles chez les revendeurs.
+    - Une recharge n'est pas remboursable une fois créditée.
+  escalade_fr: Si aucune méthode n'est possible pour le client, proposer un conseiller.
+  title_ar: كيفاش نشارجي الخط
+  objet_ar: نشرحو الطرق باش تشارجي خط بالكارط (بريبيد).
+  etapes_ar:
+    - شري كارط ديال الشحن عند شي بائع ودخل الكود من القائمة ديال الشحن فالتيليفون.
+    - شارجي فالأنترنيت بالكارط البنكية من التطبيق ولا السيت.
+    - شارجي من المحفظة الإلكترونية (موبايل موني).
+    - طلب شارج إلكتروني نيشان عند شي بائع معتمد.
+  conditions_ar:
+    - خاص الخط يكون خدام وبريبيد.
+    - الكود ديال كارط الشحن كيتستعمل غير مرة وحدة.
+  limites_ar:
+    - المساعد ما كيبيعش الشحن وما كيعرفش المبالغ اللي كاينين عند البائعين.
+    - الشحن ما كيترجعش من بعد ما يدخل للرصيد.
+  escalade_ar: إلا حتى طريقة ما ممكنة للكليان، نقدرو نحولوه لمستشار.
+
+recharge_failed:
+  title_fr: Recharge non reçue ou code refusé
+  objet_fr: Aider le client dont la recharge n'a pas été créditée ou dont le code de recharge est refusé.
+  etapes_fr:
+    - Vérifier le solde après quelques minutes (le crédit peut arriver avec un léger retard).
+    - Revérifier le code saisi (chiffres inversés, espace en trop) et réessayer une seule fois.
+    - Pour une recharge en ligne ou mobile money, retrouver la référence de la transaction ou le reçu.
+    - Si la recharge n'arrive toujours pas, déposer une réclamation « Recharge non reçue » avec le code ou la référence.
+  conditions_fr:
+    - Garder la carte de recharge ou le reçu jusqu'à la résolution.
+    - La recharge doit avoir été faite vers le bon numéro.
+  limites_fr:
+    - L'assistant ne peut pas créditer une ligne ni vérifier un code.
+    - Plusieurs essais avec un mauvais code peuvent bloquer temporairement la recharge par code.
+  escalade_fr: De l'argent est en jeu ; si le crédit n'est pas arrivé après le délai normal, transmettre à un conseiller.
+  title_ar: الشحن ما وصلش ولا الكود ما دازش
+  objet_ar: نعاونو الكليان اللي الشحن ديالو ما دخلش للرصيد ولا الكود ديالو ما تقبلش.
+  etapes_ar:
+    - شوف الصولد من بعد شي دقايق (الرصيد يقدر يتعطل شوية).
+    - عاود شوف الكود اللي دخلتي (أرقام مقلوبين، فراغ زايد) وعاود جرب مرة وحدة.
+    - إلا شارجيتي فالأنترنيت ولا بالموبايل موني، لقى المرجع ديال العملية ولا الوصل.
+    - إلا الشحن باقي ما وصلش، دير شكاية «شحن ما وصلش» مع الكود ولا المرجع.
+  conditions_ar:
+    - احتافظ بالكارط ديال الشحن ولا الوصل حتى يتحل المشكل.
+    - خاص الشحن يكون تدار للرقم الصحيح.
+  limites_ar:
+    - المساعد ما يقدرش يزيد الرصيد ولا يتأكد من الكود.
+    - بزاف ديال المحاولات بكود غالط تقدر توقف الشحن بالكود لشي مدة.
+  escalade_ar: كاينة الفلوس فالموضوع، إلا الرصيد ما وصلش من بعد الوقت العادي كنحولوك لمستشار.
+
+balance_check:
+  title_fr: Consulter son solde
+  objet_fr: Indiquer comment connaître son crédit restant et la date de validité.
+  etapes_fr:
+    - Ouvrir l'application et consulter l'écran d'accueil « Mon solde ».
+    - Ou utiliser le menu de consultation du solde du téléphone (code court indiqué sur la pochette de la carte SIM).
+    - Vérifier aussi la date de validité du crédit et des passes en cours.
+  conditions_fr:
+    - La consultation est gratuite.
+    - L'application nécessite une connexion internet ou le réseau mobile.
+  limites_fr:
+    - L'assistant ne voit pas le solde réel du client.
+    - Le solde affiché peut avoir quelques minutes de retard après une consommation.
+  escalade_fr: Si le solde affiché semble faux, le client peut faire une réclamation (voir la fiche « Crédit qui diminue »).
+  title_ar: نشوف الصولد
+  objet_ar: نقولو كيفاش تعرف شحال باقي ليك فالرصيد وحتى لإمتى صالح.
+  etapes_ar:
+    - حل التطبيق وشوف الصفحة الأولى «الرصيد ديالي».
+    - ولا استعمل القائمة ديال الرصيد فالتيليفون (الكود القصير مكتوب على الغلاف ديال السيم).
+    - شوف حتى التاريخ ديال الصلاحية ديال الرصيد والباسات اللي خدامين.
+  conditions_ar:
+    - الاطلاع على الصولد فابور.
+    - التطبيق خاصو الأنترنيت ولا الريزو.
+  limites_ar:
+    - المساعد ما كيشوفش الصولد الحقيقي ديال الكليان.
+    - الصولد اللي كيبان يقدر يتعطل شي دقايق من بعد الاستهلاك.
+  escalade_ar: إلا الصولد اللي باين كيبان غالط، يقدر الكليان يدير شكاية (شوف البطاقة «الصولد كينقص»).
+
+balance_deducted:
+  title_fr: Crédit qui diminue sans raison
+  objet_fr: Aider le client qui constate une baisse de crédit qu'il n'explique pas.
+  etapes_fr:
+    - Consulter l'historique des consommations dans l'application pour voir l'origine des débits.
+    - Vérifier les services payants actifs et les désactiver si besoin (voir « Services payants non souhaités »).
+    - Désactiver les données mobiles si aucun pass internet n'est actif (consommation hors pass).
+    - Si un débit reste inexpliqué, déposer une réclamation en indiquant les dates et montants.
+  conditions_fr:
+    - Le client indique la période concernée.
+    - La réclamation est faite par le titulaire de la ligne.
+  limites_fr:
+    - L'assistant ne voit pas l'historique réel et ne peut pas recréditer.
+    - Une consommation réellement effectuée n'est pas remboursée.
+  escalade_fr: Si le débit reste inexpliqué après vérification, transmettre à un conseiller.
+  title_ar: الصولد كينقص بلا سبب
+  objet_ar: نعاونو الكليان اللي لاحظ الرصيد ديالو نقص وما عرفش علاش.
+  etapes_ar:
+    - شوف التاريخ ديال الاستهلاك فالتطبيق باش تعرف منين تقطعو الفلوس.
+    - شوف الخدمات بالفلوس اللي مفعلة ووقفها إلا خاص (شوف «خدمات بالفلوس ما بغيتهاش»).
+    - طفي الأنترنيت ديال التيليفون إلا ما عندكش باس (الاستهلاك بلا باس كياكل الصولد).
+    - إلا بقا شي اقتطاع ما مفهومش، دير شكاية وقول التواريخ والمبالغ.
+  conditions_ar:
+    - الكليان كيعطي المدة اللي فيها المشكل.
+    - مول الخط هو اللي كيدير الشكاية.
+  limites_ar:
+    - المساعد ما كيشوفش التاريخ الحقيقي وما يقدرش يرجع الرصيد.
+    - الاستهلاك اللي تدار بصح ما كيترجعش.
+  escalade_ar: إلا بقا الاقتطاع ما مفهومش من بعد ما شفتي، كنحولوك لمستشار.
+
+credit_transfer_loan:
+  title_fr: Transférer du crédit ou emprunter une avance
+  objet_fr: Expliquer le transfert de crédit vers un autre numéro et l'avance de crédit (dépannage).
+  etapes_fr:
+    - Pour transférer du crédit, utiliser le menu « Transfert de crédit » de l'application et saisir le numéro du bénéficiaire.
+    - Confirmer le montant avant de valider ; un message confirme l'opération aux deux numéros.
+    - Pour une avance de crédit, ouvrir « Dépannage » et choisir le montant proposé.
+    - L'avance est récupérée automatiquement lors de la recharge suivante.
+  conditions_fr:
+    - Les deux lignes doivent être actives ; une ancienneté minimale peut être exigée.
+    - L'avance n'est possible que si aucune avance précédente n'est en cours.
+  limites_fr:
+    - Un transfert vers un mauvais numéro ne peut pas être annulé par l'assistant.
+    - Les montants et frais éventuels dépendent des conditions de l'offre.
+  escalade_fr: En cas de transfert envoyé au mauvais numéro, transmettre à un conseiller.
+  title_ar: نحول الرصيد ولا نتسلف شي سلفة
+  objet_ar: نشرحو كيفاش تحول الرصيد لنمرة أخرى وكيفاش تاخد سلفة ديال الرصيد.
+  etapes_ar:
+    - باش تحول الرصيد، استعمل «تحويل الرصيد» فالتطبيق ودخل النمرة ديال اللي غادي ياخدو.
+    - تأكد من المبلغ قبل ما توافق، وغادي يوصل ميساج للجوج نمرات.
+    - باش تاخد سلفة، حل «السلفة» واختار المبلغ اللي معروض.
+    - السلفة كتتقطع بوحدها فالشحن اللي جاي.
+  conditions_ar:
+    - خاص الجوج خطوط يكونو خدامين، ويقدر يكون مطلوب شي أقدمية.
+    - السلفة ممكنة غير إلا ما كانتش سلفة أخرى باقا ما تخلصاتش.
+  limites_ar:
+    - التحويل لنمرة غالطة ما يقدرش المساعد يلغيه.
+    - المبالغ والمصاريف إلا كانو كيتبعو الشروط ديال العرض.
+  escalade_ar: إلا الرصيد تصيفط لنمرة غالطة، كنحولوك لمستشار.

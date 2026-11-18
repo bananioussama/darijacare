@@ -22,7 +22,8 @@ services:
     networks: [data]
 
   qdrant:
-    image: qdrant/qdrant:v1.12.4
+    # Même version mineure que qdrant-client (1.20.0, uv.lock) : le client refuse un écart > 1.
+    image: qdrant/qdrant:v1.20.0
     restart: unless-stopped
     ports:
       - "127.0.0.1:${QDRANT_PORT:-6333}:6333"

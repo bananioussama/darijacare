@@ -1,0 +1,134 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+mm_send_receive:
+  title_fr: Envoyer ou recevoir de l'argent avec le portefeuille mobile
+  objet_fr: Expliquer l'envoi et la réception d'argent avec le portefeuille mobile, y compris depuis l'étranger.
+  etapes_fr:
+    - Ouvrir le portefeuille dans l'application, choisir « Envoyer de l'argent ».
+    - Saisir le numéro du bénéficiaire, vérifier son nom affiché, puis le montant.
+    - Confirmer avec le code secret du portefeuille ; un reçu est envoyé aux deux parties.
+    - Pour recevoir depuis l'étranger, donner au proche son numéro de portefeuille et le nom exact du titulaire.
+  conditions_fr:
+    - Les deux portefeuilles doivent être actifs ; des plafonds s'appliquent.
+    - Le code secret ne doit jamais être communiqué.
+  limites_fr:
+    - Un envoi vers un mauvais numéro ne peut pas être annulé par l'assistant (voir « Problème de transaction »).
+    - Les frais éventuels dépendent des conditions du service.
+  escalade_fr: En cas d'envoi au mauvais numéro, transmettre immédiatement à un conseiller.
+  title_ar: نصيفط ولا نتوصل بالفلوس بالمحفظة الإلكترونية
+  objet_ar: نشرحو كيفاش تصيفط ولا تتوصل بالفلوس بالمحفظة الإلكترونية، حتى من الخارج.
+  etapes_ar:
+    - حل المحفظة فالتطبيق، واختار «صيفط الفلوس».
+    - دخل النمرة ديال اللي غادي ياخدهم، تأكد من السمية اللي كتبان، ومن بعد المبلغ.
+    - أكد بالكود السري ديال المحفظة، والوصل كيوصل للجوج.
+    - باش تتوصل من الخارج، عطي لقريبك النمرة ديال المحفظة والسمية بالضبط ديال مولاها.
+  conditions_ar:
+    - خاص الجوج محفظات يكونو خدامين، وكاينين حدود.
+    - الكود السري عمرو ما يتعطى لحتى واحد.
+  limites_ar:
+    - الفلوس اللي مشاو لنمرة غالطة ما يقدرش المساعد يلغيهم (شوف «مشكل فشي عملية»).
+    - المصاريف إلا كانو كيتبعو الشروط ديال الخدمة.
+  escalade_ar: إلا صيفطتي لنمرة غالطة، كنحولوك فالحين لمستشار.
+
+mm_cash_in_out:
+  title_fr: Déposer ou retirer de l'argent chez un agent
+  objet_fr: Expliquer le dépôt d'espèces sur le portefeuille et le retrait chez un agent agréé.
+  etapes_fr:
+    - Trouver un agent agréé avec la carte des points de service dans l'application.
+    - Pour un dépôt, donner son numéro de portefeuille et les espèces ; vérifier le message de confirmation avant de partir.
+    - Pour un retrait, initier le retrait dans l'application ou chez l'agent, puis confirmer avec le code secret.
+    - Garder le reçu remis par l'agent.
+  conditions_fr:
+    - Une pièce d'identité peut être demandée ; des plafonds de dépôt et de retrait s'appliquent.
+  limites_fr:
+    - L'assistant ne voit pas les soldes ni les opérations.
+  escalade_fr: Si un dépôt n'apparaît pas sur le portefeuille, transmettre à un conseiller avec le reçu.
+  title_ar: نحط ولا نجبد الفلوس عند الوكيل
+  objet_ar: نشرحو كيفاش تحط الفلوس فالمحفظة وكيفاش تجبدهم عند وكيل معتمد.
+  etapes_ar:
+    - لقى وكيل معتمد بالخريطة ديال نقط الخدمة فالتطبيق.
+    - باش تحط، عطي النمرة ديال المحفظة والفلوس، وتأكد من ميساج التأكيد قبل ما تمشي.
+    - باش تجبد، بدا العملية فالتطبيق ولا عند الوكيل، ومن بعد أكد بالكود السري.
+    - احتافظ بالوصل اللي عطاك الوكيل.
+  conditions_ar:
+    - يقدرو يطلبو البطاقة الوطنية، وكاينين حدود ديال الإيداع والسحب.
+  limites_ar:
+    - المساعد ما كيشوفش الأرصدة ولا العمليات.
+  escalade_ar: إلا الفلوس اللي حطيتي ما بانوش فالمحفظة، كنحولوك لمستشار مع الوصل.
+
+mm_payment:
+  title_fr: Payer une facture ou un commerçant avec le portefeuille
+  objet_fr: Expliquer le paiement d'une facture ou d'un achat en magasin avec le portefeuille mobile.
+  etapes_fr:
+    - Ouvrir le portefeuille et choisir « Payer une facture » ou « Payer un commerçant ».
+    - Pour une facture, choisir l'organisme et saisir la référence ; pour un commerçant, scanner son code QR.
+    - Vérifier le montant et le bénéficiaire, puis confirmer avec le code secret.
+    - Conserver le reçu de paiement.
+  conditions_fr:
+    - Le solde du portefeuille doit couvrir le montant.
+  limites_fr:
+    - La prise en compte par l'organisme facturier peut demander un délai.
+  escalade_fr: Si le paiement est débité mais non reçu par le bénéficiaire, voir « Problème de transaction » et un conseiller.
+  title_ar: نخلص فاتورة ولا محل بالمحفظة
+  objet_ar: نشرحو كيفاش تخلص فاتورة ولا شي حاجة فالحانوت بالمحفظة الإلكترونية.
+  etapes_ar:
+    - حل المحفظة واختار «خلص فاتورة» ولا «خلص التاجر».
+    - بالنسبة للفاتورة، اختار الجهة ودخل المرجع، وبالنسبة للتاجر، سكاني الكود QR ديالو.
+    - تأكد من المبلغ واللي غادي ياخدو، ومن بعد أكد بالكود السري.
+    - احتافظ بالوصل ديال الخلاص.
+  conditions_ar:
+    - خاص الرصيد ديال المحفظة يكفي المبلغ.
+  limites_ar:
+    - الجهة اللي كتخلص ليها تقدر تاخد شوية ديال الوقت باش تسجل الخلاص.
+  escalade_ar: إلا تقطعو الفلوس وما وصلوش لمولاهم، شوف «مشكل فشي عملية» وطلب مستشار.
+
+mm_transaction_issue:
+  title_fr: Problème de transaction du portefeuille
+  objet_fr: Aider le client dont un transfert ou un paiement a échoué, est en attente ou est parti vers un mauvais numéro.
+  etapes_fr:
+    - Vérifier l'historique du portefeuille pour voir le statut exact (réussi, en attente, échoué).
+    - Une opération échouée n'est en principe pas débitée ; une opération en attente peut se régulariser seule.
+    - Rassembler la référence de la transaction, la date, le montant et le numéro concerné.
+    - Pour un envoi vers un mauvais numéro, demander immédiatement un conseiller, sans contacter soi-même le destinataire.
+  conditions_fr:
+    - La référence de la transaction est indispensable pour toute enquête.
+  limites_fr:
+    - L'assistant ne peut ni annuler ni rembourser une transaction ; aucun remboursement n'est garanti.
+  escalade_fr: De l'argent est en jeu ; transmettre à un conseiller en priorité.
+  title_ar: مشكل فشي عملية ديال المحفظة
+  objet_ar: نعاونو الكليان اللي شي تحويل ولا خلاص ديالو ما دازش، باقي معلق ولا مشى لنمرة غالطة.
+  etapes_ar:
+    - شوف التاريخ ديال المحفظة باش تعرف الحالة بالضبط (دازت، معلقة، ما دازتش).
+    - العملية اللي ما دازتش فالعادة ما كتقطعش، والمعلقة تقدر تتسوى بوحدها.
+    - جمع المرجع ديال العملية، التاريخ، المبلغ والنمرة المعنية.
+    - إلا صيفطتي لنمرة غالطة، طلب فالحين مستشار، وما تتاصلش نتا بيدك باللي وصلو الفلوس.
+  conditions_ar:
+    - المرجع ديال العملية ضروري لأي بحث.
+  limites_ar:
+    - المساعد ما يقدرش يلغي ولا يرجع العملية، وحتى رجوع الفلوس ماشي مضمون.
+  escalade_ar: كاينة الفلوس فالموضوع، كنحولوك لمستشار بالأولوية.
+
+mm_account_access:
+  title_fr: Compte du portefeuille, code secret, blocage et plafonds
+  objet_fr: Expliquer l'ouverture du portefeuille, le code secret oublié, le portefeuille bloqué et les plafonds.
+  etapes_fr:
+    - Pour ouvrir un portefeuille, s'inscrire dans l'application ou en agence avec une pièce d'identité valide.
+    - En cas de code secret oublié, utiliser « Code oublié » ou se rendre en agence avec sa pièce d'identité.
+    - Après plusieurs codes faux, le portefeuille se bloque ; le déblocage se fait après vérification d'identité.
+    - Pour relever un plafond, fournir les informations ou documents complémentaires demandés.
+  conditions_fr:
+    - Le portefeuille est personnel et lié à une ligne identifiée.
+  limites_fr:
+    - L'assistant ne débloque pas de portefeuille et ne communique aucun code.
+  escalade_fr: Si le portefeuille est bloqué alors que le client a besoin de son argent, transmettre à un conseiller.
+  title_ar: الحساب ديال المحفظة، الكود السري، البلوكاج والحدود
+  objet_ar: نشرحو كيفاش تحل المحفظة، ملي كتنسى الكود السري، ملي كتتبلوكا المحفظة، والحدود ديالها.
+  etapes_ar:
+    - باش تحل المحفظة، تسجل فالتطبيق ولا فالوكالة ببطاقة تعريف صالحة.
+    - إلا نسيتي الكود السري، استعمل «نسيت الكود» ولا سير للوكالة بالبطاقة الوطنية.
+    - من بعد بزاف ديال الكودات الغالطين، المحفظة كتتبلوكا، والفتح كيتدار من بعد التأكد من الهوية.
+    - باش تطلع شي حد، عطي المعلومات ولا الوثائق الزايدة اللي طلبو.
+  conditions_ar:
+    - المحفظة شخصية ومربوطة بخط مسجل.
+  limites_ar:
+    - المساعد ما كيفتحش المحفظة وما كيعطي حتى كود.
+  escalade_ar: إلا المحفظة مبلوكية والكليان محتاج الفلوس ديالو، كنحولوه لمستشار.

@@ -1,0 +1,54 @@
+# Politique de décision DarijaCare (Phase 3) — Tableau 24 du cahier des charges.
+# Arbitrage retenu : PRUDENCE (escalader plutôt que risquer une mauvaise réponse automatique).
+# Les seuils sont provisoires : ils seront re-choisis sur la validation propre du modèle
+# ré-entraîné (voir docs/nlu.md §4). Toute modification est versionnée (table ConfigDecision en Phase 4).
+version: 1
+
+input:
+  min_chars: 4            # cahier des charges « 4–500 » ; le message le plus court du jeu fait 4 caractères (أهلا)
+  max_chars: 500
+  # Détection simple d'injection de prompt (insensible à la casse). Liste volontairement courte et
+  # explicable ; complétée en Phase 6 par 50 attaques de test.
+  injection_patterns:
+    - "ignore (all |the |your |any )*(previous |above |prior )?(instructions|prompts?|rules)"
+    - "ignorer? (toutes |tes |les |vos )*(instructions|consignes|règles)"
+    - "(oublie|oubliez|oublier) (toutes |tes |les |vos )*(instructions|consignes|règles)"
+    - "(system|système) ?prompt"
+    - "you are now|tu es maintenant|act as|agis comme|joue le rôle"
+    - "<\\s*/?\\s*(script|system|im_start|im_end)"
+    - "\\bjailbreak\\b|\\bDAN\\b mode"
+
+thresholds:
+  # needs_human : la v5 donne des probabilités très polarisées (rappel 0,745 au test, quasi
+  # insensible au seuil) ; 0,30 = prudence, sans effet négatif mesurable.
+  needs_human: 0.30
+  # Confiance conjointe (catégorie × intention). 0,80 : ~1,5 % des messages clarifiés au test v5,
+  # exacts à 23,5 % seulement sans clarification (mesure d'information, non utilisée pour le choix).
+  intent_confidence: 0.80
+  escalate_urgency: 3     # urgence ≥ 3 -> escalade prioritaire
+
+intents:
+  security: [scam_spam_report, lost_stolen]
+  out_of_scope: [non_telecom]
+  conversational: [greeting_thanks, agency_location, customer_service_contact]
+
+clarification:
+  max_per_turn: 1
+  # Si le client a déjà reçu une clarification et que la confiance reste basse :
+  # prudence -> escalade (plutôt qu'une réponse au hasard).
+  after_failed_clarification: escalate
+
+priority:
+  # score (0–100) = 100 × (w_urg·urgence/3 + w_hum·p(needs_human) + w_conf·(1 − confiance)) / Σw
+  #                 + bonus si catégorie/intention sensible, plafonné à 100.
+  weights:
+    urgency: 0.5
+    needs_human: 0.3
+    uncertainty: 0.2
+  bonus:
+    intents: {lost_stolen: 25, scam_spam_report: 25, mm_transaction_issue: 10}
+    categories: {mobile_money: 5}
+  levels:                 # étiquettes pour la console conseiller
+    critique: 75
+    haute: 50
+    normale: 25

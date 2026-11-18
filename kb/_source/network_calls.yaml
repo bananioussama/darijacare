@@ -1,0 +1,220 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+check_signal_coverage:
+  title_fr: Vérifier la couverture réseau d'un lieu
+  objet_fr: Indiquer comment savoir si un lieu est couvert par le réseau mobile (2G, 4G, 5G).
+  etapes_fr:
+    - Ouvrir la carte de couverture dans l'application ou sur le site.
+    - Saisir la ville, le quartier ou le lieu précis (village, route, montagne).
+    - Lire le niveau de couverture indiqué pour chaque technologie.
+    - Pour un lieu isolé, se renseigner auprès de personnes sur place si possible.
+  conditions_fr:
+    - La carte donne une couverture extérieure ; à l'intérieur des bâtiments elle peut être plus faible.
+  limites_fr:
+    - La carte est indicative et ne garantit pas la qualité en un point précis.
+    - L'assistant ne connaît pas la couverture réelle.
+  escalade_fr: Pour un besoin professionnel précis de couverture, proposer un conseiller.
+  title_ar: نشوف واش الريزو كاين فشي بلاصة
+  objet_ar: نقولو كيفاش تعرف واش شي بلاصة فيها الريزو ديال التيليفون (2G، 4G، 5G).
+  etapes_ar:
+    - حل الخريطة ديال التغطية فالتطبيق ولا فالسيت.
+    - دخل المدينة، الحومة ولا البلاصة بالضبط (دوار، طريق، جبل).
+    - قرا مستوى التغطية لكل تكنولوجيا.
+    - إلا كانت بلاصة بعيدة، سول شي ناس من تما إلا ممكن.
+  conditions_ar:
+    - الخريطة كتعطي التغطية برا، والداخل ديال البني يقدر يكون فيه الريزو ضعيف كثر.
+  limites_ar:
+    - الخريطة تقريبية وما كتضمنش الجودة فبلاصة معينة.
+    - المساعد ما كيعرفش التغطية الحقيقية.
+  escalade_ar: إلا عندك حاجة ديال الخدمة فبلاصة معينة، نقدرو نحولوك لمستشار.
+
+report_poor_signal:
+  title_fr: Signaler une absence ou une faiblesse de réseau
+  objet_fr: Permettre au client de signaler qu'il n'a pas de réseau ou un réseau faible là où il se trouve.
+  etapes_fr:
+    - Redémarrer le téléphone et activer puis désactiver le mode avion.
+    - Vérifier le réglage réseau automatique et la carte SIM dans un autre téléphone.
+    - Noter le lieu exact, les horaires et le type de problème (pas de barres, 2G seulement).
+    - Faire un signalement de couverture dans l'application avec ces informations.
+  conditions_fr:
+    - Le signalement est plus utile avec une adresse précise et des horaires.
+  limites_fr:
+    - Un signalement ne garantit pas une amélioration rapide de la couverture.
+    - L'assistant ne voit pas l'état des antennes.
+  escalade_fr: Si l'absence de réseau empêche tout usage depuis plusieurs jours, transmettre à un conseiller.
+  title_ar: نبلغ بلي ما كاينش الريزو ولا ضعيف
+  objet_ar: نخليو الكليان يبلغ بلي ما عندوش الريزو ولا الريزو ضعيف فالبلاصة اللي هو فيها.
+  etapes_ar:
+    - طفي وشعل التيليفون وشعل وطفي الوضع ديال الطيارة.
+    - شوف بلي اختيار الريزو أوتوماتيكي وجرب السيم فتيليفون آخر.
+    - سجل البلاصة بالضبط، الساعات ونوع المشكل (ما كاين حتى خط، غير 2G).
+    - دير بلاغ ديال التغطية فالتطبيق بهاد المعلومات.
+  conditions_ar:
+    - البلاغ كيكون مفيد كثر بعنوان دقيق وبالساعات.
+  limites_ar:
+    - البلاغ ما كيضمنش بلي التغطية غادي تتحسن بالزربة.
+    - المساعد ما كيشوفش الحالة ديال الأنتينات.
+  escalade_ar: إلا الريزو مقطوع ومانعك من كلشي شحال من نهار، كنحولوك لمستشار.
+
+call_quality_drop:
+  title_fr: Appels coupés ou de mauvaise qualité
+  objet_fr: Aider le client dont les appels se coupent ou ont un mauvais son.
+  etapes_fr:
+    - Vérifier le niveau de réseau au moment de l'appel et se déplacer vers une zone mieux couverte.
+    - Activer les appels en 4G (VoLTE) ou Wi-Fi si le téléphone et l'offre le permettent.
+    - Redémarrer le téléphone et retirer une éventuelle coque métallique qui gêne l'antenne.
+    - Noter les heures et lieux des coupures pour un signalement.
+  conditions_fr:
+    - Les appels en 4G ou Wi-Fi dépendent du téléphone et de l'offre.
+  limites_fr:
+    - Le problème peut venir du réseau ou du téléphone de l'interlocuteur.
+    - L'assistant ne peut pas analyser les appels.
+  escalade_fr: Si les coupures sont fréquentes partout, transmettre à un conseiller avec les horaires notés.
+  title_ar: المكالمات كتقطع ولا الصوت خايب
+  objet_ar: نعاونو الكليان اللي المكالمات ديالو كتقطع ولا الصوت فيها خايب.
+  etapes_ar:
+    - شوف الريزو فاش كتعيط وتحرك لبلاصة فيها الريزو مزيان.
+    - فعل المكالمات بـ4G (VoLTE) ولا بالويفي إلا التيليفون والعرض كيسمحو.
+    - طفي وشعل التيليفون وحيد شي كوك ديال الحديد إلا كان كيضر الأنتين.
+    - سجل الساعات والبلايص فين كتقطع باش تبلغ.
+  conditions_ar:
+    - المكالمات بـ4G ولا بالويفي كتبع التيليفون والعرض.
+  limites_ar:
+    - المشكل يقدر يكون فالريزو ولا فالتيليفون ديال اللي كتهضر معاه.
+    - المساعد ما يقدرش يحلل المكالمات.
+  escalade_ar: إلا التقطيع كيتعاود فكل بلاصة، كنحولوك لمستشار مع الساعات اللي سجلتي.
+
+cannot_call_receive:
+  title_fr: Impossible d'appeler ou de recevoir des appels
+  objet_fr: Aider le client qui ne peut ni passer ni recevoir d'appels.
+  etapes_fr:
+    - Vérifier le crédit ou le forfait (ligne prépayée sans crédit, ligne suspendue).
+    - Vérifier que le mode avion et le renvoi d'appel ne sont pas activés.
+    - Vérifier que le numéro n'est pas bloqué dans la liste noire du téléphone.
+    - Redémarrer le téléphone et tester la carte SIM dans un autre appareil.
+  conditions_fr:
+    - La ligne doit être active et identifiée (voir « Identification de la ligne »).
+  limites_fr:
+    - L'assistant ne voit pas l'état réel de la ligne.
+  escalade_fr: Si la ligne ne permet aucun appel après ces vérifications, c'est un service coupé ; transmettre à un conseiller.
+  title_ar: ما نقدرش نعيط ولا يعيطو ليا
+  objet_ar: نعاونو الكليان اللي ما قادرش يعيط ولا يتوصل بالمكالمات.
+  etapes_ar:
+    - شوف الرصيد ولا الفورفي (خط بريبيد بلا رصيد، خط موقوف).
+    - تأكد بلي الوضع ديال الطيارة وتحويل المكالمات طافيين.
+    - تأكد بلي النمرة ماشي فاللائحة السودا ديال التيليفون.
+    - طفي وشعل التيليفون وجرب السيم فجهاز آخر.
+  conditions_ar:
+    - خاص الخط يكون خدام ومسجل باسمك (شوف «نسجل الخط باسمي»).
+  limites_ar:
+    - المساعد ما كيشوفش الحالة الحقيقية ديال الخط.
+  escalade_ar: إلا الخط ما كيخليك تعيط نهائيا من بعد هاد الخطوات، هادي خدمة مقطوعة، كنحولوك لمستشار.
+
+sms_issue:
+  title_fr: SMS non envoyés ou non reçus
+  objet_fr: Aider le client dont les SMS ne partent pas ou n'arrivent pas.
+  etapes_fr:
+    - Vérifier le crédit ou le forfait SMS et la mémoire du téléphone (messagerie pleine).
+    - Vérifier le numéro du centre de messagerie dans les réglages SMS (rétablir la valeur par défaut).
+    - Redémarrer le téléphone et réessayer.
+    - Pour les codes de confirmation non reçus, vérifier que l'expéditeur n'est pas bloqué.
+  conditions_fr:
+    - La ligne doit être active.
+  limites_fr:
+    - Un SMS envoyé par un service tiers peut être retardé par ce service.
+    - L'assistant ne peut pas voir les SMS.
+  escalade_fr: Si aucun SMS ne passe après ces vérifications, transmettre à un conseiller.
+  title_ar: الميساجات ما كيمشيوش ولا ما كيوصلوش
+  objet_ar: نعاونو الكليان اللي الميساجات ديالو ما كيتصيفطوش ولا ما كيوصلوش.
+  etapes_ar:
+    - شوف الرصيد ولا الفورفي ديال الميساجات والذاكرة ديال التيليفون (الميساجات عامرين).
+    - شوف رقم مركز الرسائل فإعدادات الميساجات (رجعو للقيمة الأصلية).
+    - طفي وشعل التيليفون وعاود جرب.
+    - إلا كانت الكودات ديال التأكيد ما كتوصلش، تأكد بلي المرسل ماشي مبلوكي.
+  conditions_ar:
+    - خاص الخط يكون خدام.
+  limites_ar:
+    - الميساج اللي جاي من شي خدمة أخرى يقدر يتعطل من عندهم.
+    - المساعد ما يقدرش يشوف الميساجات.
+  escalade_ar: إلا حتى ميساج ما داز من بعد هاد الخطوات، كنحولوك لمستشار.
+
+international_calls:
+  title_fr: Appeler à l'étranger
+  objet_fr: Renseigner sur les appels vers l'étranger (activation, tarifs, problèmes).
+  etapes_fr:
+    - Composer le numéro au format international (00 ou + suivi de l'indicatif du pays).
+    - Vérifier dans l'espace client que les appels internationaux sont autorisés sur la ligne.
+    - Consulter la grille tarifaire internationale de l'offre, ou un pass international si proposé.
+    - Pour appeler depuis l'étranger, voir plutôt la fiche « Utiliser sa ligne à l'étranger ».
+  conditions_fr:
+    - Sur une ligne prépayée, le crédit doit couvrir le coût de l'appel.
+  limites_fr:
+    - L'assistant ne donne pas de tarifs réels.
+    - Certains pays ou numéros spéciaux peuvent être inaccessibles.
+  escalade_fr: Si les appels internationaux échouent alors qu'ils sont autorisés, proposer un conseiller.
+  title_ar: نعيط للخارج
+  objet_ar: نعطيو المعلومات على المكالمات للخارج (التفعيل، الأثمنة، المشاكل).
+  etapes_ar:
+    - ضرب النمرة بالصيغة الدولية (00 ولا + ومن بعد الرمز ديال البلاد).
+    - شوف فالفضاء ديال الكليان واش المكالمات الدولية مسموحة فالخط.
+    - شوف الأثمنة الدولية ديال العرض، ولا شي باس دولي إلا كان.
+    - باش تعيط من الخارج، شوف البطاقة «نستعمل الخط برا».
+  conditions_ar:
+    - فالخط بريبيد، خاص الرصيد يكفي الثمن ديال المكالمة.
+  limites_ar:
+    - المساعد ما كيعطيش الأثمنة الحقيقية.
+    - شي بلدان ولا نمرات خاصة يقدرو ما يتوصلوش.
+  escalade_ar: إلا المكالمات الدولية ما كادوزش واخا مسموحة، نقدرو نحولوك لمستشار.
+
+activate_call_features:
+  title_fr: Activer la messagerie vocale, le renvoi, le double appel ou l'affichage du numéro
+  objet_fr: Expliquer comment activer les services d'appel (messagerie vocale, renvoi d'appel, double appel, présentation du numéro).
+  etapes_fr:
+    - Ouvrir Paramètres > Téléphone > Services d'appel sur le téléphone.
+    - Choisir le service (renvoi d'appel, double appel, affichage du numéro) et l'activer.
+    - Pour la messagerie vocale, l'activer dans l'application, rubrique « Mes services », puis enregistrer l'annonce.
+    - Faire un appel test pour vérifier.
+  conditions_fr:
+    - Certains services peuvent être payants ou dépendre de l'offre.
+  limites_fr:
+    - Les menus varient selon le téléphone.
+    - L'assistant ne peut pas activer un service à distance.
+  escalade_fr: Si le service ne s'active pas, proposer un conseiller.
+  title_ar: نفعل البريد الصوتي، تحويل المكالمات، المكالمة فالانتظار ولا إظهار النمرة
+  objet_ar: نشرحو كيفاش تفعل الخدمات ديال المكالمات (البريد الصوتي، تحويل المكالمات، المكالمة فالانتظار، إظهار النمرة).
+  etapes_ar:
+    - حل الإعدادات > الهاتف > خدمات المكالمات فالتيليفون.
+    - اختار الخدمة (تحويل المكالمات، المكالمة فالانتظار، إظهار النمرة) وفعلها.
+    - بالنسبة للبريد الصوتي، فعلو فالتطبيق فـ«الخدمات ديالي» وسجل الرسالة ديال الترحيب.
+    - دير مكالمة ديال التجربة باش تتأكد.
+  conditions_ar:
+    - شي خدمات يقدرو يكونو بالفلوس ولا كيتبعو العرض.
+  limites_ar:
+    - القوائم كتختلف على حساب التيليفون.
+    - المساعد ما يقدرش يفعل الخدمة من بعيد.
+  escalade_ar: إلا الخدمة ما تفعلاتش، نقدرو نحولوك لمستشار.
+
+deactivate_call_features:
+  title_fr: Désactiver la messagerie vocale, le renvoi, le double appel ou l'affichage du numéro
+  objet_fr: Expliquer comment désactiver les services d'appel.
+  etapes_fr:
+    - Ouvrir Paramètres > Téléphone > Services d'appel.
+    - Désactiver le renvoi d'appel (« Toujours », « Si occupé », « Si pas de réponse ») ou le double appel.
+    - Pour la messagerie vocale, la désactiver dans l'application, rubrique « Mes services ».
+    - Faire un appel test pour vérifier que l'appel sonne bien sur le téléphone.
+  conditions_fr:
+    - La désactivation est faite depuis la ligne concernée ou par son titulaire.
+  limites_fr:
+    - Un renvoi configuré à la fois sur le téléphone et sur la ligne doit être désactivé aux deux endroits.
+  escalade_fr: Si les appels sont toujours renvoyés, proposer un conseiller.
+  title_ar: نوقف البريد الصوتي، تحويل المكالمات، المكالمة فالانتظار ولا إظهار النمرة
+  objet_ar: نشرحو كيفاش توقف الخدمات ديال المكالمات.
+  etapes_ar:
+    - حل الإعدادات > الهاتف > خدمات المكالمات.
+    - طفي تحويل المكالمات («ديما»، «إلا كان مشغول»، «إلا ما جاوبش») ولا المكالمة فالانتظار.
+    - بالنسبة للبريد الصوتي، طفيه فالتطبيق فـ«الخدمات ديالي».
+    - دير مكالمة ديال التجربة باش تتأكد بلي التيليفون كيصوني.
+  conditions_ar:
+    - التوقيف كيتدار من الخط نيت ولا من عند مولاه.
+  limites_ar:
+    - إلا كان التحويل مفعل فالتيليفون وفالخط، خاصو يتطفى فالجوج.
+  escalade_ar: إلا المكالمات باقا كتحول، نقدرو نحولوك لمستشار.

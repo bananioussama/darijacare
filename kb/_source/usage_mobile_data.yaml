@@ -1,0 +1,210 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+check_usage:
+  title_fr: Suivre sa consommation (internet, minutes, SMS)
+  objet_fr: Indiquer comment connaître ce qui a été consommé et ce qui reste en internet, minutes et SMS.
+  etapes_fr:
+    - Ouvrir l'application, rubrique « Ma consommation ».
+    - Consulter les compteurs restants (internet, appels, SMS) et la date de fin du forfait ou du pass.
+    - Consulter le détail par jour pour repérer une consommation inhabituelle.
+    - Activer les notifications d'alerte de consommation si l'option existe.
+  conditions_fr:
+    - Valable pour les lignes prépayées et avec abonnement.
+    - Les compteurs sont mis à jour avec un léger décalage.
+  limites_fr:
+    - L'assistant ne voit pas les compteurs réels du client.
+    - Les consommations à l'étranger peuvent apparaître avec plus de retard.
+  escalade_fr: Si les compteurs semblent incohérents, le client peut demander un conseiller.
+  title_ar: نتبع الاستهلاك ديالي (أنترنيت، دقايق، ميساجات)
+  objet_ar: نقولو كيفاش تعرف شحال استهلكتي وشحال باقي ليك فالأنترنيت، الدقايق والميساجات.
+  etapes_ar:
+    - حل التطبيق، فـ«الاستهلاك ديالي».
+    - شوف شحال باقي (أنترنيت، مكالمات، ميساجات) وفوقاش كيسالي الفورفي ولا الباس.
+    - شوف التفصيل نهار بنهار باش تلقى شي استهلاك ماشي عادي.
+    - فعل التنبيهات ديال الاستهلاك إلا كانت.
+  conditions_ar:
+    - صالحة للخطوط بريبيد وللي فيها اشتراك.
+    - العدادات كيتحدثو بشوية ديال التأخير.
+  limites_ar:
+    - المساعد ما كيشوفش العدادات الحقيقية ديال الكليان.
+    - الاستهلاك فالخارج يقدر يبان معطل كثر.
+  escalade_ar: إلا العدادات بانو ليك ما معقولينش، تقدر تطلب مستشار.
+
+excess_charges:
+  title_fr: Frais de dépassement de forfait
+  objet_fr: Expliquer les frais facturés quand le client dépasse son forfait ou son volume internet, et comment les éviter.
+  etapes_fr:
+    - Repérer sur la facture ou l'historique la rubrique « Hors forfait ».
+    - Vérifier quel compteur a été dépassé (internet, appels, SMS, international).
+    - Activer une limite de consommation (voir « Limiter sa consommation ») pour éviter de nouveaux dépassements.
+    - Envisager un pass complémentaire ou un forfait plus adapté si le dépassement est fréquent.
+  conditions_fr:
+    - Les tarifs hors forfait dépendent des conditions de l'offre souscrite.
+    - Le dépassement est facturé sur la période où il a eu lieu.
+  limites_fr:
+    - L'assistant ne peut pas annuler des frais de dépassement.
+    - Une consommation réellement effectuée reste due.
+  escalade_fr: Si le client conteste le dépassement, l'orienter vers la contestation de facture et un conseiller.
+  title_ar: المصاريف ديال الفوت على الفورفي
+  objet_ar: نشرحو المصاريف اللي كتخلص ملي الكليان كيفوت الفورفي ولا الأنترنيت ديالو، وكيفاش يتفاداها.
+  etapes_ar:
+    - لقى فالفاتورة ولا التاريخ الجزء «خارج الفورفي».
+    - شوف شمن عداد اللي فات (أنترنيت، مكالمات، ميساجات، دولي).
+    - فعل حد ديال الاستهلاك (شوف «نحدد الاستهلاك») باش ما يعاودش يوقع.
+    - فكر فشي باس زايد ولا فورفي مناسب كثر إلا كان الفوت كيتعاود.
+  conditions_ar:
+    - الأثمنة خارج الفورفي كتبع الشروط ديال العرض اللي عندك.
+    - الفوت كيتخلص فالمدة اللي وقع فيها.
+  limites_ar:
+    - المساعد ما يقدرش يلغي المصاريف ديال الفوت.
+    - الاستهلاك اللي تدار بصح خاصو يتخلص.
+  escalade_ar: إلا الكليان معترض على الفوت، كنوجهوه للاعتراض على الفاتورة ولمستشار.
+
+usage_limits:
+  title_fr: Limiter sa consommation ou ses dépenses
+  objet_fr: Expliquer comment fixer, modifier ou retirer un plafond de consommation ou de dépense.
+  etapes_fr:
+    - Ouvrir l'application, rubrique « Plafond de consommation ».
+    - Choisir le type de limite (internet hors pass, montant hors forfait, services payants).
+    - Fixer la valeur souhaitée et valider ; un message confirme le changement.
+    - Revenir dans la même rubrique pour modifier ou supprimer la limite.
+  conditions_fr:
+    - Le changement est fait par le titulaire de la ligne.
+    - Une limite atteinte bloque la consommation concernée jusqu'à la période suivante ou jusqu'à modification.
+  limites_fr:
+    - Les types de limites disponibles dépendent de l'offre.
+    - Le plafond peut s'appliquer avec un léger délai.
+  escalade_fr: Si la limite ne s'applique pas, proposer un conseiller.
+  title_ar: نحدد الاستهلاك ولا المصروف
+  objet_ar: نشرحو كيفاش تحط، تبدل ولا تحيد واحد الحد ديال الاستهلاك ولا المصروف.
+  etapes_ar:
+    - حل التطبيق، فـ«الحد ديال الاستهلاك».
+    - اختار نوع الحد (أنترنيت بلا باس، مبلغ خارج الفورفي، خدمات بالفلوس).
+    - حط القيمة اللي بغيتي وأكد، وغادي يوصلك ميساج.
+    - رجع لنفس البلاصة باش تبدل ولا تحيد الحد.
+  conditions_ar:
+    - مول الخط هو اللي كيبدل.
+    - ملي كيوصل الحد، الاستهلاك كيتوقف حتى للمدة الجاية ولا حتى تبدلو.
+  limites_ar:
+    - الأنواع ديال الحدود كتبع العرض.
+    - الحد يقدر يتطبق بشوية ديال التأخير.
+  escalade_ar: إلا الحد ما تطبقش، نقدرو نحولوك لمستشار.
+
+data_pass_buy:
+  title_fr: Acheter ou activer un pass internet
+  objet_fr: Guider le client qui veut acheter ou activer un pass internet mobile.
+  etapes_fr:
+    - Ouvrir l'application, rubrique « Pass internet ».
+    - Choisir un pass selon le volume et la durée affichés.
+    - Payer avec le crédit, la carte bancaire ou le portefeuille mobile, puis confirmer.
+    - Vérifier l'activation par le message reçu ou dans « Ma consommation ».
+  conditions_fr:
+    - Le crédit ou le moyen de paiement doit couvrir le prix du pass.
+    - Certains pass ne sont pas cumulables avec un pass déjà actif.
+  limites_fr:
+    - L'assistant ne connaît pas les prix réels et ne peut pas activer un pass.
+    - Un pass activé n'est pas remboursable.
+  escalade_fr: Si le pass est payé mais non activé, voir la fiche « Promotion ou bonus non reçu » ou demander un conseiller.
+  title_ar: نشري ولا نفعل باس ديال الأنترنيت
+  objet_ar: نوجهو الكليان اللي بغا يشري ولا يفعل باس ديال الأنترنيت فالتيليفون.
+  etapes_ar:
+    - حل التطبيق، فـ«باسات الأنترنيت».
+    - اختار باس على حساب الحجم والمدة اللي باينين.
+    - خلص بالرصيد، بالكارط البنكية ولا بالمحفظة الإلكترونية، ومن بعد أكد.
+    - تأكد من التفعيل بالميساج اللي كيوصلك ولا فـ«الاستهلاك ديالي».
+  conditions_ar:
+    - خاص الرصيد ولا وسيلة الخلاص تكفي الثمن ديال الباس.
+    - شي باسات ما كيتجمعوش مع باس آخر خدام.
+  limites_ar:
+    - المساعد ما كيعرفش الأثمنة الحقيقية وما يقدرش يفعل الباس.
+    - الباس ملي كيتفعل ما كيترجعش.
+  escalade_ar: إلا خلصتي الباس وما تفعلش، شوف البطاقة «البروموسيون ولا البونوس ما وصلش» ولا طلب مستشار.
+
+data_not_working:
+  title_fr: Internet mobile qui ne fonctionne pas du tout
+  objet_fr: Aider le client dont l'internet mobile ne marche pas du tout sur le téléphone.
+  etapes_fr:
+    - Vérifier qu'un pass ou un volume internet est actif et non épuisé.
+    - Vérifier que les « Données mobiles » sont activées et que le mode avion est désactivé.
+    - Redémarrer le téléphone, puis vérifier les réglages APN (voir la fiche « Partage de connexion et APN »).
+    - Tester la carte SIM dans un autre téléphone pour isoler la panne.
+  conditions_fr:
+    - La ligne doit être active et le téléphone compatible avec le réseau.
+    - La couverture doit être présente à l'endroit où se trouve le client.
+  limites_fr:
+    - L'assistant ne peut pas voir l'état réel de la ligne ni du réseau.
+    - Une panne réseau locale ne se règle pas depuis le téléphone.
+  escalade_fr: Si rien ne fonctionne après ces vérifications, proposer un conseiller pour un diagnostic de la ligne.
+  title_ar: الأنترنيت ديال التيليفون ما خدامش نهائيا
+  objet_ar: نعاونو الكليان اللي الأنترنيت ديال التيليفون ديالو ما خدامش نهائيا.
+  etapes_ar:
+    - تأكد بلي عندك باس ولا أنترنيت خدام وما سالاش.
+    - تأكد بلي «الداتا» مشعلة والوضع ديال الطيارة طافي.
+    - طفي وشعل التيليفون، ومن بعد شوف الإعدادات ديال APN (شوف البطاقة «مشاركة الكونيكسيون وAPN»).
+    - جرب السيم فتيليفون آخر باش تعرف واش المشكل فالتيليفون ولا فالخط.
+  conditions_ar:
+    - خاص الخط يكون خدام والتيليفون كيتماشى مع الريزو.
+    - خاص الريزو يكون كاين فالبلاصة اللي فيها الكليان.
+  limites_ar:
+    - المساعد ما كيشوفش الحالة الحقيقية ديال الخط ولا ديال الريزو.
+    - شي عطب فالريزو فالمنطقة ما كيتصلحش من التيليفون.
+  escalade_ar: إلا حتى حاجة ما خدمات من بعد هاد الخطوات، نحولوك لمستشار باش يشوف الخط.
+
+data_slow:
+  title_fr: Internet mobile lent
+  objet_fr: Aider le client dont l'internet mobile fonctionne mais reste lent.
+  etapes_fr:
+    - Vérifier si le volume du pass est épuisé (le débit peut être réduit après épuisement).
+    - Vérifier que le téléphone est réglé sur le réseau le plus rapide disponible (4G/5G) dans les paramètres.
+    - Redémarrer le téléphone et fermer les applications qui téléchargent en arrière-plan.
+    - Tester à un autre endroit ou à une autre heure pour repérer une saturation locale.
+  conditions_fr:
+    - Le téléphone et la carte SIM doivent être compatibles 4G ou 5G pour en profiter.
+    - Le débit dépend de la couverture et du nombre d'utilisateurs à proximité.
+  limites_fr:
+    - Aucun débit minimal n'est garanti par l'assistant.
+    - L'assistant ne peut pas mesurer le débit réel du client.
+  escalade_fr: Si la lenteur persiste partout et depuis plusieurs jours, proposer un conseiller.
+  title_ar: الأنترنيت ديال التيليفون ثقيل
+  objet_ar: نعاونو الكليان اللي الأنترنيت ديالو خدام ولكن ثقيل.
+  etapes_ar:
+    - شوف واش الباس سالا (السرعة تقدر تنقص من بعد ما يسالي).
+    - تأكد بلي التيليفون مريڭل على الريزو الأسرع (4G/5G) فالإعدادات.
+    - طفي وشعل التيليفون وسد التطبيقات اللي كتحمل من اللور.
+    - جرب فبلاصة أخرى ولا فساعة أخرى باش تعرف واش كاين ضغط فالمنطقة.
+  conditions_ar:
+    - خاص التيليفون والسيم يكونو 4G ولا 5G باش تستافد.
+    - السرعة كتبع الريزو وشحال من واحد كيستعمل فنفس البلاصة.
+  limites_ar:
+    - المساعد ما كيضمنش حتى سرعة.
+    - المساعد ما يقدرش يقيس السرعة الحقيقية ديال الكليان.
+  escalade_ar: إلا بقا الأنترنيت ثقيل فكل بلاصة ومن شحال من نهار، نقدرو نحولوك لمستشار.
+
+hotspot_apn:
+  title_fr: Partage de connexion et réglages APN
+  objet_fr: Expliquer le partage de connexion (point d'accès) et la vérification des réglages APN des données mobiles.
+  etapes_fr:
+    - Pour partager la connexion, ouvrir Paramètres > Point d'accès personnel, choisir un nom et un mot de passe, puis l'activer.
+    - Pour l'APN, ouvrir Paramètres > Réseau mobile > Noms des points d'accès.
+    - Réinitialiser l'APN aux valeurs par défaut ou recevoir les réglages automatiques par SMS de configuration.
+    - Redémarrer le téléphone après toute modification.
+  conditions_fr:
+    - Le partage de connexion consomme le volume internet de la ligne.
+    - Certaines offres peuvent limiter le partage de connexion.
+  limites_fr:
+    - Les menus exacts varient selon la marque et la version du téléphone.
+    - L'assistant ne donne pas de valeurs APN réelles d'un opérateur.
+  escalade_fr: Si les réglages ne s'appliquent pas, proposer un conseiller.
+  title_ar: نشارك الكونيكسيون والإعدادات ديال APN
+  objet_ar: نشرحو كيفاش تشارك الكونيكسيون (هوتسبوت) وكيفاش تشوف الإعدادات ديال APN.
+  etapes_ar:
+    - باش تشارك الكونيكسيون، حل الإعدادات > نقطة الاتصال الشخصية، اختار سمية وكلمة السر، ومن بعد شعلها.
+    - بالنسبة لـAPN، حل الإعدادات > شبكة الهاتف > أسماء نقاط الاتصال.
+    - رجع APN للإعدادات الأصلية ولا طلب الإعدادات الأوتوماتيكية فميساج.
+    - طفي وشعل التيليفون من بعد أي تبديل.
+  conditions_ar:
+    - مشاركة الكونيكسيون كتاكل من الأنترنيت ديال الخط.
+    - شي عروض يقدرو يحددو مشاركة الكونيكسيون.
+  limites_ar:
+    - القوائم كتختلف على حساب الماركة والنسخة ديال التيليفون.
+    - المساعد ما كيعطيش القيم الحقيقية ديال APN ديال شي أوبيراتور.
+  escalade_ar: إلا الإعدادات ما تطبقوش، نقدرو نحولوك لمستشار.

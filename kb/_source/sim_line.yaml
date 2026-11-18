@@ -1,0 +1,228 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+activate_line:
+  title_fr: Activer une nouvelle ligne ou carte SIM
+  objet_fr: Guider le client qui veut activer une nouvelle ligne ou une nouvelle carte SIM.
+  etapes_fr:
+    - Insérer la carte SIM dans le téléphone et le redémarrer.
+    - Faire identifier la ligne avec une pièce d'identité valide (en agence, chez un revendeur agréé ou dans l'application).
+    - Attendre le message de confirmation d'activation.
+    - Faire un premier appel ou une recharge pour vérifier que la ligne fonctionne.
+  conditions_fr:
+    - L'identification du titulaire est obligatoire avant l'activation.
+  limites_fr:
+    - L'activation peut prendre un certain temps après l'identification.
+    - L'assistant ne peut pas activer une ligne.
+  escalade_fr: Si la ligne n'est pas active après le délai indiqué, proposer un conseiller.
+  title_ar: نفعل خط جديد ولا سيم جديدة
+  objet_ar: نوجهو الكليان اللي بغا يفعل خط جديد ولا سيم جديدة.
+  etapes_ar:
+    - دخل السيم فالتيليفون وطفيه وشعلو.
+    - سجل الخط بالبطاقة الوطنية صالحة (فالوكالة، عند بائع معتمد ولا فالتطبيق).
+    - تسنى الميساج ديال التأكيد ديال التفعيل.
+    - دير أول مكالمة ولا شارج باش تتأكد بلي الخط خدام.
+  conditions_ar:
+    - التسجيل ديال مول الخط ضروري قبل التفعيل.
+  limites_ar:
+    - التفعيل يقدر ياخد شوية ديال الوقت من بعد التسجيل.
+    - المساعد ما يقدرش يفعل الخط.
+  escalade_ar: إلا الخط ما تفعلش من بعد المدة المعلنة، نقدرو نحولوك لمستشار.
+
+deactivate_line:
+  title_fr: Suspendre ou désactiver une ligne mobile
+  objet_fr: Expliquer comment suspendre temporairement ou désactiver définitivement une ligne mobile.
+  etapes_fr:
+    - Pour une suspension temporaire, faire la demande dans l'espace client en indiquant la durée.
+    - Pour une désactivation définitive d'une ligne avec abonnement, voir aussi la fiche « Résilier un abonnement ».
+    - Le titulaire présente sa pièce d'identité en agence pour une désactivation définitive.
+    - En cas de perte ou de vol, suivre plutôt la fiche « Téléphone ou SIM perdu ou volé ».
+  conditions_fr:
+    - Seul le titulaire de la ligne peut la suspendre ou la désactiver.
+  limites_fr:
+    - Une ligne désactivée définitivement peut perdre son numéro après un certain délai.
+    - Le crédit restant n'est pas forcément récupérable.
+  escalade_fr: Pour une désactivation définitive, un conseiller ou une agence confirme la demande.
+  title_ar: نوقف ولا نلغي خط ديال التيليفون
+  objet_ar: نشرحو كيفاش توقف خط لواحد المدة ولا تلغيه نهائيا.
+  etapes_ar:
+    - باش توقفو لواحد المدة، دير الطلب فالفضاء ديال الكليان وقول المدة.
+    - باش تلغي نهائيا خط فيه اشتراك، شوف حتى البطاقة «نلغي الاشتراك».
+    - مول الخط كيجيب البطاقة الوطنية للوكالة باش يلغيه نهائيا.
+    - إلا ضاع ولا تسرق، تبع البطاقة «التيليفون ولا السيم ضاع ولا تسرق».
+  conditions_ar:
+    - غير مول الخط اللي يقدر يوقفو ولا يلغيه.
+  limites_ar:
+    - الخط اللي تلغى نهائيا يقدر تمشي النمرة ديالو من بعد واحد المدة.
+    - الرصيد اللي باقي ماشي ضروري يترجع.
+  escalade_ar: الإلغاء النهائي كيأكدو مستشار ولا الوكالة.
+
+sim_blocked_puk:
+  title_fr: Carte SIM bloquée, code PIN ou PUK
+  objet_fr: Aider le client dont la carte SIM est bloquée après des erreurs de code PIN et qui a besoin du code PUK.
+  etapes_fr:
+    - Ne pas essayer de codes au hasard : après trop d'erreurs de PUK, la carte devient définitivement inutilisable.
+    - Retrouver le code PUK sur le support plastique d'origine de la carte SIM.
+    - Sinon, le titulaire l'obtient dans l'espace client (rubrique « Ma SIM ») ou en agence avec sa pièce d'identité.
+    - Saisir le PUK puis choisir un nouveau code PIN.
+  conditions_fr:
+    - Le code PUK n'est communiqué qu'au titulaire identifié de la ligne.
+  limites_fr:
+    - L'assistant ne communique jamais de code PUK.
+    - Une carte bloquée définitivement doit être remplacée (voir « Remplacer sa SIM ou passer à l'eSIM »).
+  escalade_fr: Si le titulaire ne peut accéder ni à l'espace client ni à une agence, proposer un conseiller.
+  title_ar: السيم مبلوكية، الكود PIN ولا PUK
+  objet_ar: نعاونو الكليان اللي السيم ديالو تبلوكات من بعد ما غلط فالكود PIN وخاصو الكود PUK.
+  etapes_ar:
+    - ما تجربش كودات بلا ما تعرفهم، حيت إلا غلطتي بزاف فالـPUK السيم كتخسر نهائيا.
+    - لقى الكود PUK فالكارطة البلاستيكية الأصلية ديال السيم.
+    - وإلا، مول الخط كياخدو من الفضاء ديال الكليان («السيم ديالي») ولا من الوكالة بالبطاقة الوطنية.
+    - دخل الـPUK ومن بعد اختار كود PIN جديد.
+  conditions_ar:
+    - الكود PUK كيتعطى غير لمول الخط المسجل.
+  limites_ar:
+    - المساعد عمرو ما كيعطي الكود PUK.
+    - السيم اللي تبلوكات نهائيا خاصها تتبدل (شوف «نبدل السيم ولا ندوز لـeSIM»).
+  escalade_ar: إلا مول الخط ما قدرش يدخل للفضاء ديال الكليان ولا يمشي للوكالة، نقدرو نحولوه لمستشار.
+
+lost_stolen:
+  title_fr: Téléphone ou carte SIM perdu ou volé
+  objet_fr: Procédure de sécurité quand le téléphone ou la carte SIM est perdu ou volé, pour bloquer la ligne au plus vite.
+  etapes_fr:
+    - Demander immédiatement le blocage de la ligne (bouton « Bloquer ma ligne » de l'espace client ou conseiller).
+    - Si un portefeuille mobile est lié à la ligne, demander aussi son blocage.
+    - Changer les mots de passe des comptes ouverts sur le téléphone (messagerie, réseaux sociaux, banque).
+    - Déclarer le vol aux autorités et garder le récépissé.
+    - Demander ensuite une nouvelle carte SIM avec le même numéro en agence (voir « Remplacer sa SIM »).
+  conditions_fr:
+    - Le blocage est demandé par le titulaire ou après vérification de son identité.
+  limites_fr:
+    - L'assistant ne peut pas bloquer la ligne lui-même ; il transmet la demande en priorité.
+    - Les consommations faites avant le blocage peuvent rester dues.
+  escalade_fr: Cas sensible traité en priorité par un conseiller.
+  title_ar: التيليفون ولا السيم ضاع ولا تسرق
+  objet_ar: الإجراء ديال الأمان ملي كيضيع ولا كيتسرق التيليفون ولا السيم، باش يتبلوكا الخط بالزربة.
+  etapes_ar:
+    - طلب فالحين البلوكاج ديال الخط (الزر «بلوكي الخط ديالي» فالفضاء ديال الكليان ولا مستشار).
+    - إلا كانت شي محفظة إلكترونية مربوطة مع الخط، طلب حتى هي تتبلوكا.
+    - بدل كلمات السر ديال الحسابات اللي كانو محلولين فالتيليفون (الإيميل، الريزو سوسيو، البنكة).
+    - صرح بالسرقة عند السلطات واحتافظ بالوصل.
+    - من بعد طلب سيم جديدة بنفس النمرة فالوكالة (شوف «نبدل السيم»).
+  conditions_ar:
+    - البلوكاج كيطلبو مول الخط ولا من بعد ما يتأكد من الهوية ديالو.
+  limites_ar:
+    - المساعد ما يقدرش يبلوكي الخط بيدو، كيصيفط الطلب بالأولوية.
+    - الاستهلاك اللي تدار قبل البلوكاج يقدر يبقى خاصو يتخلص.
+  escalade_ar: حالة حساسة كيعالجها مستشار بالأولوية.
+
+sim_replacement_esim:
+  title_fr: Remplacer sa carte SIM ou passer à l'eSIM
+  objet_fr: Expliquer le remplacement d'une carte SIM (abîmée, perdue, mauvais format) et le passage à l'eSIM.
+  etapes_fr:
+    - Vérifier que le téléphone est compatible eSIM si c'est le choix du client.
+    - Le titulaire se présente en agence avec sa pièce d'identité (ou fait la demande dans l'application si l'option eSIM y est proposée).
+    - Pour l'eSIM, scanner le code QR remis puis redémarrer le téléphone.
+    - L'ancienne carte SIM cesse de fonctionner dès l'activation de la nouvelle.
+  conditions_fr:
+    - Seul le titulaire identifié peut demander un remplacement ; le numéro est conservé.
+  limites_fr:
+    - Le remplacement peut être payant selon l'offre.
+    - L'assistant ne peut pas émettre de SIM ni de code QR.
+  escalade_fr: Si la nouvelle SIM ou l'eSIM ne s'active pas, proposer un conseiller.
+  title_ar: نبدل السيم ولا ندوز لـeSIM
+  objet_ar: نشرحو كيفاش تبدل السيم (خاسرة، ضايعة، ماشي القياس) وكيفاش تدوز لـeSIM.
+  etapes_ar:
+    - تأكد بلي التيليفون كيقبل eSIM إلا هادشي اللي بغيتي.
+    - مول الخط كيمشي للوكالة بالبطاقة الوطنية (ولا كيطلبها فالتطبيق إلا كانت eSIM متوفرة تما).
+    - بالنسبة لـeSIM، سكاني الكود QR اللي عطاوك ومن بعد طفي وشعل التيليفون.
+    - السيم القديمة كتوقف ملي تتفعل الجديدة.
+  conditions_ar:
+    - غير مول الخط المسجل اللي يقدر يطلب التبديل، والنمرة كتبقى.
+  limites_ar:
+    - التبديل يقدر يكون بالفلوس على حساب العرض.
+    - المساعد ما يقدرش يعطي سيم ولا كود QR.
+  escalade_ar: إلا السيم الجديدة ولا eSIM ما تفعلاتش، نقدرو نحولوك لمستشار.
+
+line_identification:
+  title_fr: Identifier sa ligne ou mettre à jour son identité
+  objet_fr: Expliquer l'enregistrement de l'identité du titulaire d'une ligne ou la mise à jour de ces informations.
+  etapes_fr:
+    - Préparer une pièce d'identité valide (carte nationale, titre de séjour ou passeport).
+    - Se rendre en agence ou chez un revendeur agréé, ou utiliser la rubrique « Identification » de l'application si elle est proposée.
+    - Vérifier les informations enregistrées et signer si demandé.
+    - Attendre le message de confirmation.
+  conditions_fr:
+    - Une ligne non identifiée peut être limitée ou suspendue.
+    - Chaque ligne est rattachée à une personne majeure identifiée.
+  limites_fr:
+    - L'assistant ne collecte aucune pièce d'identité.
+  escalade_fr: Si la ligne est au nom d'une autre personne, voir « Changer le titulaire » ou un conseiller.
+  title_ar: نسجل الخط باسمي ولا نحدث المعلومات ديالي
+  objet_ar: نشرحو كيفاش تسجل الهوية ديال مول الخط ولا تحدث هاد المعلومات.
+  etapes_ar:
+    - وجد وثيقة هوية صالحة (البطاقة الوطنية، بطاقة الإقامة ولا الباسبور).
+    - سير للوكالة ولا عند بائع معتمد، ولا استعمل «التسجيل» فالتطبيق إلا كان.
+    - تأكد من المعلومات المسجلة ووقع إلا طلبو منك.
+    - تسنى الميساج ديال التأكيد.
+  conditions_ar:
+    - الخط اللي ما مسجلش يقدر يتحدد ولا يتوقف.
+    - كل خط مربوط بشي واحد راشد ومسجل.
+  limites_ar:
+    - المساعد ما كيجمعش حتى وثيقة ديال الهوية.
+  escalade_ar: إلا كان الخط باسم شي واحد آخر، شوف «نبدل مول الخط» ولا طلب مستشار.
+
+change_provider:
+  title_fr: Changer d'opérateur en gardant son numéro (portabilité)
+  objet_fr: Expliquer la portabilité du numéro vers ou depuis un autre opérateur.
+  etapes_fr:
+    - Le titulaire se rend chez le nouvel opérateur avec sa pièce d'identité et son numéro actuel.
+    - Le nouvel opérateur s'occupe de la demande de portabilité auprès de l'ancien.
+    - Garder la carte SIM actuelle active jusqu'au jour de la bascule.
+    - Insérer la nouvelle carte SIM le jour indiqué ; le numéro est conservé.
+  conditions_fr:
+    - La ligne doit être active et au nom du demandeur.
+    - Les factures et engagements en cours chez l'ancien opérateur restent dus.
+  limites_fr:
+    - Une courte interruption de service peut avoir lieu le jour de la bascule.
+    - L'assistant ne traite pas de portabilité.
+  escalade_fr: Si la portabilité est bloquée, proposer un conseiller.
+  title_ar: نبدل الأوبيراتور ونخلي نفس النمرة
+  objet_ar: نشرحو كيفاش تنقل النمرة ديالك من ولا لأوبيراتور آخر.
+  etapes_ar:
+    - مول الخط كيمشي عند الأوبيراتور الجديد بالبطاقة الوطنية والنمرة ديالو.
+    - الأوبيراتور الجديد هو اللي كيدير الطلب مع القديم.
+    - خلي السيم القديمة خدامة حتى للنهار ديال التبديل.
+    - دخل السيم الجديدة فالنهار اللي قالو ليك، والنمرة كتبقى هي هي.
+  conditions_ar:
+    - خاص الخط يكون خدام وباسم اللي كيطلب.
+    - الفواتير والالتزامات اللي باقين عند الأوبيراتور القديم خاصهم يتخلصو.
+  limites_ar:
+    - يقدر يوقع شي انقطاع قصير نهار التبديل.
+    - المساعد ما كيعالجش نقل النمرة.
+  escalade_ar: إلا نقل النمرة وقف، نقدرو نحولوك لمستشار.
+
+scam_spam_report:
+  title_fr: Signaler une arnaque, un spam ou un SMS frauduleux
+  objet_fr: Procédure de sécurité face aux appels ou SMS d'arnaque (faux gains, faux conseiller, demande de code).
+  etapes_fr:
+    - Ne jamais communiquer de code reçu par SMS, de code PIN, de mot de passe ni de données bancaires.
+    - Ne pas rappeler le numéro et ne pas cliquer sur les liens reçus.
+    - Signaler le numéro ou le SMS depuis la rubrique « Signaler une fraude » de l'application.
+    - Bloquer le numéro dans le téléphone.
+    - Si un code ou de l'argent a déjà été donné, demander immédiatement un conseiller pour sécuriser la ligne et le portefeuille.
+  conditions_fr:
+    - Un vrai conseiller ne demande jamais de code de confirmation ni de code PIN.
+  limites_fr:
+    - L'assistant ne peut pas identifier l'auteur d'une arnaque ni récupérer l'argent.
+  escalade_fr: Cas sensible traité en priorité par un conseiller, surtout si de l'argent ou un code a été donné.
+  title_ar: نبلغ على نصب، سبام ولا ميساج ديال التحايل
+  objet_ar: الإجراء ديال الأمان ملي كتوصلك مكالمات ولا ميساجات ديال النصب (ربح كذاب، مستشار كذاب، كيطلبو كود).
+  etapes_ar:
+    - عمرك ما تعطي شي كود جاك فميساج، الكود PIN، كلمة السر ولا المعلومات ديال البنكة.
+    - ما تعاودش تعيط للنمرة وما تكليكيش على الروابط اللي وصلاتك.
+    - بلغ على النمرة ولا الميساج من «بلغ على تحايل» فالتطبيق.
+    - بلوكي النمرة فالتيليفون.
+    - إلا عطيتي شي كود ولا شي فلوس، طلب فالحين مستشار باش يحمي الخط والمحفظة.
+  conditions_ar:
+    - المستشار الحقيقي عمرو ما كيطلب الكود ديال التأكيد ولا الكود PIN.
+  limites_ar:
+    - المساعد ما يقدرش يعرف شكون اللي نصب ولا يرجع الفلوس.
+  escalade_ar: حالة حساسة كيعالجها مستشار بالأولوية، خصوصا إلا تعطات شي فلوس ولا شي كود.

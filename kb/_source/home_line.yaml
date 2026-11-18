@@ -1,0 +1,200 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+relocation:
+  title_fr: Déménagement de la ligne fixe ou de l'internet
+  objet_fr: Expliquer comment transférer sa ligne fixe ou son abonnement internet vers une nouvelle adresse.
+  etapes_fr:
+    - Vérifier l'éligibilité de la nouvelle adresse (voir « Éligibilité à la fibre »).
+    - Déposer une demande de transfert d'adresse depuis l'espace client ou en agence, idéalement avant le déménagement.
+    - Fournir la nouvelle adresse complète et un justificatif si demandé.
+    - Choisir le rendez-vous d'installation à la nouvelle adresse et conserver le matériel (box, décodeur).
+  conditions_fr:
+    - La demande est faite par le titulaire de l'abonnement.
+    - L'abonnement doit être à jour de ses paiements.
+  limites_fr:
+    - Si la nouvelle adresse n'est pas éligible à la même technologie, une autre offre peut être proposée.
+    - Le numéro fixe peut changer selon la zone.
+  escalade_fr: Pour un déménagement vers une autre ville ou un cas complexe, proposer un conseiller.
+  title_ar: نرحل الخط الثابت ولا الأنترنيت لدار جديدة
+  objet_ar: نشرحو كيفاش تنقل الخط الثابت ولا الاشتراك ديال الأنترنيت لعنوان جديد.
+  etapes_ar:
+    - تأكد من الأهلية ديال العنوان الجديد (شوف «واش لافيبر كاينة عندي»).
+    - دير طلب ديال تبديل العنوان من الفضاء ديال الكليان ولا فالوكالة، والأحسن قبل ما ترحل.
+    - عطي العنوان الجديد كامل وشي وثيقة إلا طلبوها.
+    - اختار الموعد ديال التركيب فالعنوان الجديد واحتافظ بالأجهزة (البوكس، الديكودور).
+  conditions_ar:
+    - مول الاشتراك هو اللي كيدير الطلب.
+    - خاص الاشتراك يكون مخلص.
+  limites_ar:
+    - إلا العنوان الجديد ما فيهش نفس التكنولوجيا، يقدر يتقترح عرض آخر.
+    - رقم الفيكس يقدر يتبدل على حساب المنطقة.
+  escalade_ar: إلا كان الرحيل لمدينة أخرى ولا حالة معقدة، نقدرو نحولوك لمستشار.
+
+home_line_activation:
+  title_fr: Ligne fixe installée mais pas encore active
+  objet_fr: Aider le client dont la ligne fixe ou internet a été commandée ou installée mais n'est pas encore activée.
+  etapes_fr:
+    - Retrouver le numéro de commande et vérifier l'étape « Activation » dans le suivi de commande.
+    - Après l'installation, attendre le délai d'activation indiqué dans le message de confirmation.
+    - Redémarrer la box et vérifier les voyants une fois le délai passé.
+    - Si la ligne n'est toujours pas active, déposer une réclamation « Activation en attente ».
+  conditions_fr:
+    - L'installation physique doit être terminée.
+    - Les documents demandés à la souscription doivent être complets.
+  limites_fr:
+    - L'assistant ne peut pas activer une ligne.
+  escalade_fr: Si le délai d'activation est dépassé, transmettre à un conseiller.
+  title_ar: الخط الثابت تركب ولكن باقي ما تفعلش
+  objet_ar: نعاونو الكليان اللي الخط الثابت ولا الأنترنيت ديالو تطلب ولا تركب ولكن باقي ما تفعلش.
+  etapes_ar:
+    - لقى رقم الطلب وشوف المرحلة «التفعيل» فالتتبع ديال الطلب.
+    - من بعد التركيب، تسنى المدة ديال التفعيل اللي مكتوبة فميساج التأكيد.
+    - طفي وشعل البوكس وشوف الضواو ملي تفوت المدة.
+    - إلا الخط باقي ما تفعلش، دير شكاية «التفعيل باقي».
+  conditions_ar:
+    - خاص التركيب يكون سالا.
+    - خاص الوثائق اللي تطلبو نهار الاشتراك يكونو كاملين.
+  limites_ar:
+    - المساعد ما يقدرش يفعل الخط.
+  escalade_ar: إلا فاتت المدة ديال التفعيل، كنحولوك لمستشار.
+
+home_line_suspend_restore:
+  title_fr: Suspendre ou rétablir la ligne fixe
+  objet_fr: Expliquer comment suspendre temporairement la ligne fixe ou internet, ou la rétablir après une suspension ou une coupure pour impayé.
+  etapes_fr:
+    - Pour une suspension temporaire (absence, voyage), faire la demande dans l'espace client en indiquant la période.
+    - Pour rétablir après une suspension volontaire, utiliser « Réactiver ma ligne » dans la même rubrique.
+    - Après une coupure pour impayé, régler la facture en attente (voir « Payer sa facture maintenant »).
+    - Redémarrer la box une fois le rétablissement confirmé.
+  conditions_fr:
+    - La suspension temporaire est limitée dans le temps selon les conditions de l'offre.
+    - Le rétablissement après impayé suppose le paiement complet des sommes dues.
+  limites_fr:
+    - Le rétablissement peut prendre un peu de temps après le paiement.
+  escalade_fr: Si la ligne reste coupée après paiement, voir « Paiement effectué mais non pris en compte » et un conseiller.
+  title_ar: نوقف ولا نرجع الخط الثابت
+  objet_ar: نشرحو كيفاش توقف الخط الثابت ولا الأنترنيت لواحد المدة، ولا ترجعو من بعد توقيف ولا قطع على قبل ما خلصتيش.
+  etapes_ar:
+    - باش توقفو لواحد المدة (غياب، سفر)، دير الطلب فالفضاء ديال الكليان وقول المدة.
+    - باش ترجعو من بعد توقيف درتيه بيدك، استعمل «رجع الخط ديالي» فنفس البلاصة.
+    - إلا تقطع على قبل ما خلصتيش، خلص الفاتورة اللي باقا (شوف «نخلص الفاتورة دابا»).
+    - طفي وشعل البوكس ملي يتأكد الرجوع.
+  conditions_ar:
+    - التوقيف المؤقت محدود فالوقت على حساب الشروط ديال العرض.
+    - الرجوع من بعد عدم الخلاص كيتطلب تخلص كلشي اللي عليك.
+  limites_ar:
+    - الرجوع يقدر ياخد شوية ديال الوقت من بعد الخلاص.
+  escalade_ar: إلا بقا الخط مقطوع من بعد الخلاص، شوف «خلصت والخلاص ما تسجلش» وطلب مستشار.
+
+ownership_transfer:
+  title_fr: Changer le titulaire de la ligne
+  objet_fr: Expliquer le changement de titulaire d'une ligne (cession à une autre personne, titulaire décédé ou parti).
+  etapes_fr:
+    - Le titulaire actuel et le nouveau titulaire se présentent en agence avec leurs pièces d'identité.
+    - En cas de décès du titulaire, un proche présente l'acte de décès et un document prouvant son lien ou sa qualité d'héritier.
+    - Signer le formulaire de changement de titulaire ; le nouveau titulaire reprend l'abonnement.
+    - Conserver le récépissé de la demande.
+  conditions_fr:
+    - Les factures en cours doivent être réglées avant le changement.
+    - Le nouveau titulaire doit être majeur.
+  limites_fr:
+    - Le changement de titulaire ne se fait pas par message ni par l'assistant.
+    - Les documents exacts peuvent varier selon la situation.
+  escalade_fr: Toute demande de changement de titulaire passe par un conseiller ou une agence.
+  title_ar: نبدل مول الخط
+  objet_ar: نشرحو كيفاش يتبدل مول الخط (نعطيه لشي واحد آخر، مول الخط توفى ولا مشا).
+  etapes_ar:
+    - مول الخط الحالي واللي غادي ياخدو كيمشيو للوكالة بالبطاقات الوطنية ديالهم.
+    - إلا مول الخط توفى، شي واحد من العائلة كيجيب شهادة الوفاة وشي وثيقة كتبين العلاقة ولا بلي وارث.
+    - توقع الاستمارة ديال تبديل مول الخط، والجديد كيكمل بالاشتراك.
+    - احتافظ بالوصل ديال الطلب.
+  conditions_ar:
+    - خاص الفواتير اللي باقين يتخلصو قبل التبديل.
+    - خاص مول الخط الجديد يكون راشد.
+  limites_ar:
+    - تبديل مول الخط ما كيتدارش بميساج ولا عن طريق المساعد.
+    - الوثائق بالضبط يقدرو يختلفو على حساب الحالة.
+  escalade_ar: أي طلب ديال تبديل مول الخط كيدوز عن طريق مستشار ولا الوكالة.
+
+adsl_to_fiber_migration:
+  title_fr: Passer de l'ADSL à la fibre
+  objet_fr: Expliquer comment migrer une ligne ADSL existante vers la fibre.
+  etapes_fr:
+    - Vérifier l'éligibilité fibre de l'adresse.
+    - Demander la migration dans l'espace client ou en agence en choisissant une offre fibre.
+    - Prendre rendez-vous pour l'installation de la prise fibre et de la nouvelle box.
+    - Après l'activation de la fibre, rendre l'ancienne box ADSL (voir « Retour d'équipement »).
+  conditions_fr:
+    - L'adresse doit être éligible à la fibre.
+    - L'abonnement ADSL doit être à jour de ses paiements.
+  limites_fr:
+    - Une courte coupure peut avoir lieu le jour de la bascule.
+    - Le numéro fixe est en principe conservé, sauf contrainte technique.
+  escalade_fr: Si la migration bloque après l'installation, proposer un conseiller.
+  title_ar: ندوز من ADSL لـلافيبر
+  objet_ar: نشرحو كيفاش تبدل خط ADSL لـلافيبر.
+  etapes_ar:
+    - تأكد بلي العنوان مؤهل لـلافيبر.
+    - طلب التبديل فالفضاء ديال الكليان ولا فالوكالة واختار عرض ديال لافيبر.
+    - دير موعد باش يركبو البريز ديال لافيبر والبوكس الجديدة.
+    - من بعد ما تفعل لافيبر، رجع البوكس القديمة ديال ADSL (شوف «نرجع الأجهزة»).
+  conditions_ar:
+    - خاص العنوان يكون مؤهل لـلافيبر.
+    - خاص الاشتراك ديال ADSL يكون مخلص.
+  limites_ar:
+    - يقدر يوقع شي انقطاع قصير نهار التبديل.
+    - رقم الفيكس فالعادة كيبقى، إلا إلا كان شي مشكل تقني.
+  escalade_ar: إلا التبديل وقف من بعد التركيب، نقدرو نحولوك لمستشار.
+
+fixed_phone_issue:
+  title_fr: Problème de téléphone fixe
+  objet_fr: Aider le client dont le téléphone fixe ne fonctionne pas (pas de tonalité, appels impossibles, problème de numéro).
+  etapes_fr:
+    - Vérifier que le téléphone est bien branché sur le port téléphone de la box et que la box fonctionne.
+    - Tester avec un autre combiné si possible.
+    - Redémarrer la box ; la ligne fixe passe par la box sur les offres internet.
+    - Vérifier dans l'espace client que la ligne fixe est active et non suspendue.
+  conditions_fr:
+    - Sur les offres internet, le fixe ne fonctionne que si la box est allumée et connectée.
+  limites_fr:
+    - L'assistant ne peut pas tester la ligne ni changer le numéro.
+  escalade_fr: Si la tonalité ne revient pas après ces vérifications, transmettre à un conseiller.
+  title_ar: مشكل فالتيليفون الثابت
+  objet_ar: نعاونو الكليان اللي التيليفون الثابت ديالو ما خدامش (ما كاينش الصوت، ما كيقدرش يعيط، مشكل فالنمرة).
+  etapes_ar:
+    - تأكد بلي التيليفون مربوط مزيان فالبلاصة ديال التيليفون فالبوكس وبلي البوكس خدامة.
+    - جرب بتيليفون آخر إلا ممكن.
+    - طفي وشعل البوكس، حيت الفيكس كيدوز من البوكس فعروض الأنترنيت.
+    - شوف فالفضاء ديال الكليان واش الخط الثابت خدام وماشي موقوف.
+  conditions_ar:
+    - فعروض الأنترنيت، الفيكس ما كيخدمش غير إلا كانت البوكس مشعلة ومربوطة.
+  limites_ar:
+    - المساعد ما يقدرش يجرب الخط ولا يبدل النمرة.
+  escalade_ar: إلا الصوت ما رجعش من بعد هاد الخطوات، كنحولوك لمستشار.
+
+equipment_return:
+  title_fr: Rendre la box, le routeur ou le décodeur
+  objet_fr: Expliquer comment rendre le matériel prêté (box, routeur, décodeur), par exemple après une résiliation.
+  etapes_fr:
+    - Réunir le matériel complet avec ses câbles et son alimentation.
+    - Le déposer dans une agence et demander un reçu de restitution.
+    - Conserver ce reçu jusqu'à la clôture définitive du compte.
+  conditions_fr:
+    - Le matériel doit être rendu dans le délai indiqué après la résiliation.
+    - Le matériel prêté reste la propriété de l'opérateur.
+  limites_fr:
+    - Un matériel non rendu ou incomplet peut être facturé selon les conditions de l'offre.
+    - L'assistant ne peut pas enregistrer la restitution.
+  escalade_fr: Si le matériel rendu est encore facturé, transmettre à un conseiller avec le reçu.
+  title_ar: نرجع البوكس، الروتور ولا الديكودور
+  objet_ar: نشرحو كيفاش ترجع الأجهزة اللي عطاوك (البوكس، الروتور، الديكودور)، مثلا من بعد ما تحيد الاشتراك.
+  etapes_ar:
+    - جمع الجهاز كامل بالكابلات والضو ديالو.
+    - دفعو فالوكالة وطلب وصل ديال الإرجاع.
+    - احتافظ بهاد الوصل حتى يتسد الحساب نهائيا.
+  conditions_ar:
+    - خاص الجهاز يترجع فالوقت المحدد من بعد إلغاء الاشتراك.
+    - الجهاز اللي عطاوك كيبقى ديال الأوبيراتور.
+  limites_ar:
+    - الجهاز اللي ما ترجعش ولا ناقص يقدر يتخلص على حساب الشروط ديال العرض.
+    - المساعد ما يقدرش يسجل الإرجاع.
+  escalade_ar: إلا رجعتي الجهاز وباقي كيتخلص عليك، كنحولوك لمستشار مع الوصل.

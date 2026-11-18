@@ -4,13 +4,13 @@
 export PYTHONUTF8 := 1
 UV ?= uv
 
-.PHONY: help install lint format typecheck test test-data cov repro data-status eda up down logs clean precommit
+.PHONY: help install install-gpu lint format typecheck test test-data cov repro data-status eda up down logs clean precommit kb-validate rag-index rag-eval
 
 help:
-	@echo "Cibles : install lint format typecheck test test-data cov repro data-status up down logs clean precommit"
+	@echo "Cibles : install install-gpu lint format typecheck test test-data cov repro data-status up down logs clean precommit kb-validate rag-index rag-eval"
 
 install:  ## Environnement figé (uv.lock), torch CPU + hooks pre-commit
-	$(UV) sync --locked --extra pipeline --extra nlu --extra cpu
+	$(UV) sync --locked --extra pipeline --extra nlu --extra rag --extra cpu
 	$(UV) run pre-commit install
 
 lint:
@@ -52,7 +52,17 @@ logs:
 	docker compose logs -f --tail=100
 
 install-gpu:  ## Variante torch CUDA 12.6 (GPU Pascal et plus récents)
-	$(UV) sync --locked --extra pipeline --extra nlu --extra cu126
+	$(UV) sync --locked --extra pipeline --extra nlu --extra rag --extra cu126
+
+kb-validate:  ## Contrôle des 75 fiches (une par intention, sections, longueur, « fictif »)
+	$(UV) run python -m darijacare.rag.cli validate-kb
+
+rag-index:  ## Indexe les fiches dans Qdrant (BGE-M3 dense + creux ; QDRANT_URL ou mode local)
+	$(UV) run python -m darijacare.rag.cli index
+
+rag-eval:  ## Recall@k / MRR avec et sans filtre d'intention (validation puis test)
+	$(UV) run python -m darijacare.rag.cli evaluate --split val
+	$(UV) run python -m darijacare.rag.cli evaluate --split test
 
 precommit:
 	$(UV) run pre-commit run --all-files

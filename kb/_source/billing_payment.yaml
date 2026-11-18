@@ -1,0 +1,240 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+invoice_info:
+  title_fr: Consulter et comprendre sa facture
+  objet_fr: Aider le client à retrouver sa facture du mois et à comprendre son montant (abonnement, options, consommations hors forfait).
+  etapes_fr:
+    - Ouvrir l'espace client (application ou site) et choisir « Mes factures ».
+    - Sélectionner le mois voulu pour afficher la facture détaillée.
+    - Lire les rubriques dans l'ordre : abonnement, options souscrites, consommations hors forfait, taxes.
+    - Télécharger la facture en PDF si besoin d'un justificatif.
+  conditions_fr:
+    - Concerne les lignes avec abonnement (forfait facturé chaque mois).
+    - La facture du mois est disponible quelques jours après la date de clôture.
+  limites_fr:
+    - Le conseiller automatique n'a pas accès au montant réel d'une facture.
+    - Les anciennes factures ne sont consultables que sur une durée limitée.
+  escalade_fr: Si une ligne de la facture reste incompréhensible après lecture du détail, proposer un conseiller.
+  title_ar: نشوف الفاتورة ونفهمها
+  objet_ar: نعاونو الكليان يلقى الفاتورة ديال الشهر ويفهم المبلغ ديالها (الاشتراك، الأوبسيونات، الاستهلاك اللي فات الفورفي).
+  etapes_ar:
+    - دخل للفضاء ديال الكليان (التطبيق ولا السيت) واختار «الفواتير ديالي».
+    - اختار الشهر اللي بغيتي باش تبان ليك الفاتورة بالتفصيل.
+    - قرا الأجزاء بالترتيب ديالها، الاشتراك، الأوبسيونات، الاستهلاك اللي فات الفورفي، الضرائب.
+    - حمّل الفاتورة PDF إلا حتاجيتي شي وثيقة.
+  conditions_ar:
+    - كتخص الخطوط اللي فيها اشتراك (فورفي كيتخلص كل شهر).
+    - الفاتورة ديال الشهر كتبان شي أيام من بعد تاريخ الإغلاق.
+  limites_ar:
+    - المساعد الأوتوماتيكي ما عندوش المبلغ الحقيقي ديال الفاتورة.
+    - الفواتير القدام كيتشافو غير لواحد المدة محدودة.
+  escalade_ar: إلا بقات شي حاجة فالفاتورة ما مفهوماش من بعد ما قريتي التفصيل، نقدرو نحولوك لمستشار.
+
+invoice_dispute:
+  title_fr: Contester une facture
+  objet_fr: Permettre au client de contester un montant ou une ligne de facture qu'il estime injustifiée.
+  etapes_fr:
+    - Repérer sur la facture détaillée la ligne ou le montant contesté.
+    - Rassembler les éléments utiles (date, service concerné, captures d'écran éventuelles).
+    - Déposer une réclamation depuis l'espace client, rubrique « Réclamations », en choisissant « Contestation de facture ».
+    - Noter le numéro de réclamation affiché pour le suivi.
+  conditions_fr:
+    - La contestation doit être faite dans un délai raisonnable après réception de la facture.
+    - Le titulaire de la ligne (ou une personne autorisée) dépose la réclamation.
+  limites_fr:
+    - L'assistant ne peut ni annuler ni modifier une facture.
+    - Le montant contesté reste en principe dû tant que la réclamation n'est pas traitée.
+  escalade_fr: Toute contestation est transmise à un conseiller, qui étudie le dossier et répond au client.
+  title_ar: نعترض على فاتورة
+  objet_ar: نخليو الكليان يعترض على شي مبلغ ولا شي سطر فالفاتورة اللي كيشوف بلي ماشي معقول.
+  etapes_ar:
+    - لقى فالفاتورة المفصلة السطر ولا المبلغ اللي معترض عليه.
+    - جمع المعلومات اللي كتعاون (التاريخ، الخدمة، تصاور ديال الشاشة إلا كانو).
+    - دير شكاية من الفضاء ديال الكليان، فـ«الشكايات»، واختار «اعتراض على فاتورة».
+    - سجل رقم الشكاية اللي كيبان ليك باش تتبعها.
+  conditions_ar:
+    - خاص الاعتراض يكون فواحد المدة معقولة من بعد ما توصلتي بالفاتورة.
+    - مول الخط (ولا شي واحد عندو الإذن) هو اللي كيدير الشكاية.
+  limites_ar:
+    - المساعد ما يقدرش يلغي ولا يبدل الفاتورة.
+    - المبلغ المعترض عليه كيبقى فالأصل خاصو يتخلص حتى تتعالج الشكاية.
+  escalade_ar: أي اعتراض كيتحول لمستشار، هو اللي كيدرس الملف وكيجاوب الكليان.
+
+payment_methods:
+  title_fr: Moyens de paiement d'une facture
+  objet_fr: Présenter les moyens possibles pour régler une facture.
+  etapes_fr:
+    - Paiement par carte bancaire dans l'espace client (application ou site).
+    - Paiement en agence, au guichet, avec la référence de la facture.
+    - Paiement chez un point de paiement partenaire agréé.
+    - Paiement depuis le portefeuille mobile (mobile money) si le client en possède un.
+  conditions_fr:
+    - Se munir de la référence de la facture ou du numéro de la ligne.
+    - Le paiement par carte nécessite une carte activée pour les paiements en ligne.
+  limites_fr:
+    - Les délais de prise en compte varient selon le moyen choisi (immédiat en ligne, plus long ailleurs).
+    - L'assistant ne prend aucun paiement lui-même.
+  escalade_fr: Si aucun moyen ne fonctionne pour le client, proposer un conseiller.
+  title_ar: الطرق باش تخلص الفاتورة
+  objet_ar: نشرحو الطرق اللي ممكن تخلص بيهم الفاتورة.
+  etapes_ar:
+    - الخلاص بالكارط البنكية فالفضاء ديال الكليان (التطبيق ولا السيت).
+    - الخلاص فالوكالة، فالكيشي، بالمرجع ديال الفاتورة.
+    - الخلاص عند شي نقطة أداء شريكة معتمدة.
+    - الخلاص من المحفظة الإلكترونية (موبايل موني) إلا عندك وحدة.
+  conditions_ar:
+    - خاصك المرجع ديال الفاتورة ولا رقم الخط.
+    - الخلاص بالكارط خاصو كارط مفعلة للخلاص فالأنترنيت.
+  limites_ar:
+    - الوقت باش يتسجل الخلاص كيختلف على حساب الطريقة (فالحين فالأنترنيت، كثر فالبلايص الأخرى).
+    - المساعد ما كياخد حتى خلاص بيدو.
+  escalade_ar: إلا حتى طريقة ما خدمات مع الكليان، نقدرو نحولوه لمستشار.
+
+pay_bill:
+  title_fr: Payer sa facture maintenant
+  objet_fr: Guider le client qui veut régler sa facture immédiatement.
+  etapes_fr:
+    - Ouvrir l'espace client et choisir « Payer ma facture ».
+    - Vérifier le montant et la période affichés.
+    - Choisir le moyen de paiement (carte bancaire ou portefeuille mobile) et confirmer.
+    - Conserver le reçu de paiement envoyé par message ou affiché à l'écran.
+  conditions_fr:
+    - La ligne doit être une ligne avec abonnement et une facture doit être en attente.
+    - Le paiement en ligne nécessite un moyen de paiement valide.
+  limites_fr:
+    - Si la ligne est suspendue pour impayé, le rétablissement peut prendre un peu de temps après le paiement.
+    - L'assistant ne voit pas le solde dû réel.
+  escalade_fr: Si le paiement échoue plusieurs fois, proposer un conseiller.
+  title_ar: نخلص الفاتورة دابا
+  objet_ar: نوجهو الكليان اللي بغا يخلص الفاتورة ديالو فالحين.
+  etapes_ar:
+    - دخل للفضاء ديال الكليان واختار «خلص الفاتورة».
+    - تأكد من المبلغ والمدة اللي باينين.
+    - اختار طريقة الخلاص (كارط بنكية ولا محفظة إلكترونية) وأكد.
+    - احتافظ بالوصل ديال الخلاص اللي كيوصلك فميساج ولا كيبان فالشاشة.
+  conditions_ar:
+    - خاص الخط يكون فيه اشتراك وتكون شي فاتورة باقا ما تخلصاتش.
+    - الخلاص فالأنترنيت خاصو وسيلة خلاص صالحة.
+  limites_ar:
+    - إلا كان الخط مقطوع على قبل ما تخلصش، يقدر ياخد شوية ديال الوقت باش يرجع من بعد الخلاص.
+    - المساعد ما كيشوفش المبلغ الحقيقي اللي عليك.
+  escalade_ar: إلا الخلاص ما دازش بزاف ديال المرات، نقدرو نحولوك لمستشار.
+
+schedule_payments:
+  title_fr: Prélèvement automatique de la facture
+  objet_fr: Expliquer comment mettre en place, modifier ou arrêter le paiement automatique des factures.
+  etapes_fr:
+    - Dans l'espace client, ouvrir « Paiement automatique ».
+    - Choisir le moyen de prélèvement (compte bancaire ou carte) et saisir les informations demandées.
+    - Valider la demande ; une confirmation est envoyée au client.
+    - Pour arrêter le prélèvement, revenir dans la même rubrique et choisir « Désactiver ».
+  conditions_fr:
+    - Réservé aux lignes avec abonnement.
+    - Le titulaire du compte bancaire doit donner son accord.
+  limites_fr:
+    - La mise en place peut ne s'appliquer qu'à partir de la facture suivante.
+    - Le client reste responsable d'avoir un solde suffisant au moment du prélèvement.
+  escalade_fr: En cas de prélèvement refusé ou effectué deux fois, orienter vers un conseiller.
+  title_ar: الخلاص الأوتوماتيكي ديال الفاتورة
+  objet_ar: نشرحو كيفاش تفعل، تبدل ولا توقف الخلاص الأوتوماتيكي ديال الفواتير.
+  etapes_ar:
+    - فالفضاء ديال الكليان، حل «الخلاص الأوتوماتيكي».
+    - اختار منين غادي يتقطع الخلاص (حساب بنكي ولا كارط) ودخل المعلومات المطلوبة.
+    - أكد الطلب، وغادي توصلك رسالة ديال التأكيد.
+    - باش توقف الخلاص، رجع لنفس البلاصة واختار «إيقاف».
+  conditions_ar:
+    - غير للخطوط اللي فيها اشتراك.
+    - خاص مول الحساب البنكي يكون موافق.
+  limites_ar:
+    - التفعيل يقدر يبدا غير من الفاتورة الجاية.
+    - الكليان هو المسؤول يكون عندو الفلوس فالحساب نهار الاقتطاع.
+  escalade_ar: إلا الاقتطاع تّرفض ولا تقطع جوج مرات، نوجهوك لمستشار.
+
+payment_not_reflected:
+  title_fr: Paiement effectué mais non pris en compte
+  objet_fr: Aider le client qui a payé mais dont le paiement n'apparaît pas ou dont la ligne reste coupée.
+  etapes_fr:
+    - Vérifier la date et le moyen du paiement (certains moyens demandent un délai de traitement).
+    - Retrouver le reçu ou la référence de la transaction.
+    - Redémarrer le téléphone ou l'équipement si la ligne était suspendue.
+    - Si le délai normal est dépassé, déposer une réclamation « Paiement non pris en compte » avec le reçu.
+  conditions_fr:
+    - Le reçu ou la référence de transaction est indispensable pour l'enquête.
+    - Le paiement doit concerner la bonne ligne et la bonne facture.
+  limites_fr:
+    - L'assistant ne peut pas vérifier une transaction ni rétablir une ligne.
+    - Un paiement fait sur une autre référence peut demander plus de temps à retrouver.
+  escalade_fr: Un paiement non pris en compte est un cas où de l'argent est en jeu ; transmettre à un conseiller si le délai est dépassé.
+  title_ar: خلصت والخلاص ما تسجلش
+  objet_ar: نعاونو الكليان اللي خلص ولكن الخلاص ما بانش ولا الخط باقي مقطوع.
+  etapes_ar:
+    - شوف التاريخ والطريقة اللي خلصتي بيها (شي طرق كتاخد شوية ديال الوقت).
+    - لقى الوصل ولا المرجع ديال العملية.
+    - طفي وشعل التيليفون ولا الجهاز إلا كان الخط موقوف.
+    - إلا فات الوقت العادي، دير شكاية «خلاص ما تسجلش» ومعاها الوصل.
+  conditions_ar:
+    - الوصل ولا المرجع ديال العملية ضروري باش يتبحث فالملف.
+    - خاص الخلاص يكون على الخط والفاتورة الصحاح.
+  limites_ar:
+    - المساعد ما يقدرش يتأكد من العملية ولا يرجع الخط.
+    - الخلاص اللي تدار على مرجع آخر يقدر ياخد كثر ديال الوقت باش يتلقى.
+  escalade_ar: هادي حالة فيها الفلوس، إلا فات الوقت العادي كنحولوك لمستشار.
+
+refund_compensation:
+  title_fr: Demander un remboursement ou un dédommagement
+  objet_fr: Expliquer comment demander un remboursement ou un geste commercial après un problème de service.
+  etapes_fr:
+    - Décrire le problème : service concerné, dates de début et de fin, impact.
+    - Rassembler les justificatifs (numéros de réclamation précédents, reçus).
+    - Déposer une demande « Remboursement / dédommagement » dans la rubrique Réclamations.
+    - Suivre la réponse avec le numéro de réclamation.
+  conditions_fr:
+    - La demande porte sur un problème réel et daté (coupure, double paiement, service non fourni).
+    - Chaque demande est étudiée au cas par cas.
+  limites_fr:
+    - L'assistant ne peut promettre aucun montant ni aucun remboursement.
+    - Les dédommagements dépendent des conditions générales de l'offre.
+  escalade_fr: Toute demande de remboursement est transmise à un conseiller.
+  title_ar: نطلب نرجعو ليا الفلوس ولا تعويض
+  objet_ar: نشرحو كيفاش تطلب ترجع ليك الفلوس ولا شي تعويض من بعد مشكل فالخدمة.
+  etapes_ar:
+    - وصف المشكل، الخدمة، النهار اللي بدا واللي سالا، والتأثير ديالو.
+    - جمع الوثائق (أرقام الشكايات اللي درتي قبل، الوصولات).
+    - دير طلب «استرجاع الفلوس / تعويض» فالشكايات.
+    - تبع الجواب برقم الشكاية.
+  conditions_ar:
+    - خاص الطلب يكون على مشكل حقيقي ومعروف التاريخ ديالو (انقطاع، خلاص جوج مرات، خدمة ما توصلتيش بيها).
+    - كل طلب كيتدرس بوحدو.
+  limites_ar:
+    - المساعد ما يقدرش يوعدك بحتى مبلغ ولا بالرجوع ديال الفلوس.
+    - التعويضات كتبع الشروط العامة ديال العرض.
+  escalade_ar: أي طلب ديال استرجاع الفلوس كيتحول لمستشار.
+
+paid_services_charges:
+  title_fr: Services payants non souhaités
+  objet_fr: Aider le client à repérer et arrêter des services payants, SMS surtaxés ou abonnements tiers qui consomment son crédit ou sa facture.
+  etapes_fr:
+    - Consulter l'historique des consommations dans l'espace client pour repérer le service facturé.
+    - Ouvrir la rubrique « Mes services » et désactiver le service concerné.
+    - Activer le blocage des services payants de tiers si l'option est proposée.
+    - Ne jamais répondre aux SMS qui demandent de confirmer un abonnement inconnu.
+  conditions_fr:
+    - La désactivation est faite par le titulaire de la ligne.
+    - Le nom du service figure dans l'historique ou dans le SMS de confirmation reçu.
+  limites_fr:
+    - L'arrêt d'un service ne rembourse pas automatiquement les montants déjà prélevés.
+    - L'assistant ne voit pas la liste réelle des services actifs.
+  escalade_fr: Si le client conteste des montants déjà prélevés, transmettre à un conseiller.
+  title_ar: خدمات بالفلوس ما بغيتهاش
+  objet_ar: نعاونو الكليان يلقى ويوقف شي خدمات بالفلوس، ميساجات غالية ولا اشتراكات ديال شركات أخرى كياكلو ليه الصولد ولا الفاتورة.
+  etapes_ar:
+    - شوف التاريخ ديال الاستهلاك فالفضاء ديال الكليان باش تلقى الخدمة اللي كتخلص عليها.
+    - حل «الخدمات ديالي» ووقف الخدمة.
+    - فعل الحماية من الخدمات بالفلوس ديال الشركات الأخرى إلا كانت.
+    - ما تجاوبش أبدا على شي ميساج كيطلب منك تأكد شي اشتراك ما كتعرفوش.
+  conditions_ar:
+    - مول الخط هو اللي كيوقف الخدمة.
+    - السمية ديال الخدمة كتبان فالتاريخ ولا فالميساج ديال التأكيد.
+  limites_ar:
+    - إيقاف الخدمة ما كيرجعش أوتوماتيكيا الفلوس اللي تقطعو.
+    - المساعد ما كيشوفش اللائحة الحقيقية ديال الخدمات المفعلة.
+  escalade_ar: إلا الكليان معترض على فلوس تقطعو من قبل، كنحولوه لمستشار.

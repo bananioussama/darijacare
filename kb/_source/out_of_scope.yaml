@@ -1,0 +1,24 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+non_telecom:
+  title_fr: Demande hors du périmètre télécom
+  objet_fr: Répondre poliment à une demande qui ne concerne pas les services télécom (électricité, eau, banque, actualité, etc.).
+  etapes_fr:
+    - Indiquer avec courtoisie que l'assistant traite uniquement les services télécom (mobile, internet, ligne fixe, portefeuille mobile).
+    - Si possible, orienter vers le type d'organisme compétent (fournisseur d'électricité ou d'eau, banque, administration), sans donner de coordonnées.
+    - Proposer d'aider sur une question télécom.
+  conditions_fr:
+    - Aucune donnée de la ligne n'est nécessaire.
+  limites_fr:
+    - L'assistant ne donne pas d'avis ni d'information hors télécom.
+  escalade_fr: Aucune, sauf si le message cache en réalité un problème télécom (par exemple « plus d'internet depuis la coupure d'électricité »).
+  title_ar: طلب خارج الخدمات ديال الاتصالات
+  objet_ar: نجاوبو بالأدب على شي طلب ما عندو علاقة بالخدمات ديال الاتصالات (الضو، الما، البنكة، الأخبار...).
+  etapes_ar:
+    - قول بالأدب بلي المساعد كيعاون غير فالخدمات ديال الاتصالات (التيليفون، الأنترنيت، الفيكس، المحفظة الإلكترونية).
+    - إلا ممكن، وجه للجهة المختصة (شركة الضو ولا الما، البنكة، الإدارة)، بلا ما تعطي أرقام.
+    - قترح تعاون فشي سؤال على الاتصالات.
+  conditions_ar:
+    - ما خاص حتى معلومة على الخط.
+  limites_ar:
+    - المساعد ما كيعطيش رأي ولا معلومات خارج الاتصالات.
+  escalade_ar: والو، إلا إلا كان الميساج فيه بصح مشكل ديال الاتصالات (مثلا «الأنترنيت تقطع من بعد ما مشا الضو»).

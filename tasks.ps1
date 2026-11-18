@@ -12,8 +12,8 @@ function Invoke-Step([string]$Cmd) {
 }
 
 switch ($Target) {
-    "install"     { Invoke-Step "uv sync --locked --extra pipeline --extra nlu --extra cpu"; Invoke-Step "uv run pre-commit install" }
-    "install-gpu" { Invoke-Step "uv sync --locked --extra pipeline --extra nlu --extra cu126" }
+    "install"     { Invoke-Step "uv sync --locked --extra pipeline --extra nlu --extra rag --extra cpu"; Invoke-Step "uv run pre-commit install" }
+    "install-gpu" { Invoke-Step "uv sync --locked --extra pipeline --extra nlu --extra rag --extra cu126" }
     "lint"        { Invoke-Step "uv run ruff check src tests tools"; Invoke-Step "uv run black --check src tests tools" }
     "format"      { Invoke-Step "uv run ruff check --fix src tests tools"; Invoke-Step "uv run black src tests tools" }
     "typecheck"   { Invoke-Step "uv run mypy" }
@@ -26,6 +26,9 @@ switch ($Target) {
     "up"          { Invoke-Step "docker compose up -d" }
     "down"        { Invoke-Step "docker compose down" }
     "logs"        { Invoke-Step "docker compose logs -f --tail=100" }
+    "kb-validate" { Invoke-Step "uv run python -m darijacare.rag.cli validate-kb" }
+    "rag-index"   { Invoke-Step "uv run python -m darijacare.rag.cli index" }
+    "rag-eval"    { Invoke-Step "uv run python -m darijacare.rag.cli evaluate --split val"; Invoke-Step "uv run python -m darijacare.rag.cli evaluate --split test" }
     "precommit"   { Invoke-Step "uv run pre-commit run --all-files" }
-    default       { Write-Host "Cibles : install lint format typecheck test test-data cov repro data-status eda up down logs precommit" }
+    default       { Write-Host "Cibles : install install-gpu lint format typecheck test test-data cov repro data-status eda up down logs precommit kb-validate rag-index rag-eval" }
 }

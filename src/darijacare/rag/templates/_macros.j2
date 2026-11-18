@@ -1,0 +1,8 @@
+{#- Macros communes : étapes numérotées et citation de la fiche. -#}
+{% macro steps(items, limit=6) -%}
+{% for s in items[:limit] %}{{ loop.index }}. {{ s }}
+{% endfor -%}
+{%- endmacro %}
+{% macro source(fiche, label) -%}
+({{ label }} : {{ fiche.id }}, v{{ fiche.version }})
+{%- endmacro %}

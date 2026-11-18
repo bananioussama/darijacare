@@ -1,0 +1,248 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+plan_offers_info:
+  title_fr: Découvrir les offres et forfaits
+  objet_fr: Orienter le client qui veut connaître les offres disponibles (prépayé, forfait, internet à domicile).
+  etapes_fr:
+    - Préciser le besoin principal (appels, internet mobile, internet à domicile, international).
+    - Consulter la rubrique « Offres » de l'application ou du site, ou la brochure en agence.
+    - Comparer le volume inclus, la durée d'engagement et les conditions de chaque offre.
+    - Pour souscrire, voir la fiche « Souscrire un nouveau forfait ».
+  conditions_fr:
+    - Les offres et leurs prix évoluent ; seule la documentation officielle à jour fait foi.
+  limites_fr:
+    - L'assistant ne donne pas de prix et ne recommande pas d'offre commerciale précise.
+  escalade_fr: Pour un conseil personnalisé (entreprise, famille nombreuse), proposer un conseiller.
+  title_ar: نتعرف على العروض والفورفيات
+  objet_ar: نوجهو الكليان اللي بغا يعرف العروض اللي كاينين (بريبيد، فورفي، أنترنيت فالدار).
+  etapes_ar:
+    - حدد شنو اللي كتحتاج كثر (مكالمات، أنترنيت فالتيليفون، أنترنيت فالدار، دولي).
+    - شوف «العروض» فالتطبيق ولا فالسيت، ولا المطوية فالوكالة.
+    - قارن الحجم اللي داخل، مدة الالتزام والشروط ديال كل عرض.
+    - باش تشترك، شوف البطاقة «نشترك ففورفي جديد».
+  conditions_ar:
+    - العروض والأثمنة كيتبدلو، والمرجع هو الوثائق الرسمية المحدثة.
+  limites_ar:
+    - المساعد ما كيعطيش الأثمنة وما كينصحش بعرض تجاري معين.
+  escalade_ar: إلا بغيتي نصيحة خاصة بيك (شركة، عائلة كبيرة)، نقدرو نحولوك لمستشار.
+
+sign_up_plan:
+  title_fr: Souscrire un nouveau forfait
+  objet_fr: Guider le client qui veut souscrire un nouveau forfait ou abonnement.
+  etapes_fr:
+    - Choisir l'offre dans l'application, sur le site ou en agence.
+    - Fournir une pièce d'identité valide et, si demandé, un justificatif d'adresse ou un moyen de paiement.
+    - Lire les conditions (durée d'engagement, frais) avant de signer.
+    - Recevoir la carte SIM ou planifier l'installation, puis activer la ligne.
+  conditions_fr:
+    - Le souscripteur doit être majeur et identifié.
+    - Une durée d'engagement peut s'appliquer selon l'offre choisie.
+  limites_fr:
+    - L'assistant ne réalise aucune souscription.
+  escalade_fr: Si la souscription en ligne échoue, proposer un conseiller ou une agence.
+  title_ar: نشترك ففورفي جديد
+  objet_ar: نوجهو الكليان اللي بغا يشترك ففورفي ولا اشتراك جديد.
+  etapes_ar:
+    - اختار العرض فالتطبيق، فالسيت ولا فالوكالة.
+    - عطي بطاقة تعريف صالحة، وإلا طلبو، شي وثيقة ديال العنوان ولا وسيلة الخلاص.
+    - قرا الشروط (مدة الالتزام، المصاريف) قبل ما توقع.
+    - توصل بالسيم ولا دير موعد ديال التركيب، ومن بعد فعل الخط.
+  conditions_ar:
+    - خاص اللي كيشترك يكون راشد ومسجل.
+    - يقدر يكون شي التزام بمدة على حساب العرض اللي اخترتي.
+  limites_ar:
+    - المساعد ما كيدير حتى اشتراك.
+  escalade_ar: إلا الاشتراك فالأنترنيت ما دازش، نقدرو نحولوك لمستشار ولا للوكالة.
+
+change_plan:
+  title_fr: Changer de forfait
+  objet_fr: Expliquer comment passer à un forfait supérieur ou inférieur, ou changer d'offre.
+  etapes_fr:
+    - Ouvrir l'application, rubrique « Changer d'offre », pour voir les offres accessibles depuis l'offre actuelle.
+    - Vérifier la date d'effet (immédiate ou au prochain cycle de facturation).
+    - Vérifier si un engagement en cours limite le passage à une offre inférieure.
+    - Valider le changement et conserver le message de confirmation.
+  conditions_fr:
+    - Le changement est fait par le titulaire de la ligne.
+  limites_fr:
+    - Un passage à une offre inférieure pendant un engagement peut entraîner des frais.
+    - Le volume non utilisé de l'ancienne offre n'est pas forcément reporté.
+  escalade_fr: Si l'offre souhaitée n'apparaît pas, proposer un conseiller.
+  title_ar: نبدل الفورفي
+  objet_ar: نشرحو كيفاش تطلع لفورفي أكبر ولا تنزل لفورفي أصغر ولا تبدل العرض.
+  etapes_ar:
+    - حل التطبيق فـ«بدل العرض» باش تشوف العروض اللي ممكن تدوز ليهم.
+    - شوف فوقاش غادي يبدا التبديل (فالحين ولا فالفاتورة الجاية).
+    - تأكد واش كاين شي التزام كيمنع النزول لعرض أصغر.
+    - أكد التبديل واحتافظ بالميساج ديال التأكيد.
+  conditions_ar:
+    - مول الخط هو اللي كيبدل.
+  limites_ar:
+    - النزول لعرض أصغر وانت باقي ملتزم يقدر يجيب مصاريف.
+    - اللي ما استهلكتيش من العرض القديم ماشي ضروري يتزاد.
+  escalade_ar: إلا العرض اللي بغيتي ما بانش، نقدرو نحولوك لمستشار.
+
+cancel_plan:
+  title_fr: Résilier un abonnement
+  objet_fr: Expliquer comment résilier un abonnement mobile ou internet.
+  etapes_fr:
+    - Vérifier la fin de la période d'engagement et les frais éventuels (voir « Frais de résiliation »).
+    - Le titulaire fait la demande en agence avec sa pièce d'identité, ou par le canal indiqué dans le contrat.
+    - Régler les factures restantes.
+    - Rendre le matériel prêté (voir « Rendre la box, le routeur ou le décodeur »).
+  conditions_fr:
+    - Seul le titulaire peut résilier.
+  limites_fr:
+    - La résiliation prend effet selon le délai prévu au contrat.
+    - L'assistant n'enregistre pas de résiliation.
+  escalade_fr: Toute demande de résiliation est confirmée par un conseiller ou une agence.
+  title_ar: نلغي الاشتراك
+  objet_ar: نشرحو كيفاش تلغي اشتراك ديال التيليفون ولا الأنترنيت.
+  etapes_ar:
+    - شوف فوقاش كتسالي مدة الالتزام والمصاريف إلا كانو (شوف «المصاريف ديال الإلغاء»).
+    - مول الخط كيدير الطلب فالوكالة بالبطاقة الوطنية، ولا بالطريقة المكتوبة فالعقد.
+    - خلص الفواتير اللي باقين.
+    - رجع الأجهزة اللي عطاوك (شوف «نرجع البوكس، الروتور ولا الديكودور»).
+  conditions_ar:
+    - غير مول الخط اللي يقدر يلغي.
+  limites_ar:
+    - الإلغاء كيبدا على حساب المدة المكتوبة فالعقد.
+    - المساعد ما كيسجلش الإلغاء.
+  escalade_ar: أي طلب ديال الإلغاء كيأكدو مستشار ولا الوكالة.
+
+cancellation_fee:
+  title_fr: Frais de résiliation
+  objet_fr: Renseigner sur les frais ou pénalités possibles en cas de résiliation.
+  etapes_fr:
+    - Retrouver la date de début et la durée d'engagement dans le contrat ou l'espace client.
+    - Lire la section « Résiliation » des conditions de l'offre.
+    - Distinguer les frais d'engagement restant à courir, les factures non réglées et le matériel non rendu.
+  conditions_fr:
+    - Les frais dépendent du contrat signé et de la date de résiliation.
+  limites_fr:
+    - L'assistant ne calcule pas de montant de frais.
+  escalade_fr: Pour connaître le montant exact, un conseiller consulte le contrat du client.
+  title_ar: المصاريف ديال الإلغاء
+  objet_ar: نعطيو المعلومات على المصاريف ولا الغرامات اللي ممكن تكون ملي تلغي.
+  etapes_ar:
+    - لقى التاريخ اللي بدا فيه الالتزام والمدة ديالو فالعقد ولا فالفضاء ديال الكليان.
+    - قرا الجزء «الإلغاء» فالشروط ديال العرض.
+    - فرق بين المصاريف ديال الالتزام اللي باقي، الفواتير اللي ما تخلصوش، والأجهزة اللي ما ترجعوش.
+  conditions_ar:
+    - المصاريف كتبع العقد اللي وقعتي والتاريخ ديال الإلغاء.
+  limites_ar:
+    - المساعد ما كيحسبش المبلغ ديال المصاريف.
+  escalade_ar: باش تعرف المبلغ بالضبط، المستشار كيشوف العقد ديالك.
+
+promotions_bonus:
+  title_fr: Promotion ou bonus non reçu
+  objet_fr: Aider le client qui n'a pas reçu un bonus, une recharge doublée ou un avantage promotionnel.
+  etapes_fr:
+    - Relire les conditions de la promotion (dates, montant minimal, lignes concernées).
+    - Vérifier dans « Ma consommation » si le bonus a été crédité sur un compteur séparé.
+    - Attendre le délai de crédit indiqué dans les conditions.
+    - Si le bonus n'apparaît pas après ce délai, déposer une réclamation avec la date et la preuve de l'opération.
+  conditions_fr:
+    - La promotion doit avoir été valable à la date de l'opération pour la ligne concernée.
+  limites_fr:
+    - L'assistant ne peut pas créditer un bonus.
+  escalade_fr: Si les conditions étaient remplies et le délai dépassé, transmettre à un conseiller.
+  title_ar: البروموسيون ولا البونوس ما وصلش
+  objet_ar: نعاونو الكليان اللي ما توصلش بشي بونوس، شارج مضاعف ولا شي امتياز ديال البروموسيون.
+  etapes_ar:
+    - عاود قرا الشروط ديال البروموسيون (التواريخ، أقل مبلغ، الخطوط المعنية).
+    - شوف فـ«الاستهلاك ديالي» واش البونوس دخل فعداد بوحدو.
+    - تسنى المدة اللي مكتوبة فالشروط.
+    - إلا البونوس ما بانش من بعد هاد المدة، دير شكاية بالتاريخ والدليل ديال العملية.
+  conditions_ar:
+    - خاص البروموسيون تكون صالحة نهار العملية للخط ديالك.
+  limites_ar:
+    - المساعد ما يقدرش يزيد البونوس.
+  escalade_ar: إلا كانت الشروط متوفرة وفاتت المدة، كنحولوك لمستشار.
+
+roaming:
+  title_fr: Utiliser sa ligne à l'étranger (itinérance)
+  objet_fr: Expliquer comment utiliser sa ligne à l'étranger et activer l'itinérance.
+  etapes_fr:
+    - Avant le départ, vérifier dans l'application que l'itinérance est activée sur la ligne.
+    - Consulter les tarifs et les pass itinérance proposés pour le pays de destination.
+    - Activer l'itinérance des données dans les paramètres du téléphone seulement si un pass est actif.
+    - Sur place, choisir un réseau partenaire si la sélection automatique ne fonctionne pas.
+  conditions_fr:
+    - Sur une ligne prépayée, le crédit doit être suffisant.
+    - L'itinérance peut nécessiter une ancienneté minimale de la ligne.
+  limites_fr:
+    - Sans pass, les consommations à l'étranger peuvent coûter cher.
+    - L'assistant ne donne pas de tarifs réels.
+  escalade_fr: Si la ligne ne fonctionne pas à l'étranger malgré l'activation, proposer un conseiller.
+  title_ar: نستعمل الخط برا (الرومينغ)
+  objet_ar: نشرحو كيفاش تستعمل الخط ديالك فالخارج وتفعل الرومينغ.
+  etapes_ar:
+    - قبل ما تسافر، تأكد فالتطبيق بلي الرومينغ مفعل فالخط.
+    - شوف الأثمنة والباسات ديال الرومينغ للبلاد اللي غادي ليها.
+    - شعل الرومينغ ديال الأنترنيت فالإعدادات غير إلا كان عندك باس.
+    - تما، اختار شي ريزو شريك إلا الاختيار الأوتوماتيكي ما خدمش.
+  conditions_ar:
+    - فالخط بريبيد، خاص الرصيد يكون كافي.
+    - الرومينغ يقدر يتطلب شي أقدمية ديال الخط.
+  limites_ar:
+    - بلا باس، الاستهلاك برا يقدر يكون غالي بزاف.
+    - المساعد ما كيعطيش الأثمنة الحقيقية.
+  escalade_ar: إلا الخط ما خدمش برا واخا مفعل، نقدرو نحولوك لمستشار.
+
+entertainment_services:
+  title_fr: Services de divertissement (streaming, musique, jeux, tonalités)
+  objet_fr: Expliquer la souscription et la gestion des options de divertissement (streaming, musique, jeux, tonalités d'attente).
+  etapes_fr:
+    - Ouvrir la rubrique « Divertissement » de l'application pour voir les options disponibles.
+    - Souscrire à l'option choisie et noter sa périodicité de facturation (jour, semaine, mois).
+    - Gérer ou arrêter une option depuis « Mes services ».
+    - Pour un service souscrit par erreur, voir la fiche « Services payants non souhaités ».
+  conditions_fr:
+    - Les options sont facturées sur le crédit ou la facture selon l'offre.
+  limites_fr:
+    - Le contenu des services est fourni par des partenaires.
+    - L'assistant ne souscrit aucune option.
+  escalade_fr: Si une option ne fonctionne pas ou ne s'arrête pas, proposer un conseiller.
+  title_ar: خدمات الترفيه (ستريمينغ، موسيقى، ألعاب، رنات)
+  objet_ar: نشرحو كيفاش تشترك وتسير الأوبسيونات ديال الترفيه (ستريمينغ، موسيقى، ألعاب، رنات الانتظار).
+  etapes_ar:
+    - حل «الترفيه» فالتطبيق باش تشوف الأوبسيونات اللي كاينين.
+    - اشترك فالأوبسيون اللي بغيتي وشوف كل شحال كيتخلص (نهار، سيمانة، شهر).
+    - سير ولا وقف الأوبسيون من «الخدمات ديالي».
+    - إلا اشتركتي بالغلط، شوف البطاقة «خدمات بالفلوس ما بغيتهاش».
+  conditions_ar:
+    - الأوبسيونات كتخلص من الرصيد ولا من الفاتورة على حساب العرض.
+  limites_ar:
+    - المحتوى ديال الخدمات كيقدموه شركاء.
+    - المساعد ما كيشترك فحتى أوبسيون.
+  escalade_ar: إلا شي أوبسيون ما خدماتش ولا ما بغاتش تتوقف، نقدرو نحولوك لمستشار.
+
+loyalty_points:
+  title_fr: Programme de fidélité et points
+  objet_fr: Expliquer comment consulter, gagner et utiliser ses points de fidélité.
+  etapes_fr:
+    - Consulter le solde de points dans la rubrique « Fidélité » de l'application.
+    - Lire les règles d'obtention (recharges, factures payées, ancienneté).
+    - Choisir une récompense dans le catalogue et confirmer l'échange de points.
+    - Vérifier la date d'expiration des points.
+  conditions_fr:
+    - Les points sont personnels et liés à la ligne.
+  limites_fr:
+    - Les points expirés ne sont pas restaurés.
+    - Les récompenses du catalogue changent selon les périodes.
+    - L'assistant ne voit pas le solde de points réel.
+  escalade_fr: Si des points semblent manquer, proposer une réclamation et un conseiller.
+  title_ar: برنامج الوفاء والنقط
+  objet_ar: نشرحو كيفاش تشوف، تربح وتستعمل النقط ديال الوفاء.
+  etapes_ar:
+    - شوف شحال عندك من نقطة فـ«الوفاء» فالتطبيق.
+    - قرا القواعد باش تربح النقط (الشحن، الفواتير المخلصة، الأقدمية).
+    - اختار شي هدية من الكاطالوك وأكد التبديل ديال النقط.
+    - شوف فوقاش كيساليو النقط.
+  conditions_ar:
+    - النقط شخصية ومربوطة بالخط.
+  limites_ar:
+    - النقط اللي سالاو ما كيرجعوش.
+    - الهدايا اللي فالكاطالوك كيتبدلو على حساب الفترات.
+    - المساعد ما كيشوفش شحال عندك من نقطة بصح.
+  escalade_ar: إلا بان ليك شي نقط ناقصين، دير شكاية ونقدرو نحولوك لمستشار.

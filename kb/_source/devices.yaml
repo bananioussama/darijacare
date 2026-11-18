@@ -1,0 +1,82 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+device_purchase:
+  title_fr: Acheter un téléphone ou un appareil
+  objet_fr: Orienter le client qui veut acheter un téléphone ou un appareil, y compris en paiement échelonné.
+  etapes_fr:
+    - Consulter le catalogue d'appareils dans l'application, sur le site ou en agence.
+    - Vérifier la compatibilité de l'appareil (4G, 5G, eSIM) avec l'usage souhaité.
+    - Pour un paiement échelonné, se renseigner sur les conditions (pièces demandées, durée, engagement).
+    - Finaliser l'achat en agence ou en ligne et conserver la facture d'achat pour la garantie.
+  conditions_fr:
+    - Le paiement échelonné peut être réservé aux clients avec abonnement et soumis à acceptation.
+  limites_fr:
+    - L'assistant ne vend pas d'appareil et ne donne pas de prix ni de disponibilité.
+  escalade_fr: Pour une offre entreprise ou une commande en nombre, proposer un conseiller.
+  title_ar: نشري تيليفون ولا جهاز
+  objet_ar: نوجهو الكليان اللي بغا يشري تيليفون ولا جهاز، حتى بالتقسيط.
+  etapes_ar:
+    - شوف الكاطالوك ديال الأجهزة فالتطبيق، فالسيت ولا فالوكالة.
+    - تأكد بلي الجهاز كيتماشى (4G، 5G، eSIM) مع الاستعمال ديالك.
+    - إلا بغيتي بالتقسيط، سول على الشروط (الوثائق، المدة، الالتزام).
+    - كمل الشرا فالوكالة ولا فالأنترنيت واحتافظ بالفاتورة ديال الشرا للضمانة.
+  conditions_ar:
+    - التقسيط يقدر يكون غير للكليان اللي عندهم اشتراك وخاصو موافقة.
+  limites_ar:
+    - المساعد ما كيبيعش الأجهزة وما كيعطيش الأثمنة ولا واش كاين فالسطوك.
+  escalade_ar: إلا كان عرض ديال شركة ولا طلب بالكمية، نقدرو نحولوك لمستشار.
+
+device_repair_warranty:
+  title_fr: Réparation, garantie et assurance d'un appareil
+  objet_fr: Expliquer la prise en charge d'un appareil acheté auprès de l'opérateur (panne, garantie, assurance).
+  etapes_fr:
+    - Retrouver la facture d'achat et, le cas échéant, le contrat d'assurance.
+    - Sauvegarder les données et retirer la carte SIM et la carte mémoire.
+    - Déposer l'appareil en agence ou au centre de service indiqué, avec la facture.
+    - Garder le bon de dépôt et suivre l'avancement de la réparation.
+  conditions_fr:
+    - La garantie couvre les pannes de fabrication pendant la durée indiquée sur la facture.
+    - La casse ou l'oxydation ne relèvent pas de la garantie, mais éventuellement de l'assurance souscrite.
+  limites_fr:
+    - L'assistant ne décide pas de la prise en charge ; le diagnostic est fait par le service technique.
+  escalade_fr: En cas de refus de prise en charge contesté, transmettre à un conseiller.
+  title_ar: الإصلاح، الضمانة والتأمين ديال الجهاز
+  objet_ar: نشرحو كيفاش يتعالج جهاز شريتيه من عند الأوبيراتور (عطب، ضمانة، تأمين).
+  etapes_ar:
+    - لقى الفاتورة ديال الشرا، وإلا كان، العقد ديال التأمين.
+    - دير نسخة ديال المعلومات ديالك وحيد السيم والكارط ميموار.
+    - دفع الجهاز فالوكالة ولا فمركز الخدمة اللي قالو ليك، مع الفاتورة.
+    - احتافظ بالوصل ديال الإيداع وتبع الإصلاح.
+  conditions_ar:
+    - الضمانة كتغطي الأعطاب ديال الصنع فالمدة المكتوبة فالفاتورة.
+    - التهريس ولا الما ماشي داخلين فالضمانة، ولكن يقدرو يدخلو فالتأمين إلا كان.
+  limites_ar:
+    - المساعد ما كيقررش واش الجهاز غادي يتصلح فابور، التشخيص كتديرو المصلحة التقنية.
+  escalade_ar: إلا رفضو يصلحوه وانت معترض، كنحولوك لمستشار.
+
+device_settings:
+  title_fr: Réglages du téléphone (4G, 5G, réseau)
+  objet_fr: Aider à régler le téléphone, par exemple pour activer la 4G ou la 5G.
+  etapes_fr:
+    - Ouvrir Paramètres > Réseau mobile > Type de réseau préféré.
+    - Choisir le mode le plus élevé disponible (5G/4G/3G/2G automatique).
+    - Vérifier que la carte SIM est compatible 4G ou 5G (une ancienne SIM peut devoir être remplacée).
+    - Redémarrer le téléphone et vérifier l'icône réseau.
+  conditions_fr:
+    - Le téléphone, la carte SIM et l'offre doivent être compatibles avec la technologie voulue.
+    - La couverture 4G ou 5G doit exister à l'endroit concerné.
+  limites_fr:
+    - Les menus varient selon la marque et la version du système.
+  escalade_fr: Si le réglage reste impossible, proposer un conseiller.
+  title_ar: الإعدادات ديال التيليفون (4G، 5G، الريزو)
+  objet_ar: نعاونو نريڭلو التيليفون، مثلا باش تشعل 4G ولا 5G.
+  etapes_ar:
+    - حل الإعدادات > شبكة الهاتف > نوع الشبكة المفضل.
+    - اختار أعلى وضع كاين (5G/4G/3G/2G أوتوماتيكي).
+    - تأكد بلي السيم كتقبل 4G ولا 5G (السيم القديمة يقدر يخصها تتبدل).
+    - طفي وشعل التيليفون وشوف الرمز ديال الريزو.
+  conditions_ar:
+    - خاص التيليفون، السيم والعرض يكونو كيتماشاو مع التكنولوجيا اللي بغيتي.
+    - خاص التغطية ديال 4G ولا 5G تكون كاينة فالبلاصة.
+  limites_ar:
+    - القوائم كتختلف على حساب الماركة والنسخة ديال النظام.
+  escalade_ar: إلا ما قدرتيش تريڭلو، نقدرو نحولوك لمستشار.

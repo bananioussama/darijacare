@@ -1,0 +1,4 @@
+{% import "_macros.j2" as m %}فهمتك، غادي نحولك لمستشار{% if priority in ("critique", "haute") %} بالأولوية{% endif %}. ما تحتاجش تعاود كلشي، الطلب ديالك غادي يكون عندو.
+{% if fiche and safety %}فهاد الوقت، باش تحمي راسك:
+{{ m.steps(fiche.etapes) }}{{ m.source(fiche, "المصدر، بطاقة خيالية") }}
+{% endif %}

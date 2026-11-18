@@ -1,0 +1,198 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+install_internet:
+  title_fr: Demander l'installation d'internet à domicile
+  objet_fr: Guider le client qui souhaite une nouvelle installation internet à domicile (fibre, ADSL ou box 4G/5G).
+  etapes_fr:
+    - Vérifier d'abord l'éligibilité de l'adresse (voir la fiche « Éligibilité à la fibre »).
+    - Choisir l'offre dans l'application, sur le site ou en agence.
+    - Fournir la pièce d'identité du titulaire et l'adresse complète du logement.
+    - Choisir un créneau de rendez-vous pour le technicien et garder le numéro de commande.
+  conditions_fr:
+    - Le titulaire doit être majeur et présenter une pièce d'identité valide.
+    - Une personne majeure doit être présente au logement le jour du rendez-vous.
+  limites_fr:
+    - L'assistant ne peut pas passer la commande ni fixer de date.
+    - Les délais d'installation dépendent de la zone et des travaux nécessaires.
+  escalade_fr: Pour un cas particulier (immeuble sans gaine, local professionnel), proposer un conseiller.
+  title_ar: نطلب نركبو الأنترنيت فالدار
+  objet_ar: نوجهو الكليان اللي بغا يركب أنترنيت جديد فالدار (لافيبر، ADSL ولا بوكس 4G/5G).
+  etapes_ar:
+    - تأكد قبل من واش العنوان مؤهل (شوف البطاقة «واش لافيبر كاينة»).
+    - اختار العرض فالتطبيق، فالسيت ولا فالوكالة.
+    - عطي البطاقة الوطنية ديال مول الخط والعنوان كامل ديال الدار.
+    - اختار موعد للتقني واحتافظ برقم الطلب.
+  conditions_ar:
+    - خاص مول الخط يكون راشد وعندو بطاقة تعريف صالحة.
+    - خاص يكون شي واحد راشد فالدار نهار الموعد.
+  limites_ar:
+    - المساعد ما يقدرش يدير الطلب ولا يحدد الموعد.
+    - الوقت ديال التركيب كيتبع المنطقة والخدمة اللي خاصها تدار.
+  escalade_ar: فشي حالة خاصة (عمارة بلا قنوات، محل ديال الخدمة)، نقدرو نحولوك لمستشار.
+
+fiber_eligibility:
+  title_fr: Éligibilité à la fibre ou à internet à domicile
+  objet_fr: Expliquer comment savoir si la fibre ou une autre offre internet est disponible à une adresse.
+  etapes_fr:
+    - Ouvrir le test d'éligibilité dans l'application ou sur le site.
+    - Saisir l'adresse complète (ville, quartier, rue, numéro, immeuble et étage si besoin).
+    - Lire le résultat : fibre disponible, ADSL ou box 4G/5G proposée à la place.
+    - Si l'adresse n'est pas éligible, s'inscrire pour être informé d'une ouverture future si l'option existe.
+  conditions_fr:
+    - L'adresse doit être précise ; une adresse approximative peut donner un résultat faux.
+  limites_fr:
+    - Le résultat est indicatif et confirmé lors de la visite technique.
+    - L'assistant ne connaît pas la couverture réelle d'une adresse.
+  escalade_fr: Si le test donne un résultat incohérent avec les voisins déjà raccordés, proposer un conseiller.
+  title_ar: واش لافيبر كاينة عندي
+  objet_ar: نشرحو كيفاش تعرف واش لافيبر ولا شي عرض أنترنيت آخر كاين فواحد العنوان.
+  etapes_ar:
+    - حل الاختبار ديال الأهلية فالتطبيق ولا فالسيت.
+    - دخل العنوان كامل (المدينة، الحومة، الزنقة، الرقم، العمارة والطابق إلا خاص).
+    - قرا النتيجة، لافيبر كاينة، ADSL ولا بوكس 4G/5G فبلاصتها.
+    - إلا العنوان ما مؤهلش، سجل باش يعلموك ملي توصل إلا كانت هاد الإمكانية.
+  conditions_ar:
+    - خاص العنوان يكون دقيق، العنوان التقريبي يقدر يعطي نتيجة غالطة.
+  limites_ar:
+    - النتيجة تقريبية وكتأكد نهار ما يجي التقني.
+    - المساعد ما كيعرفش التغطية الحقيقية ديال شي عنوان.
+  escalade_ar: إلا النتيجة ما متافقاش مع الجيران اللي عندهم لافيبر، نقدرو نحولوك لمستشار.
+
+installation_delay:
+  title_fr: Retard d'installation ou de rendez-vous technicien
+  objet_fr: Aider le client dont l'installation ou la visite du technicien est en retard, ou qui veut connaître son rendez-vous.
+  etapes_fr:
+    - Retrouver le numéro de commande reçu lors de la souscription.
+    - Consulter le suivi de commande dans l'application pour voir l'étape en cours et la date prévue.
+    - Pour déplacer le rendez-vous, utiliser « Modifier le rendez-vous » dans le suivi.
+    - Si la date prévue est dépassée, déposer une réclamation « Retard d'installation » avec le numéro de commande.
+  conditions_fr:
+    - Le numéro de commande est nécessaire pour toute démarche.
+  limites_fr:
+    - L'assistant ne voit pas l'avancement réel et ne peut pas avancer une date.
+    - Certains retards dépendent de travaux ou d'autorisations extérieures.
+  escalade_fr: Si le rendez-vous a été manqué ou le délai largement dépassé, transmettre à un conseiller.
+  title_ar: التركيب تعطل ولا التقني ما جاش
+  objet_ar: نعاونو الكليان اللي التركيب ديالو تعطل ولا التقني ما جاش، ولا بغا يعرف الموعد ديالو.
+  etapes_ar:
+    - لقى رقم الطلب اللي توصلتي بيه نهار درتي الاشتراك.
+    - شوف التتبع ديال الطلب فالتطبيق باش تعرف فين وصل والتاريخ المتوقع.
+    - باش تبدل الموعد، استعمل «تبديل الموعد» فالتتبع.
+    - إلا فات التاريخ المتوقع، دير شكاية «تعطل التركيب» برقم الطلب.
+  conditions_ar:
+    - رقم الطلب ضروري لأي إجراء.
+  limites_ar:
+    - المساعد ما كيشوفش فين وصل الطلب بصح وما يقدرش يقدم الموعد.
+    - شي تعطلات كتبع أشغال ولا رخص من برا.
+  escalade_ar: إلا الموعد فات ولا الوقت تعطل بزاف، كنحولوك لمستشار.
+
+home_outage:
+  title_fr: Internet à domicile coupé
+  objet_fr: Aider le client dont l'internet à domicile ne fonctionne plus du tout.
+  etapes_fr:
+    - Vérifier que la box est allumée et observer les voyants (un voyant rouge ou éteint indique une coupure de ligne).
+    - Vérifier les câbles (fibre ou ADSL et alimentation) sans tordre le câble fibre.
+    - Éteindre la box une minute puis la rallumer, et attendre la stabilisation des voyants.
+    - Vérifier dans l'application si un incident est signalé dans le quartier.
+  conditions_fr:
+    - La facture ou l'abonnement ne doit pas être suspendu pour impayé.
+  limites_fr:
+    - L'assistant ne peut pas tester la ligne à distance.
+    - Une panne de quartier se règle par l'intervention de l'équipe technique.
+  escalade_fr: Si la connexion ne revient pas après redémarrage, ouvrir un signalement et transmettre à un conseiller (service coupé).
+  title_ar: الأنترنيت ديال الدار مقطوع
+  objet_ar: نعاونو الكليان اللي الأنترنيت ديال الدار ديالو مابقاش خدام نهائيا.
+  etapes_ar:
+    - تأكد بلي البوكس مشعلة وشوف الضواو (الضو الحمر ولا الطافي كيعني الخط مقطوع).
+    - شوف الكابلات (لافيبر ولا ADSL والضو) بلا ما تلوي الكابل ديال لافيبر.
+    - طفي البوكس دقيقة ومن بعد شعلها، وتسنى حتى يتستقرو الضواو.
+    - شوف فالتطبيق واش كاين شي عطب معلن فالحومة.
+  conditions_ar:
+    - خاص الفاتورة ولا الاشتراك ما يكونش موقوف على قبل ما تخلصش.
+  limites_ar:
+    - المساعد ما يقدرش يجرب الخط من بعيد.
+    - العطب فالحومة كيتصلح بتدخل ديال الفرقة التقنية.
+  escalade_ar: إلا الكونيكسيون ما رجعاتش من بعد ما طفيتي وشعلتي، كنفتحو بلاغ وكنحولوك لمستشار (خدمة مقطوعة).
+
+home_slow:
+  title_fr: Internet à domicile lent
+  objet_fr: Aider le client dont l'internet à domicile fonctionne mais reste plus lent que le débit souscrit.
+  etapes_fr:
+    - Mesurer le débit avec un appareil branché en câble à la box, pas en Wi-Fi.
+    - Redémarrer la box et limiter le nombre d'appareils qui téléchargent en même temps.
+    - En Wi-Fi, rapprocher l'appareil de la box ou utiliser la bande 5 GHz si elle est disponible.
+    - Noter les résultats des tests (jour, heure, débit) pour une éventuelle réclamation.
+  conditions_fr:
+    - Le débit annoncé est un débit maximal ; le débit réel dépend de la ligne et de l'équipement.
+  limites_fr:
+    - L'assistant ne peut pas mesurer ni garantir le débit.
+    - Un appareil ancien ou un Wi-Fi encombré peut limiter le débit indépendamment de la ligne.
+  escalade_fr: Si le débit en câble reste nettement inférieur à l'offre pendant plusieurs jours, transmettre à un conseiller.
+  title_ar: الأنترنيت ديال الدار ثقيل
+  objet_ar: نعاونو الكليان اللي الأنترنيت ديال الدار ديالو خدام ولكن أقل من السرعة اللي كيخلص عليها.
+  etapes_ar:
+    - قيس السرعة بجهاز مربوط بالكابل مع البوكس، ماشي بالويفي.
+    - طفي وشعل البوكس ونقص من الأجهزة اللي كيحملو فنفس الوقت.
+    - فالويفي، قرب الجهاز من البوكس ولا استعمل 5 GHz إلا كانت.
+    - سجل النتائج ديال الاختبارات (النهار، الساعة، السرعة) إلا احتاجيتي تدير شكاية.
+  conditions_ar:
+    - السرعة المعلنة هي السرعة القصوى، والسرعة الحقيقية كتبع الخط والأجهزة.
+  limites_ar:
+    - المساعد ما يقدرش يقيس ولا يضمن السرعة.
+    - جهاز قديم ولا ويفي فيه الضغط يقدرو ينقصو السرعة بلا ما يكون المشكل فالخط.
+  escalade_ar: إلا بقات السرعة بالكابل أقل بزاف من العرض شحال من نهار، كنحولوك لمستشار.
+
+router_wifi:
+  title_fr: Box, routeur et Wi-Fi
+  objet_fr: Aider pour les problèmes de box ou de routeur et pour le nom ou le mot de passe du Wi-Fi.
+  etapes_fr:
+    - Le nom du réseau et le mot de passe d'origine figurent sur l'étiquette sous la box.
+    - Pour les changer, ouvrir l'interface de la box depuis l'application ou le navigateur, rubrique « Wi-Fi ».
+    - En cas de dysfonctionnement, redémarrer la box ; en dernier recours, faire une réinitialisation (le Wi-Fi revient alors aux réglages de l'étiquette).
+    - Placer la box en hauteur, à découvert, loin des murs épais et des appareils électroniques.
+  conditions_fr:
+    - Les modifications se font depuis un appareil connecté à la box.
+  limites_fr:
+    - Une réinitialisation efface les réglages personnalisés.
+    - L'assistant ne peut pas accéder à la box à distance.
+  escalade_fr: Si la box ne s'allume plus ou semble défectueuse, transmettre à un conseiller pour un remplacement.
+  title_ar: البوكس، الروتور والويفي
+  objet_ar: نعاونو فالمشاكل ديال البوكس ولا الروتور وفالسمية ولا كلمة السر ديال الويفي.
+  etapes_ar:
+    - السمية ديال الويفي وكلمة السر الأصلية مكتوبين فالورقة اللي تحت البوكس.
+    - باش تبدلهم، حل الواجهة ديال البوكس من التطبيق ولا المتصفح، فـ«الويفي».
+    - إلا كان شي مشكل، طفي وشعل البوكس، وإلا ما نفعش دير إعادة الضبط (الويفي كيرجع للإعدادات اللي فالورقة).
+    - حط البوكس فبلاصة عالية ومحلولة، بعيدة على الحيوط الغليظة والأجهزة الإلكترونية.
+  conditions_ar:
+    - التبديلات كتدار من جهاز مربوط مع البوكس.
+  limites_ar:
+    - إعادة الضبط كتمسح الإعدادات اللي درتي.
+    - المساعد ما يقدرش يدخل للبوكس من بعيد.
+  escalade_ar: إلا البوكس مابقاتش كتشعل ولا باينة خاسرة، كنحولوك لمستشار باش تتبدل.
+
+tv_issue:
+  title_fr: Problème de TV ou de décodeur
+  objet_fr: Aider le client dont la télévision par box ou IPTV ne fonctionne pas (chaînes, décodeur, image).
+  etapes_fr:
+    - Vérifier que la connexion internet de la box fonctionne (sinon voir « Internet à domicile coupé »).
+    - Vérifier le câble entre le décodeur et la télévision et la bonne source (HDMI) sur la télévision.
+    - Redémarrer le décodeur en le débranchant une minute.
+    - Si une chaîne précise manque, vérifier qu'elle fait partie du bouquet souscrit.
+  conditions_fr:
+    - Le service TV doit être inclus dans l'abonnement ou souscrit en option.
+  limites_fr:
+    - Le contenu des chaînes ne dépend pas de l'assistant.
+    - L'assistant ne peut pas réinitialiser le décodeur à distance.
+  escalade_fr: Si l'image ne revient pas après redémarrage, transmettre à un conseiller.
+  title_ar: مشكل فالتلفزة ولا الديكودور
+  objet_ar: نعاونو الكليان اللي التلفزة ديالو بالبوكس ولا IPTV ما خداماش (القنوات، الديكودور، الصورة).
+  etapes_ar:
+    - تأكد بلي الأنترنيت ديال البوكس خدام (وإلا شوف «الأنترنيت ديال الدار مقطوع»).
+    - شوف الكابل بين الديكودور والتلفزة واختار المصدر الصحيح (HDMI) فالتلفزة.
+    - طفي الديكودور، حيد الضو دقيقة ورجعو.
+    - إلا شي قناة معينة ناقصة، تأكد بلي داخلة فالباقة اللي عندك.
+  conditions_ar:
+    - خاص خدمة التلفزة تكون داخلة فالاشتراك ولا مفعلة كأوبسيون.
+  limites_ar:
+    - المحتوى ديال القنوات ما كيتبعش المساعد.
+    - المساعد ما يقدرش يعاود يضبط الديكودور من بعيد.
+  escalade_ar: إلا الصورة ما رجعاتش من بعد ما طفيتي وشعلتي، كنحولوك لمستشار.

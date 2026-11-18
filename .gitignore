@@ -47,3 +47,6 @@ mlflow.db
 # Prédictions NLU (régénérables : python -m darijacare.nlu.cli evaluate ...)
 reports/nlu/**/predictions.jsonl
 reports/nlu/**/intent_gold_category.jsonl
+reports/rag/**/query_cache.*
+/data/qdrant/
+reports/rag/**/details.csv

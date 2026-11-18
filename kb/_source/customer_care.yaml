@@ -1,0 +1,190 @@
+# Source des fiches (contenu FICTIF). Après génération, les fiches Markdown de kb/ font foi.
+file_complaint:
+  title_fr: Déposer une réclamation
+  objet_fr: Expliquer comment déposer une nouvelle réclamation sur un service.
+  etapes_fr:
+    - Ouvrir la rubrique « Réclamations » de l'application ou du site, ou se rendre en agence.
+    - Choisir le motif (facture, réseau, internet, service, accueil) et décrire le problème avec les dates.
+    - Joindre les justificatifs utiles (captures, reçus, numéros de commande).
+    - Noter le numéro de réclamation attribué pour le suivi.
+  conditions_fr:
+    - La réclamation est faite par le titulaire ou une personne autorisée.
+  limites_fr:
+    - Le délai de réponse dépend du type de réclamation.
+    - L'assistant ne peut pas enregistrer une réclamation officielle lui-même.
+  escalade_fr: Si le client ne peut pas déposer sa réclamation, un conseiller l'enregistre.
+  title_ar: نديرو شكاية
+  objet_ar: نشرحو كيفاش تدير شكاية جديدة على شي خدمة.
+  etapes_ar:
+    - حل «الشكايات» فالتطبيق ولا فالسيت، ولا سير للوكالة.
+    - اختار السبب (فاتورة، ريزو، أنترنيت، خدمة، الاستقبال) ووصف المشكل بالتواريخ.
+    - زيد الوثائق اللي كتعاون (تصاور الشاشة، الوصولات، أرقام الطلبات).
+    - سجل رقم الشكاية اللي عطاوك باش تتبعها.
+  conditions_ar:
+    - الشكاية كيديرها مول الخط ولا شي واحد عندو الإذن.
+  limites_ar:
+    - الوقت ديال الجواب كيتبع النوع ديال الشكاية.
+    - المساعد ما يقدرش يسجل شكاية رسمية بيدو.
+  escalade_ar: إلا الكليان ما قدرش يدير الشكاية، المستشار كيسجلها ليه.
+
+complaint_followup:
+  title_fr: Suivre une réclamation en cours
+  objet_fr: Aider le client qui veut connaître l'avancement d'une réclamation ou d'une demande déjà déposée.
+  etapes_fr:
+    - Retrouver le numéro de réclamation reçu par message.
+    - Consulter « Mes réclamations » dans l'application pour voir le statut.
+    - Si le délai annoncé est dépassé, relancer depuis la réclamation (bouton « Relancer »).
+    - Ajouter tout nouvel élément utile au dossier.
+  conditions_fr:
+    - Le numéro de réclamation est nécessaire pour un suivi précis.
+  limites_fr:
+    - L'assistant ne voit pas le statut réel des réclamations.
+  escalade_fr: Si la réclamation reste sans réponse après relance, transmettre à un conseiller (problème répété).
+  title_ar: نتبع شكاية درتها
+  objet_ar: نعاونو الكليان اللي بغا يعرف فين وصلات شي شكاية ولا شي طلب دارو من قبل.
+  etapes_ar:
+    - لقى رقم الشكاية اللي وصلك فميساج.
+    - شوف «الشكايات ديالي» فالتطبيق باش تعرف الحالة ديالها.
+    - إلا فاتت المدة اللي قالو، عاود ذكرهم من الشكاية (الزر «ذكّر»).
+    - زيد أي معلومة جديدة كتعاون فالملف.
+  conditions_ar:
+    - رقم الشكاية ضروري باش تتبع بالضبط.
+  limites_ar:
+    - المساعد ما كيشوفش الحالة الحقيقية ديال الشكايات.
+  escalade_ar: إلا بقات الشكاية بلا جواب من بعد ما ذكرتيهم، كنحولوك لمستشار (مشكل كيتعاود).
+
+human_agent:
+  title_fr: Parler à un conseiller
+  objet_fr: Répondre au client qui demande explicitement à parler à une personne.
+  etapes_fr:
+    - Le client utilise le bouton « Parler à un conseiller » dans la conversation.
+    - Le dossier est créé avec le résumé de la demande pour éviter de tout répéter.
+    - Le client reçoit une position dans la file d'attente des conseillers.
+    - En attendant, le client peut préciser sa demande ; le conseiller la retrouvera dans le dossier.
+  conditions_fr:
+    - La demande explicite d'un humain est toujours respectée.
+    - Les démarches qui exigent une pièce d'identité restent à faire en agence.
+  limites_fr:
+    - Le délai dépend du nombre de demandes en cours ; les cas urgents passent en priorité.
+  escalade_fr: Transmettre systématiquement à un conseiller.
+  title_ar: بغيت نهضر مع مستشار
+  objet_ar: نجاوبو الكليان اللي طلب بالصراحة يهضر مع شي واحد.
+  etapes_ar:
+    - الكليان كيستعمل الزر «نهضر مع مستشار» فالمحادثة.
+    - كيتحل ملف فيه ملخص الطلب باش ما يعاودش كلشي.
+    - الكليان كيعرف الترتيب ديالو فالصف ديال المستشارين.
+    - وهو كيتسنى، يقدر الكليان يزيد يوضح الطلب ديالو، والمستشار غادي يلقاه فالملف.
+  conditions_ar:
+    - الطلب الصريح ديال الهضرة مع إنسان ديما كيتحترم.
+    - الإجراءات اللي خاصها البطاقة الوطنية كتبقى خاصها تدار فالوكالة.
+  limites_ar:
+    - الوقت كيتبع شحال كاين من طلب، والحالات المستعجلة كيدوزو اللولين.
+  escalade_ar: ديما كنحولو لمستشار.
+
+customer_service_contact:
+  title_fr: Contacter le service client
+  objet_fr: Indiquer les moyens de contacter le service client et ses horaires.
+  etapes_fr:
+    - Utiliser le chat de l'application ou le bouton « Parler à un conseiller ».
+    - Appeler le numéro court du service client indiqué au dos de la pochette de la carte SIM et dans l'application.
+    - Écrire via le formulaire de contact du site pour une demande non urgente.
+    - Se rendre en agence pour les démarches nécessitant une pièce d'identité.
+  conditions_fr:
+    - Les horaires du service client sont affichés dans l'application.
+  limites_fr:
+    - Cette fiche fictive ne donne aucun numéro réel.
+  escalade_fr: Si le client veut être mis en relation tout de suite, utiliser « Parler à un conseiller ».
+  title_ar: كيفاش نتاصل بخدمة الكليان
+  objet_ar: نقولو الطرق باش تتاصل بخدمة الكليان والأوقات ديالها.
+  etapes_ar:
+    - استعمل الشات ديال التطبيق ولا الزر «نهضر مع مستشار».
+    - عيط للنمرة القصيرة ديال خدمة الكليان المكتوبة فالغلاف ديال السيم وفالتطبيق.
+    - كتب من الاستمارة ديال الاتصال فالسيت إلا ما كانش الطلب مستعجل.
+    - سير للوكالة للإجراءات اللي خاصها البطاقة الوطنية.
+  conditions_ar:
+    - الأوقات ديال خدمة الكليان باينين فالتطبيق.
+  limites_ar:
+    - هاد البطاقة الخيالية ما فيها حتى نمرة حقيقية.
+  escalade_ar: إلا بغا الكليان يتاصل فالحين، استعمل «نهضر مع مستشار».
+
+agency_location:
+  title_fr: Trouver une agence et ses horaires
+  objet_fr: Aider le client à trouver l'agence la plus proche et ses horaires d'ouverture.
+  etapes_fr:
+    - Ouvrir la carte des agences dans l'application ou sur le site.
+    - Rechercher par ville ou autoriser la localisation pour voir les agences proches.
+    - Consulter les horaires d'ouverture et les services proposés par l'agence.
+    - Prendre rendez-vous en ligne si l'option est disponible pour éviter l'attente.
+  conditions_fr:
+    - Les horaires peuvent changer pendant les jours fériés et le Ramadan.
+  limites_fr:
+    - Cette fiche fictive ne contient aucune adresse réelle.
+  escalade_fr: Pas d'escalade nécessaire, sauf si le client ne peut pas se déplacer.
+  title_ar: نلقى وكالة والأوقات ديالها
+  objet_ar: نعاونو الكليان يلقى أقرب وكالة والأوقات ديال الفتح ديالها.
+  etapes_ar:
+    - حل الخريطة ديال الوكالات فالتطبيق ولا فالسيت.
+    - قلب بالمدينة ولا خلي التطبيق يعرف فين نتا باش تبان ليك الوكالات القراب.
+    - شوف الأوقات ديال الفتح والخدمات اللي كتقدم الوكالة.
+    - دير موعد فالأنترنيت إلا كانت هاد الإمكانية باش ما تسناش.
+  conditions_ar:
+    - الأوقات يقدرو يتبدلو فالعطل وفرمضان.
+  limites_ar:
+    - هاد البطاقة الخيالية ما فيها حتى عنوان حقيقي.
+  escalade_ar: ما خاصش تحويل، إلا إلا كان الكليان ما يقدرش يتحرك.
+
+account_app_access:
+  title_fr: Problème de connexion à l'application ou à l'espace client
+  objet_fr: Aider le client qui n'arrive pas à se connecter à l'application ou à son espace client en ligne.
+  etapes_fr:
+    - Utiliser « Mot de passe oublié » et suivre le lien ou le code reçu.
+    - Vérifier que le code de confirmation est saisi rapidement (il expire après quelques minutes).
+    - Mettre à jour l'application, vider son cache ou la réinstaller.
+    - Vérifier la connexion internet et la date et l'heure automatiques du téléphone.
+  conditions_fr:
+    - Le code de confirmation est envoyé au numéro de la ligne ; la ligne doit recevoir les SMS.
+  limites_fr:
+    - Ne jamais communiquer le code de confirmation à quelqu'un, même se présentant comme conseiller.
+    - L'assistant ne réinitialise pas de compte.
+  escalade_fr: Si le compte reste bloqué, transmettre à un conseiller.
+  title_ar: ما قادرش ندخل للتطبيق ولا للفضاء ديال الكليان
+  objet_ar: نعاونو الكليان اللي ما قادرش يدخل للتطبيق ولا للحساب ديالو فالأنترنيت.
+  etapes_ar:
+    - استعمل «نسيت كلمة السر» وتبع الرابط ولا الكود اللي وصلك.
+    - دخل الكود ديال التأكيد بالزربة (كيسالي من بعد شي دقايق).
+    - حدث التطبيق، مسح الكاش ديالو ولا عاود حملو.
+    - شوف الأنترنيت وشوف بلي التاريخ والساعة فالتيليفون أوتوماتيكيين.
+  conditions_ar:
+    - الكود ديال التأكيد كيتصيفط للنمرة ديال الخط، خاص الخط يتوصل بالميساجات.
+  limites_ar:
+    - عمرك ما تعطي الكود ديال التأكيد لحتى واحد، واخا يقول ليك بلي مستشار.
+    - المساعد ما كيعاودش يفتح الحسابات.
+  escalade_ar: إلا بقا الحساب مبلوكي، كنحولوك لمستشار.
+
+greeting_thanks:
+  title_fr: Salutations et remerciements
+  objet_fr: Répondre poliment à une salutation, un remerciement ou un au revoir sans demande particulière.
+  etapes_fr:
+    - Saluer le client en retour dans sa forme d'écriture.
+    - Lui proposer de décrire sa demande s'il en a une.
+    - En fin d'échange, le remercier et lui rappeler qu'il peut revenir à tout moment.
+    - Rester bref et courtois, sans poser de question personnelle.
+  conditions_fr:
+    - Aucune donnée de la ligne n'est nécessaire.
+  limites_fr:
+    - Pas de procédure associée.
+    - Si le message contient aussi une demande, c'est cette demande qui est traitée.
+  escalade_fr: Aucune.
+  title_ar: السلام والشكر
+  objet_ar: نجاوبو بالأدب على السلام، الشكر ولا التسليم بلا طلب معين.
+  etapes_ar:
+    - رد السلام على الكليان بنفس الطريقة ديال الكتابة ديالو.
+    - قترح عليه يوصف الطلب ديالو إلا كان عندو شي طلب.
+    - فالأخير، شكرو وفكرو بلي يقدر يرجع فأي وقت.
+    - خلي الجواب قصير ومؤدب، بلا ما تسول حتى سؤال شخصي.
+  conditions_ar:
+    - ما خاص حتى معلومة على الخط.
+  limites_ar:
+    - ما كاين حتى إجراء.
+    - إلا كان فالميساج حتى شي طلب، هداك الطلب هو اللي كيتعالج.
+  escalade_ar: والو.

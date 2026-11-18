@@ -19,6 +19,8 @@ dependencies = [
     "scipy>=1.13",
     "matplotlib>=3.9",
     "huggingface-hub>=0.25",
+    "jinja2>=3.1",
+    "qdrant-client==1.20.0",
 ]
 
 [project.optional-dependencies]
@@ -33,6 +35,8 @@ nlu = [
     # MLflow 2.17 casse avec SQLAlchemy 2.1 (FallbackAsyncAdaptedQueuePool supprimé).
     "sqlalchemy>=2.0,<2.1",
 ]
+# RAG : BGE-M3 (dense + creux) via la bibliothèque officielle de BAAI.
+rag = ["FlagEmbedding==1.4.2"]
 # Variante de torch (extras exclusifs) : `--extra cpu` (léger, par défaut) ou `--extra cu126`
 # (CUDA 12.6 : dernière combinaison qui prend encore en charge les GPU Pascal, sm_61).
 cpu = ["torch==2.7.1"]
