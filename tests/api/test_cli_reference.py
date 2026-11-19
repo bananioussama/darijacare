@@ -66,3 +66,63 @@ def test_evaluation_import_and_model_versions(engine: Engine) -> None:
         db.commit()
         statuses = dict(db.execute(select(ModeleNLU.version, ModeleNLU.status)).all())
         assert statuses == {"v5@8e694ecf": "archive", "v6@00000000": "en_service"}
+
+
+def test_ensure_admin_creates_the_initial_account_once(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    url = f"sqlite:///{(tmp_path / 'admin.db').as_posix()}"
+    monkeypatch.setenv("DATABASE_URL", url)
+    monkeypatch.setattr(cli, "configure_json_logging", lambda: None)
+    assert cli.main(["db-upgrade"]) == 0
+    monkeypatch.delenv("DARIJACARE_ADMIN_USERNAME", raising=False)
+    monkeypatch.delenv("DARIJACARE_ADMIN_PASSWORD", raising=False)
+    cli.ensure_admin()  # nothing configured: no account, no error
+    monkeypatch.setenv("DARIJACARE_ADMIN_USERNAME", "admin")
+    monkeypatch.setenv("DARIJACARE_ADMIN_PASSWORD", "un-mot-de-passe-assez-long")
+    cli.ensure_admin()
+    cli.ensure_admin()  # idempotent: the second start-up keeps the account
+    engine = create_engine(url)
+    try:
+        with Session(engine) as db:
+            users = db.scalars(select(Utilisateur)).all()
+            assert [(u.username, u.role) for u in users] == [("admin", "admin")]
+    finally:
+        engine.dispose()
+
+
+def test_start_runs_migrations_admin_index_then_server(monkeypatch: pytest.MonkeyPatch) -> None:
+    calls: list[object] = []
+    monkeypatch.setattr(cli, "configure_json_logging", lambda: None)
+    monkeypatch.setattr(cli, "db_upgrade", lambda: calls.append("migrations"))
+    monkeypatch.setattr(cli, "ensure_admin", lambda: calls.append("admin"))
+    monkeypatch.setattr(cli, "ensure_index", lambda: calls.append("index"))
+    monkeypatch.setattr(cli, "serve", lambda host, port: calls.append((host, port)))
+    assert cli.main(["start"]) == 0
+    assert calls == ["migrations", "admin", "index", ("0.0.0.0", 8000)]
+    calls.clear()
+    assert cli.main(["serve"]) == 0
+    assert calls == [("127.0.0.1", 8000)]  # local runs stay on the loopback
+
+
+def test_ensure_index_skips_a_current_index(monkeypatch: pytest.MonkeyPatch) -> None:
+    from darijacare.rag import cli as rag_cli
+    from darijacare.rag import index as rag_index
+
+    class Client:
+        closed = False
+
+        def close(self) -> None:
+            Client.closed = True
+
+    indexed: list[int] = []
+    monkeypatch.setattr(rag_index, "get_client", lambda cfg, root, url=None: Client())
+    monkeypatch.setattr(rag_index, "index_is_current", lambda client, name, chunks: True)
+    monkeypatch.setattr(rag_index, "index_chunks", lambda *a: indexed.append(1))
+    monkeypatch.setattr(rag_cli, "make_embedder", lambda *a: pytest.fail("aucun modèle à charger"))
+    cli.ensure_index()
+    assert indexed == [] and Client.closed
+    monkeypatch.setattr(rag_index, "index_is_current", lambda client, name, chunks: False)
+    monkeypatch.setattr(rag_cli, "make_embedder", lambda *a: "embedder")
+    cli.ensure_index()
+    assert indexed == [1]

@@ -1,0 +1,49 @@
+{
+  "appareil": "cpu",
+  "echauffement": 10,
+  "float": {
+    "exactitude": {
+      "category": 0.995,
+      "intent": 0.995,
+      "needs_human": 1,
+      "product": 0.995,
+      "urgency": 0.96
+    },
+    "max": 2850.1,
+    "moyenne": 1834.8,
+    "n": 200,
+    "p50": 1748.1,
+    "p95": 2514.2,
+    "p99": 2753.0
+  },
+  "int8": {
+    "accord_avec_float": {
+      "category": 0.95,
+      "ecart_max_confiance_intention": 0.6738,
+      "ecart_max_p_needs_human": 0.8842,
+      "identiques_sur_les_5_taches": 0.74,
+      "intent": 0.915,
+      "needs_human": 0.985,
+      "product": 0.945,
+      "urgency": 0.87
+    },
+    "exactitude": {
+      "category": 0.955,
+      "intent": 0.92,
+      "needs_human": 0.985,
+      "product": 0.95,
+      "urgency": 0.855
+    },
+    "max": 2206.8,
+    "moyenne": 1538.3,
+    "n": 200,
+    "p50": 1497.9,
+    "p95": 1991.1,
+    "p99": 2172.8
+  },
+  "materiel": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+  "messages": 200,
+  "modele": "v5",
+  "threads_torch": 6,
+  "torch": "2.7.1+cpu"
+}

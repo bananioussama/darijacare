@@ -55,3 +55,15 @@ reports/rag/**/details.csv
 frontend/test-results/
 frontend/playwright-report/
 frontend/.vite/
+
+# Certificats TLS locaux (tools/make_certs.py)
+deploy/certs/
+
+# Audit des dépendances (make audit)
+requirements-prod.txt
+
+# Sorties brutes de Locust (résumé : reports/quality/load.md)
+reports/quality/load/
+
+# Prédictions sur messages perturbés (régénérables : make quality-robustness)
+reports/quality/robustness/

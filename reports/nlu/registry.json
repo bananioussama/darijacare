@@ -1,0 +1,36 @@
+{
+  "champion": {
+    "alias": "champion",
+    "comparaison": {
+      "lignes": [],
+      "ok": true,
+      "regressions": []
+    },
+    "justification": null,
+    "modele": "v5",
+    "precedent": null,
+    "promu_le": "2026-11-18T22:24:55+00:00",
+    "registered_model": "darijacare-nlu",
+    "run_id": "caef31eb265f45c7bb89b8f413e77424",
+    "source": "hf://mballouch/jev-darija-telecom-model@8e694ecf05de3ef6cd9de14317d996d38079af83",
+    "version": 1
+  },
+  "historique": [
+    {
+      "alias": "champion",
+      "comparaison": {
+        "lignes": [],
+        "ok": true,
+        "regressions": []
+      },
+      "justification": null,
+      "modele": "v5",
+      "precedent": null,
+      "promu_le": "2026-11-18T22:24:55+00:00",
+      "registered_model": "darijacare-nlu",
+      "run_id": "caef31eb265f45c7bb89b8f413e77424",
+      "source": "hf://mballouch/jev-darija-telecom-model@8e694ecf05de3ef6cd9de14317d996d38079af83",
+      "version": 1
+    }
+  ]
+}

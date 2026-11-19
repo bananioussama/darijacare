@@ -1,0 +1,143 @@
+{
+  "nlu_model": "v5",
+  "perturbations": {
+    "brievete": {
+      "baisse_f1_points": 31.78,
+      "category_acc": 0.7028,
+      "cible_atteinte": false,
+      "intent_end_to_end": 0.5827,
+      "intent_f1_macro": 0.577,
+      "messages_modifies": 0.9919,
+      "needs_human_acc": 0.8925,
+      "par_ecriture": {
+        "arabic": {
+          "apres": 0.5253,
+          "avant": 0.8968,
+          "baisse_points": 37.15
+        },
+        "arabizi": {
+          "apres": 0.5727,
+          "avant": 0.8808,
+          "baisse_points": 30.81
+        },
+        "mixed": {
+          "apres": 0.6739,
+          "avant": 0.9035,
+          "baisse_points": 22.96
+        }
+      }
+    },
+    "caracteres_exotiques": {
+      "baisse_f1_points": 3.9,
+      "category_acc": 0.9079,
+      "cible_atteinte": true,
+      "intent_end_to_end": 0.8573,
+      "intent_f1_macro": 0.8558,
+      "messages_modifies": 1.0,
+      "needs_human_acc": 0.9268,
+      "par_ecriture": {
+        "arabic": {
+          "apres": 0.8646,
+          "avant": 0.8968,
+          "baisse_points": 3.22
+        },
+        "arabizi": {
+          "apres": 0.8229,
+          "avant": 0.8808,
+          "baisse_points": 5.79
+        },
+        "mixed": {
+          "apres": 0.8599,
+          "avant": 0.9035,
+          "baisse_points": 4.36
+        }
+      }
+    },
+    "fautes": {
+      "baisse_f1_points": 8.45,
+      "category_acc": 0.8636,
+      "cible_atteinte": false,
+      "intent_end_to_end": 0.8121,
+      "intent_f1_macro": 0.8103,
+      "messages_modifies": 0.9982,
+      "needs_human_acc": 0.9404,
+      "par_ecriture": {
+        "arabic": {
+          "apres": 0.8231,
+          "avant": 0.8968,
+          "baisse_points": 7.37
+        },
+        "arabizi": {
+          "apres": 0.7635,
+          "avant": 0.8808,
+          "baisse_points": 11.73
+        },
+        "mixed": {
+          "apres": 0.8152,
+          "avant": 0.9035,
+          "baisse_points": 8.83
+        }
+      }
+    },
+    "mixte": {
+      "baisse_f1_points": 6.05,
+      "category_acc": 0.8898,
+      "cible_atteinte": false,
+      "intent_end_to_end": 0.8365,
+      "intent_f1_macro": 0.8343,
+      "messages_modifies": 0.9684,
+      "needs_human_acc": 0.9368,
+      "par_ecriture": {
+        "arabic": {
+          "apres": 0.8644,
+          "avant": 0.8968,
+          "baisse_points": 3.24
+        },
+        "arabizi": {
+          "apres": 0.757,
+          "avant": 0.8808,
+          "baisse_points": 12.38
+        },
+        "mixed": {
+          "apres": 0.8423,
+          "avant": 0.9035,
+          "baisse_points": 6.12
+        }
+      }
+    },
+    "translitteration": {
+      "baisse_f1_points": 3.8,
+      "category_acc": 0.9033,
+      "cible_atteinte": true,
+      "intent_end_to_end": 0.8573,
+      "intent_f1_macro": 0.8568,
+      "messages_modifies": 0.9097,
+      "needs_human_acc": 0.9503,
+      "par_ecriture": {
+        "arabic": {
+          "apres": 0.8724,
+          "avant": 0.8968,
+          "baisse_points": 2.44
+        },
+        "arabizi": {
+          "apres": 0.8161,
+          "avant": 0.8808,
+          "baisse_points": 6.47
+        },
+        "mixed": {
+          "apres": 0.8579,
+          "avant": 0.9035,
+          "baisse_points": 4.56
+        }
+      }
+    }
+  },
+  "reference": {
+    "category_acc": 0.9268,
+    "intent_end_to_end": 0.8961,
+    "intent_f1_macro": 0.8948,
+    "needs_human_acc": 0.9467
+  },
+  "seed": 42,
+  "split": "test"
+}

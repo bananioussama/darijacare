@@ -4,6 +4,7 @@
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import { configDefaults } from "vitest/config";
 
 const API_TARGET = "http://127.0.0.1:8000";
 
@@ -27,5 +28,7 @@ export default defineConfig({
     setupFiles: ["./src/test/setup.ts"],
     css: false,
     restoreMocks: true,
+    // Les parcours E2E (e2e/, Playwright) tournent contre la pile Docker : make e2e.
+    exclude: [...configDefaults.exclude, "e2e/**"],
   },
 });

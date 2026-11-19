@@ -16,6 +16,7 @@ baseline:
 published_models:
   v5:
     path: models/jev-darija-telecom-model
+    repo: mballouch/jev-darija-telecom-model
     revision: 8e694ecf05de3ef6cd9de14317d996d38079af83
     weights_sha256: a2130760903dc24269884875ed1b0a7889df5b30df13370e9009d13d4784f3f8
     trained_on: "40 357 messages (train complet, 10 % retenus par l'auteur pour la sélection d'époque)"
@@ -29,6 +30,7 @@ published_models:
       by_script: {arabic: 89.7, arabizi: 88.7, mixed: 90.5}
   v3:
     path: models/jev-darija-telecom-model-v3
+    repo: mballouch/jev-darija-telecom-model
     revision: 704030997d
     weights_sha256: 8caeb28ea0a2c107c720c3a60cc7d929840ec6903c755df962a8b7533350088f
     trained_on: "18 350 messages = rondes 1, 2 et 3"

@@ -15,7 +15,8 @@ from collections.abc import AsyncIterator, Awaitable, Callable
 from contextlib import asynccontextmanager
 
 import yaml
-from fastapi import FastAPI, Request, Response
+from fastapi import FastAPI, Request, Response, status
+from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from sqlalchemy.engine import Engine
@@ -82,7 +83,13 @@ def build_state(
     with sessions() as db:
         config_row = sync_decision_config(db, decision_cfg, raw_decision)
         if model_info is not None:
-            ensure_model(db, model_info["version"], model_info["encoder"], model_info["metrics"])
+            ensure_model(
+                db,
+                model_info["version"],
+                model_info["encoder"],
+                model_info["metrics"],
+                model_info["mlflow_run"],
+            )
             sync_evaluations(db, paths, settings.nlu_model, model_info["version"])
         n_parts, n_chunks = sync_knowledge_base(db, fiches)
         db.commit()
@@ -174,6 +181,19 @@ def create_app(
             },
         )
         return response
+
+    @app.exception_handler(RequestValidationError)
+    async def invalid_request(request: Request, exc: RequestValidationError) -> JSONResponse:
+        """422 without echoing the input: it may be large, personal, or not encodable
+        (a lone surrogate is valid JSON but breaks the default UTF-8 rendering)."""
+        errors = [
+            {"loc": [str(part) for part in e.get("loc", ())], "type": e.get("type")}
+            for e in exc.errors()
+        ]
+        return JSONResponse(
+            {"detail": "Requête invalide.", "errors": errors},
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+        )
 
     @app.exception_handler(Exception)
     async def internal_error(request: Request, exc: Exception) -> JSONResponse:

@@ -1,0 +1,35 @@
+# Contexte de construction des images : ni secrets, ni données, ni modèles (montés en volume).
+.git
+.github
+.env
+.env.*
+!.env.example
+.venv
+.venv-*
+**/__pycache__
+**/*.pyc
+.mypy_cache
+.ruff_cache
+.pytest_cache
+htmlcov
+.coverage*
+data
+models
+mlruns
+mlflow.db
+deploy/certs
+notebooks
+frontend/node_modules
+frontend/dist
+frontend/test-results
+frontend/playwright-report
+reports/**/predictions.jsonl
+reports/**/intent_gold_category.jsonl
+reports/**/details.csv
+reports/**/query_cache.*
+reports/demo/phase5
+*.log
+
+# Caches des évaluations de qualité (Phase 6), régénérables
+reports/quality/robustness
+reports/quality/load

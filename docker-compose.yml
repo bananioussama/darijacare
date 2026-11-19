@@ -1,8 +1,87 @@
-# DarijaCare — services de base (Phase 1). Backend, frontend et nginx seront ajoutés aux phases 4 à 6.
-# Lancement : `make up` (ou `.\tasks.ps1 up`). Les variables viennent de .env (voir .env.example).
+# DarijaCare — pile complète (Phase 6). Lancement : `make up` (ou `.\tasks.ps1 up`).
+# Seul le frontal nginx publie un port : HTTPS sur 127.0.0.1:8443 (EDGE_BIND, EDGE_PORT).
+# Réseaux : edge (frontal, seul port publié), app (frontal <-> interface et API) et data
+# (API et worker <-> PostgreSQL, Qdrant, MLflow) ; app et data sont internes (pas d'Internet).
+# Variables et secrets : .env (voir .env.example). Les modèles sont montés en lecture seule.
+# Développement local (make dev-up) : docker-compose.dev.yml publie aussi PostgreSQL,
+# Qdrant et MLflow sur 127.0.0.1.
 name: darijacare
 
+x-backend: &backend
+  build:
+    context: .
+    dockerfile: deploy/backend/Dockerfile
+  image: darijacare-backend:local
+  env_file: .env
+  environment:
+    POSTGRES_HOST: postgres
+    POSTGRES_PORT: "5432"
+    QDRANT_URL: http://qdrant:6333
+    MLFLOW_TRACKING_URI: http://mlflow:5000
+    # Le backend n'est joignable que par le frontal : il peut lire X-Forwarded-For.
+    FORWARDED_ALLOW_IPS: "*"
+  volumes:
+    - ./models:/app/models:ro
+
 services:
+  edge:
+    image: nginxinc/nginx-unprivileged:1.31.2-alpine
+    restart: unless-stopped
+    ports:
+      - "${EDGE_BIND:-127.0.0.1}:${EDGE_PORT:-8443}:8443"
+    volumes:
+      - ./deploy/edge/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./deploy/edge/proxy_backend.conf:/etc/nginx/proxy_backend.conf:ro
+      - ./deploy/edge/limits:/etc/nginx/limits:ro
+      - ./deploy/certs:/etc/nginx/certs:ro
+    depends_on:
+      backend:
+        condition: service_healthy
+      frontend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8081/healthz || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    networks: [edge, app]
+
+  frontend:
+    build: ./frontend
+    image: darijacare-frontend:local
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8080/ || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    networks: [app]
+
+  backend:
+    <<: *backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+    networks: [app, data]
+
+  # Travaux ponctuels (évaluations, ré-indexation) : docker compose run --rm worker <module> ...
+  worker:
+    <<: *backend
+    profiles: [worker]
+    entrypoint: ["python", "-m"]
+    command: ["darijacare.rag.cli", "evaluate", "--split", "val"]
+    volumes:
+      - ./models:/app/models:ro
+      - ./data:/app/data
+      - ./reports:/app/reports
+    depends_on:
+      qdrant:
+        condition: service_healthy
+    networks: [data]
+
   postgres:
     image: postgres:16.4-alpine
     restart: unless-stopped
@@ -10,8 +89,6 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-darijacare}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?définir POSTGRES_PASSWORD dans .env}
       POSTGRES_DB: ${POSTGRES_DB:-darijacare}
-    ports:
-      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -25,8 +102,6 @@ services:
     # Même version mineure que qdrant-client (1.20.0, uv.lock) : le client refuse un écart > 1.
     image: qdrant/qdrant:v1.20.0
     restart: unless-stopped
-    ports:
-      - "127.0.0.1:${QDRANT_PORT:-6333}:6333"
     volumes:
       - qdrant:/qdrant/storage
     healthcheck:
@@ -38,7 +113,9 @@ services:
     networks: [data]
 
   mlflow:
-    image: ghcr.io/mlflow/mlflow:v2.17.2
+    # Même version que le client (uv.lock). 3.x filtre l'en-tête Host (attaques par
+    # rebinding DNS) : seuls le nom du service et l'accès local sont acceptés.
+    image: ghcr.io/mlflow/mlflow:v3.18.0
     restart: unless-stopped
     command: >
       mlflow server
@@ -46,8 +123,7 @@ services:
       --backend-store-uri sqlite:////mlflow/mlflow.db
       --artifacts-destination /mlflow/artifacts
       --serve-artifacts
-    ports:
-      - "127.0.0.1:${MLFLOW_PORT:-5000}:5000"
+      --allowed-hosts mlflow,mlflow:5000,localhost,localhost:5000,127.0.0.1,127.0.0.1:5000
     volumes:
       - mlflow:/mlflow
     healthcheck:
@@ -63,4 +139,8 @@ volumes:
   mlflow:
 
 networks:
+  edge: {}
+  app:
+    internal: true
   data:
+    internal: true

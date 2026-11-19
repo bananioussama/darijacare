@@ -1,0 +1,49 @@
+{
+  "appareil": "cuda",
+  "echauffement": 10,
+  "float": {
+    "exactitude": {
+      "category": 0.995,
+      "intent": 0.995,
+      "needs_human": 1,
+      "product": 0.995,
+      "urgency": 0.96
+    },
+    "max": 415.3,
+    "moyenne": 315.6,
+    "n": 200,
+    "p50": 320.7,
+    "p95": 356.0,
+    "p99": 370.1
+  },
+  "fp32": {
+    "accord_avec_float": {
+      "category": 1,
+      "ecart_max_confiance_intention": 0.0003,
+      "ecart_max_p_needs_human": 0.0001,
+      "identiques_sur_les_5_taches": 1,
+      "intent": 1,
+      "needs_human": 1,
+      "product": 1,
+      "urgency": 1
+    },
+    "exactitude": {
+      "category": 0.995,
+      "intent": 0.995,
+      "needs_human": 1,
+      "product": 0.995,
+      "urgency": 0.96
+    },
+    "max": 389.7,
+    "moyenne": 297.3,
+    "n": 200,
+    "p50": 304.9,
+    "p95": 342.5,
+    "p99": 359.4
+  },
+  "materiel": "Quadro P2000",
+  "messages": 200,
+  "modele": "v5",
+  "threads_torch": 6,
+  "torch": "2.7.1+cu126"
+}

@@ -1,0 +1,15 @@
+# Test de charge (capacité) : limites relâchées, car Locust envoie tous les utilisateurs
+# simulés depuis une seule adresse. Ne jamais utiliser en démonstration.
+#   docker compose -f docker-compose.yml -f deploy/load/docker-compose.load.yml up -d backend edge
+#   ... puis `docker compose up -d backend edge` pour revenir aux limites normales.
+services:
+  backend:
+    environment:
+      RATE_LIMIT_CHAT_PER_MINUTE: "100000"
+      RATE_LIMIT_LOGIN_PER_MINUTE: "100000"
+  edge:
+    volumes:
+      - ./deploy/edge/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./deploy/edge/proxy_backend.conf:/etc/nginx/proxy_backend.conf:ro
+      - ./deploy/load/limits:/etc/nginx/limits:ro
+      - ./deploy/certs:/etc/nginx/certs:ro

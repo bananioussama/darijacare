@@ -26,13 +26,14 @@ dependencies = [
 [project.optional-dependencies]
 pipeline = ["dvc>=3.50"]
 # Modèle publié : versions imposées par sa fiche (laya 0.3.28, transformers 4.57.6).
-# MLflow aligné sur l'image du serveur docker-compose.
+# MLflow aligné sur l'image du serveur docker-compose. 3.18.0 (Phase 6) : corrige les avis
+# critiques de la 2.17.2 relevés par pip-audit (docs/securite.md).
 nlu = [
     "transformers==4.57.6",
     "laya==0.3.28",
     "safetensors>=0.4",
-    "mlflow==2.17.2",
-    # MLflow 2.17 casse avec SQLAlchemy 2.1 (FallbackAsyncAdaptedQueuePool supprimé).
+    "mlflow==3.18.0",
+    # SQLAlchemy 2.0.x : version testée (MLflow 2.17 cassait avec la 2.1).
     "sqlalchemy>=2.0,<2.1",
 ]
 # RAG : BGE-M3 (dense + creux) via la bibliothèque officielle de BAAI.
@@ -56,6 +57,9 @@ cu126 = ["torch==2.7.1"]
 
 [tool.uv]
 conflicts = [[{ extra = "cpu" }, { extra = "cu126" }]]
+# Dépendances transitives ajoutées en Phase 6 (MLflow 3.18) : versions publiées depuis au
+# moins 14 jours, comme les dépendances directes.
+exclude-newer-package = { prettytable = "2026-11-04T00:00:00Z", python-multipart = "2026-11-04T00:00:00Z" }
 
 [tool.uv.sources]
 torch = [
@@ -83,6 +87,10 @@ dev = [
     "pandas-stubs",
     "types-PyYAML",
     "pre-commit>=3.8",
+    "testcontainers==4.15.0",
+]
+load = [
+    "locust==2.47.0",
 ]
 
 [project.scripts]
@@ -122,12 +130,19 @@ ignore_missing_imports = true
 mypy_path = "src"
 packages = ["darijacare"]
 
+# torch n'est pas installé dans le job de typage de la CI : les `type: ignore` propres à
+# torch y seraient « inutilisés » ; on ne les signale donc pas dans ces modules.
+[[tool.mypy.overrides]]
+module = ["darijacare.nlu.train", "darijacare.quality.latency"]
+warn_unused_ignores = false
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q --strict-markers"
 markers = [
     "data: tests sur les vraies données (nécessite data/raw, sinon ignorés)",
     "postgres: tests sur le PostgreSQL de docker-compose (ignorés s'il est absent)",
+    "integration: Testcontainers, API <-> PostgreSQL <-> Qdrant (ignorés sans Docker)",
 ]
 filterwarnings = [
     # Avertissement interne de starlette.testclient (dépendance httpx), sans effet sur nos tests.

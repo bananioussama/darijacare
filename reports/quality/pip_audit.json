@@ -1,0 +1,149 @@
+[
+ {
+  "paquet": "datasets",
+  "version": "4.0.0",
+  "avis": "PYSEC-2026-3716",
+  "alias": [
+   "GHSA-379c-qx7v-6h59",
+   "CVE-2026-66007"
+  ],
+  "gravite": "MODERATE",
+  "corrige_en": [
+   "5.0.1"
+  ],
+  "resume": "Datasets through 5.0.0, fixed in commit f989ef9, contains a path traversal vulnerability in folder-b"
+ },
+ {
+  "paquet": "fsspec",
+  "version": "2025.3.0",
+  "avis": "PYSEC-2026-4217",
+  "alias": [
+   "GHSA-27vj-qcqg-25rc",
+   "CVE-2026-104851"
+  ],
+  "gravite": "HIGH",
+  "corrige_en": [
+   "2026.6.0"
+  ],
+  "resume": "fsspec: Server-Side Template Injection in ReferenceFileSystem leads to Remote Code Execution"
+ },
+ {
+  "paquet": "transformers",
+  "version": "4.57.6",
+  "avis": "PYSEC-2025-217",
+  "alias": [
+   "CVE-2025-14929"
+  ],
+  "gravite": "?",
+  "corrige_en": [],
+  "resume": "Hugging Face Transformers X-CLIP Checkpoint Conversion Deserialization of Untrusted Data Remote Code"
+ },
+ {
+  "paquet": "transformers",
+  "version": "4.57.6",
+  "avis": "PYSEC-2026-2288",
+  "alias": [
+   "GHSA-69w3-r845-3855",
+   "CVE-2026-1839"
+  ],
+  "gravite": "MODERATE",
+  "corrige_en": [
+   "5.0.0rc3"
+  ],
+  "resume": "A vulnerability in the HuggingFace Transformers library, specifically in the `Trainer` class, allows"
+ },
+ {
+  "paquet": "transformers",
+  "version": "4.57.6",
+  "avis": "PYSEC-2026-2289",
+  "alias": [
+   "GHSA-29pf-2h5f-8g72",
+   "CVE-2026-4372"
+  ],
+  "gravite": "HIGH",
+  "corrige_en": [
+   "5.3.0"
+  ],
+  "resume": "A critical remote code execution vulnerability exists in all versions of the HuggingFace transformer"
+ },
+ {
+  "paquet": "transformers",
+  "version": "4.57.6",
+  "avis": "PYSEC-2026-2290",
+  "alias": [
+   "GHSA-fgcw-684q-jj6r",
+   "CVE-2026-5241"
+  ],
+  "gravite": "HIGH",
+  "corrige_en": [],
+  "resume": "A vulnerability in the LightGlue model loading path of huggingface/transformers version 5.2.0 allows"
+ },
+ {
+  "paquet": "transformers",
+  "version": "4.57.6",
+  "avis": "PYSEC-2026-2288",
+  "alias": [
+   "GHSA-69w3-r845-3855",
+   "CVE-2026-1839"
+  ],
+  "gravite": "MODERATE",
+  "corrige_en": [
+   "5.0.0"
+  ],
+  "resume": "A vulnerability in the HuggingFace Transformers library, specifically in the `Trainer` class, allows"
+ },
+ {
+  "paquet": "transformers",
+  "version": "4.57.6",
+  "avis": "PYSEC-2026-2289",
+  "alias": [
+   "GHSA-29pf-2h5f-8g72",
+   "CVE-2026-4372"
+  ],
+  "gravite": "HIGH",
+  "corrige_en": [
+   "5.3.0"
+  ],
+  "resume": "A critical remote code execution vulnerability exists in all versions of the HuggingFace transformer"
+ },
+ {
+  "paquet": "transformers",
+  "version": "4.57.6",
+  "avis": "PYSEC-2026-2290",
+  "alias": [
+   "GHSA-fgcw-684q-jj6r",
+   "CVE-2026-5241"
+  ],
+  "gravite": "HIGH",
+  "corrige_en": [
+   "5.5.0"
+  ],
+  "resume": "A vulnerability in the LightGlue model loading path of huggingface/transformers version 5.2.0 allows"
+ },
+ {
+  "paquet": "transformers",
+  "version": "4.57.6",
+  "avis": "PYSEC-2026-3929",
+  "alias": [
+   "GHSA-xrqw-3rrv-vx5w",
+   "CVE-2026-9856"
+  ],
+  "gravite": "HIGH",
+  "corrige_en": [
+   "5.10.0"
+  ],
+  "resume": "Transformers save_pretrained path traversal allows arbitrary file writes through chat template names"
+ },
+ {
+  "paquet": "transformers",
+  "version": "4.57.6",
+  "avis": "PYSEC-2026-4174",
+  "alias": [
+   "GHSA-x9r9-c232-4q39",
+   "CVE-2026-80047"
+  ],
+  "gravite": "HIGH",
+  "corrige_en": [],
+  "resume": "Hugging Face Transformers downloads custom generation code before trust consent"
+ }
+]

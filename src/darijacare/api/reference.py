@@ -3,7 +3,7 @@
 * :class:`ConfigDecision`: ``configs/decision.yaml``, identified by its content hash
   and marked active;
 * :class:`ModeleNLU`: the served model (version, encoder, published and reproduced
-  metrics), other versions are archived;
+  metrics, MLflow run when it is the registry champion), other versions are archived;
 * :class:`ExecutionEvaluation`: the official-test evaluation of that model
   (``reports/nlu/<model>/``);
 * :class:`FicheKB` and :class:`Chunk`: a mirror of ``kb/`` and of the Qdrant points
@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 import uuid
 from collections.abc import Mapping
 from typing import Any
@@ -25,6 +26,8 @@ from darijacare.api.models import Chunk, ConfigDecision, ExecutionEvaluation, Fi
 from darijacare.config import Paths
 from darijacare.rag.index import chunk_fiches
 from darijacare.rag.kb import HEADINGS, LANGS, SECTION_KEYS, Fiche
+
+log = logging.getLogger("darijacare.api")
 
 
 def config_id(raw_yaml: str) -> str:
@@ -52,9 +55,16 @@ def sync_decision_config(db: Session, cfg: Mapping[str, Any], raw_yaml: str) -> 
 
 
 def ensure_model(
-    db: Session, version: str, encoder: str = "inconnu", metrics: Mapping[str, Any] | None = None
+    db: Session,
+    version: str,
+    encoder: str = "inconnu",
+    metrics: Mapping[str, Any] | None = None,
+    mlflow_run: str | None = None,
 ) -> ModeleNLU:
-    """Return the model row, created if needed and marked in service; others are archived."""
+    """Return the model row, created if needed and marked in service; others are archived.
+
+    ``mlflow_run`` links the served model to its evaluation run (MLflow registry, F-OPS-01).
+    """
     row = db.get(ModeleNLU, version)
     if row is None:
         row = ModeleNLU(version=version, encoder=encoder, metrics=dict(metrics or {}))
@@ -62,6 +72,8 @@ def ensure_model(
         db.flush()
     elif metrics:
         row.metrics = dict(metrics)
+    if mlflow_run:
+        row.mlflow_run = mlflow_run
     row.status = "en_service"
     db.execute(
         update(ModeleNLU)
@@ -85,7 +97,30 @@ def served_model_info(paths: Paths, train_cfg: Mapping[str, Any], name: str) -> 
     report = paths.reports / "nlu" / name / "test" / "metrics.json"
     if report.exists():
         metrics["reproduced_test"] = json.loads(report.read_text(encoding="utf-8"))["overall"]
-    return {"version": f"{name}@{spec['revision'][:8]}", "encoder": encoder, "metrics": metrics}
+    return {
+        "version": f"{name}@{spec['revision'][:8]}",
+        "encoder": encoder,
+        "metrics": metrics,
+        "mlflow_run": champion_run(paths, name),
+    }
+
+
+def champion_run(paths: Paths, name: str) -> str | None:
+    """MLflow run of ``name`` if it is the registry champion (``reports/nlu/registry.json``)."""
+    registry = paths.reports / "nlu" / "registry.json"
+    if not registry.exists():
+        log.warning("registre de modèles absent (python -m darijacare.nlu.registry promote)")
+        return None
+    current = json.loads(registry.read_text(encoding="utf-8")).get("champion", {})
+    if current.get("modele") != name:
+        log.warning(
+            "le modèle servi (%s) n'est pas le champion du registre (%s)",
+            name,
+            current.get("modele"),
+        )
+        return None
+    run: str | None = current.get("run_id")
+    return run
 
 
 def sync_evaluations(db: Session, paths: Paths, name: str, version: str) -> int:

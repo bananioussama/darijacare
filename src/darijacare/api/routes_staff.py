@@ -376,6 +376,7 @@ def models(
             "version": m.version,
             "encoder": m.encoder,
             "status": m.status,
+            "mlflow_run": m.mlflow_run,
             "metrics": m.metrics,
             "evaluations": [
                 {"dataset": e.dataset, "f1_macro": e.f1_macro, "ece": e.ece, "source": e.source}

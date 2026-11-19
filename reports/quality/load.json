@@ -1,0 +1,125 @@
+{
+  "abus": {
+    "/chat": {
+      "echecs": 1000,
+      "max_ms": 19465.4,
+      "p50_ms": 6.0,
+      "p95_ms": 18.0,
+      "p99_ms": 4000.0,
+      "par_seconde": 17.09,
+      "requetes": 1015
+    },
+    "/sessions": {
+      "echecs": 5,
+      "max_ms": 114.2,
+      "p50_ms": 92.0,
+      "p95_ms": 110.0,
+      "p99_ms": 110.0,
+      "par_seconde": 0.34,
+      "requetes": 20
+    },
+    "Aggregated": {
+      "echecs": 1005,
+      "max_ms": 19465.4,
+      "p50_ms": 6.0,
+      "p95_ms": 21.0,
+      "p99_ms": 4000.0,
+      "par_seconde": 17.42,
+      "requetes": 1035
+    },
+    "erreurs": {
+      "/chat : CatchResponseError('statut 429')": 1000,
+      "/sessions : CatchResponseError('statut 429')": 5
+    }
+  },
+  "base": {
+    "/chat": {
+      "echecs": 0,
+      "max_ms": 6089.7,
+      "p50_ms": 1800.0,
+      "p95_ms": 6100.0,
+      "p99_ms": 6100.0,
+      "par_seconde": 0.09,
+      "requetes": 10
+    },
+    "/sessions": {
+      "echecs": 0,
+      "max_ms": 56.5,
+      "p50_ms": 56.0,
+      "p95_ms": 56.0,
+      "p99_ms": 56.0,
+      "par_seconde": 0.01,
+      "requetes": 1
+    },
+    "Aggregated": {
+      "echecs": 0,
+      "max_ms": 6089.7,
+      "p50_ms": 1800.0,
+      "p95_ms": 6100.0,
+      "p99_ms": 6100.0,
+      "par_seconde": 0.1,
+      "requetes": 11
+    },
+    "erreurs": {}
+  },
+  "realiste": {
+    "/chat": {
+      "echecs": 0,
+      "max_ms": 32662.0,
+      "p50_ms": 16000.0,
+      "p95_ms": 30000.0,
+      "p99_ms": 33000.0,
+      "par_seconde": 0.42,
+      "requetes": 99
+    },
+    "/sessions": {
+      "echecs": 0,
+      "max_ms": 2096.3,
+      "p50_ms": 52.0,
+      "p95_ms": 2100.0,
+      "p99_ms": 2100.0,
+      "par_seconde": 0.08,
+      "requetes": 20
+    },
+    "Aggregated": {
+      "echecs": 0,
+      "max_ms": 32662.0,
+      "p50_ms": 14000.0,
+      "p95_ms": 30000.0,
+      "p99_ms": 31000.0,
+      "par_seconde": 0.5,
+      "requetes": 119
+    },
+    "erreurs": {}
+  },
+  "soutenu": {
+    "/chat": {
+      "echecs": 0,
+      "max_ms": 47999.0,
+      "p50_ms": 35000.0,
+      "p95_ms": 42000.0,
+      "p99_ms": 48000.0,
+      "par_seconde": 0.4,
+      "requetes": 71
+    },
+    "/sessions": {
+      "echecs": 0,
+      "max_ms": 5953.2,
+      "p50_ms": 2400.0,
+      "p95_ms": 6000.0,
+      "p99_ms": 6000.0,
+      "par_seconde": 0.11,
+      "requetes": 20
+    },
+    "Aggregated": {
+      "echecs": 0,
+      "max_ms": 47999.0,
+      "p50_ms": 33000.0,
+      "p95_ms": 41000.0,
+      "p99_ms": 48000.0,
+      "par_seconde": 0.51,
+      "requetes": 91
+    },
+    "erreurs": {}
+  }
+}

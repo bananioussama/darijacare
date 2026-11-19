@@ -124,17 +124,25 @@ vérifie qu'Alembic ne détecte aucune différence entre la migration et les mod
 
 **Exposition**
 - Limitation de débit par adresse : 30 messages par minute ; 5 tentatives de connexion par minute.
+  Derrière le frontal nginx (Phase 6), l'adresse vient de `X-Forwarded-For`, accepté seulement
+  depuis le frontal ; nginx ajoute ses propres limites (`deploy/edge/limits/`).
 - CORS strict : seules les origines configurées sont acceptées (l'interface Vite en développement).
 - En-tête `X-Content-Type-Options: nosniff`.
-- Les services Docker n'écoutent que sur 127.0.0.1.
+- Entrées assainies avant tout stockage (Phase 6) : caractères de contrôle et invisibles
+  retirés, filtre d'injection sur le texte replié (voir [securite.md](securite.md)).
+- Erreur 422 sans écho de l'entrée reçue :
+  `{"detail": "Requête invalide.", "errors": [{"loc": [...], "type": "..."}]}`.
+- Depuis la Phase 6, seul le frontal nginx publie un port (`127.0.0.1:8443`) ; l'API n'est
+  joignable que par lui (voir [deploiement.md](deploiement.md)).
 
 ## 6. Choix et limites
 
 | Point | Choix |
 |---|---|
 | Matrice des permissions | Les lignes « lancer pipeline et entraînement », « publier un modèle » et « consulter les journaux » passent par DVC, MLflow et `docker logs`, pas par l'API. Les seuils de décision se changent dans `configs/decision.yaml`, fichier versionné et tracé sur chaque message par son empreinte, puis au redémarrage. |
-| ONNX Runtime (F-API-01) | laya fournit `ONNXAgent` mais aucune fonction d'export : l'API sert le modèle en PyTorch. La quantification int8 et ONNX seront étudiées en Phase 6, en vérifiant que les sorties restent identiques. |
-| Un seul processus | Les modèles sont en mémoire, un appel au modèle à la fois. La limitation de débit est en mémoire ; derrière plusieurs processus, elle passerait dans nginx (Phase 6). |
+| ONNX Runtime (F-API-01) | laya fournit `ONNXAgent` mais aucune fonction d'export : l'API sert le modèle en PyTorch. La quantification int8 a été essayée en Phase 6 et **n'est pas retenue** : les sorties changent (voir [qualite.md](qualite.md) §4). |
+| Un seul processus | Les modèles sont en mémoire, un appel au modèle à la fois. La limitation de débit de l'API est en mémoire ; nginx en applique une seconde, commune à tous les processus. |
+| Modèle servi | `GET /models` donne aussi `mlflow_run` : le run d'évaluation du modèle quand il est le champion du registre MLflow (`reports/nlu/registry.json`, voir [qualite.md](qualite.md) §7). |
 | Qdrant | L'API utilise le serveur, avec réutilisation des connexions (voir [rag.md](rag.md) §2) : le mode local n'accepte qu'un processus. |
 | Comptes | Le premier compte admin se crée en ligne de commande. Le mot de passe est demandé ou lu dans `DARIJACARE_NEW_PASSWORD`, jamais passé en argument. Ensuite, `POST /admin/users`. |
 

@@ -35,8 +35,44 @@ jobs:
         with:
           version: ${{ env.UV_VERSION }}
       - run: uv sync --locked --extra pipeline --extra api
-      # Les tests PostgreSQL sont ignorés en CI (pas de serveur) ; ils tournent en local.
-      - run: uv run pytest --cov=darijacare --cov-report=term-missing
+      # Les tests PostgreSQL de docker-compose sont ignorés en CI (pas de serveur) ; les tests
+      # d'intégration Testcontainers (tests/integration) lancent leurs propres conteneurs
+      # PostgreSQL 16.4 et Qdrant 1.20.0 avec le Docker du runner.
+      - run: uv run pytest --cov=darijacare --cov-report=term-missing --cov-fail-under=70
+
+  images:
+    name: Construction des images Docker
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      # Construites seulement (aucune publication) ; les modèles sont montés à l'exécution.
+      # Compose lit .env et exige POSTGRES_PASSWORD même pour construire : valeurs factices.
+      - run: cp .env.example .env
+      - run: docker compose build backend frontend
+        env:
+          POSTGRES_PASSWORD: construction-seulement
+      - run: docker image ls --format '{{.Repository}}:{{.Tag}} {{.Size}}' | grep darijacare
+
+  audit:
+    name: Audit des dépendances Python (pip-audit)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: ${{ env.UV_VERSION }}
+      - run: >
+          uv export --locked --format requirements-txt --no-hashes --no-emit-project
+          --extra nlu --extra rag --extra api --extra cpu --no-dev > requirements-prod.txt
+      # Risques résiduels acceptés et justifiés dans docs/securite.md (transformers figé par
+      # la fiche du modèle ; fsspec et datasets transitifs, fonctions non utilisées). Tout
+      # nouvel avis fait échouer la CI.
+      - run: >
+          uvx --from pip-audit==2.10.1 pip-audit --no-deps --disable-pip -r requirements-prod.txt
+          --ignore-vuln PYSEC-2026-3716 --ignore-vuln PYSEC-2026-4217
+          --ignore-vuln PYSEC-2025-217 --ignore-vuln PYSEC-2026-2288
+          --ignore-vuln PYSEC-2026-2289 --ignore-vuln PYSEC-2026-2290
+          --ignore-vuln PYSEC-2026-3929 --ignore-vuln PYSEC-2026-4174
 
   frontend:
     name: Interface (types, formatage, tests, construction)
@@ -58,6 +94,8 @@ jobs:
       - run: npm run build
       # Dépendances livrées au navigateur uniquement (voir docs/frontend.md).
       - run: npm audit --omit=dev --audit-level=high
+      # Les parcours E2E Playwright (e2e/) demandent la pile complète avec les modèles :
+      # ils tournent en local (make e2e), pas en CI.
 
   data-pipeline:
     name: Rejeu du pipeline DVC (données du Hub, révision figée)

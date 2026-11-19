@@ -2,21 +2,46 @@
 # Arbitrage retenu : PRUDENCE (escalader plutôt que risquer une mauvaise réponse automatique).
 # Les seuils sont provisoires : ils seront re-choisis sur la validation propre du modèle
 # ré-entraîné (voir docs/nlu.md §4). Toute modification est versionnée (table ConfigDecision en Phase 4).
-version: 1
+version: 2               # v2 (Phase 6) : filtre d'entrée étendu
 
 input:
   min_chars: 4            # cahier des charges « 4–500 » ; le message le plus court du jeu fait 4 caractères (أهلا)
   max_chars: 500
-  # Détection simple d'injection de prompt (insensible à la casse). Liste volontairement courte et
-  # explicable ; complétée en Phase 6 par 50 attaques de test.
+  # Motifs d'injection de prompt (insensibles à la casse), cherchés sur le texte replié :
+  # NFKC, minuscules, espaces simples, caractères invisibles retirés. Liste courte et
+  # explicable : première ligne de défense seulement (aucun générateur dans le MVP).
+  # Complétée en Phase 6 APRÈS l'écriture du jeu de 50 attaques (tests/security/attacks.yaml) :
+  # le taux de détection mesuré sur ce jeu est donc optimiste. Contrôle des faux positifs
+  # sur train + validation (docs/securite.md).
   injection_patterns:
-    - "ignore (all |the |your |any )*(previous |above |prior )?(instructions|prompts?|rules)"
-    - "ignorer? (toutes |tes |les |vos )*(instructions|consignes|règles)"
-    - "(oublie|oubliez|oublier) (toutes |tes |les |vos )*(instructions|consignes|règles)"
-    - "(system|système) ?prompt"
-    - "you are now|tu es maintenant|act as|agis comme|joue le rôle"
-    - "<\\s*/?\\s*(script|system|im_start|im_end)"
-    - "\\bjailbreak\\b|\\bDAN\\b mode"
+    # remplacer ou désactiver les consignes
+    - 'ignore (all |the |your |any |every )*(previous |above |prior |earlier )?(instructions|prompts?|rules|directives)'
+    - 'disregard (all |the |your |any )*(previous|above|prior|earlier|instructions|prompts?|rules)'
+    - '\b(new|updated) (system )?(instructions?|rules)\b|system override|developer mode|mode d[ée]veloppeur'
+    - '\b(disable|remove|turn off|bypass) (all )?your (filters|rules|restrictions|safety)'
+    - 'ignorer? (toutes |tous |tes |les |vos )*(instructions|consignes|r[èe]gles)'
+    - '(oublie|oubliez|oublier) (toutes |tes |les |vos )*(instructions|consignes|r[èe]gles)'
+    - '(d[ée]sactive|enl[èe]ve|supprime|contourne) (tous |toutes )?(tes|vos) (filtres|protections|r[èe]gles|consignes|restrictions)'
+    - '\b(nsa|ensa|nssa|tnsa) (ga3 |kolchi |kolshi |les |l )*(l-?|l )?(9awanin|qawanin|9awa3id|instructions|consignes|r[èe]gles|rules)'
+    - '(نسى|انسى|تنسى|تجاهل|خلي عليك|خليك من)[^.!?؟]{0,30}(التعليمات|القواعد|القوانين|الأوامر|الاوامر|الإرشادات)'
+    # extraire les consignes, la configuration ou des secrets
+    - '(system|syst[èe]me) ?prompt|prompt (syst[èe]me|system)'
+    - '\b(reveal|print|show|display|repeat|output) (me )?(your |the )?(full |entire |whole )?(system |initial |hidden |original )?(prompt|instructions)\b'
+    - 'repeat (the )?(text|words|everything) above'
+    - '(affiche|montre|r[ée]v[èe]le|r[ée]p[èe]te)(-moi| moi)? (ton|tes|votre|vos) (prompt|consignes|instructions|r[èe]gles)'
+    - '(وريني|عطيني|بين ليا|اعرض|كتب ليا)[^.!?؟]{0,15}(التعليمات|القواعد|الأوامر|الاوامر|البرومبت) (ديالك|الداخلية)'
+    - 'jwt[ _]?secret|postgres_password|\bapi[ _]?key\b|variables? d.environnement|environment variables|\.env\b'
+    - 'mot de passe (de la |du |de l.)?(base de donn[ée]es|bdd|serveur)|database password|cl[ée] (jwt|secr[èe]te|priv[ée]e)'
+    # changer de rôle
+    - 'you are now|tu es maintenant|\bact as\b|agis comme|joue le r[ôo]le|pretend (you are|to be)|from now on,? you'
+    - '\bjailbreak|\bdan mode\b|do anything now'
+    - '\b(nta|nti|anta|enta) daba (howa |hiya )?(l-?|l.)?(admin|mdir|moudir|d[ée]veloppeur|developer|hacker)'
+    - '(نتا|انت|أنت|إنت)( دابا)? (ماشي روبو|مدير النظام|الأدمين|الادمين)|صلاحيات (الأدمين|الادمين|المدير)'
+    # balises de modèles de conversation
+    - '<\s*\|?\s*/?\s*(script|system|im_start|im_end|endoftext)'
+    - '\[/?inst\]|<<\s*/?\s*sys\s*>>|#{2,}\s*(instruction|system|response)\b|```\s*(system|prompt)'
+    # script dans la page (historique, console conseiller)
+    - 'javascript\s*:|\bon[a-z]+\s*=\s*\S|<\s*(iframe|object|embed|svg|img)\b'
 
 thresholds:
   # needs_human : la v5 donne des probabilités très polarisées (rappel 0,745 au test, quasi

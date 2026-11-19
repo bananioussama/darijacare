@@ -202,3 +202,24 @@ def index_chunks(
         "deleted": len(stale),
         "total": int(client.count(collection).count),
     }
+
+
+def index_is_current(client: Any, collection: str, chunks: Sequence[Chunk]) -> bool:
+    """``True`` when the collection holds exactly these chunks (same ids and payloads).
+
+    Reads the payloads only (no vectors), so a container can check its index at start-up
+    in a second instead of re-encoding the whole knowledge base (~4 min on CPU).
+    """
+    if not client.collection_exists(collection):
+        return False
+    expected = {c.point_id: c.payload() for c in chunks}
+    seen: dict[str, Any] = {}
+    offset = None
+    while True:
+        records, offset = client.scroll(
+            collection, limit=256, offset=offset, with_payload=True, with_vectors=False
+        )
+        seen.update({str(r.id): r.payload for r in records})
+        if offset is None:
+            break
+    return seen == expected

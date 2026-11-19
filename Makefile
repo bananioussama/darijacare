@@ -4,10 +4,10 @@
 export PYTHONUTF8 := 1
 UV ?= uv
 
-.PHONY: help install install-gpu lint format typecheck test test-data cov repro data-status eda up down logs clean precommit kb-validate rag-index rag-eval db-upgrade api api-smoke front-install front-dev front-test front-build
+.PHONY: certs dev-up help install install-gpu lint format typecheck test test-data cov repro data-status eda up down logs clean precommit kb-validate rag-index rag-eval db-upgrade api api-smoke front-install front-dev front-test front-build integration e2e load-capacity load-abuse quality-decision quality-injections quality-robustness quality-latency audit registry-promote gold-validate
 
 help:
-	@echo "Cibles : install install-gpu lint format typecheck test test-data cov repro data-status up down logs clean precommit kb-validate rag-index rag-eval db-upgrade api api-smoke front-install front-dev front-test front-build"
+	@echo "Cibles : install install-gpu lint format typecheck test test-data cov repro data-status up down logs clean precommit kb-validate rag-index rag-eval db-upgrade api api-smoke front-install front-dev front-test front-build integration e2e load-capacity load-abuse quality-decision quality-injections quality-robustness quality-latency audit registry-promote gold-validate"
 
 install:  ## Environnement figé (uv.lock), torch CPU + hooks pre-commit
 	$(UV) sync --locked --extra pipeline --extra nlu --extra rag --extra api --extra cpu
@@ -42,8 +42,14 @@ data-status:
 eda:
 	$(UV) run dvc repro eda
 
-up:  ## Services de base (PostgreSQL, Qdrant, MLflow)
-	docker compose up -d
+certs:  ## Certificat TLS auto-signé du frontal (deploy/certs, ignoré par git)
+	$(UV) run python tools/make_certs.py
+
+up: certs  ## Pile complète : https://127.0.0.1:8443 (nginx, interface, API, données)
+	docker compose up -d --build
+
+dev-up:  ## Données seules (PostgreSQL, Qdrant, MLflow) publiées sur 127.0.0.1
+	docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d postgres qdrant mlflow
 
 down:
 	docker compose down
@@ -86,6 +92,45 @@ front-test:  ## Types, formatage et tests de l'interface
 
 front-build:  ## Version de production de l'interface -> frontend/dist
 	npm --prefix frontend run build
+
+# --- Phase 6 : qualité, sécurité, livraison -------------------------------------------
+
+integration:  ## Tests Testcontainers : API <-> PostgreSQL <-> Qdrant (Docker requis)
+	$(UV) run pytest -m integration
+
+e2e:  ## Parcours Playwright sur la pile lancée (make up) ; comptes lus dans .env
+	cd frontend && node --env-file=../.env node_modules/@playwright/test/cli.js test
+
+load-capacity:  ## Locust, 20 clients, limites relâchées -> reports/quality/load/
+	docker compose -f docker-compose.yml -f deploy/load/docker-compose.load.yml up -d backend edge
+	$(UV) run --group load locust -f tests/load/locustfile.py --headless -u 20 -r 2 -t 3m 		--host https://127.0.0.1:8443/api --csv reports/quality/load/capacite
+	docker compose up -d backend edge
+
+load-abuse:  ## Locust, 20 clients rapides, limites normales : des 429 sont attendus
+	DARIJACARE_LOAD_WAIT=0.5,1.5 $(UV) run --group load locust -f tests/load/locustfile.py 		--headless -u 20 -r 5 -t 1m --host https://127.0.0.1:8443/api --csv reports/quality/load/abus
+
+quality-decision:  ## Politique de décision rejouée sur le test (erreurs critiques)
+	$(UV) run python -m darijacare.quality.cli decision --split test
+
+quality-injections:  ## 50 attaques + entrées atypiques sur la pile lancée (make up)
+	$(UV) run python -m darijacare.quality.cli injections
+
+quality-robustness:  ## Test de perturbation du NLU (GPU conseillé : DEVICE=cuda)
+	$(UV) run python -m darijacare.quality.cli robustness --split test --device $(or $(DEVICE),cpu)
+
+quality-latency:  ## Latence du NLU sur CPU, avec l'essai int8
+	$(UV) run python -m darijacare.quality.cli latency --device cpu --quantize
+
+audit:  ## pip-audit (dépendances de production) et npm audit
+	$(UV) export --locked --format requirements-txt --no-hashes --no-emit-project 		--extra nlu --extra rag --extra api --extra cpu --no-dev > requirements-prod.txt
+	uvx --from pip-audit==2.10.1 pip-audit --no-deps --disable-pip -r requirements-prod.txt
+	npm --prefix frontend audit
+
+registry-promote:  ## Promotion explicite du modèle MODEL (contrôle de non-régression)
+	$(UV) run python -m darijacare.nlu.registry promote --model $(or $(MODEL),v5)
+
+gold-validate:  ## Contrôles du jeu gold (data/gold, rédigé par l'équipe) et kappa
+	$(UV) run python -m darijacare.data.gold validate
 
 precommit:
 	$(UV) run pre-commit run --all-files

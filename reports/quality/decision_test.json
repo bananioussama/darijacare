@@ -1,0 +1,218 @@
+{
+  "actions": {
+    "clarification": 14,
+    "escalade": 132,
+    "gabarit_direct": 44,
+    "hors_perimetre": 12,
+    "reponse_ancree": 890,
+    "securite_escalade": 15
+  },
+  "clarification": {
+    "taux": 0.0126
+  },
+  "erreurs_critiques": {
+    "a_escalader": 150,
+    "intentions": {
+      "change_provider": 2,
+      "complaint_followup": 2,
+      "data_not_working": 2,
+      "device_repair_warranty": 2,
+      "excess_charges": 2,
+      "file_complaint": 4,
+      "invoice_dispute": 4,
+      "mm_transaction_issue": 2,
+      "payment_not_reflected": 3,
+      "refund_compensation": 2
+    },
+    "non_escalades": 40,
+    "par_ecriture": {
+      "arabic": 24,
+      "arabizi": 8,
+      "mixed": 8
+    },
+    "taux": 0.2667
+  },
+  "escalade": {
+    "precision": 0.7483,
+    "taux": 0.1328
+  },
+  "hors_perimetre": {
+    "messages": 15,
+    "repli_approprie": 0.6667
+  },
+  "n": 1107,
+  "nlu_model": "v5",
+  "reponses_automatiques": {
+    "exactitude": 0.9015,
+    "taux": 0.8437
+  },
+  "split": "test",
+  "strates_intention": {
+    "generator": {
+      "claude-opus-5.5": {
+        "exactitude": 0.8961,
+        "n": 1107
+      }
+    },
+    "profession": {
+      "café owner": {
+        "exactitude": 0.9026,
+        "n": 195
+      },
+      "construction foreman": {
+        "exactitude": 1.0,
+        "n": 1
+      },
+      "construction site foreman": {
+        "exactitude": 1.0,
+        "n": 1
+      },
+      "construction worker": {
+        "exactitude": 0.891,
+        "n": 156
+      },
+      "delivery driver": {
+        "exactitude": 0.8913,
+        "n": 184
+      },
+      "elderly man helped by grandson": {
+        "exactitude": 1.0,
+        "n": 5
+      },
+      "elderly man helped by his daughter": {
+        "exactitude": 1.0,
+        "n": 8
+      },
+      "elderly man helped by his granddaughter": {
+        "exactitude": 1.0,
+        "n": 14
+      },
+      "elderly man helped by his grandson": {
+        "exactitude": 0.8889,
+        "n": 27
+      },
+      "elderly man helped by his nephew": {
+        "exactitude": 1.0,
+        "n": 1
+      },
+      "elderly man helped by his son": {
+        "exactitude": 0.8571,
+        "n": 14
+      },
+      "elderly man helped by son": {
+        "exactitude": 0.5,
+        "n": 2
+      },
+      "elderly man's son": {
+        "exactitude": 1.0,
+        "n": 1
+      },
+      "elderly woman helped by daughter": {
+        "exactitude": 1.0,
+        "n": 4
+      },
+      "elderly woman helped by granddaughter": {
+        "exactitude": 1.0,
+        "n": 1
+      },
+      "elderly woman helped by grandson": {
+        "exactitude": 1.0,
+        "n": 1
+      },
+      "elderly woman helped by her daughter": {
+        "exactitude": 0.9231,
+        "n": 13
+      },
+      "elderly woman helped by her granddaughter": {
+        "exactitude": 1.0,
+        "n": 16
+      },
+      "elderly woman helped by her grandson": {
+        "exactitude": 0.8077,
+        "n": 26
+      },
+      "elderly woman helped by her nephew": {
+        "exactitude": 0.6667,
+        "n": 3
+      },
+      "elderly woman helped by her niece": {
+        "exactitude": 0.5,
+        "n": 2
+      },
+      "elderly woman helped by her son": {
+        "exactitude": 1.0,
+        "n": 13
+      },
+      "elderly woman helped by niece": {
+        "exactitude": 1.0,
+        "n": 1
+      },
+      "elderly woman helped by son": {
+        "exactitude": 1.0,
+        "n": 3
+      },
+      "former café owner": {
+        "exactitude": 1.0,
+        "n": 1
+      },
+      "high-school teacher": {
+        "exactitude": 0.867,
+        "n": 188
+      },
+      "young graduate": {
+        "exactitude": 0.9111,
+        "n": 225
+      },
+      "young graduate paying his grandmother's line": {
+        "exactitude": 1.0,
+        "n": 1
+      }
+    },
+    "round": {
+      "1": {
+        "exactitude": 0.8961,
+        "n": 1107
+      }
+    },
+    "script": {
+      "arabic": {
+        "exactitude": 0.897,
+        "n": 592
+      },
+      "arabizi": {
+        "exactitude": 0.8874,
+        "n": 293
+      },
+      "mixed": {
+        "exactitude": 0.9054,
+        "n": 222
+      }
+    },
+    "ville": {
+      "El Jadida": {
+        "exactitude": 0.9341,
+        "n": 167
+      },
+      "Errachidia": {
+        "exactitude": 0.8868,
+        "n": 159
+      },
+      "Laâyoune": {
+        "exactitude": 0.8606,
+        "n": 165
+      },
+      "Oujda": {
+        "exactitude": 0.9213,
+        "n": 216
+      },
+      "Safi": {
+        "exactitude": 0.8792,
+        "n": 207
+      },
+      "Tétouan": {
+        "exactitude": 0.8912,
+        "n": 193
+      }
+    }
+  }
+}

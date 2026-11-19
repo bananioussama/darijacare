@@ -1,0 +1,19 @@
+# Développement local (make dev-up) : publie PostgreSQL, Qdrant et MLflow sur 127.0.0.1,
+# pour l'API lancée hors conteneur (make api) et les tests d'intégration. Le réseau data
+# étant interne, ces services rejoignent aussi le réseau dev, qui permet de publier un port.
+services:
+  postgres:
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    networks: [data, dev]
+  qdrant:
+    ports:
+      - "127.0.0.1:${QDRANT_PORT:-6333}:6333"
+    networks: [data, dev]
+  mlflow:
+    ports:
+      - "127.0.0.1:${MLFLOW_PORT:-5000}:5000"
+    networks: [data, dev]
+
+networks:
+  dev: {}

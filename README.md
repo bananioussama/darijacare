@@ -14,13 +14,16 @@ sur des données synthétiques.
 >   **Phase 3** (décision — [docs/decision.md](docs/decision.md) ; base de connaissances et RAG —
 >   [docs/rag.md](docs/rag.md)), **Phase 4** (API et base de données — [docs/api.md](docs/api.md))
 >   et **Phase 5** (interface — [docs/frontend.md](docs/frontend.md)) ;
-> - en attente : le ré-entraînement complet sur GPU T4, et la relecture par l'équipe des 75 fiches
->   (fictives, en français, darija et arabizi) ;
-> - phase suivante : qualité, sécurité et livraison.
+> - **Phase 6** (qualité, sécurité, livraison — [docs/qualite.md](docs/qualite.md),
+>   [docs/securite.md](docs/securite.md), [docs/deploiement.md](docs/deploiement.md)) : faite,
+>   en attente de validation ;
+> - en attente côté équipe : le ré-entraînement complet sur GPU T4, la relecture des 75 fiches
+>   (fictives, en français, darija et arabizi) et la rédaction du jeu gold
+>   ([docs/gold.md](docs/gold.md)).
 
 ## Démarrage rapide
 
-Prérequis : [uv](https://docs.astral.sh/uv/) ≥ 0.10, Git, Docker (PostgreSQL et serveur Qdrant, nécessaires à partir de la Phase 4).
+Prérequis : [uv](https://docs.astral.sh/uv/) ≥ 0.10, Git, Docker (pile complète à partir de la Phase 6), Node 22 pour l'interface.
 
 ```bash
 cd darijacare
@@ -73,25 +76,37 @@ darijacare/
     data/                  ingest, validate, normalize, split, eda, scripts, proximity, taxonomy, cli
   tests/unit/              tests unitaires (données fictives)
   tests/data/              tests sur les vraies données (ignorés si `dvc repro` n'a pas tourné)
+  tests/api/               tests de l'API (SQLite en mémoire, NLU factice), dont la sécurité
+  tests/integration/       Testcontainers : API <-> PostgreSQL <-> Qdrant
+  tests/security/          jeu de 50 attaques (figé)
+  tests/load/              scénario Locust
+  frontend/e2e/            parcours Playwright sur la pile complète
+  deploy/                  image du backend, frontal nginx (TLS, limites), surcharge de charge
   reports/                 rapports générés (versionnés dans git)
   data/                    données (DVC, jamais dans git)
   tools/check_lock.py      comparaison des empreintes (CI)
   dvc.yaml, dvc.lock       pipeline et empreintes figées
-  docker-compose.yml       PostgreSQL, Qdrant, MLflow
+  docker-compose.yml       pile complète : nginx, interface, API, worker, PostgreSQL, Qdrant, MLflow
   Makefile, tasks.ps1      commandes usuelles
 ```
 
 ## Qualité
 
 - `ruff` + `black` + `mypy --strict` ; hooks `pre-commit` (`make install`).
-- GitHub Actions : lint et typage, tests unitaires avec couverture, et **rejeu
-  complet du pipeline DVC** depuis le Hub avec comparaison des empreintes des données.
+- GitHub Actions : lint et typage ; tests (unitaires, API, intégration Testcontainers)
+  avec une couverture minimale de 70 % ; interface (types, formatage, tests, construction,
+  npm audit) ; construction des images Docker ; pip-audit ; **rejeu complet du pipeline
+  DVC** depuis le Hub avec comparaison des empreintes des données.
 
 ## Services (Docker Compose)
 
 ```bash
-make up    # ou .\tasks.ps1 up — PostgreSQL :5432, Qdrant :6333, MLflow :5000 (localhost uniquement)
+make up        # ou .\tasks.ps1 up — https://127.0.0.1:8443 (seul port publié)
+make dev-up    # développement : PostgreSQL, Qdrant et MLflow seuls, sur 127.0.0.1
 ```
+
+Réseaux, sondes de santé, variables `.env` et dépannage :
+[docs/deploiement.md](docs/deploiement.md).
 
 ## Décision et RAG (Phase 3)
 
@@ -155,6 +170,41 @@ make front-test           # types, formatage, tests
 
 Captures avec les vrais modèles : [reports/demo/phase5/](reports/demo/phase5/). Détails :
 [docs/frontend.md](docs/frontend.md).
+
+## Qualité, sécurité et livraison (Phase 6)
+
+```bash
+make up                  # pile complète sur https://127.0.0.1:8443
+make e2e                 # parcours Playwright sur la pile (chat, analyse, console, tableau de bord)
+make integration         # Testcontainers : API <-> PostgreSQL <-> Qdrant
+make quality-injections  # 50 attaques et entrées atypiques sur la pile
+make quality-decision    # politique de décision rejouée sur le test officiel
+make quality-robustness DEVICE=cuda   # test de perturbation du NLU
+make quality-latency     # latence du NLU sur CPU, essai int8
+make load-capacity       # Locust, 20 clients (limites relâchées le temps du test)
+make audit               # pip-audit et npm audit
+make registry-promote MODEL=v5        # promotion explicite, contrôle de non-régression
+```
+
+Principaux résultats (mesurés sur données synthétiques, portable i7-8850H et Quadro P2000) :
+
+| Mesure | Résultat | Cible |
+|---|---|---|
+| Tests (unitaires, API, intégration, données) | 285 réussis, couverture 80 % | ≥ 70 % |
+| Parcours E2E Playwright sur la pile | 4/4 | chat, analyse, console, tableau de bord |
+| 50 attaques adverses | 50/50 défendues ; filtre 33/36 (10/36 avant) | jeu d'attaques réussi |
+| Entrées atypiques | 21/21 sans 5xx (un défaut 500 trouvé et corrigé) | aucune 5xx |
+| Dépendances | 0 avis critique (MLflow 2.17 → 3.18) ; npm 0 | aucune vulnérabilité critique |
+| Erreurs critiques de la décision (test) | 40/150 (26,7 %) | à minimiser |
+| Robustesse (baisse de F1 macro) | 3,8 à 8,5 points ; 31,8 en brièveté | ≤ 5 points |
+| Latence NLU p95 | CPU 2,5 s ; GPU 0,36 s | 300 ms ; 50 ms |
+| Première réponse, un client | 1,8 s (médiane) | ≤ 2 s |
+| 20 clients simultanés | 0,4 message/s, attente médiane 16 s | sans dégradation notable |
+
+Les cibles non atteintes sont expliquées, sans réglage sur le test officiel, dans
+[docs/qualite.md](docs/qualite.md) (tests, décision, robustesse, latence, charge,
+registre). Voir aussi [docs/securite.md](docs/securite.md) (attaques, en-têtes, réseaux,
+dépendances) et [docs/deploiement.md](docs/deploiement.md) (pile Docker).
 
 ## Licences et crédits
 

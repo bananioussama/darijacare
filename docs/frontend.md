@@ -140,5 +140,12 @@ non autorisées sont simplement masquées ou redirigées vers la connexion.
     - la couche clavier de Recharts est coupée dans les graphiques masqués aux technologies
       d'assistance, dont le tableau « Voir les données » est l'équivalent.
   - Un audit automatique ne remplace pas les vérifications manuelles (lecteur d'écran, ordre de
-    tabulation) : elles sont prévues en Phase 6.
-- **Tests de bout en bout** (Playwright : chat, console, tableau de bord) : prévus en Phase 6.
+    tabulation) : elles restent à faire par l'équipe, avec les tests utilisateurs (SUS).
+- **Tests de bout en bout** (Phase 6) : `make e2e` (`e2e/parcours.spec.ts`, Playwright) sur la
+  pile Docker lancée, via `https://127.0.0.1:8443`, avec les vrais modèles. Quatre parcours :
+  chat (exemple cliquable, réponse en flux, sources, panneau d'analyse masquable, « Utile »,
+  fiche), trois écritures avec un message `<img onerror>` refusé et affiché comme du texte
+  (aucune boîte de dialogue ne s'ouvre), transfert à un conseiller ; console (le conseiller
+  prend puis clôture ce dossier) ; tableau de bord (indicateurs et graphiques). Le compte
+  conseiller `e2e.conseiller` est créé au premier lancement par le compte administrateur
+  (`e2e/global-setup.ts`, mots de passe lus dans `.env`). Résultat : 4/4.
