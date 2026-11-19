@@ -44,7 +44,8 @@ Le conteneur de l'API est prévu en Phase 6, avec nginx et l'interface.
 | `POST /feedback` | jeton de session | « Utile » / « Corriger », sur ses propres messages (F-UI-04) |
 | `GET /intents` | libre | les 75 intentions, leur catégorie et les titres des fiches (liste « Corriger », Phase 5) |
 | `GET /fiches/{id}?lang=fr\|ar\|arabizi` | libre | une fiche (fictive) dans une langue : ce que cite une source (F-UI-03) |
-| `POST /auth/login` | libre, limité | connexion du personnel : jeton de 15 minutes |
+| `POST /auth/login` | libre, limité | connexion du personnel : jeton de 15 minutes ; compte en attente : 403 |
+| `POST /auth/register` | libre, limité | inscription du personnel (rôle demandé : conseiller ou ml) : compte **en attente**, sans connexion possible avant validation (202) |
 | `GET /auth/me` | personnel | compte connecté |
 | `GET /escalades` | conseiller, admin (lecture) | file triée par priorité puis par arrivée (F-UI-06) |
 | `GET /escalades/{id}` | conseiller, admin (lecture) | dossier : message, analyse NLU, fiche proposée, historique |
@@ -53,7 +54,9 @@ Le conteneur de l'API est prévu en Phase 6, avec nginx et l'interface.
 | `GET /analytics/escalades` | conseiller, ml, admin | file par statut et par niveau (vue limitée des conseillers) |
 | `GET /feedback/export` | ml, admin | corrections d'intention, pour enrichir le jeu gold |
 | `GET /kb/fiches`, `GET /models`, `GET /config/decision` | ml, admin | fiches, versions du modèle et évaluations, configuration active |
-| `GET /admin/users`, `POST /admin/users` | admin | comptes du personnel |
+| `GET /admin/users`, `POST /admin/users` | admin | comptes du personnel (demandes en attente en tête) |
+| `PATCH /admin/users/{id}` | admin | valider une inscription en attente et fixer son rôle (`{"action": "valider", "role": …}`) |
+| `DELETE /admin/users/{id}` | admin | refuser une inscription en attente : la demande est supprimée (204) |
 
 Les contrats (schémas Pydantic) sont publiés par FastAPI sur `/openapi.json` et `/docs`.
 
@@ -83,7 +86,7 @@ progressif. Avec la génération par LLM (option non activée), les morceaux sui
 
 | Classe du cahier | Table | Remarques |
 |---|---|---|
-| Utilisateur | `utilisateur` | personnel seulement (conseiller, ml, admin) ; hachage Argon2id ; les clients restent anonymes |
+| Utilisateur | `utilisateur` | personnel seulement (conseiller, ml, admin) ; hachage Argon2id ; `pending` = inscription en attente de validation (migration `0002`) ; les clients restent anonymes |
 | Conversation | `conversation` | `session_id` aléatoire ; statut ouverte / escaladee / close ; état « clarification en attente » (règle 5) |
 | Message | `message` | texte **masqué**, écriture, intention, catégorie, produit, urgence, needs_human, confiance, `model_version`, `decision_config_id`, règle et action, analyse complète, réponse, sources, fiche proposée, latences |
 | Feedback | `feedback` | 0..1 par message ; note `utile` / `a_corriger`, intention corrigée, commentaire masqué, auteur client ou conseiller |
@@ -122,6 +125,12 @@ vérifie qu'Alembic ne détecte aucune différence entre la migration et les mod
 - Ils sont vérifiés côté serveur à chaque requête, selon le Tableau 14.
 - Le compte est relu en base : un compte désactivé ou un rôle modifié prend effet tout de suite.
 
+**Inscription du personnel**
+- `POST /auth/register` crée un compte **en attente** (`pending`) avec le rôle demandé (conseiller ou ml ; personne ne peut demander le rôle admin).
+- Tant qu'il n'est pas validé, le compte ne peut pas se connecter : avec le bon mot de passe, la connexion répond 403 « Compte en attente de validation par un administrateur. » ; avec un mauvais mot de passe, la réponse habituelle (401), ce qui n'apprend rien sur les comptes en attente.
+- L'administrateur valide (`PATCH /admin/users/{id}`, il choisit le rôle final) ou refuse (`DELETE /admin/users/{id}` : la demande est supprimée, rien n'est conservé).
+- Garde-fous : 3 inscriptions par minute et par adresse (API) en plus des limites de connexion de nginx ; au-delà de 20 demandes en attente (`max_pending_registrations`), les nouvelles sont refusées (429) ; journaux sans identifiant ni mot de passe.
+
 **Exposition**
 - Limitation de débit par adresse : 30 messages par minute ; 5 tentatives de connexion par minute.
   Derrière le frontal nginx (Phase 6), l'adresse vient de `X-Forwarded-For`, accepté seulement
@@ -144,7 +153,7 @@ vérifie qu'Alembic ne détecte aucune différence entre la migration et les mod
 | Un seul processus | Les modèles sont en mémoire, un appel au modèle à la fois. La limitation de débit de l'API est en mémoire ; nginx en applique une seconde, commune à tous les processus. |
 | Modèle servi | `GET /models` donne aussi `mlflow_run` : le run d'évaluation du modèle quand il est le champion du registre MLflow (`reports/nlu/registry.json`, voir [qualite.md](qualite.md) §7). |
 | Qdrant | L'API utilise le serveur, avec réutilisation des connexions (voir [rag.md](rag.md) §2) : le mode local n'accepte qu'un processus. |
-| Comptes | Le premier compte admin se crée en ligne de commande. Le mot de passe est demandé ou lu dans `DARIJACARE_NEW_PASSWORD`, jamais passé en argument. Ensuite, `POST /admin/users`. |
+| Comptes | Le premier compte admin se crée en ligne de commande. Le mot de passe est demandé ou lu dans `DARIJACARE_NEW_PASSWORD`, jamais passé en argument. Ensuite, `POST /admin/users`, ou l'inscription du personnel (`POST /auth/register`) validée par un administrateur. |
 
 ## 7. Tests et mesures
 

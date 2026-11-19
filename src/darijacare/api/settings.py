@@ -50,6 +50,9 @@ class Settings(BaseSettings):
     cors_origins: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
     rate_limit_chat_per_minute: int = 30
     rate_limit_login_per_minute: int = 5
+    rate_limit_register_per_minute: int = 3
+    max_pending_registrations: int = 20
+    """Beyond this many requests awaiting an administrator, new registrations are refused."""
 
     def sqlalchemy_url(self) -> str:
         """SQLAlchemy URL of the database (``psycopg`` driver for PostgreSQL)."""

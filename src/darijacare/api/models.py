@@ -34,6 +34,7 @@ from sqlalchemy import (
     Text,
     UniqueConstraint,
     Uuid,
+    false,
 )
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -64,7 +65,11 @@ def _one_of(column: str, values: Sequence[str]) -> str:
 
 
 class Utilisateur(Base):
-    """Staff account. Passwords are stored as Argon2id hashes only."""
+    """Staff account. Passwords are stored as Argon2id hashes only.
+
+    Self-registered accounts start ``pending``: they cannot log in until an administrator
+    validates them and sets their role (a refused request is deleted).
+    """
 
     __tablename__ = "utilisateur"
     __table_args__ = (CheckConstraint(_one_of("role", ROLES), name="ck_utilisateur_role"),)
@@ -74,6 +79,8 @@ class Utilisateur(Base):
     password_hash: Mapped[str] = mapped_column(String(255))
     role: Mapped[str] = mapped_column(String(16))
     active: Mapped[bool] = mapped_column(Boolean, default=True)
+    pending: Mapped[bool] = mapped_column(Boolean, default=False, server_default=false())
+    """Self-registration waiting for an administrator: login refused until validated."""
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 

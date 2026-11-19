@@ -130,6 +130,7 @@ def make_settings(**overrides: Any) -> Settings:
         "load_models": False,
         "rate_limit_chat_per_minute": 10_000,
         "rate_limit_login_per_minute": 10_000,
+        "rate_limit_register_per_minute": 10_000,
         "cors_origins": ["http://localhost:5173"],
     }
     values.update(overrides)

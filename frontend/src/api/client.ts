@@ -44,7 +44,7 @@ function unreachable(error: unknown): unknown {
 }
 
 export interface RequestOptions {
-  method?: "GET" | "POST" | "PATCH";
+  method?: "GET" | "POST" | "PATCH" | "DELETE";
   body?: unknown;
   token?: string | null;
   signal?: AbortSignal;
@@ -67,6 +67,7 @@ export async function api<T>(path: string, options: RequestOptions = {}): Promis
     throw unreachable(error);
   }
   if (!res.ok) throw await errorFrom(res);
+  if (res.status === 204) return undefined as T; // pas de corps (refus d'une inscription)
   return (await res.json()) as T;
 }
 

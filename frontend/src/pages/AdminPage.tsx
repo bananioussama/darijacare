@@ -1,5 +1,6 @@
 // Gestion de la base de connaissances et des modèles (Tableau 29) : fiches, modèles et
-// évaluations, configuration de décision (lecture), comptes du personnel (administrateur).
+// évaluations, configuration de décision (lecture), comptes du personnel (administrateur),
+// dont la validation des inscriptions en attente.
 import { useEffect, useState } from "react";
 
 import { ApiError } from "../api/client";
@@ -10,6 +11,72 @@ import { formatDate } from "../lib/labels";
 import { useTitle } from "../lib/useTitle";
 
 const decimal = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 3 });
+
+const ROLE_LABELS: Record<Role, string> = {
+  conseiller: "Conseiller",
+  ml: "ML / data",
+  admin: "Administrateur",
+};
+
+function PendingRequest({
+  user,
+  onValidate,
+  onRefuse,
+}: {
+  user: UserOut;
+  onValidate: (user: UserOut, role: Role) => Promise<void>;
+  onRefuse: (user: UserOut) => Promise<void>;
+}) {
+  const [role, setRole] = useState<Role>(user.role);
+  const [busy, setBusy] = useState(false);
+  const act = (action: () => Promise<void>) => {
+    setBusy(true);
+    void action().finally(() => setBusy(false));
+  };
+  return (
+    <li className="flex flex-wrap items-end gap-3 border-t border-lavande py-3">
+      <div className="min-w-40 flex-1">
+        <p className="font-semibold">{user.username}</p>
+        <p className="text-sm text-texte-2">
+          Rôle demandé : {ROLE_LABELS[user.role]} · {formatDate(user.created_at)}
+        </p>
+      </div>
+      <div>
+        <label htmlFor={`role-${user.id}`} className="block text-sm font-semibold">
+          Rôle accordé
+        </label>
+        <select
+          id={`role-${user.id}`}
+          className="champ mt-1"
+          value={role}
+          onChange={(e) => setRole(e.target.value as Role)}
+        >
+          <option value="conseiller">Conseiller</option>
+          <option value="ml">ML / data</option>
+          <option value="admin">Administrateur</option>
+        </select>
+      </div>
+      <button
+        type="button"
+        className="bouton-principal"
+        disabled={busy}
+        aria-label={`Valider l'inscription de ${user.username}`}
+        onClick={() => act(() => onValidate(user, role))}
+      >
+        Valider
+      </button>
+      <button
+        type="button"
+        className="bouton-secondaire"
+        disabled={busy}
+        aria-label={`Refuser l'inscription de ${user.username}`}
+        onClick={() => act(() => onRefuse(user))}
+      >
+        Refuser
+      </button>
+    </li>
+  );
+}
 
 function UsersSection() {
   const call = useStaffApi();
@@ -36,11 +103,59 @@ function UsersSection() {
     }
   }
 
+  async function validate(user: UserOut, role: Role): Promise<void> {
+    setMessage(null);
+    try {
+      const updated = await call<UserOut>(`/admin/users/${user.id}`, {
+        method: "PATCH",
+        body: { action: "valider", role },
+      });
+      setUsers((list) => (list ?? []).map((u) => (u.id === updated.id ? updated : u)));
+      setMessage({
+        ok: true,
+        text: `Compte ${updated.username} validé (${ROLE_LABELS[updated.role]}) : il peut se connecter.`,
+      });
+    } catch (e) {
+      setMessage({ ok: false, text: e instanceof ApiError ? e.message : "Validation impossible." });
+    }
+  }
+
+  async function refuse(user: UserOut): Promise<void> {
+    setMessage(null);
+    try {
+      await call<void>(`/admin/users/${user.id}`, { method: "DELETE" });
+      setUsers((list) => (list ?? []).filter((u) => u.id !== user.id));
+      setMessage({ ok: true, text: `Demande de ${user.username} refusée et supprimée.` });
+    } catch (e) {
+      setMessage({ ok: false, text: e instanceof ApiError ? e.message : "Refus impossible." });
+    }
+  }
+
+  const pending = (users ?? []).filter((u) => u.pending);
+  const accounts = (users ?? []).filter((u) => !u.pending);
+
   return (
     <section className="carte p-4" aria-labelledby="titre-comptes">
       <h2 id="titre-comptes" className="text-lg font-bold text-profond">
         Comptes du personnel
       </h2>
+      <section className="mt-2 rounded-bouton bg-gris p-3" aria-labelledby="titre-demandes">
+        <h3 id="titre-demandes" className="font-bold text-profond">
+          Demandes d'inscription en attente ({pending.length})
+        </h3>
+        {pending.length === 0 ? (
+          <p className="mt-1 text-sm text-texte-2">
+            Aucune demande. Le bouton « S'inscrire » de la page de connexion en crée une ; le compte
+            ne peut pas se connecter avant d'être validé ici.
+          </p>
+        ) : (
+          <ul className="mt-1">
+            {pending.map((u) => (
+              <PendingRequest key={u.id} user={u} onValidate={validate} onRefuse={refuse} />
+            ))}
+          </ul>
+        )}
+      </section>
       <table className="mt-2 w-full text-sm">
         <thead>
           <tr className="text-texte-2">
@@ -51,7 +166,7 @@ function UsersSection() {
           </tr>
         </thead>
         <tbody>
-          {users?.map((u) => (
+          {accounts.map((u) => (
             <tr key={u.id} className="border-t border-lavande">
               <td className="py-1">{u.username}</td>
               <td className="py-1">{u.role}</td>

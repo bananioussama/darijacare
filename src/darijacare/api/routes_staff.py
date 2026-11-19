@@ -8,11 +8,16 @@ Function                        Customer    Advisor      ML       Admin
 Handle an escalation            --          yes          --       read
 Dashboard                       --          queue only   yes      yes
 Export corrections, KB, models  --          --           yes      yes
-Users and roles                 --          --           --       yes
+Users, validate registrations   --          --           --       yes
 ==============================  ==========  ===========  =======  ======
 
 Thresholds and the decision policy are changed in ``configs/decision.yaml`` (versioned,
 identified by its hash on every message), not through the API.
+
+Staff members may register themselves (``POST /auth/register``): the account stays
+``pending`` and cannot log in until an administrator validates it and sets its role
+(``PATCH /admin/users/{id}``) or refuses it (``DELETE /admin/users/{id}``, the request is
+deleted). Customers stay anonymous.
 """
 
 from __future__ import annotations
@@ -23,8 +28,9 @@ from datetime import timedelta
 from typing import Any
 
 import numpy as np
-from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, Response, status
 from sqlalchemy import func, select
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from darijacare.api.deps import AppState, get_db, get_state, rate_limit, require_staff
@@ -46,9 +52,12 @@ from darijacare.api.schemas import (
     EscalationUpdate,
     LoginIn,
     MessageOut,
+    RegisterIn,
+    RegisterOut,
     TokenOut,
     UserIn,
     UserOut,
+    UserValidation,
 )
 from darijacare.api.security import (
     DUMMY_HASH,
@@ -69,6 +78,10 @@ ML_ADMIN = require_staff("ml", "admin")
 ADMIN = require_staff("admin")
 ANY_STAFF = require_staff("conseiller", "ml", "admin")
 login_limit = Depends(rate_limit("login", "rate_limit_login_per_minute"))
+register_limit = Depends(rate_limit("register", "rate_limit_register_per_minute"))
+REGISTERED = (
+    "Demande enregistrée : un administrateur doit valider le compte avant la première connexion."
+)
 
 
 # --- authentication ------------------------------------------------------------------
@@ -89,10 +102,56 @@ def login(
             "Identifiants invalides.",
             headers={"WWW-Authenticate": "Bearer"},
         )
+    if user.pending:
+        # Told only to someone who knows the password: no enumeration of pending accounts.
+        log.warning(
+            "connexion refusée : compte en attente", extra={"action": "connexion_en_attente"}
+        )
+        raise HTTPException(
+            status.HTTP_403_FORBIDDEN, "Compte en attente de validation par un administrateur."
+        )
     ttl = timedelta(minutes=state.settings.jwt_ttl_minutes)
     token = create_token(state.jwt_key, subject=str(user.id), role=user.role, kind=STAFF, ttl=ttl)
     log.info("connexion", extra={"action": "connexion"})
     return TokenOut(access_token=token, expires_in=int(ttl.total_seconds()), role=user.role)
+
+
+@router.post(
+    "/auth/register",
+    response_model=RegisterOut,
+    status_code=status.HTTP_202_ACCEPTED,
+    dependencies=[register_limit],
+    tags=["auth"],
+)
+def register(
+    body: RegisterIn, db: Session = Depends(get_db), state: AppState = Depends(get_state)
+) -> RegisterOut:
+    """Staff self-registration: a pending account that an administrator must validate."""
+    waiting = db.scalar(
+        select(func.count()).select_from(Utilisateur).where(Utilisateur.pending.is_(True))
+    )
+    if (waiting or 0) >= state.settings.max_pending_registrations:
+        raise HTTPException(
+            status.HTTP_429_TOO_MANY_REQUESTS,
+            "Trop de demandes d'inscription en attente : réessayez plus tard.",
+        )
+    if db.scalar(select(Utilisateur).where(Utilisateur.username == body.username)):
+        raise HTTPException(status.HTTP_409_CONFLICT, "Identifiant déjà utilisé.")
+    db.add(
+        Utilisateur(
+            username=body.username,
+            password_hash=hash_password(body.password),
+            role=body.requested_role,
+            pending=True,
+        )
+    )
+    try:
+        db.commit()
+    except IntegrityError:  # same username registered at the same moment
+        db.rollback()
+        raise HTTPException(status.HTTP_409_CONFLICT, "Identifiant déjà utilisé.") from None
+    log.info("inscription demandée", extra={"action": "inscription_demandee"})
+    return RegisterOut(detail=REGISTERED)
 
 
 @router.get("/auth/me", response_model=UserOut, tags=["auth"])
@@ -426,8 +485,51 @@ def create_user(
 def list_users(
     _admin: Utilisateur = Depends(ADMIN), db: Session = Depends(get_db)
 ) -> list[UserOut]:
-    """Staff accounts."""
+    """Staff accounts, pending registrations first."""
     return [
         UserOut.model_validate(u)
-        for u in db.scalars(select(Utilisateur).order_by(Utilisateur.username))
+        for u in db.scalars(
+            select(Utilisateur).order_by(Utilisateur.pending.desc(), Utilisateur.username)
+        )
     ]
+
+
+def pending_account(db: Session, user_id: uuid.UUID) -> Utilisateur:
+    """The pending account ``user_id`` (404 if unknown, 409 if already validated)."""
+    user = db.get(Utilisateur, user_id)
+    if user is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Compte introuvable.")
+    if not user.pending:
+        raise HTTPException(
+            status.HTTP_409_CONFLICT, "Ce compte n'est pas en attente de validation."
+        )
+    return user
+
+
+@router.patch("/admin/users/{user_id}", response_model=UserOut, tags=["administration"])
+def validate_user(
+    user_id: uuid.UUID,
+    body: UserValidation,
+    _admin: Utilisateur = Depends(ADMIN),
+    db: Session = Depends(get_db),
+) -> UserOut:
+    """Validate a self-registration and set its role: the account can then log in."""
+    user = pending_account(db, user_id)
+    user.pending = False
+    user.role = body.role
+    db.commit()
+    log.info("inscription validée", extra={"action": "inscription_validee"})
+    return UserOut.model_validate(user)
+
+
+@router.delete(
+    "/admin/users/{user_id}", status_code=status.HTTP_204_NO_CONTENT, tags=["administration"]
+)
+def refuse_user(
+    user_id: uuid.UUID, _admin: Utilisateur = Depends(ADMIN), db: Session = Depends(get_db)
+) -> Response:
+    """Refuse a self-registration: the request is deleted, nothing about it is kept."""
+    db.delete(pending_account(db, user_id))
+    db.commit()
+    log.info("inscription refusée", extra={"action": "inscription_refusee"})
+    return Response(status_code=status.HTTP_204_NO_CONTENT)

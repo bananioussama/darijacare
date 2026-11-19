@@ -10,6 +10,7 @@ import CreditsPage from "./pages/CreditsPage";
 import HistoryPage from "./pages/HistoryPage";
 import LoginPage from "./pages/LoginPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const AdminPage = lazy(() => import("./pages/AdminPage"));
 const ConsolePage = lazy(() => import("./pages/ConsolePage"));
@@ -23,6 +24,7 @@ export default function App() {
           <Route index element={<ChatPage />} />
           <Route path="historique" element={<HistoryPage />} />
           <Route path="connexion" element={<LoginPage />} />
+          <Route path="inscription" element={<RegisterPage />} />
           <Route
             path="console"
             element={

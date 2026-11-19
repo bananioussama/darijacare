@@ -137,6 +137,8 @@ FastAPI, PostgreSQL (SQLAlchemy et migrations Alembic) et le serveur Qdrant :
 - les conseillers disposent d'une console d'escalades, triée par priorité ;
 - les comptes du personnel (conseiller, ml, admin) se connectent avec un mot de passe haché en
   Argon2id et un jeton de 15 minutes ;
+- un membre du personnel peut s'inscrire (bouton « S'inscrire ») : le compte reste en attente
+  jusqu'à ce qu'un administrateur le valide et choisisse son rôle ;
 - les textes sont masqués avant tout stockage.
 
 ```bash

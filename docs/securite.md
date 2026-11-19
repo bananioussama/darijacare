@@ -13,6 +13,7 @@ données synthétiques. Rapports bruts : `reports/quality/injections.{json,md}` 
 | Réponse | **sortie contrainte** : gabarits et fiches, aucun générateur dans le MVP (rien à « détourner ») |
 | Réseaux Docker | `edge` (frontal) ; `app` et `data` **internes** (sans accès Internet) ; PostgreSQL, Qdrant et MLflow ne publient aucun port |
 | Secrets | `.env` seulement (ignoré par git), mots de passe Argon2id, JWT HS256 de 15 min, rien dans les journaux |
+| Inscription du personnel | compte « en attente » sans connexion possible jusqu'à la validation par un administrateur (qui fixe le rôle) ; refus = suppression de la demande ; 3 inscriptions/min par adresse (API) et limites de connexion de nginx ; 20 demandes en attente au plus |
 | Chaîne d'approvisionnement | versions figées (`uv.lock`, `package-lock.json`), empreintes SHA-256 des poids, mode hors ligne du Hub, audit pip/npm en CI |
 
 ## 2. Menaces du Tableau 33 et résultats

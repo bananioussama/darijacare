@@ -69,14 +69,23 @@ export default function Layout() {
             </button>
           </>
         ) : (
-          <NavLink
-            to="/connexion"
-            state={{ from: location.pathname }}
-            onClick={() => setMenuOpen(false)}
-            className="flex min-h-11 items-center rounded-bouton px-3 font-semibold text-lavande hover:bg-profond focus-visible:outline-lumineux"
-          >
-            Connexion du personnel
-          </NavLink>
+          <>
+            <NavLink
+              to="/connexion"
+              state={{ from: location.pathname }}
+              onClick={() => setMenuOpen(false)}
+              className="flex min-h-11 items-center rounded-bouton px-3 font-semibold text-lavande hover:bg-profond focus-visible:outline-lumineux"
+            >
+              Connexion du personnel
+            </NavLink>
+            <NavLink
+              to="/inscription"
+              onClick={() => setMenuOpen(false)}
+              className="flex min-h-11 items-center justify-center rounded-bouton px-3 font-semibold text-white ring-1 ring-lumineux hover:bg-profond focus-visible:outline-lumineux"
+            >
+              S'inscrire
+            </NavLink>
+          </>
         )}
         <p className="text-xs leading-relaxed">
           Projet académique : données synthétiques, fiches fictives, aucun système réel.

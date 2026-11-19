@@ -108,7 +108,7 @@ def require_staff(*roles: str) -> Callable[..., Utilisateur]:
             user = db.get(Utilisateur, uuid.UUID(principal.subject))
         except ValueError:
             user = None
-        if user is None or not user.active or user.role != principal.role:
+        if user is None or not user.active or user.pending or user.role != principal.role:
             raise HTTPException(
                 status.HTTP_401_UNAUTHORIZED,
                 "Compte inactif ou modifié : reconnectez-vous.",

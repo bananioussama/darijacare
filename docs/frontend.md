@@ -32,8 +32,9 @@ origine. En production (Phase 6), nginx servira `frontend/dist` et relaiera `/ap
 | Historique de session | `/historique` | tous | sessions de ce navigateur, fil de chacune, reprise, réinitialisation (F-UI-05) |
 | Console conseiller | `/console` | conseiller, admin (lecture seule) | file triée par priorité, dossier complet, prise en charge, clôture avec correction (F-UI-06) |
 | Tableau de bord | `/tableau-de-bord` | ml, admin ; conseiller : file seulement | 4 indicateurs (messages, F1 macro du test, taux d'escalade, latence p95), répartitions, décisions, retours, file (F-UI-07) |
-| Base et modèles | `/administration` | ml, admin | 75 fiches (recherche, consultation), modèles et évaluations, configuration de décision (lecture), comptes (admin) |
-| Connexion | `/connexion` | personnel | jeton de 15 minutes, déconnexion automatique à l'expiration (F-UI-08) |
+| Base et modèles | `/administration` | ml, admin | 75 fiches (recherche, consultation), modèles et évaluations, configuration de décision (lecture), comptes (admin) : demandes d'inscription en attente (valider avec un rôle, ou refuser), liste et création des comptes |
+| Connexion | `/connexion` | personnel | jeton de 15 minutes, déconnexion automatique à l'expiration ; bouton « S'inscrire » (F-UI-08) |
+| Inscription | `/inscription` | visiteurs | demande de compte du personnel (identifiant, mot de passe de 12 caractères au moins, confirmation, rôle demandé) ; le compte attend la validation d'un administrateur |
 | Crédits | `/credits` | tous | attribution CC BY 4.0 du jeu de données et licences des modèles |
 
 Les droits réels sont vérifiés par l'API à chaque requête (Tableau 14). Côté interface, les pages

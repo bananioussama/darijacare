@@ -161,7 +161,13 @@ export interface UserOut {
   username: string;
   role: Role;
   active: boolean;
+  /** Inscription en attente de validation par un administrateur. */
+  pending: boolean;
   created_at: string;
+}
+
+export interface RegisterOut {
+  detail: string;
 }
 
 export interface EscalationOut {

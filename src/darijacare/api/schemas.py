@@ -121,7 +121,28 @@ class UserOut(BaseModel):
     username: str
     role: str
     active: bool
+    pending: bool
     created_at: datetime
+
+
+class RegisterIn(BaseModel):
+    """Staff self-registration: the account waits for an administrator."""
+
+    username: str = Field(min_length=3, max_length=64, pattern=r"^[a-zA-Z0-9._-]+$")
+    password: str = Field(min_length=12, max_length=256)
+    requested_role: Literal["conseiller", "ml"]
+    """The administrator confirms or changes it; nobody can ask to be administrator."""
+
+
+class RegisterOut(BaseModel):
+    detail: str
+
+
+class UserValidation(BaseModel):
+    """Administrator decision on a pending account (refusal = ``DELETE``)."""
+
+    action: Literal["valider"]
+    role: Literal["conseiller", "ml", "admin"]
 
 
 class EscalationOut(BaseModel):

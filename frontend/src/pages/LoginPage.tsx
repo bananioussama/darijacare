@@ -96,6 +96,10 @@ export default function LoginPage() {
           {busy ? "Connexion…" : "Se connecter"}
         </button>
       </form>
+      <p className="mt-5 text-center text-sm text-texte-2">Pas encore de compte ?</p>
+      <Link to="/inscription" className="bouton-secondaire mt-2 w-full">
+        S'inscrire
+      </Link>
     </div>
   );
 }
