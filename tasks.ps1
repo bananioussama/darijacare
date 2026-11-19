@@ -18,7 +18,7 @@ switch ($Target) {
     "format"      { Invoke-Step "uv run ruff check --fix src tests tools migrations"; Invoke-Step "uv run black src tests tools migrations" }
     "typecheck"   { Invoke-Step "uv run mypy" }
     "test"        { Invoke-Step "uv run pytest" }
-    "test-data"   { Invoke-Step "uv run pytest -m data" }
+    "test-data"   { Invoke-Step "uv run pytest -m data tests/data" }
     "cov"         { Invoke-Step "uv run pytest --cov=darijacare --cov-report=term-missing --cov-report=html" }
     "repro"       { Invoke-Step "uv run dvc repro" }
     "data-status" { Invoke-Step "uv run dvc status" }

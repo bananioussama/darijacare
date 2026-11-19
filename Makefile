@@ -28,7 +28,7 @@ test:
 	$(UV) run pytest
 
 test-data:  ## Tests sur les vraies données (après `make repro`)
-	$(UV) run pytest -m data
+	$(UV) run pytest -m data tests/data
 
 cov:
 	$(UV) run pytest --cov=darijacare --cov-report=term-missing --cov-report=html

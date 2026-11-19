@@ -135,11 +135,13 @@ class LayaTelecomModel:
         model_version: str | None = None,
         needs_human_threshold: float = 0.5,
     ) -> None:
-        import laya
-
         path = Path(checkpoint)
         if not path.exists():
             raise FileNotFoundError(f"Checkpoint introuvable : {path}")
+        # Imported once the checkpoint is known to exist: a missing folder gets a clear
+        # error even where laya is not installed (CI without the ``nlu`` extra).
+        import laya
+
         self.checkpoint = path
         self.taxonomy: dict[str, Any] = json.loads(
             (path / "telecom_taxonomy.json").read_text(encoding="utf-8")

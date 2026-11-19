@@ -112,5 +112,7 @@ jobs:
           uv run dvc repro --force
       - name: Vérifier les empreintes des données
         run: uv run python tools/check_lock.py /tmp/reference.lock dvc.lock
+      # Seulement tests/data : ce job n'installe que l'extra pipeline, et les tests de l'API
+      # (FastAPI, SQLAlchemy) ne pourraient pas être collectés.
       - name: Tests sur les données produites
-        run: uv run pytest -m data
+        run: uv run pytest -m data tests/data
